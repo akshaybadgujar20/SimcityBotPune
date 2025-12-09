@@ -1,0 +1,132 @@
+[
+  {
+    "name": "TIRAMISU",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/tiramisu.png",
+      "x1": "global_trade_hq/desert_shop/tiramisu_x1.png",
+      "x2": "global_trade_hq/desert_shop/tiramisu_x2.png",
+      "x3": "global_trade_hq/desert_shop/tiramisu_x3.png",
+      "x4": "global_trade_hq/desert_shop/tiramisu_x4.png",
+      "x5": "global_trade_hq/desert_shop/tiramisu_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/tiramisu.png",
+      "x1": "trade_depot/desert_shop/tiramisu_x1.png",
+      "x2": "trade_depot/desert_shop/tiramisu_x2.png",
+      "x3": "trade_depot/desert_shop/tiramisu_x3.png",
+      "x4": "trade_depot/desert_shop/tiramisu_x4.png",
+      "x5": "trade_depot/desert_shop/tiramisu_x5.png"
+    },
+    "base_price": 5,
+    "actual_price": 8,
+    "storage_template": "city_storage/desert_shop/tiramisu.png",
+    "sell_duration": 200,
+    "building_name": "DESERT_SHOP"
+  },
+  {
+    "name": "CHURROS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/churros.png",
+      "x1": "global_trade_hq/desert_shop/churros_x1.png",
+      "x2": "global_trade_hq/desert_shop/churros_x2.png",
+      "x3": "global_trade_hq/desert_shop/churros_x3.png",
+      "x4": "global_trade_hq/desert_shop/churros_x4.png",
+      "x5": "global_trade_hq/desert_shop/churros_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/churros.png",
+      "x1": "trade_depot/desert_shop/churros_x1.png",
+      "x2": "trade_depot/desert_shop/churros_x2.png",
+      "x3": "trade_depot/desert_shop/churros_x3.png",
+      "x4": "trade_depot/desert_shop/churros_x4.png",
+      "x5": "trade_depot/desert_shop/churros_x5.png"
+    },
+    "base_price": 4,
+    "actual_price": 7,
+    "storage_template": "city_storage/desert_shop/churros.png",
+    "sell_duration": 180,
+    "building_name": "DESERT_SHOP"
+  },
+  {
+    "name": "PROFITEROLE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/profiterole.png",
+      "x1": "global_trade_hq/desert_shop/profiterole_x1.png",
+      "x2": "global_trade_hq/desert_shop/profiterole_x2.png",
+      "x3": "global_trade_hq/desert_shop/profiterole_x3.png",
+      "x4": "global_trade_hq/desert_shop/profiterole_x4.png",
+      "x5": "global_trade_hq/desert_shop/profiterole_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/profiterole.png",
+      "x1": "trade_depot/desert_shop/profiterole_x1.png",
+      "x2": "trade_depot/desert_shop/profiterole_x2.png",
+      "x3": "trade_depot/desert_shop/profiterole_x3.png",
+      "x4": "trade_depot/desert_shop/profiterole_x4.png",
+      "x5": "trade_depot/desert_shop/profiterole_x5.png"
+    },
+    "base_price": 6,
+    "actual_price": 9,
+    "storage_template": "city_storage/desert_shop/profiterole.png",
+    "sell_duration": 220,
+    "building_name": "DESERT_SHOP"
+  },
+  {
+    "name": "MOCHI",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/mochi.png",
+      "x1": "global_trade_hq/desert_shop/mochi_x1.png",
+      "x2": "global_trade_hq/desert_shop/mochi_x2.png",
+      "x3": "global_trade_hq/desert_shop/mochi_x3.png",
+      "x4": "global_trade_hq/desert_shop/mochi_x4.png",
+      "x5": "global_trade_hq/desert_shop/mochi_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/mochi.png",
+      "x1": "trade_depot/desert_shop/mochi_x1.png",
+      "x2": "trade_depot/desert_shop/mochi_x2.png",
+      "x3": "trade_depot/desert_shop/mochi_x3.png",
+      "x4": "trade_depot/desert_shop/mochi_x4.png",
+      "x5": "trade_depot/desert_shop/mochi_x5.png"
+    },
+    "base_price": 7,
+    "actual_price": 10,
+    "storage_template": "city_storage/desert_shop/mochi.png",
+    "sell_duration": 250,
+    "building_name": "DESERT_SHOP"
+  },
+  {
+    "name": "PAVLOVA",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/pavlova.png",
+      "x1": "global_trade_hq/desert_shop/pavlova_x1.png",
+      "x2": "global_trade_hq/desert_shop/pavlova_x2.png",
+      "x3": "global_trade_hq/desert_shop/pavlova_x3.png",
+      "x4": "global_trade_hq/desert_shop/pavlova_x4.png",
+      "x5": "global_trade_hq/desert_shop/pavlova_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/pavlova.png",
+      "x1": "trade_depot/desert_shop/pavlova_x1.png",
+      "x2": "trade_depot/desert_shop/pavlova_x2.png",
+      "x3": "trade_depot/desert_shop/pavlova_x3.png",
+      "x4": "trade_depot/desert_shop/pavlova_x4.png",
+      "x5": "trade_depot/desert_shop/pavlova_x5.png"
+    },
+    "base_price": 8,
+    "actual_price": 12,
+    "storage_template": "city_storage/desert_shop/pavlova.png",
+    "sell_duration": 300,
+    "building_name": "DESERT_SHOP"
+  }
+]

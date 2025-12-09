@@ -1,0 +1,80 @@
+[
+  {
+    "name": "STRING",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/string.png",
+      "x1": "global_trade_hq/silk_store/string_x1.png",
+      "x2": "global_trade_hq/silk_store/string_x2.png",
+      "x3": "global_trade_hq/silk_store/string_x3.png",
+      "x4": "global_trade_hq/silk_store/string_x4.png",
+      "x5": "global_trade_hq/silk_store/string_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/string.png",
+      "x1": "trade_depot/silk_store/string_x1.png",
+      "x2": "trade_depot/silk_store/string_x2.png",
+      "x3": "trade_depot/silk_store/string_x3.png",
+      "x4": "trade_depot/silk_store/string_x4.png",
+      "x5": "trade_depot/silk_store/string_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 4,
+    "storage_template": "city_storage/silk_store/string.png",
+    "sell_duration": 3000,
+    "building_name": "SILK_STORE"
+  },
+  {
+    "name": "FAN",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/fan.png",
+      "x1": "global_trade_hq/silk_store/fan_x1.png",
+      "x2": "global_trade_hq/silk_store/fan_x2.png",
+      "x3": "global_trade_hq/silk_store/fan_x3.png",
+      "x4": "global_trade_hq/silk_store/fan_x4.png",
+      "x5": "global_trade_hq/silk_store/fan_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/fan.png",
+      "x1": "trade_depot/silk_store/fan_x1.png",
+      "x2": "trade_depot/silk_store/fan_x2.png",
+      "x3": "trade_depot/silk_store/fan_x3.png",
+      "x4": "trade_depot/silk_store/fan_x4.png",
+      "x5": "trade_depot/silk_store/fan_x5.png"
+    },
+    "base_price": 825,
+    "actual_price": 20,
+    "storage_template": "city_storage/silk_store/fan.png",
+    "sell_duration": 9000,
+    "building_name": "SILK_STORE"
+  },
+  {
+    "name": "ROBE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/robe.png",
+      "x1": "global_trade_hq/silk_store/robe_x1.png",
+      "x2": "global_trade_hq/silk_store/robe_x2.png",
+      "x3": "global_trade_hq/silk_store/robe_x3.png",
+      "x4": "global_trade_hq/silk_store/robe_x4.png",
+      "x5": "global_trade_hq/silk_store/robe_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/robe.png",
+      "x1": "trade_depot/silk_store/robe_x1.png",
+      "x2": "trade_depot/silk_store/robe_x2.png",
+      "x3": "trade_depot/silk_store/robe_x3.png",
+      "x4": "trade_depot/silk_store/robe_x4.png",
+      "x5": "trade_depot/silk_store/robe_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 35,
+    "storage_template": "city_storage/silk_store/robe.png",
+    "sell_duration": 13000,
+    "building_name": "SILK_STORE"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "WROUGHT_IRON",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/wrought_iron.png",
+      "x1": "global_trade_hq/bureau_of_restoration/wrought_iron_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/wrought_iron_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/wrought_iron_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/wrought_iron_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/wrought_iron_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/wrought_iron.png",
+      "x1": "trade_depot/bureau_of_restoration/wrought_iron_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/wrought_iron_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/wrought_iron_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/wrought_iron_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/wrought_iron_x5.png"
+    },
+    "base_price": 12,
+    "actual_price": 15,
+    "storage_template": "city_storage/bureau_of_restoration/wrought_iron.png",
+    "sell_duration": 400,
+    "building_name": "BUREAU_OF_RESTORATION"
+  },
+  {
+    "name": "CARVED_WOOD",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/carved_wood.png",
+      "x1": "global_trade_hq/bureau_of_restoration/carved_wood_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/carved_wood_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/carved_wood_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/carved_wood_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/carved_wood_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/carved_wood.png",
+      "x1": "trade_depot/bureau_of_restoration/carved_wood_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/carved_wood_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/carved_wood_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/carved_wood_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/carved_wood_x5.png"
+    },
+    "base_price": 10,
+    "actual_price": 12,
+    "storage_template": "city_storage/bureau_of_restoration/carved_wood.png",
+    "sell_duration": 350,
+    "building_name": "BUREAU_OF_RESTORATION"
+  },
+  {
+    "name": "CHISELED_STONE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/chiseled_stone.png",
+      "x1": "global_trade_hq/bureau_of_restoration/chiseled_stone_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/chiseled_stone_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/chiseled_stone_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/chiseled_stone_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/chiseled_stone_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/chiseled_stone.png",
+      "x1": "trade_depot/bureau_of_restoration/chiseled_stone_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/chiseled_stone_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/chiseled_stone_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/chiseled_stone_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/chiseled_stone_x5.png"
+    },
+    "base_price": 14,
+    "actual_price": 18,
+    "storage_template": "city_storage/bureau_of_restoration/chiseled_stone.png",
+    "sell_duration": 420,
+    "building_name": "BUREAU_OF_RESTORATION"
+  },
+  {
+    "name": "TAPESTRY",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/tapestry.png",
+      "x1": "global_trade_hq/bureau_of_restoration/tapestry_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/tapestry_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/tapestry_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/tapestry_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/tapestry_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/tapestry.png",
+      "x1": "trade_depot/bureau_of_restoration/tapestry_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/tapestry_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/tapestry_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/tapestry_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/tapestry_x5.png"
+    },
+    "base_price": 25,
+    "actual_price": 30,
+    "storage_template": "city_storage/bureau_of_restoration/tapestry.png",
+    "sell_duration": 500,
+    "building_name": "BUREAU_OF_RESTORATION"
+  },
+  {
+    "name": "STAINED_GLASS",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/stained_glass.png",
+      "x1": "global_trade_hq/bureau_of_restoration/stained_glass_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/stained_glass_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/stained_glass_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/stained_glass_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/stained_glass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/stained_glass.png",
+      "x1": "trade_depot/bureau_of_restoration/stained_glass_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/stained_glass_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/stained_glass_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/stained_glass_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/stained_glass_x5.png"
+    },
+    "base_price": 20,
+    "actual_price": 22,
+    "storage_template": "city_storage/bureau_of_restoration/stained_glass_storage.png",
+    "sell_duration": 450,
+    "building_name": "BUREAU_OF_RESTORATION"
+  }
+]

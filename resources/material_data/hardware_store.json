@@ -1,0 +1,158 @@
+[
+  {
+    "name": "HAMMER",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/hammer.png",
+      "x1": "global_trade_hq/hardware_store/hammer_x1.png",
+      "x2": "global_trade_hq/hardware_store/hammer_x2.png",
+      "x3": "global_trade_hq/hardware_store/hammer_x3.png",
+      "x4": "global_trade_hq/hardware_store/hammer_x4.png",
+      "x5": "global_trade_hq/hardware_store/hammer_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/hammer.png",
+      "x1": "trade_depot/hardware_store/hammer_x1.png",
+      "x2": "trade_depot/hardware_store/hammer_x2.png",
+      "x3": "trade_depot/hardware_store/hammer_x3.png",
+      "x4": "trade_depot/hardware_store/hammer_x4.png",
+      "x5": "trade_depot/hardware_store/hammer_x5.png"
+    },
+    "base_price": 67,
+    "actual_price": 15,
+    "storage_template": "city_storage/hardware_store/hammer.png",
+    "sell_duration": 3000,
+    "building_name": "HARDWARE_STORE"
+  },
+  {
+    "name": "MEASURING_TAPE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/measuring_tape.png",
+      "x1": "global_trade_hq/hardware_store/measuring_tape_x1.png",
+      "x2": "global_trade_hq/hardware_store/measuring_tape_x2.png",
+      "x3": "global_trade_hq/hardware_store/measuring_tape_x3.png",
+      "x4": "global_trade_hq/hardware_store/measuring_tape_x4.png",
+      "x5": "global_trade_hq/hardware_store/measuring_tape_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/measuring_tape.png",
+      "x1": "trade_depot/hardware_store/measuring_tape_x1.png",
+      "x2": "trade_depot/hardware_store/measuring_tape_x2.png",
+      "x3": "trade_depot/hardware_store/measuring_tape_x3.png",
+      "x4": "trade_depot/hardware_store/measuring_tape_x4.png",
+      "x5": "trade_depot/hardware_store/measuring_tape_x5.png"
+    },
+    "base_price": 82,
+    "actual_price": 8,
+    "storage_template": "city_storage/hardware_store/measuring_tape.png",
+    "sell_duration": 3000,
+    "building_name": "HARDWARE_STORE"
+  },
+  {
+    "name": "SHOVEL",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/shovel.png",
+      "x1": "global_trade_hq/hardware_store/shovel_x1.png",
+      "x2": "global_trade_hq/hardware_store/shovel_x2.png",
+      "x3": "global_trade_hq/hardware_store/shovel_x3.png",
+      "x4": "global_trade_hq/hardware_store/shovel_x4.png",
+      "x5": "global_trade_hq/hardware_store/shovel_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/shovel.png",
+      "x1": "trade_depot/hardware_store/shovel_x1.png",
+      "x2": "trade_depot/hardware_store/shovel_x2.png",
+      "x3": "trade_depot/hardware_store/shovel_x3.png",
+      "x4": "trade_depot/hardware_store/shovel_x4.png",
+      "x5": "trade_depot/hardware_store/shovel_x5.png"
+    },
+    "base_price": 112,
+    "actual_price": 18,
+    "storage_template": "city_storage/hardware_store/shovel.png",
+    "sell_duration": 3500,
+    "building_name": "HARDWARE_STORE"
+  },
+  {
+    "name": "COOKING_UTENSILS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/cooking_utensils.png",
+      "x1": "global_trade_hq/hardware_store/cooking_utensils_x1.png",
+      "x2": "global_trade_hq/hardware_store/cooking_utensils_x2.png",
+      "x3": "global_trade_hq/hardware_store/cooking_utensils_x3.png",
+      "x4": "global_trade_hq/hardware_store/cooking_utensils_x4.png",
+      "x5": "global_trade_hq/hardware_store/cooking_utensils_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/cooking_utensils.png",
+      "x1": "trade_depot/hardware_store/cooking_utensils_x1.png",
+      "x2": "trade_depot/hardware_store/cooking_utensils_x2.png",
+      "x3": "trade_depot/hardware_store/cooking_utensils_x3.png",
+      "x4": "trade_depot/hardware_store/cooking_utensils_x4.png",
+      "x5": "trade_depot/hardware_store/cooking_utensils_x5.png"
+    },
+    "base_price": 187,
+    "actual_price": 28,
+    "storage_template": "city_storage/hardware_store/cooking_utensils.png",
+    "sell_duration": 4000,
+    "building_name": "HARDWARE_STORE"
+  },
+  {
+    "name": "LADDER",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/ladder.png",
+      "x1": "global_trade_hq/hardware_store/ladder_x1.png",
+      "x2": "global_trade_hq/hardware_store/ladder_x2.png",
+      "x3": "global_trade_hq/hardware_store/ladder_x3.png",
+      "x4": "global_trade_hq/hardware_store/ladder_x4.png",
+      "x5": "global_trade_hq/hardware_store/ladder_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/ladder.png",
+      "x1": "trade_depot/hardware_store/ladder_x1.png",
+      "x2": "trade_depot/hardware_store/ladder_x2.png",
+      "x3": "trade_depot/hardware_store/ladder_x3.png",
+      "x4": "trade_depot/hardware_store/ladder_x4.png",
+      "x5": "trade_depot/hardware_store/ladder_x5.png"
+    },
+    "base_price": 315,
+    "actual_price": 24,
+    "storage_template": "city_storage/hardware_store/ladder.png",
+    "sell_duration": 5000,
+    "building_name": "HARDWARE_STORE"
+  },
+  {
+    "name": "DRILL",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/drill.png",
+      "x1": "global_trade_hq/hardware_store/drill_x1.png",
+      "x2": "global_trade_hq/hardware_store/drill_x2.png",
+      "x3": "global_trade_hq/hardware_store/drill_x3.png",
+      "x4": "global_trade_hq/hardware_store/drill_x4.png",
+      "x5": "global_trade_hq/hardware_store/drill_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/drill.png",
+      "x1": "trade_depot/hardware_store/drill_x1.png",
+      "x2": "trade_depot/hardware_store/drill_x2.png",
+      "x3": "trade_depot/hardware_store/drill_x3.png",
+      "x4": "trade_depot/hardware_store/drill_x4.png",
+      "x5": "trade_depot/hardware_store/drill_x5.png"
+    },
+    "base_price": 442,
+    "actual_price": 40,
+    "storage_template": "city_storage/hardware_store/drill.png",
+    "sell_duration": 6000,
+    "building_name": "HARDWARE_STORE"
+  }
+]

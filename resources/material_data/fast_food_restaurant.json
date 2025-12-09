@@ -1,0 +1,158 @@
+[
+  {
+    "name": "ICE_CREAM_SANDWICH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich.png",
+      "x1": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/ice_cream_sandwich.png",
+      "x1": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x5.png"
+    },
+    "base_price": 1920,
+    "actual_price": 6,
+    "storage_template": "city_storage/fast_food_restaurant/ice_cream_sandwich.png",
+    "sell_duration": 15000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  },
+  {
+    "name": "PIZZA",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/pizza.png",
+      "x1": "global_trade_hq/fast_food_restaurant/pizza_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/pizza_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/pizza_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/pizza_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/pizza_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/pizza.png",
+      "x1": "trade_depot/fast_food_restaurant/pizza_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/pizza_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/pizza_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/pizza_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/pizza_x5.png"
+    },
+    "base_price": 1920,
+    "actual_price": 12,
+    "storage_template": "city_storage/fast_food_restaurant/pizza.png",
+    "sell_duration": 15000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  },
+  {
+    "name": "BURGERS",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/burgers.png",
+      "x1": "global_trade_hq/fast_food_restaurant/burgers_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/burgers_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/burgers_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/burgers_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/burgers_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/burgers.png",
+      "x1": "trade_depot/fast_food_restaurant/burgers_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/burgers_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/burgers_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/burgers_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/burgers_x5.png"
+    },
+    "base_price": 2715,
+    "actual_price": 9,
+    "storage_template": "city_storage/fast_food_restaurant/burgers.png",
+    "sell_duration": 21000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  },
+  {
+    "name": "CHEESE_FRIES",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/cheese_fries.png",
+      "x1": "global_trade_hq/fast_food_restaurant/cheese_fries_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/cheese_fries_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/cheese_fries_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/cheese_fries_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/cheese_fries_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/cheese_fries.png",
+      "x1": "trade_depot/fast_food_restaurant/cheese_fries_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/cheese_fries_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/cheese_fries_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/cheese_fries_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/cheese_fries_x5.png"
+    },
+    "base_price": 787,
+    "actual_price": 7,
+    "storage_template": "city_storage/fast_food_restaurant/cheese_fries.png",
+    "sell_duration": 8000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  },
+  {
+    "name": "LEMONADE_BOTTLE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/lemonade_bottle.png",
+      "x1": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/lemonade_bottle.png",
+      "x1": "trade_depot/fast_food_restaurant/lemonade_bottle_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/lemonade_bottle_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/lemonade_bottle_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/lemonade_bottle_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/lemonade_bottle_x5.png"
+    },
+    "base_price": 1267,
+    "actual_price": 4,
+    "storage_template": "city_storage/fast_food_restaurant/lemonade_bottle.png",
+    "sell_duration": 11000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  },
+  {
+    "name": "POPCORN",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/popcorn.png",
+      "x1": "global_trade_hq/fast_food_restaurant/popcorn_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/popcorn_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/popcorn_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/popcorn_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/popcorn_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/popcorn.png",
+      "x1": "trade_depot/fast_food_restaurant/popcorn_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/popcorn_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/popcorn_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/popcorn_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/popcorn_x5.png"
+    },
+    "base_price": 937,
+    "actual_price": 3,
+    "storage_template": "city_storage/fast_food_restaurant/popcorn.png",
+    "sell_duration": 10000,
+    "building_name": "FAST_FOOD_RESTAURANT"
+  }
+]

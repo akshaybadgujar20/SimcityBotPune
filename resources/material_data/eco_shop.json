@@ -1,0 +1,80 @@
+[
+  {
+    "name": "REUSABLE_BAG",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/reusable_bag.png",
+      "x1": "global_trade_hq/eco_shop/reusable_bag_x1.png",
+      "x2": "global_trade_hq/eco_shop/reusable_bag_x2.png",
+      "x3": "global_trade_hq/eco_shop/reusable_bag_x3.png",
+      "x4": "global_trade_hq/eco_shop/reusable_bag_x4.png",
+      "x5": "global_trade_hq/eco_shop/reusable_bag_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/reusable_bag.png",
+      "x1": "trade_depot/eco_shop/reusable_bag_x1.png",
+      "x2": "trade_depot/eco_shop/reusable_bag_x2.png",
+      "x3": "trade_depot/eco_shop/reusable_bag_x3.png",
+      "x4": "trade_depot/eco_shop/reusable_bag_x4.png",
+      "x5": "trade_depot/eco_shop/reusable_bag_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 4,
+    "storage_template": "city_storage/eco_shop/reusable_bag.png",
+    "sell_duration": 3000,
+    "building_name": "ECO_SHOP"
+  },
+  {
+    "name": "ECOLOGICAL_SHOES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/ecological_shoes.png",
+      "x1": "global_trade_hq/eco_shop/ecological_shoes_x1.png",
+      "x2": "global_trade_hq/eco_shop/ecological_shoes_x2.png",
+      "x3": "global_trade_hq/eco_shop/ecological_shoes_x3.png",
+      "x4": "global_trade_hq/eco_shop/ecological_shoes_x4.png",
+      "x5": "global_trade_hq/eco_shop/ecological_shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/ecological_shoes.png",
+      "x1": "trade_depot/eco_shop/ecological_shoes_x1.png",
+      "x2": "trade_depot/eco_shop/ecological_shoes_x2.png",
+      "x3": "trade_depot/eco_shop/ecological_shoes_x3.png",
+      "x4": "trade_depot/eco_shop/ecological_shoes_x4.png",
+      "x5": "trade_depot/eco_shop/ecological_shoes_x5.png"
+    },
+    "base_price": 562,
+    "actual_price": 20,
+    "storage_template": "city_storage/eco_shop/ecological_shoes.png",
+    "sell_duration": 6000,
+    "building_name": "ECO_SHOP"
+  },
+  {
+    "name": "YOGA_MAT",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/yoga_mat.png",
+      "x1": "global_trade_hq/eco_shop/yoga_mat_x1.png",
+      "x2": "global_trade_hq/eco_shop/yoga_mat_x2.png",
+      "x3": "global_trade_hq/eco_shop/yoga_mat_x3.png",
+      "x4": "global_trade_hq/eco_shop/yoga_mat_x4.png",
+      "x5": "global_trade_hq/eco_shop/yoga_mat_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/yoga_mat.png",
+      "x1": "trade_depot/eco_shop/yoga_mat_x1.png",
+      "x2": "trade_depot/eco_shop/yoga_mat_x2.png",
+      "x3": "trade_depot/eco_shop/yoga_mat_x3.png",
+      "x4": "trade_depot/eco_shop/yoga_mat_x4.png",
+      "x5": "trade_depot/eco_shop/yoga_mat_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 15,
+    "storage_template": "city_storage/eco_shop/yoga_mat.png",
+    "sell_duration": 13000,
+    "building_name": "ECO_SHOP"
+  }
+]

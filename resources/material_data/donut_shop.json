@@ -1,0 +1,158 @@
+[
+  {
+    "name": "DONUTS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/donuts.png",
+      "x1": "global_trade_hq/donut_shop/donuts_x1.png",
+      "x2": "global_trade_hq/donut_shop/donuts_x2.png",
+      "x3": "global_trade_hq/donut_shop/donuts_x3.png",
+      "x4": "global_trade_hq/donut_shop/donuts_x4.png",
+      "x5": "global_trade_hq/donut_shop/donuts_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/donuts.png",
+      "x1": "trade_depot/donut_shop/donuts_x1.png",
+      "x2": "trade_depot/donut_shop/donuts_x2.png",
+      "x3": "trade_depot/donut_shop/donuts_x3.png",
+      "x4": "trade_depot/donut_shop/donuts_x4.png",
+      "x5": "trade_depot/donut_shop/donuts_x5.png"
+    },
+    "base_price": 712,
+    "actual_price": 5,
+    "storage_template": "city_storage/donut_shop/donuts.png",
+    "sell_duration": 7000,
+    "building_name": "DONUT_SHOP"
+  },
+  {
+    "name": "GREEN_SMOOTHIE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/green_smoothie.png",
+      "x1": "global_trade_hq/donut_shop/green_smoothie_x1.png",
+      "x2": "global_trade_hq/donut_shop/green_smoothie_x2.png",
+      "x3": "global_trade_hq/donut_shop/green_smoothie_x3.png",
+      "x4": "global_trade_hq/donut_shop/green_smoothie_x4.png",
+      "x5": "global_trade_hq/donut_shop/green_smoothie_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/green_smoothie.png",
+      "x1": "trade_depot/donut_shop/green_smoothie_x1.png",
+      "x2": "trade_depot/donut_shop/green_smoothie_x2.png",
+      "x3": "trade_depot/donut_shop/green_smoothie_x3.png",
+      "x4": "trade_depot/donut_shop/green_smoothie_x4.png",
+      "x5": "trade_depot/donut_shop/green_smoothie_x5.png"
+    },
+    "base_price": 862,
+    "actual_price": 6,
+    "storage_template": "city_storage/donut_shop/green_smoothie.png",
+    "sell_duration": 8000,
+    "building_name": "DONUT_SHOP"
+  },
+  {
+    "name": "BREAD_ROLL",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/bread_roll.png",
+      "x1": "global_trade_hq/donut_shop/bread_roll_x1.png",
+      "x2": "global_trade_hq/donut_shop/bread_roll_x2.png",
+      "x3": "global_trade_hq/donut_shop/bread_roll_x3.png",
+      "x4": "global_trade_hq/donut_shop/bread_roll_x4.png",
+      "x5": "global_trade_hq/donut_shop/bread_roll_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/bread_roll.png",
+      "x1": "trade_depot/donut_shop/bread_roll_x1.png",
+      "x2": "trade_depot/donut_shop/bread_roll_x2.png",
+      "x3": "trade_depot/donut_shop/bread_roll_x3.png",
+      "x4": "trade_depot/donut_shop/bread_roll_x4.png",
+      "x5": "trade_depot/donut_shop/bread_roll_x5.png"
+    },
+    "base_price": 1380,
+    "actual_price": 4,
+    "storage_template": "city_storage/donut_shop/bread_roll.png",
+    "sell_duration": 11000,
+    "building_name": "DONUT_SHOP"
+  },
+  {
+    "name": "CHERRY_CHEESECAKE",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/cherry_cheesecake.png",
+      "x1": "global_trade_hq/donut_shop/cherry_cheesecake_x1.png",
+      "x2": "global_trade_hq/donut_shop/cherry_cheesecake_x2.png",
+      "x3": "global_trade_hq/donut_shop/cherry_cheesecake_x3.png",
+      "x4": "global_trade_hq/donut_shop/cherry_cheesecake_x4.png",
+      "x5": "global_trade_hq/donut_shop/cherry_cheesecake_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/cherry_cheesecake.png",
+      "x1": "trade_depot/donut_shop/cherry_cheesecake_x1.png",
+      "x2": "trade_depot/donut_shop/cherry_cheesecake_x2.png",
+      "x3": "trade_depot/donut_shop/cherry_cheesecake_x3.png",
+      "x4": "trade_depot/donut_shop/cherry_cheesecake_x4.png",
+      "x5": "trade_depot/donut_shop/cherry_cheesecake_x5.png"
+    },
+    "base_price": 1680,
+    "actual_price": 8,
+    "storage_template": "city_storage/donut_shop/cherry_cheesecake.png",
+    "sell_duration": 14000,
+    "building_name": "DONUT_SHOP"
+  },
+  {
+    "name": "FROZEN_YOGURT",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/frozen_yogurt.png",
+      "x1": "global_trade_hq/donut_shop/frozen_yogurt_x1.png",
+      "x2": "global_trade_hq/donut_shop/frozen_yogurt_x2.png",
+      "x3": "global_trade_hq/donut_shop/frozen_yogurt_x3.png",
+      "x4": "global_trade_hq/donut_shop/frozen_yogurt_x4.png",
+      "x5": "global_trade_hq/donut_shop/frozen_yogurt_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/frozen_yogurt.png",
+      "x1": "trade_depot/donut_shop/frozen_yogurt_x1.png",
+      "x2": "trade_depot/donut_shop/frozen_yogurt_x2.png",
+      "x3": "trade_depot/donut_shop/frozen_yogurt_x3.png",
+      "x4": "trade_depot/donut_shop/frozen_yogurt_x4.png",
+      "x5": "trade_depot/donut_shop/frozen_yogurt_x5.png"
+    },
+    "base_price": 1312,
+    "actual_price": 5,
+    "storage_template": "city_storage/donut_shop/frozen_yogurt.png",
+    "sell_duration": 12000,
+    "building_name": "DONUT_SHOP"
+  },
+  {
+    "name": "COFFEE",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/coffee.png",
+      "x1": "global_trade_hq/donut_shop/coffee_x1.png",
+      "x2": "global_trade_hq/donut_shop/coffee_x2.png",
+      "x3": "global_trade_hq/donut_shop/coffee_x3.png",
+      "x4": "global_trade_hq/donut_shop/coffee_x4.png",
+      "x5": "global_trade_hq/donut_shop/coffee_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/coffee.png",
+      "x1": "trade_depot/donut_shop/coffee_x1.png",
+      "x2": "trade_depot/donut_shop/coffee_x2.png",
+      "x3": "trade_depot/donut_shop/coffee_x3.png",
+      "x4": "trade_depot/donut_shop/coffee_x4.png",
+      "x5": "trade_depot/donut_shop/coffee_x5.png"
+    },
+    "base_price": 562,
+    "actual_price": 3,
+    "storage_template": "city_storage/donut_shop/coffee.png",
+    "sell_duration": 6000,
+    "building_name": "DONUT_SHOP"
+  }
+]

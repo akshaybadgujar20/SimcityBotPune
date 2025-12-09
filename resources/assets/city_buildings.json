@@ -1,0 +1,57 @@
+{
+    "BASE_CITY": [
+        "VU_RANDOM_GENERATOR",
+        "TOY_SHOP",
+        "BUILDING_SUPPLIES_STORE",
+        "GARDENING_SUPPLIES",
+        "FARMER_S_MARKET",
+        "HARDWARE_STORE",
+        "FASHION_STORE",
+        "HOME_APPLIANCES",
+        "FURNITURE_STORE",
+        "DONUT_SHOP",
+        "FAST_FOOD_RESTAURANT",
+        "DESERT_SHOP",
+        "COUNTRY_STORE",
+        "SPORT_SHOP",
+        "BUREAU_OF_RESTORATION"
+    ],
+    "BARLEYCORN_POINT": [
+        "FURNITURE_STORE",
+        "FARMER_S_MARKET",
+        "BUILDING_SUPPLIES_STORE",
+        "HARDWARE_STORE",
+        "FAST_FOOD_RESTAURANT",
+        "GARDENING_SUPPLIES",
+        "HOME_APPLIANCES",
+        "FASHION_STORE",
+        "DONUT_SHOP"
+    ],
+    "SUNSHINE_VALLEY": [
+        "FAST_FOOD_RESTAURANT",
+        "DONUT_SHOP",
+        "HOME_APPLIANCES",
+        "FASHION_STORE",
+        "GARDENING_SUPPLIES",
+        "FARMER_S_MARKET",
+        "BUILDING_SUPPLIES_STORE",
+        "HARDWARE_STORE",
+        "FURNITURE_STORE"
+    ],
+    "TRADERS_RIDGE": [
+        "DONUT_SHOP",
+        "FASHION_STORE",
+        "GARDENING_SUPPLIES",
+        "FURNITURE_STORE",
+        "BUILDING_SUPPLIES_STORE",
+        "HARDWARE_STORE",
+        "FARMER_S_MARKET"
+    ],
+    "MAGNOLIA_WETLANDS": [],
+    "HOKUSAI_CLIFFS": [],
+    "NAUTILUS_PLATEAU": [],
+    "PETROL_BAY": [],
+    "GRAND_HAVEN": [],
+    "JUGBAND_HILLS": [],
+    "COTTONWOOD_FOREST": []
+}

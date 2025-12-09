@@ -1,0 +1,132 @@
+[
+  {
+    "name": "CHAIRS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/chairs.png",
+      "x1": "global_trade_hq/furniture_store/chairs_x1.png",
+      "x2": "global_trade_hq/furniture_store/chairs_x2.png",
+      "x3": "global_trade_hq/furniture_store/chairs_x3.png",
+      "x4": "global_trade_hq/furniture_store/chairs_x4.png",
+      "x5": "global_trade_hq/furniture_store/chairs_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/chairs.png",
+      "x1": "trade_depot/furniture_store/chairs_x1.png",
+      "x2": "trade_depot/furniture_store/chairs_x2.png",
+      "x3": "trade_depot/furniture_store/chairs_x3.png",
+      "x4": "trade_depot/furniture_store/chairs_x4.png",
+      "x5": "trade_depot/furniture_store/chairs_x5.png"
+    },
+    "base_price": 225,
+    "actual_price": 70,
+    "storage_template": "city_storage/furniture_store/chairs.png",
+    "sell_duration": 3000,
+    "building_name": "FURNITURE_STORE"
+  },
+  {
+    "name": "TABLES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/tables.png",
+      "x1": "global_trade_hq/furniture_store/tables_x1.png",
+      "x2": "global_trade_hq/furniture_store/tables_x2.png",
+      "x3": "global_trade_hq/furniture_store/tables_x3.png",
+      "x4": "global_trade_hq/furniture_store/tables_x4.png",
+      "x5": "global_trade_hq/furniture_store/tables_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/tables.png",
+      "x1": "trade_depot/furniture_store/tables_x1.png",
+      "x2": "trade_depot/furniture_store/tables_x2.png",
+      "x3": "trade_depot/furniture_store/tables_x3.png",
+      "x4": "trade_depot/furniture_store/tables_x4.png",
+      "x5": "trade_depot/furniture_store/tables_x5.png"
+    },
+    "base_price": 375,
+    "actual_price": 120,
+    "storage_template": "city_storage/furniture_store/tables.png",
+    "sell_duration": 5500,
+    "building_name": "FURNITURE_STORE"
+  },
+  {
+    "name": "HOME_TEXTILES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/home_textiles.png",
+      "x1": "global_trade_hq/furniture_store/home_textiles_x1.png",
+      "x2": "global_trade_hq/furniture_store/home_textiles_x2.png",
+      "x3": "global_trade_hq/furniture_store/home_textiles_x3.png",
+      "x4": "global_trade_hq/furniture_store/home_textiles_x4.png",
+      "x5": "global_trade_hq/furniture_store/home_textiles_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/home_textiles.png",
+      "x1": "trade_depot/furniture_store/home_textiles_x1.png",
+      "x2": "trade_depot/furniture_store/home_textiles_x2.png",
+      "x3": "trade_depot/furniture_store/home_textiles_x3.png",
+      "x4": "trade_depot/furniture_store/home_textiles_x4.png",
+      "x5": "trade_depot/furniture_store/home_textiles_x5.png"
+    },
+    "base_price": 457,
+    "actual_price": 45,
+    "storage_template": "city_storage/furniture_store/home_textiles.png",
+    "sell_duration": 6000,
+    "building_name": "FURNITURE_STORE"
+  },
+  {
+    "name": "CUPBOARD",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/cupboard.png",
+      "x1": "global_trade_hq/furniture_store/cupboard_x1.png",
+      "x2": "global_trade_hq/furniture_store/cupboard_x2.png",
+      "x3": "global_trade_hq/furniture_store/cupboard_x3.png",
+      "x4": "global_trade_hq/furniture_store/cupboard_x4.png",
+      "x5": "global_trade_hq/furniture_store/cupboard_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/cupboard.png",
+      "x1": "trade_depot/furniture_store/cupboard_x1.png",
+      "x2": "trade_depot/furniture_store/cupboard_x2.png",
+      "x3": "trade_depot/furniture_store/cupboard_x3.png",
+      "x4": "trade_depot/furniture_store/cupboard_x4.png",
+      "x5": "trade_depot/furniture_store/cupboard_x5.png"
+    },
+    "base_price": 675,
+    "actual_price": 150,
+    "storage_template": "city_storage/furniture_store/cupboard.png",
+    "sell_duration": 7000,
+    "building_name": "FURNITURE_STORE"
+  },
+  {
+    "name": "COUCH",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/couch.png",
+      "x1": "global_trade_hq/furniture_store/couch_x1.png",
+      "x2": "global_trade_hq/furniture_store/couch_x2.png",
+      "x3": "global_trade_hq/furniture_store/couch_x3.png",
+      "x4": "global_trade_hq/furniture_store/couch_x4.png",
+      "x5": "global_trade_hq/furniture_store/couch_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/couch.png",
+      "x1": "trade_depot/furniture_store/couch_x1.png",
+      "x2": "trade_depot/furniture_store/couch_x2.png",
+      "x3": "trade_depot/furniture_store/couch_x3.png",
+      "x4": "trade_depot/furniture_store/couch_x4.png",
+      "x5": "trade_depot/furniture_store/couch_x5.png"
+    },
+    "base_price": 1357,
+    "actual_price": 300,
+    "storage_template": "city_storage/furniture_store/couch.png",
+    "sell_duration": 11500,
+    "building_name": "FURNITURE_STORE"
+  }
+]

@@ -1,0 +1,128 @@
+08-12-2025 - 20:59:29  - logger.py:39 - INFO - 
+===== New Automation Started =====
+
+08-12-2025 - 20:59:29  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+08-12-2025 - 20:59:29  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5574	device
+
+
+08-12-2025 - 20:59:29  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+08-12-2025 - 20:59:29  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 20:59:29  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 20:59:30  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 20:59:32  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 20:59:32  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 20:59:33  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 20:59:33  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 20:59:40  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 20:59:41  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 20:59:41  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 20:59:42  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 20:59:44  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 20:59:55  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 20:59:57  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 20:59:58  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:00:02  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:00:02  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:00:03  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:00:06  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:00:06  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:00:07  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:00:07  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:00:14  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:00:15  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:00:15  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:00:16  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:00:17  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:00:28  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:00:30  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:00:32  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:00:36  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:00:36  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:00:37  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:00:39  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:00:39  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:00:40  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:00:40  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:00:47  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:00:48  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:00:48  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:00:49  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:00:51  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:01:02  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:01:04  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:01:05  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:01:09  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:01:09  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:01:10  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:01:12  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:01:12  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:01:13  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:01:13  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:01:20  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:01:21  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:01:21  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:01:22  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:01:24  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:01:35  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:01:37  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:01:38  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:01:42  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:01:42  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:01:43  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:01:45  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:01:45  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:01:46  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:01:47  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:01:54  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:01:54  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:01:54  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:01:56  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:01:57  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:02:08  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:02:10  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:02:11  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:02:15  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:02:16  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:02:17  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:02:19  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:02:19  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:02:20  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:02:20  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:02:27  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:02:28  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:02:28  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:02:29  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:02:30  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:02:41  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:02:43  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:02:45  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:02:49  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:02:49  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:02:50  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:02:52  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:02:52  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:02:53  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:02:53  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:03:00  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:03:01  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:03:01  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:03:02  - hotspot_automation.py:51 - INFO - Upgrading building
+08-12-2025 - 21:03:04  - hotspot_automation.py:55 - INFO - Waiting for 11 seconds
+08-12-2025 - 21:03:15  - hotspot_automation.py:58 - INFO - Opening building menu
+08-12-2025 - 21:03:17  - hotspot_automation.py:64 - INFO - Clicking on delete
+08-12-2025 - 21:03:18  - hotspot_automation.py:68 - INFO - Clicking on confirm delete button
+08-12-2025 - 21:03:22  - hotspot_automation.py:15 - INFO - Clicking on home icon
+08-12-2025 - 21:03:22  - hotspot_automation.py:18 - INFO - Waiting for 0.5 seconds
+08-12-2025 - 21:03:23  - hotspot_automation.py:21 - INFO - Creating new building
+08-12-2025 - 21:03:25  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:03:25  - hotspot_automation.py:27 - INFO - confirm_icon icon found and clicking on it
+08-12-2025 - 21:03:26  - hotspot_automation.py:34 - INFO - Clicking on close home menu icon
+08-12-2025 - 21:03:27  - hotspot_automation.py:37 - INFO - Waiting for 7 seconds
+08-12-2025 - 21:03:34  - hotspot_automation.py:40 - INFO - Finding contruction hat icon
+08-12-2025 - 21:03:34  - apply_nsm.py:23 - INFO - total matches 1
+08-12-2025 - 21:03:34  - hotspot_automation.py:43 - INFO - contruction_hat icon found and clicking on it
+08-12-2025 - 21:03:36  - hotspot_automation.py:51 - INFO - Upgrading building

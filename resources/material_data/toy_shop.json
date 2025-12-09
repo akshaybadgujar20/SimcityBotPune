@@ -1,0 +1,106 @@
+[
+  {
+    "name": "LETTER_BLOCKS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/letter_blocks.png",
+      "x1": "global_trade_hq/toy_shop/letter_blocks_x1.png",
+      "x2": "global_trade_hq/toy_shop/letter_blocks_x2.png",
+      "x3": "global_trade_hq/toy_shop/letter_blocks_x3.png",
+      "x4": "global_trade_hq/toy_shop/letter_blocks_x4.png",
+      "x5": "global_trade_hq/toy_shop/letter_blocks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/letter_blocks.png",
+      "x1": "trade_depot/toy_shop/letter_blocks_x1.png",
+      "x2": "trade_depot/toy_shop/letter_blocks_x2.png",
+      "x3": "trade_depot/toy_shop/letter_blocks_x3.png",
+      "x4": "trade_depot/toy_shop/letter_blocks_x4.png",
+      "x5": "trade_depot/toy_shop/letter_blocks_x5.png"
+    },
+    "base_price": 5,
+    "actual_price": 7,
+    "storage_template": "city_storage/toy_shop/letter_blocks.png",
+    "sell_duration": 200,
+    "building_name": "TOY_SHOP"
+  },
+  {
+    "name": "KITE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/kite.png",
+      "x1": "global_trade_hq/toy_shop/kite_x1.png",
+      "x2": "global_trade_hq/toy_shop/kite_x2.png",
+      "x3": "global_trade_hq/toy_shop/kite_x3.png",
+      "x4": "global_trade_hq/toy_shop/kite_x4.png",
+      "x5": "global_trade_hq/toy_shop/kite_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/kite.png",
+      "x1": "trade_depot/toy_shop/kite_x1.png",
+      "x2": "trade_depot/toy_shop/kite_x2.png",
+      "x3": "trade_depot/toy_shop/kite_x3.png",
+      "x4": "trade_depot/toy_shop/kite_x4.png",
+      "x5": "trade_depot/toy_shop/kite_x5.png"
+    },
+    "base_price": 10,
+    "actual_price": 13,
+    "storage_template": "city_storage/toy_shop/kite.png",
+    "sell_duration": 300,
+    "building_name": "TOY_SHOP"
+  },
+  {
+    "name": "TEDDY_BEAR",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/teddy_bear.png",
+      "x1": "global_trade_hq/toy_shop/teddy_bear_x1.png",
+      "x2": "global_trade_hq/toy_shop/teddy_bear_x2.png",
+      "x3": "global_trade_hq/toy_shop/teddy_bear_x3.png",
+      "x4": "global_trade_hq/toy_shop/teddy_bear_x4.png",
+      "x5": "global_trade_hq/toy_shop/teddy_bear_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/teddy_bear.png",
+      "x1": "trade_depot/toy_shop/teddy_bear_x1.png",
+      "x2": "trade_depot/toy_shop/teddy_bear_x2.png",
+      "x3": "trade_depot/toy_shop/teddy_bear_x3.png",
+      "x4": "trade_depot/toy_shop/teddy_bear_x4.png",
+      "x5": "trade_depot/toy_shop/teddy_bear_x5.png"
+    },
+    "base_price": 15,
+    "actual_price": 18,
+    "storage_template": "city_storage/toy_shop/teddy_bear.png",
+    "sell_duration": 400,
+    "building_name": "TOY_SHOP"
+  },
+  {
+    "name": "GAME_CONSOLE",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/game_console.png",
+      "x1": "global_trade_hq/toy_shop/game_console_x1.png",
+      "x2": "global_trade_hq/toy_shop/game_console_x2.png",
+      "x3": "global_trade_hq/toy_shop/game_console_x3.png",
+      "x4": "global_trade_hq/toy_shop/game_console_x4.png",
+      "x5": "global_trade_hq/toy_shop/game_console_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/game_console.png",
+      "x1": "trade_depot/toy_shop/game_console_x1.png",
+      "x2": "trade_depot/toy_shop/game_console_x2.png",
+      "x3": "trade_depot/toy_shop/game_console_x3.png",
+      "x4": "trade_depot/toy_shop/game_console_x4.png",
+      "x5": "trade_depot/toy_shop/game_console_x5.png"
+    },
+    "base_price": 250,
+    "actual_price": 300,
+    "storage_template": "city_storage/toy_shop/game_console.png",
+    "sell_duration": 900,
+    "building_name": "TOY_SHOP"
+  }
+]

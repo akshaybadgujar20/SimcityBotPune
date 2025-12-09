@@ -1,0 +1,80 @@
+[
+  {
+    "name": "CANNED_FISH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/canned_fish.png",
+      "x1": "global_trade_hq/fish_marketplace/canned_fish_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/canned_fish_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/canned_fish_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/canned_fish_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/canned_fish_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/canned_fish.png",
+      "x1": "trade_depot/fish_marketplace/canned_fish_x1.png",
+      "x2": "trade_depot/fish_marketplace/canned_fish_x2.png",
+      "x3": "trade_depot/fish_marketplace/canned_fish_x3.png",
+      "x4": "trade_depot/fish_marketplace/canned_fish_x4.png",
+      "x5": "trade_depot/fish_marketplace/canned_fish_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 5,
+    "storage_template": "city_storage/fish_marketplace/canned_fish_storage.png",
+    "sell_duration": 3000,
+    "building_name": "FISH_MARKETPLACE"
+  },
+  {
+    "name": "FISH_SOUP",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/fish_soup.png",
+      "x1": "global_trade_hq/fish_marketplace/fish_soup_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/fish_soup_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/fish_soup_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/fish_soup_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/fish_soup_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/fish_soup.png",
+      "x1": "trade_depot/fish_marketplace/fish_soup_x1.png",
+      "x2": "trade_depot/fish_marketplace/fish_soup_x2.png",
+      "x3": "trade_depot/fish_marketplace/fish_soup_x3.png",
+      "x4": "trade_depot/fish_marketplace/fish_soup_x4.png",
+      "x5": "trade_depot/fish_marketplace/fish_soup_x5.png"
+    },
+    "base_price": 825,
+    "actual_price": 8,
+    "storage_template": "city_storage/fish_marketplace/fish_soup_storage.png",
+    "sell_duration": 9000,
+    "building_name": "FISH_MARKETPLACE"
+  },
+  {
+    "name": "SALMON_SANDWICH",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/salmon_sandwich.png",
+      "x1": "global_trade_hq/fish_marketplace/salmon_sandwich_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/salmon_sandwich_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/salmon_sandwich_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/salmon_sandwich_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/salmon_sandwich_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/salmon_sandwich.png",
+      "x1": "trade_depot/fish_marketplace/salmon_sandwich_x1.png",
+      "x2": "trade_depot/fish_marketplace/salmon_sandwich_x2.png",
+      "x3": "trade_depot/fish_marketplace/salmon_sandwich_x3.png",
+      "x4": "trade_depot/fish_marketplace/salmon_sandwich_x4.png",
+      "x5": "trade_depot/fish_marketplace/salmon_sandwich_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 9,
+    "storage_template": "city_storage/fish_marketplace/salmon_sandwich_storage.png",
+    "sell_duration": 13000,
+    "building_name": "FISH_MARKETPLACE"
+  }
+]

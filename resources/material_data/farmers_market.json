@@ -1,0 +1,184 @@
+[
+  {
+    "name": "VEGETABLES",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/vegetables.png",
+      "x1": "global_trade_hq/farmers_market/vegetables_x1.png",
+      "x2": "global_trade_hq/farmers_market/vegetables_x2.png",
+      "x3": "global_trade_hq/farmers_market/vegetables_x3.png",
+      "x4": "global_trade_hq/farmers_market/vegetables_x4.png",
+      "x5": "global_trade_hq/farmers_market/vegetables_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/vegetables.png",
+      "x1": "trade_depot/farmers_market/vegetables_x1.png",
+      "x2": "trade_depot/farmers_market/vegetables_x2.png",
+      "x3": "trade_depot/farmers_market/vegetables_x3.png",
+      "x4": "trade_depot/farmers_market/vegetables_x4.png",
+      "x5": "trade_depot/farmers_market/vegetables_x5.png"
+    },
+    "base_price": 120,
+    "actual_price": 5,
+    "storage_template": "city_storage/farmers_market/vegetables.png",
+    "sell_duration": 3500,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "FLOUR_BAG",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/flour_bag.png",
+      "x1": "global_trade_hq/farmers_market/flour_bag_x1.png",
+      "x2": "global_trade_hq/farmers_market/flour_bag_x2.png",
+      "x3": "global_trade_hq/farmers_market/flour_bag_x3.png",
+      "x4": "global_trade_hq/farmers_market/flour_bag_x4.png",
+      "x5": "global_trade_hq/farmers_market/flour_bag_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/flour_bag.png",
+      "x1": "trade_depot/farmers_market/flour_bag_x1.png",
+      "x2": "trade_depot/farmers_market/flour_bag_x2.png",
+      "x3": "trade_depot/farmers_market/flour_bag_x3.png",
+      "x4": "trade_depot/farmers_market/flour_bag_x4.png",
+      "x5": "trade_depot/farmers_market/flour_bag_x5.png"
+    },
+    "base_price": 427,
+    "actual_price": 6,
+    "storage_template": "city_storage/farmers_market/flour_bag.png",
+    "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "FRUIT_AND_BERRIES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/fruit_and_berries.png",
+      "x1": "global_trade_hq/farmers_market/fruit_and_berries_x1.png",
+      "x2": "global_trade_hq/farmers_market/fruit_and_berries_x2.png",
+      "x3": "global_trade_hq/farmers_market/fruit_and_berries_x3.png",
+      "x4": "global_trade_hq/farmers_market/fruit_and_berries_x4.png",
+      "x5": "global_trade_hq/farmers_market/fruit_and_berries_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/fruit_and_berries.png",
+      "x1": "trade_depot/farmers_market/fruit_and_berries_x1.png",
+      "x2": "trade_depot/farmers_market/fruit_and_berries_x2.png",
+      "x3": "trade_depot/farmers_market/fruit_and_berries_x3.png",
+      "x4": "trade_depot/farmers_market/fruit_and_berries_x4.png",
+      "x5": "trade_depot/farmers_market/fruit_and_berries_x5.png"
+    },
+    "base_price": 547,
+    "actual_price": 7,
+    "storage_template": "city_storage/farmers_market/fruit_and_berries.png",
+    "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "CREAM",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/cream.png",
+      "x1": "global_trade_hq/farmers_market/cream_x1.png",
+      "x2": "global_trade_hq/farmers_market/cream_x2.png",
+      "x3": "global_trade_hq/farmers_market/cream_x3.png",
+      "x4": "global_trade_hq/farmers_market/cream_x4.png",
+      "x5": "global_trade_hq/farmers_market/cream_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/cream.png",
+      "x1": "trade_depot/farmers_market/cream_x1.png",
+      "x2": "trade_depot/farmers_market/cream_x2.png",
+      "x3": "trade_depot/farmers_market/cream_x3.png",
+      "x4": "trade_depot/farmers_market/cream_x4.png",
+      "x5": "trade_depot/farmers_market/cream_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 9,
+    "storage_template": "city_storage/farmers_market/cream.png",
+    "sell_duration": 5000,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "CORN",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/corn.png",
+      "x1": "global_trade_hq/farmers_market/corn_x1.png",
+      "x2": "global_trade_hq/farmers_market/corn_x2.png",
+      "x3": "global_trade_hq/farmers_market/corn_x3.png",
+      "x4": "global_trade_hq/farmers_market/corn_x4.png",
+      "x5": "global_trade_hq/farmers_market/corn_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/corn.png",
+      "x1": "trade_depot/farmers_market/corn_x1.png",
+      "x2": "trade_depot/farmers_market/corn_x2.png",
+      "x3": "trade_depot/farmers_market/corn_x3.png",
+      "x4": "trade_depot/farmers_market/corn_x4.png",
+      "x5": "trade_depot/farmers_market/corn_x5.png"
+    },
+    "base_price": 210,
+    "actual_price": 4,
+    "storage_template": "city_storage/farmers_market/corn.png",
+    "sell_duration": 5000,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "CHEESE",
+    "x_location": 1245,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/cheese.png",
+      "x1": "global_trade_hq/farmers_market/cheese_x1.png",
+      "x2": "global_trade_hq/farmers_market/cheese_x2.png",
+      "x3": "global_trade_hq/farmers_market/cheese_x3.png",
+      "x4": "global_trade_hq/farmers_market/cheese_x4.png",
+      "x5": "global_trade_hq/farmers_market/cheese_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/cheese.png",
+      "x1": "trade_depot/farmers_market/cheese_x1.png",
+      "x2": "trade_depot/farmers_market/cheese_x2.png",
+      "x3": "trade_depot/farmers_market/cheese_x3.png",
+      "x4": "trade_depot/farmers_market/cheese_x4.png",
+      "x5": "trade_depot/farmers_market/cheese_x5.png"
+    },
+    "base_price": 495,
+    "actual_price": 12,
+    "storage_template": "city_storage/farmers_market/cheese.png",
+    "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET"
+  },
+  {
+    "name": "BEEF",
+    "x_location": 480,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/beef.png",
+      "x1": "global_trade_hq/farmers_market/beef_x1.png",
+      "x2": "global_trade_hq/farmers_market/beef_x2.png",
+      "x3": "global_trade_hq/farmers_market/beef_x3.png",
+      "x4": "global_trade_hq/farmers_market/beef_x4.png",
+      "x5": "global_trade_hq/farmers_market/beef_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/beef.png",
+      "x1": "trade_depot/farmers_market/beef_x1.png",
+      "x2": "trade_depot/farmers_market/beef_x2.png",
+      "x3": "trade_depot/farmers_market/beef_x3.png",
+      "x4": "trade_depot/farmers_market/beef_x4.png",
+      "x5": "trade_depot/farmers_market/beef_x5.png"
+    },
+    "base_price": 645,
+    "actual_price": 15,
+    "storage_template": "city_storage/farmers_market/beef.png",
+    "sell_duration": 7000,
+    "building_name": "FARMER_S_MARKET"
+  }
+]

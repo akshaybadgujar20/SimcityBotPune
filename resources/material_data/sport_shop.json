@@ -1,0 +1,132 @@
+[
+  {
+    "name": "TENNIS_RACKET",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/tennis_racket.png",
+      "x1": "global_trade_hq/sport_shop/tennis_racket_x1.png",
+      "x2": "global_trade_hq/sport_shop/tennis_racket_x2.png",
+      "x3": "global_trade_hq/sport_shop/tennis_racket_x3.png",
+      "x4": "global_trade_hq/sport_shop/tennis_racket_x4.png",
+      "x5": "global_trade_hq/sport_shop/tennis_racket_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/tennis_racket.png",
+      "x1": "trade_depot/sport_shop/tennis_racket_x1.png",
+      "x2": "trade_depot/sport_shop/tennis_racket_x2.png",
+      "x3": "trade_depot/sport_shop/tennis_racket_x3.png",
+      "x4": "trade_depot/sport_shop/tennis_racket_x4.png",
+      "x5": "trade_depot/sport_shop/tennis_racket_x5.png"
+    },
+    "base_price": 585,
+    "actual_price": 20,
+    "storage_template": "city_storage/sport_shop/tennis_racket.png",
+    "sell_duration": 6000,
+    "building_name": "SPORT_SHOP"
+  },
+  {
+    "name": "SPORTS_DRINK",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/sports_drink.png",
+      "x1": "global_trade_hq/sport_shop/sports_drink_x1.png",
+      "x2": "global_trade_hq/sport_shop/sports_drink_x2.png",
+      "x3": "global_trade_hq/sport_shop/sports_drink_x3.png",
+      "x4": "global_trade_hq/sport_shop/sports_drink_x4.png",
+      "x5": "global_trade_hq/sport_shop/sports_drink_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/sports_drink.png",
+      "x1": "trade_depot/sport_shop/sports_drink_x1.png",
+      "x2": "trade_depot/sport_shop/sports_drink_x2.png",
+      "x3": "trade_depot/sport_shop/sports_drink_x3.png",
+      "x4": "trade_depot/sport_shop/sports_drink_x4.png",
+      "x5": "trade_depot/sport_shop/sports_drink_x5.png"
+    },
+    "base_price": 202,
+    "actual_price": 3,
+    "storage_template": "city_storage/sport_shop/sports_drink.png",
+    "sell_duration": 4000,
+    "building_name": "SPORT_SHOP"
+  },
+  {
+    "name": "FOOTBALL_SHOES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/football_shoes.png",
+      "x1": "global_trade_hq/sport_shop/football_shoes_x1.png",
+      "x2": "global_trade_hq/sport_shop/football_shoes_x2.png",
+      "x3": "global_trade_hq/sport_shop/football_shoes_x3.png",
+      "x4": "global_trade_hq/sport_shop/football_shoes_x4.png",
+      "x5": "global_trade_hq/sport_shop/football_shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/football_shoes.png",
+      "x1": "trade_depot/sport_shop/football_shoes_x1.png",
+      "x2": "trade_depot/sport_shop/football_shoes_x2.png",
+      "x3": "trade_depot/sport_shop/football_shoes_x3.png",
+      "x4": "trade_depot/sport_shop/football_shoes_x4.png",
+      "x5": "trade_depot/sport_shop/football_shoes_x5.png"
+    },
+    "base_price": 690,
+    "actual_price": 55,
+    "storage_template": "city_storage/sport_shop/football_shoes.png",
+    "sell_duration": 7000,
+    "building_name": "SPORT_SHOP"
+  },
+  {
+    "name": "PROTEIN_BAR",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/protein_bar.png",
+      "x1": "global_trade_hq/sport_shop/protein_bar_x1.png",
+      "x2": "global_trade_hq/sport_shop/protein_bar_x2.png",
+      "x3": "global_trade_hq/sport_shop/protein_bar_x3.png",
+      "x4": "global_trade_hq/sport_shop/protein_bar_x4.png",
+      "x5": "global_trade_hq/sport_shop/protein_bar_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/protein_bar.png",
+      "x1": "trade_depot/sport_shop/protein_bar_x1.png",
+      "x2": "trade_depot/sport_shop/protein_bar_x2.png",
+      "x3": "trade_depot/sport_shop/protein_bar_x3.png",
+      "x4": "trade_depot/sport_shop/protein_bar_x4.png",
+      "x5": "trade_depot/sport_shop/protein_bar_x5.png"
+    },
+    "base_price": 783,
+    "actual_price": 4,
+    "storage_template": "city_storage/sport_shop/protein_bar.png",
+    "sell_duration": 8000,
+    "building_name": "SPORT_SHOP"
+  },
+  {
+    "name": "PING_PONG_TABLE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/ping_pong_table.png",
+      "x1": "global_trade_hq/sport_shop/ping_pong_table_x1.png",
+      "x2": "global_trade_hq/sport_shop/ping_pong_table_x2.png",
+      "x3": "global_trade_hq/sport_shop/ping_pong_table_x3.png",
+      "x4": "global_trade_hq/sport_shop/ping_pong_table_x4.png",
+      "x5": "global_trade_hq/sport_shop/ping_pong_table_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/ping_pong_table.png",
+      "x1": "trade_depot/sport_shop/ping_pong_table_x1.png",
+      "x2": "trade_depot/sport_shop/ping_pong_table_x2.png",
+      "x3": "trade_depot/sport_shop/ping_pong_table_x3.png",
+      "x4": "trade_depot/sport_shop/ping_pong_table_x4.png",
+      "x5": "trade_depot/sport_shop/ping_pong_table_x5.png"
+    },
+    "base_price": 933,
+    "actual_price": 120,
+    "storage_template": "city_storage/sport_shop/ping_pong_table.png",
+    "sell_duration": 10000,
+    "building_name": "SPORT_SHOP"
+  }
+]

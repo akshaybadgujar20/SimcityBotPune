@@ -1,0 +1,132 @@
+[
+  {
+    "name": "CAP",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/cap.png",
+      "x1": "global_trade_hq/fashion_store/cap_x1.png",
+      "x2": "global_trade_hq/fashion_store/cap_x2.png",
+      "x3": "global_trade_hq/fashion_store/cap_x3.png",
+      "x4": "global_trade_hq/fashion_store/cap_x4.png",
+      "x5": "global_trade_hq/fashion_store/cap_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/cap.png",
+      "x1": "trade_depot/fashion_store/cap_x1.png",
+      "x2": "trade_depot/fashion_store/cap_x2.png",
+      "x3": "trade_depot/fashion_store/cap_x3.png",
+      "x4": "trade_depot/fashion_store/cap_x4.png",
+      "x5": "trade_depot/fashion_store/cap_x5.png"
+    },
+    "base_price": 450,
+    "actual_price": 20,
+    "storage_template": "city_storage/fashion_store/cap.png",
+    "sell_duration": 6000,
+    "building_name": "FASHION_STORE"
+  },
+  {
+    "name": "SHOES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/shoes.png",
+      "x1": "global_trade_hq/fashion_store/shoes_x1.png",
+      "x2": "global_trade_hq/fashion_store/shoes_x2.png",
+      "x3": "global_trade_hq/fashion_store/shoes_x3.png",
+      "x4": "global_trade_hq/fashion_store/shoes_x4.png",
+      "x5": "global_trade_hq/fashion_store/shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/shoes.png",
+      "x1": "trade_depot/fashion_store/shoes_x1.png",
+      "x2": "trade_depot/fashion_store/shoes_x2.png",
+      "x3": "trade_depot/fashion_store/shoes_x3.png",
+      "x4": "trade_depot/fashion_store/shoes_x4.png",
+      "x5": "trade_depot/fashion_store/shoes_x5.png"
+    },
+    "base_price": 735,
+    "actual_price": 70,
+    "storage_template": "city_storage/fashion_store/shoes.png",
+    "sell_duration": 8000,
+    "building_name": "FASHION_STORE"
+  },
+  {
+    "name": "WATCH",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/watch.png",
+      "x1": "global_trade_hq/fashion_store/watch_x1.png",
+      "x2": "global_trade_hq/fashion_store/watch_x2.png",
+      "x3": "global_trade_hq/fashion_store/watch_x3.png",
+      "x4": "global_trade_hq/fashion_store/watch_x4.png",
+      "x5": "global_trade_hq/fashion_store/watch_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/watch.png",
+      "x1": "trade_depot/fashion_store/watch_x1.png",
+      "x2": "trade_depot/fashion_store/watch_x2.png",
+      "x3": "trade_depot/fashion_store/watch_x3.png",
+      "x4": "trade_depot/fashion_store/watch_x4.png",
+      "x5": "trade_depot/fashion_store/watch_x5.png"
+    },
+    "base_price": 435,
+    "actual_price": 150,
+    "storage_template": "city_storage/fashion_store/watch.png",
+    "sell_duration": 6000,
+    "building_name": "FASHION_STORE"
+  },
+  {
+    "name": "BUSINESS_SUITS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/business_suits.png",
+      "x1": "global_trade_hq/fashion_store/business_suits_x1.png",
+      "x2": "global_trade_hq/fashion_store/business_suits_x2.png",
+      "x3": "global_trade_hq/fashion_store/business_suits_x3.png",
+      "x4": "global_trade_hq/fashion_store/business_suits_x4.png",
+      "x5": "global_trade_hq/fashion_store/business_suits_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/business_suits.png",
+      "x1": "trade_depot/fashion_store/business_suits_x1.png",
+      "x2": "trade_depot/fashion_store/business_suits_x2.png",
+      "x3": "trade_depot/fashion_store/business_suits_x3.png",
+      "x4": "trade_depot/fashion_store/business_suits_x4.png",
+      "x5": "trade_depot/fashion_store/business_suits_x5.png"
+    },
+    "base_price": 877,
+    "actual_price": 180,
+    "storage_template": "city_storage/fashion_store/business_suits.png",
+    "sell_duration": 9000,
+    "building_name": "FASHION_STORE"
+  },
+  {
+    "name": "BACKPACK",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/backpack.png",
+      "x1": "global_trade_hq/fashion_store/backpack_x1.png",
+      "x2": "global_trade_hq/fashion_store/backpack_x2.png",
+      "x3": "global_trade_hq/fashion_store/backpack_x3.png",
+      "x4": "global_trade_hq/fashion_store/backpack_x4.png",
+      "x5": "global_trade_hq/fashion_store/backpack_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/backpack.png",
+      "x1": "trade_depot/fashion_store/backpack_x1.png",
+      "x2": "trade_depot/fashion_store/backpack_x2.png",
+      "x3": "trade_depot/fashion_store/backpack_x3.png",
+      "x4": "trade_depot/fashion_store/backpack_x4.png",
+      "x5": "trade_depot/fashion_store/backpack_x5.png"
+    },
+    "base_price": 322,
+    "actual_price": 60,
+    "storage_template": "city_storage/fashion_store/backpack.png",
+    "sell_duration": 5000,
+    "building_name": "FASHION_STORE"
+  }
+]

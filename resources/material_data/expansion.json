@@ -1,0 +1,80 @@
+[
+  {
+    "name": "DOZER_BLADE",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/blade.png",
+      "x1": "global_trade_hq/special/expansion/blade_x1.png",
+      "x2": "global_trade_hq/special/expansion/blade_x2.png",
+      "x3": "global_trade_hq/special/expansion/blade_x3.png",
+      "x4": "global_trade_hq/special/expansion/blade_x4.png",
+      "x5": "global_trade_hq/special/expansion/blade_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/blade.png",
+      "x1": "trade_depot/special/expansion/blade_x1.png",
+      "x2": "trade_depot/special/expansion/blade_x2.png",
+      "x3": "trade_depot/special/expansion/blade_x3.png",
+      "x4": "trade_depot/special/expansion/blade_x4.png",
+      "x5": "trade_depot/special/expansion/blade_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/blade.png",
+    "sell_duration": 6000,
+    "building_name": ""
+  },
+  {
+    "name": "DOZER_EXHAUST",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/exhaust.png",
+      "x1": "global_trade_hq/special/expansion/exhaust_x1.png",
+      "x2": "global_trade_hq/special/expansion/exhaust_x2.png",
+      "x3": "global_trade_hq/special/expansion/exhaust_x3.png",
+      "x4": "global_trade_hq/special/expansion/exhaust_x4.png",
+      "x5": "global_trade_hq/special/expansion/exhaust_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/exhaust.png",
+      "x1": "trade_depot/special/expansion/exhaust_x1.png",
+      "x2": "trade_depot/special/expansion/exhaust_x2.png",
+      "x3": "trade_depot/special/expansion/exhaust_x3.png",
+      "x4": "trade_depot/special/expansion/exhaust_x4.png",
+      "x5": "trade_depot/special/expansion/exhaust_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/exhaust.png",
+    "sell_duration": 6000,
+    "building_name": ""
+  },
+  {
+    "name": "DOZER_WHEEL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/wheel.png",
+      "x1": "global_trade_hq/special/expansion/wheel_x1.png",
+      "x2": "global_trade_hq/special/expansion/wheel_x2.png",
+      "x3": "global_trade_hq/special/expansion/wheel_x3.png",
+      "x4": "global_trade_hq/special/expansion/wheel_x4.png",
+      "x5": "global_trade_hq/special/expansion/wheel_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/wheel.png",
+      "x1": "trade_depot/special/expansion/wheel_x1.png",
+      "x2": "trade_depot/special/expansion/wheel_x2.png",
+      "x3": "trade_depot/special/expansion/wheel_x3.png",
+      "x4": "trade_depot/special/expansion/wheel_x4.png",
+      "x5": "trade_depot/special/expansion/wheel_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/wheel.png",
+    "sell_duration": 6000,
+    "building_name": ""
+  }
+]

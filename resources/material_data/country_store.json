@@ -1,0 +1,80 @@
+[
+  {
+    "name": "WOOL_SHIRT",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/wool_shirt.png",
+      "x1": "global_trade_hq/country_store/wool_shirt_x1.png",
+      "x2": "global_trade_hq/country_store/wool_shirt_x2.png",
+      "x3": "global_trade_hq/country_store/wool_shirt_x3.png",
+      "x4": "global_trade_hq/country_store/wool_shirt_x4.png",
+      "x5": "global_trade_hq/country_store/wool_shirt_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/wool_shirt.png",
+      "x1": "trade_depot/country_store/wool_shirt_x1.png",
+      "x2": "trade_depot/country_store/wool_shirt_x2.png",
+      "x3": "trade_depot/country_store/wool_shirt_x3.png",
+      "x4": "trade_depot/country_store/wool_shirt_x4.png",
+      "x5": "trade_depot/country_store/wool_shirt_x5.png"
+    },
+    "base_price": 1275,
+    "actual_price": 25,
+    "storage_template": "city_storage/country_store/wool_shirt.png",
+    "sell_duration": 14000,
+    "building_name": "COUNTRY_STORE"
+  },
+  {
+    "name": "PICNIC_BASKET",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/picnic_basket.png",
+      "x1": "global_trade_hq/country_store/picnic_basket_x1.png",
+      "x2": "global_trade_hq/country_store/picnic_basket_x2.png",
+      "x3": "global_trade_hq/country_store/picnic_basket_x3.png",
+      "x4": "global_trade_hq/country_store/picnic_basket_x4.png",
+      "x5": "global_trade_hq/country_store/picnic_basket_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/picnic_basket.png",
+      "x1": "trade_depot/country_store/picnic_basket_x1.png",
+      "x2": "trade_depot/country_store/picnic_basket_x2.png",
+      "x3": "trade_depot/country_store/picnic_basket_x3.png",
+      "x4": "trade_depot/country_store/picnic_basket_x4.png",
+      "x5": "trade_depot/country_store/picnic_basket_x5.png"
+    },
+    "base_price": 4500,
+    "actual_price": 18,
+    "storage_template": "city_storage/country_store/picnic_basket.png",
+    "sell_duration": 39000,
+    "building_name": "COUNTRY_STORE"
+  },
+  {
+    "name": "APPLE_JAM",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/apple_jam.png",
+      "x1": "global_trade_hq/country_store/apple_jam_x1.png",
+      "x2": "global_trade_hq/country_store/apple_jam_x2.png",
+      "x3": "global_trade_hq/country_store/apple_jam_x3.png",
+      "x4": "global_trade_hq/country_store/apple_jam_x4.png",
+      "x5": "global_trade_hq/country_store/apple_jam_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/apple_jam.png",
+      "x1": "trade_depot/country_store/apple_jam_x1.png",
+      "x2": "trade_depot/country_store/apple_jam_x2.png",
+      "x3": "trade_depot/country_store/apple_jam_x3.png",
+      "x4": "trade_depot/country_store/apple_jam_x4.png",
+      "x5": "trade_depot/country_store/apple_jam_x5.png"
+    },
+    "base_price": 2775,
+    "actual_price": 10,
+    "storage_template": "city_storage/country_store/apple_jam.png",
+    "sell_duration": 22000,
+    "building_name": "COUNTRY_STORE"
+  }
+]

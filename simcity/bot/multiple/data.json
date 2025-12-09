@@ -1,0 +1,2966 @@
+{
+  "NAILS": {
+    "name": "NAILS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/nails.png",
+      "x1": "global_trade_hq/building_supplies_store/nails_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/nails_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/nails_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/nails_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/nails_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/nails.png",
+      "x1": "trade_depot/building_supplies_store/nails_x1.png",
+      "x2": "trade_depot/building_supplies_store/nails_x2.png",
+      "x3": "trade_depot/building_supplies_store/nails_x3.png",
+      "x4": "trade_depot/building_supplies_store/nails_x4.png",
+      "x5": "trade_depot/building_supplies_store/nails_x5.png"
+    },
+    "base_price": 60,
+    "actual_price": 8,
+    "storage_template": "city_storage/building_supplies_store/nails.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "PLANKS": {
+    "name": "PLANKS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/planks.png",
+      "x1": "global_trade_hq/building_supplies_store/planks_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/planks_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/planks_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/planks_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/planks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/planks.png",
+      "x1": "trade_depot/building_supplies_store/planks_x1.png",
+      "x2": "trade_depot/building_supplies_store/planks_x2.png",
+      "x3": "trade_depot/building_supplies_store/planks_x3.png",
+      "x4": "trade_depot/building_supplies_store/planks_x4.png",
+      "x5": "trade_depot/building_supplies_store/planks_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 9,
+    "storage_template": "city_storage/building_supplies_store/planks.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "BRICKS": {
+    "name": "BRICKS",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/bricks.png",
+      "x1": "global_trade_hq/building_supplies_store/bricks_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/bricks_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/bricks_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/bricks_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/bricks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/bricks.png",
+      "x1": "trade_depot/building_supplies_store/bricks_x1.png",
+      "x2": "trade_depot/building_supplies_store/bricks_x2.png",
+      "x3": "trade_depot/building_supplies_store/bricks_x3.png",
+      "x4": "trade_depot/building_supplies_store/bricks_x4.png",
+      "x5": "trade_depot/building_supplies_store/bricks_x5.png"
+    },
+    "base_price": 142,
+    "actual_price": 14,
+    "storage_template": "city_storage/building_supplies_store/bricks.png",
+    "sell_duration": 4000,
+    "manufacturing_recipes": {}
+  },
+  "CEMENT": {
+    "name": "CEMENT",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/cement.png",
+      "x1": "global_trade_hq/building_supplies_store/cement_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/cement_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/cement_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/cement_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/cement_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/cement.png",
+      "x1": "trade_depot/building_supplies_store/cement_x1.png",
+      "x2": "trade_depot/building_supplies_store/cement_x2.png",
+      "x3": "trade_depot/building_supplies_store/cement_x3.png",
+      "x4": "trade_depot/building_supplies_store/cement_x4.png",
+      "x5": "trade_depot/building_supplies_store/cement_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 16,
+    "storage_template": "city_storage/building_supplies_store/cement.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "GLUE": {
+    "name": "GLUE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/glue.png",
+      "x1": "global_trade_hq/building_supplies_store/glue_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/glue_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/glue_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/glue_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/glue_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/glue.png",
+      "x1": "trade_depot/building_supplies_store/glue_x1.png",
+      "x2": "trade_depot/building_supplies_store/glue_x2.png",
+      "x3": "trade_depot/building_supplies_store/glue_x3.png",
+      "x4": "trade_depot/building_supplies_store/glue_x4.png",
+      "x5": "trade_depot/building_supplies_store/glue_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 7,
+    "storage_template": "city_storage/building_supplies_store/glue.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "PAINT": {
+    "name": "PAINT",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/paint.png",
+      "x1": "global_trade_hq/building_supplies_store/paint_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/paint_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/paint_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/paint_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/paint_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/paint.png",
+      "x1": "trade_depot/building_supplies_store/paint_x1.png",
+      "x2": "trade_depot/building_supplies_store/paint_x2.png",
+      "x3": "trade_depot/building_supplies_store/paint_x3.png",
+      "x4": "trade_depot/building_supplies_store/paint_x4.png",
+      "x5": "trade_depot/building_supplies_store/paint_x5.png"
+    },
+    "base_price": 240,
+    "actual_price": 13,
+    "storage_template": "city_storage/building_supplies_store/paint.png",
+    "sell_duration": 4500,
+    "manufacturing_recipes": {}
+  },
+  "WROUGHT_IRON": {
+    "name": "WROUGHT_IRON",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/wrought_iron.png",
+      "x1": "global_trade_hq/bureau_of_restoration/wrought_iron_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/wrought_iron_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/wrought_iron_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/wrought_iron_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/wrought_iron_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/wrought_iron.png",
+      "x1": "trade_depot/bureau_of_restoration/wrought_iron_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/wrought_iron_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/wrought_iron_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/wrought_iron_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/wrought_iron_x5.png"
+    },
+    "base_price": 12,
+    "actual_price": 15,
+    "storage_template": "city_storage/bureau_of_restoration/wrought_iron.png",
+    "sell_duration": 400,
+    "manufacturing_recipes": {}
+  },
+  "CARVED_WOOD": {
+    "name": "CARVED_WOOD",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/carved_wood.png",
+      "x1": "global_trade_hq/bureau_of_restoration/carved_wood_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/carved_wood_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/carved_wood_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/carved_wood_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/carved_wood_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/carved_wood.png",
+      "x1": "trade_depot/bureau_of_restoration/carved_wood_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/carved_wood_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/carved_wood_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/carved_wood_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/carved_wood_x5.png"
+    },
+    "base_price": 10,
+    "actual_price": 12,
+    "storage_template": "city_storage/bureau_of_restoration/carved_wood.png",
+    "sell_duration": 350,
+    "manufacturing_recipes": {}
+  },
+  "CHISELED_STONE": {
+    "name": "CHISELED_STONE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/chiseled_stone.png",
+      "x1": "global_trade_hq/bureau_of_restoration/chiseled_stone_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/chiseled_stone_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/chiseled_stone_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/chiseled_stone_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/chiseled_stone_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/chiseled_stone.png",
+      "x1": "trade_depot/bureau_of_restoration/chiseled_stone_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/chiseled_stone_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/chiseled_stone_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/chiseled_stone_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/chiseled_stone_x5.png"
+    },
+    "base_price": 14,
+    "actual_price": 18,
+    "storage_template": "city_storage/bureau_of_restoration/chiseled_stone.png",
+    "sell_duration": 420,
+    "manufacturing_recipes": {}
+  },
+  "TAPESTRY": {
+    "name": "TAPESTRY",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/tapestry.png",
+      "x1": "global_trade_hq/bureau_of_restoration/tapestry_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/tapestry_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/tapestry_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/tapestry_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/tapestry_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/tapestry.png",
+      "x1": "trade_depot/bureau_of_restoration/tapestry_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/tapestry_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/tapestry_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/tapestry_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/tapestry_x5.png"
+    },
+    "base_price": 25,
+    "actual_price": 30,
+    "storage_template": "city_storage/bureau_of_restoration/tapestry.png",
+    "sell_duration": 500,
+    "manufacturing_recipes": {}
+  },
+  "STAINED_GLASS": {
+    "name": "STAINED_GLASS",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/bureau_of_restoration/stained_glass.png",
+      "x1": "global_trade_hq/bureau_of_restoration/stained_glass_x1.png",
+      "x2": "global_trade_hq/bureau_of_restoration/stained_glass_x2.png",
+      "x3": "global_trade_hq/bureau_of_restoration/stained_glass_x3.png",
+      "x4": "global_trade_hq/bureau_of_restoration/stained_glass_x4.png",
+      "x5": "global_trade_hq/bureau_of_restoration/stained_glass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/bureau_of_restoration/stained_glass.png",
+      "x1": "trade_depot/bureau_of_restoration/stained_glass_x1.png",
+      "x2": "trade_depot/bureau_of_restoration/stained_glass_x2.png",
+      "x3": "trade_depot/bureau_of_restoration/stained_glass_x3.png",
+      "x4": "trade_depot/bureau_of_restoration/stained_glass_x4.png",
+      "x5": "trade_depot/bureau_of_restoration/stained_glass_x5.png"
+    },
+    "base_price": 20,
+    "actual_price": 22,
+    "storage_template": "city_storage/bureau_of_restoration/stained_glass_storage.png",
+    "sell_duration": 450,
+    "manufacturing_recipes": {}
+  },
+  "MOTOR_OIL": {
+    "name": "MOTOR_OIL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/motor_oil.png",
+      "x1": "global_trade_hq/car_parts/motor_oil_x1.png",
+      "x2": "global_trade_hq/car_parts/motor_oil_x2.png",
+      "x3": "global_trade_hq/car_parts/motor_oil_x3.png",
+      "x4": "global_trade_hq/car_parts/motor_oil_x4.png",
+      "x5": "global_trade_hq/car_parts/motor_oil_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/motor_oil.png",
+      "x1": "trade_depot/car_parts/motor_oil_x1.png",
+      "x2": "trade_depot/car_parts/motor_oil_x2.png",
+      "x3": "trade_depot/car_parts/motor_oil_x3.png",
+      "x4": "trade_depot/car_parts/motor_oil_x4.png",
+      "x5": "trade_depot/car_parts/motor_oil_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 12,
+    "storage_template": "city_storage/car_parts/motor_oil.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "CAR_TIRE": {
+    "name": "CAR_TIRE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/car_tire.png",
+      "x1": "global_trade_hq/car_parts/car_tire_x1.png",
+      "x2": "global_trade_hq/car_parts/car_tire_x2.png",
+      "x3": "global_trade_hq/car_parts/car_tire_x3.png",
+      "x4": "global_trade_hq/car_parts/car_tire_x4.png",
+      "x5": "global_trade_hq/car_parts/car_tire_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/car_tire.png",
+      "x1": "trade_depot/car_parts/car_tire_x1.png",
+      "x2": "trade_depot/car_parts/car_tire_x2.png",
+      "x3": "trade_depot/car_parts/car_tire_x3.png",
+      "x4": "trade_depot/car_parts/car_tire_x4.png",
+      "x5": "trade_depot/car_parts/car_tire_x5.png"
+    },
+    "base_price": 712,
+    "actual_price": 22,
+    "storage_template": "city_storage/car_parts/car_tire.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "ENGINE": {
+    "name": "ENGINE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/engine.png",
+      "x1": "global_trade_hq/car_parts/engine_x1.png",
+      "x2": "global_trade_hq/car_parts/engine_x2.png",
+      "x3": "global_trade_hq/car_parts/engine_x3.png",
+      "x4": "global_trade_hq/car_parts/engine_x4.png",
+      "x5": "global_trade_hq/car_parts/engine_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/engine.png",
+      "x1": "trade_depot/car_parts/engine_x1.png",
+      "x2": "trade_depot/car_parts/engine_x2.png",
+      "x3": "trade_depot/car_parts/engine_x3.png",
+      "x4": "trade_depot/car_parts/engine_x4.png",
+      "x5": "trade_depot/car_parts/engine_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 150,
+    "storage_template": "city_storage/car_parts/engine.png",
+    "sell_duration": 13000,
+    "manufacturing_recipes": {}
+  },
+  "WOOL_SHIRT": {
+    "name": "WOOL_SHIRT",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/wool_shirt.png",
+      "x1": "global_trade_hq/country_store/wool_shirt_x1.png",
+      "x2": "global_trade_hq/country_store/wool_shirt_x2.png",
+      "x3": "global_trade_hq/country_store/wool_shirt_x3.png",
+      "x4": "global_trade_hq/country_store/wool_shirt_x4.png",
+      "x5": "global_trade_hq/country_store/wool_shirt_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/wool_shirt.png",
+      "x1": "trade_depot/country_store/wool_shirt_x1.png",
+      "x2": "trade_depot/country_store/wool_shirt_x2.png",
+      "x3": "trade_depot/country_store/wool_shirt_x3.png",
+      "x4": "trade_depot/country_store/wool_shirt_x4.png",
+      "x5": "trade_depot/country_store/wool_shirt_x5.png"
+    },
+    "base_price": 1275,
+    "actual_price": 25,
+    "storage_template": "city_storage/country_store/wool_shirt.png",
+    "sell_duration": 14000,
+    "manufacturing_recipes": {}
+  },
+  "PICNIC_BASKET": {
+    "name": "PICNIC_BASKET",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/picnic_basket.png",
+      "x1": "global_trade_hq/country_store/picnic_basket_x1.png",
+      "x2": "global_trade_hq/country_store/picnic_basket_x2.png",
+      "x3": "global_trade_hq/country_store/picnic_basket_x3.png",
+      "x4": "global_trade_hq/country_store/picnic_basket_x4.png",
+      "x5": "global_trade_hq/country_store/picnic_basket_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/picnic_basket.png",
+      "x1": "trade_depot/country_store/picnic_basket_x1.png",
+      "x2": "trade_depot/country_store/picnic_basket_x2.png",
+      "x3": "trade_depot/country_store/picnic_basket_x3.png",
+      "x4": "trade_depot/country_store/picnic_basket_x4.png",
+      "x5": "trade_depot/country_store/picnic_basket_x5.png"
+    },
+    "base_price": 4500,
+    "actual_price": 18,
+    "storage_template": "city_storage/country_store/picnic_basket.png",
+    "sell_duration": 39000,
+    "manufacturing_recipes": {}
+  },
+  "APPLE_JAM": {
+    "name": "APPLE_JAM",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/country_store/apple_jam.png",
+      "x1": "global_trade_hq/country_store/apple_jam_x1.png",
+      "x2": "global_trade_hq/country_store/apple_jam_x2.png",
+      "x3": "global_trade_hq/country_store/apple_jam_x3.png",
+      "x4": "global_trade_hq/country_store/apple_jam_x4.png",
+      "x5": "global_trade_hq/country_store/apple_jam_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/country_store/apple_jam.png",
+      "x1": "trade_depot/country_store/apple_jam_x1.png",
+      "x2": "trade_depot/country_store/apple_jam_x2.png",
+      "x3": "trade_depot/country_store/apple_jam_x3.png",
+      "x4": "trade_depot/country_store/apple_jam_x4.png",
+      "x5": "trade_depot/country_store/apple_jam_x5.png"
+    },
+    "base_price": 2775,
+    "actual_price": 10,
+    "storage_template": "city_storage/country_store/apple_jam.png",
+    "sell_duration": 22000,
+    "manufacturing_recipes": {}
+  },
+  "TIRAMISU": {
+    "name": "TIRAMISU",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/tiramisu.png",
+      "x1": "global_trade_hq/desert_shop/tiramisu_x1.png",
+      "x2": "global_trade_hq/desert_shop/tiramisu_x2.png",
+      "x3": "global_trade_hq/desert_shop/tiramisu_x3.png",
+      "x4": "global_trade_hq/desert_shop/tiramisu_x4.png",
+      "x5": "global_trade_hq/desert_shop/tiramisu_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/tiramisu.png",
+      "x1": "trade_depot/desert_shop/tiramisu_x1.png",
+      "x2": "trade_depot/desert_shop/tiramisu_x2.png",
+      "x3": "trade_depot/desert_shop/tiramisu_x3.png",
+      "x4": "trade_depot/desert_shop/tiramisu_x4.png",
+      "x5": "trade_depot/desert_shop/tiramisu_x5.png"
+    },
+    "base_price": 5,
+    "actual_price": 8,
+    "storage_template": "city_storage/desert_shop/tiramisu.png",
+    "sell_duration": 200,
+    "manufacturing_recipes": {}
+  },
+  "CHURROS": {
+    "name": "CHURROS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/churros.png",
+      "x1": "global_trade_hq/desert_shop/churros_x1.png",
+      "x2": "global_trade_hq/desert_shop/churros_x2.png",
+      "x3": "global_trade_hq/desert_shop/churros_x3.png",
+      "x4": "global_trade_hq/desert_shop/churros_x4.png",
+      "x5": "global_trade_hq/desert_shop/churros_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/churros.png",
+      "x1": "trade_depot/desert_shop/churros_x1.png",
+      "x2": "trade_depot/desert_shop/churros_x2.png",
+      "x3": "trade_depot/desert_shop/churros_x3.png",
+      "x4": "trade_depot/desert_shop/churros_x4.png",
+      "x5": "trade_depot/desert_shop/churros_x5.png"
+    },
+    "base_price": 4,
+    "actual_price": 7,
+    "storage_template": "city_storage/desert_shop/churros.png",
+    "sell_duration": 180,
+    "manufacturing_recipes": {}
+  },
+  "PROFITEROLE": {
+    "name": "PROFITEROLE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/profiterole.png",
+      "x1": "global_trade_hq/desert_shop/profiterole_x1.png",
+      "x2": "global_trade_hq/desert_shop/profiterole_x2.png",
+      "x3": "global_trade_hq/desert_shop/profiterole_x3.png",
+      "x4": "global_trade_hq/desert_shop/profiterole_x4.png",
+      "x5": "global_trade_hq/desert_shop/profiterole_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/profiterole.png",
+      "x1": "trade_depot/desert_shop/profiterole_x1.png",
+      "x2": "trade_depot/desert_shop/profiterole_x2.png",
+      "x3": "trade_depot/desert_shop/profiterole_x3.png",
+      "x4": "trade_depot/desert_shop/profiterole_x4.png",
+      "x5": "trade_depot/desert_shop/profiterole_x5.png"
+    },
+    "base_price": 6,
+    "actual_price": 9,
+    "storage_template": "city_storage/desert_shop/profiterole.png",
+    "sell_duration": 220,
+    "manufacturing_recipes": {}
+  },
+  "MOCHI": {
+    "name": "MOCHI",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/mochi.png",
+      "x1": "global_trade_hq/desert_shop/mochi_x1.png",
+      "x2": "global_trade_hq/desert_shop/mochi_x2.png",
+      "x3": "global_trade_hq/desert_shop/mochi_x3.png",
+      "x4": "global_trade_hq/desert_shop/mochi_x4.png",
+      "x5": "global_trade_hq/desert_shop/mochi_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/mochi.png",
+      "x1": "trade_depot/desert_shop/mochi_x1.png",
+      "x2": "trade_depot/desert_shop/mochi_x2.png",
+      "x3": "trade_depot/desert_shop/mochi_x3.png",
+      "x4": "trade_depot/desert_shop/mochi_x4.png",
+      "x5": "trade_depot/desert_shop/mochi_x5.png"
+    },
+    "base_price": 7,
+    "actual_price": 10,
+    "storage_template": "city_storage/desert_shop/mochi.png",
+    "sell_duration": 250,
+    "manufacturing_recipes": {}
+  },
+  "PAVLOVA": {
+    "name": "PAVLOVA",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/desert_shop/pavlova.png",
+      "x1": "global_trade_hq/desert_shop/pavlova_x1.png",
+      "x2": "global_trade_hq/desert_shop/pavlova_x2.png",
+      "x3": "global_trade_hq/desert_shop/pavlova_x3.png",
+      "x4": "global_trade_hq/desert_shop/pavlova_x4.png",
+      "x5": "global_trade_hq/desert_shop/pavlova_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/desert_shop/pavlova.png",
+      "x1": "trade_depot/desert_shop/pavlova_x1.png",
+      "x2": "trade_depot/desert_shop/pavlova_x2.png",
+      "x3": "trade_depot/desert_shop/pavlova_x3.png",
+      "x4": "trade_depot/desert_shop/pavlova_x4.png",
+      "x5": "trade_depot/desert_shop/pavlova_x5.png"
+    },
+    "base_price": 8,
+    "actual_price": 12,
+    "storage_template": "city_storage/desert_shop/pavlova.png",
+    "sell_duration": 300,
+    "manufacturing_recipes": {}
+  },
+  "DONUTS": {
+    "name": "DONUTS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/donuts.png",
+      "x1": "global_trade_hq/donut_shop/donuts_x1.png",
+      "x2": "global_trade_hq/donut_shop/donuts_x2.png",
+      "x3": "global_trade_hq/donut_shop/donuts_x3.png",
+      "x4": "global_trade_hq/donut_shop/donuts_x4.png",
+      "x5": "global_trade_hq/donut_shop/donuts_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/donuts.png",
+      "x1": "trade_depot/donut_shop/donuts_x1.png",
+      "x2": "trade_depot/donut_shop/donuts_x2.png",
+      "x3": "trade_depot/donut_shop/donuts_x3.png",
+      "x4": "trade_depot/donut_shop/donuts_x4.png",
+      "x5": "trade_depot/donut_shop/donuts_x5.png"
+    },
+    "base_price": 712,
+    "actual_price": 5,
+    "storage_template": "city_storage/donut_shop/donuts.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "GREEN_SMOOTHIE": {
+    "name": "GREEN_SMOOTHIE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/green_smoothie.png",
+      "x1": "global_trade_hq/donut_shop/green_smoothie_x1.png",
+      "x2": "global_trade_hq/donut_shop/green_smoothie_x2.png",
+      "x3": "global_trade_hq/donut_shop/green_smoothie_x3.png",
+      "x4": "global_trade_hq/donut_shop/green_smoothie_x4.png",
+      "x5": "global_trade_hq/donut_shop/green_smoothie_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/green_smoothie.png",
+      "x1": "trade_depot/donut_shop/green_smoothie_x1.png",
+      "x2": "trade_depot/donut_shop/green_smoothie_x2.png",
+      "x3": "trade_depot/donut_shop/green_smoothie_x3.png",
+      "x4": "trade_depot/donut_shop/green_smoothie_x4.png",
+      "x5": "trade_depot/donut_shop/green_smoothie_x5.png"
+    },
+    "base_price": 862,
+    "actual_price": 6,
+    "storage_template": "city_storage/donut_shop/green_smoothie.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "BREAD_ROLL": {
+    "name": "BREAD_ROLL",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/bread_roll.png",
+      "x1": "global_trade_hq/donut_shop/bread_roll_x1.png",
+      "x2": "global_trade_hq/donut_shop/bread_roll_x2.png",
+      "x3": "global_trade_hq/donut_shop/bread_roll_x3.png",
+      "x4": "global_trade_hq/donut_shop/bread_roll_x4.png",
+      "x5": "global_trade_hq/donut_shop/bread_roll_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/bread_roll.png",
+      "x1": "trade_depot/donut_shop/bread_roll_x1.png",
+      "x2": "trade_depot/donut_shop/bread_roll_x2.png",
+      "x3": "trade_depot/donut_shop/bread_roll_x3.png",
+      "x4": "trade_depot/donut_shop/bread_roll_x4.png",
+      "x5": "trade_depot/donut_shop/bread_roll_x5.png"
+    },
+    "base_price": 1380,
+    "actual_price": 4,
+    "storage_template": "city_storage/donut_shop/bread_roll.png",
+    "sell_duration": 11000,
+    "manufacturing_recipes": {}
+  },
+  "CHERRY_CHEESECAKE": {
+    "name": "CHERRY_CHEESECAKE",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/cherry_cheesecake.png",
+      "x1": "global_trade_hq/donut_shop/cherry_cheesecake_x1.png",
+      "x2": "global_trade_hq/donut_shop/cherry_cheesecake_x2.png",
+      "x3": "global_trade_hq/donut_shop/cherry_cheesecake_x3.png",
+      "x4": "global_trade_hq/donut_shop/cherry_cheesecake_x4.png",
+      "x5": "global_trade_hq/donut_shop/cherry_cheesecake_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/cherry_cheesecake.png",
+      "x1": "trade_depot/donut_shop/cherry_cheesecake_x1.png",
+      "x2": "trade_depot/donut_shop/cherry_cheesecake_x2.png",
+      "x3": "trade_depot/donut_shop/cherry_cheesecake_x3.png",
+      "x4": "trade_depot/donut_shop/cherry_cheesecake_x4.png",
+      "x5": "trade_depot/donut_shop/cherry_cheesecake_x5.png"
+    },
+    "base_price": 1680,
+    "actual_price": 8,
+    "storage_template": "city_storage/donut_shop/cherry_cheesecake.png",
+    "sell_duration": 14000,
+    "manufacturing_recipes": {}
+  },
+  "FROZEN_YOGURT": {
+    "name": "FROZEN_YOGURT",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/frozen_yogurt.png",
+      "x1": "global_trade_hq/donut_shop/frozen_yogurt_x1.png",
+      "x2": "global_trade_hq/donut_shop/frozen_yogurt_x2.png",
+      "x3": "global_trade_hq/donut_shop/frozen_yogurt_x3.png",
+      "x4": "global_trade_hq/donut_shop/frozen_yogurt_x4.png",
+      "x5": "global_trade_hq/donut_shop/frozen_yogurt_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/frozen_yogurt.png",
+      "x1": "trade_depot/donut_shop/frozen_yogurt_x1.png",
+      "x2": "trade_depot/donut_shop/frozen_yogurt_x2.png",
+      "x3": "trade_depot/donut_shop/frozen_yogurt_x3.png",
+      "x4": "trade_depot/donut_shop/frozen_yogurt_x4.png",
+      "x5": "trade_depot/donut_shop/frozen_yogurt_x5.png"
+    },
+    "base_price": 1312,
+    "actual_price": 5,
+    "storage_template": "city_storage/donut_shop/frozen_yogurt.png",
+    "sell_duration": 12000,
+    "manufacturing_recipes": {}
+  },
+  "COFFEE": {
+    "name": "COFFEE",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/donut_shop/coffee.png",
+      "x1": "global_trade_hq/donut_shop/coffee_x1.png",
+      "x2": "global_trade_hq/donut_shop/coffee_x2.png",
+      "x3": "global_trade_hq/donut_shop/coffee_x3.png",
+      "x4": "global_trade_hq/donut_shop/coffee_x4.png",
+      "x5": "global_trade_hq/donut_shop/coffee_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/donut_shop/coffee.png",
+      "x1": "trade_depot/donut_shop/coffee_x1.png",
+      "x2": "trade_depot/donut_shop/coffee_x2.png",
+      "x3": "trade_depot/donut_shop/coffee_x3.png",
+      "x4": "trade_depot/donut_shop/coffee_x4.png",
+      "x5": "trade_depot/donut_shop/coffee_x5.png"
+    },
+    "base_price": 562,
+    "actual_price": 3,
+    "storage_template": "city_storage/donut_shop/coffee.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "REUSABLE_BAG": {
+    "name": "REUSABLE_BAG",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/reusable_bag.png",
+      "x1": "global_trade_hq/eco_shop/reusable_bag_x1.png",
+      "x2": "global_trade_hq/eco_shop/reusable_bag_x2.png",
+      "x3": "global_trade_hq/eco_shop/reusable_bag_x3.png",
+      "x4": "global_trade_hq/eco_shop/reusable_bag_x4.png",
+      "x5": "global_trade_hq/eco_shop/reusable_bag_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/reusable_bag.png",
+      "x1": "trade_depot/eco_shop/reusable_bag_x1.png",
+      "x2": "trade_depot/eco_shop/reusable_bag_x2.png",
+      "x3": "trade_depot/eco_shop/reusable_bag_x3.png",
+      "x4": "trade_depot/eco_shop/reusable_bag_x4.png",
+      "x5": "trade_depot/eco_shop/reusable_bag_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 4,
+    "storage_template": "city_storage/eco_shop/reusable_bag.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "ECOLOGICAL_SHOES": {
+    "name": "ECOLOGICAL_SHOES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/ecological_shoes.png",
+      "x1": "global_trade_hq/eco_shop/ecological_shoes_x1.png",
+      "x2": "global_trade_hq/eco_shop/ecological_shoes_x2.png",
+      "x3": "global_trade_hq/eco_shop/ecological_shoes_x3.png",
+      "x4": "global_trade_hq/eco_shop/ecological_shoes_x4.png",
+      "x5": "global_trade_hq/eco_shop/ecological_shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/ecological_shoes.png",
+      "x1": "trade_depot/eco_shop/ecological_shoes_x1.png",
+      "x2": "trade_depot/eco_shop/ecological_shoes_x2.png",
+      "x3": "trade_depot/eco_shop/ecological_shoes_x3.png",
+      "x4": "trade_depot/eco_shop/ecological_shoes_x4.png",
+      "x5": "trade_depot/eco_shop/ecological_shoes_x5.png"
+    },
+    "base_price": 562,
+    "actual_price": 20,
+    "storage_template": "city_storage/eco_shop/ecological_shoes.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "YOGA_MAT": {
+    "name": "YOGA_MAT",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/eco_shop/yoga_mat.png",
+      "x1": "global_trade_hq/eco_shop/yoga_mat_x1.png",
+      "x2": "global_trade_hq/eco_shop/yoga_mat_x2.png",
+      "x3": "global_trade_hq/eco_shop/yoga_mat_x3.png",
+      "x4": "global_trade_hq/eco_shop/yoga_mat_x4.png",
+      "x5": "global_trade_hq/eco_shop/yoga_mat_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/eco_shop/yoga_mat.png",
+      "x1": "trade_depot/eco_shop/yoga_mat_x1.png",
+      "x2": "trade_depot/eco_shop/yoga_mat_x2.png",
+      "x3": "trade_depot/eco_shop/yoga_mat_x3.png",
+      "x4": "trade_depot/eco_shop/yoga_mat_x4.png",
+      "x5": "trade_depot/eco_shop/yoga_mat_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 15,
+    "storage_template": "city_storage/eco_shop/yoga_mat.png",
+    "sell_duration": 13000,
+    "manufacturing_recipes": {}
+  },
+  "DOZER_BLADE": {
+    "name": "DOZER_BLADE",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/blade.png",
+      "x1": "global_trade_hq/special/expansion/blade_x1.png",
+      "x2": "global_trade_hq/special/expansion/blade_x2.png",
+      "x3": "global_trade_hq/special/expansion/blade_x3.png",
+      "x4": "global_trade_hq/special/expansion/blade_x4.png",
+      "x5": "global_trade_hq/special/expansion/blade_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/blade.png",
+      "x1": "trade_depot/special/expansion/blade_x1.png",
+      "x2": "trade_depot/special/expansion/blade_x2.png",
+      "x3": "trade_depot/special/expansion/blade_x3.png",
+      "x4": "trade_depot/special/expansion/blade_x4.png",
+      "x5": "trade_depot/special/expansion/blade_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/blade.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "DOZER_EXHAUST": {
+    "name": "DOZER_EXHAUST",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/exhaust.png",
+      "x1": "global_trade_hq/special/expansion/exhaust_x1.png",
+      "x2": "global_trade_hq/special/expansion/exhaust_x2.png",
+      "x3": "global_trade_hq/special/expansion/exhaust_x3.png",
+      "x4": "global_trade_hq/special/expansion/exhaust_x4.png",
+      "x5": "global_trade_hq/special/expansion/exhaust_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/exhaust.png",
+      "x1": "trade_depot/special/expansion/exhaust_x1.png",
+      "x2": "trade_depot/special/expansion/exhaust_x2.png",
+      "x3": "trade_depot/special/expansion/exhaust_x3.png",
+      "x4": "trade_depot/special/expansion/exhaust_x4.png",
+      "x5": "trade_depot/special/expansion/exhaust_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/exhaust.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "DOZER_WHEEL": {
+    "name": "DOZER_WHEEL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/expansion/wheel.png",
+      "x1": "global_trade_hq/special/expansion/wheel_x1.png",
+      "x2": "global_trade_hq/special/expansion/wheel_x2.png",
+      "x3": "global_trade_hq/special/expansion/wheel_x3.png",
+      "x4": "global_trade_hq/special/expansion/wheel_x4.png",
+      "x5": "global_trade_hq/special/expansion/wheel_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/expansion/wheel.png",
+      "x1": "trade_depot/special/expansion/wheel_x1.png",
+      "x2": "trade_depot/special/expansion/wheel_x2.png",
+      "x3": "trade_depot/special/expansion/wheel_x3.png",
+      "x4": "trade_depot/special/expansion/wheel_x4.png",
+      "x5": "trade_depot/special/expansion/wheel_x5.png"
+    },
+    "base_price": 600,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/expansion/wheel.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "VEGETABLES": {
+    "name": "VEGETABLES",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/vegetables.png",
+      "x1": "global_trade_hq/farmers_market/vegetables_x1.png",
+      "x2": "global_trade_hq/farmers_market/vegetables_x2.png",
+      "x3": "global_trade_hq/farmers_market/vegetables_x3.png",
+      "x4": "global_trade_hq/farmers_market/vegetables_x4.png",
+      "x5": "global_trade_hq/farmers_market/vegetables_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/vegetables.png",
+      "x1": "trade_depot/farmers_market/vegetables_x1.png",
+      "x2": "trade_depot/farmers_market/vegetables_x2.png",
+      "x3": "trade_depot/farmers_market/vegetables_x3.png",
+      "x4": "trade_depot/farmers_market/vegetables_x4.png",
+      "x5": "trade_depot/farmers_market/vegetables_x5.png"
+    },
+    "base_price": 120,
+    "actual_price": 5,
+    "storage_template": "city_storage/farmers_market/vegetables.png",
+    "sell_duration": 3500,
+    "manufacturing_recipes": {}
+  },
+  "FLOUR_BAG": {
+    "name": "FLOUR_BAG",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/flour_bag.png",
+      "x1": "global_trade_hq/farmers_market/flour_bag_x1.png",
+      "x2": "global_trade_hq/farmers_market/flour_bag_x2.png",
+      "x3": "global_trade_hq/farmers_market/flour_bag_x3.png",
+      "x4": "global_trade_hq/farmers_market/flour_bag_x4.png",
+      "x5": "global_trade_hq/farmers_market/flour_bag_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/flour_bag.png",
+      "x1": "trade_depot/farmers_market/flour_bag_x1.png",
+      "x2": "trade_depot/farmers_market/flour_bag_x2.png",
+      "x3": "trade_depot/farmers_market/flour_bag_x3.png",
+      "x4": "trade_depot/farmers_market/flour_bag_x4.png",
+      "x5": "trade_depot/farmers_market/flour_bag_x5.png"
+    },
+    "base_price": 427,
+    "actual_price": 6,
+    "storage_template": "city_storage/farmers_market/flour_bag.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "FRUIT_AND_BERRIES": {
+    "name": "FRUIT_AND_BERRIES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/fruit_and_berries.png",
+      "x1": "global_trade_hq/farmers_market/fruit_and_berries_x1.png",
+      "x2": "global_trade_hq/farmers_market/fruit_and_berries_x2.png",
+      "x3": "global_trade_hq/farmers_market/fruit_and_berries_x3.png",
+      "x4": "global_trade_hq/farmers_market/fruit_and_berries_x4.png",
+      "x5": "global_trade_hq/farmers_market/fruit_and_berries_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/fruit_and_berries.png",
+      "x1": "trade_depot/farmers_market/fruit_and_berries_x1.png",
+      "x2": "trade_depot/farmers_market/fruit_and_berries_x2.png",
+      "x3": "trade_depot/farmers_market/fruit_and_berries_x3.png",
+      "x4": "trade_depot/farmers_market/fruit_and_berries_x4.png",
+      "x5": "trade_depot/farmers_market/fruit_and_berries_x5.png"
+    },
+    "base_price": 547,
+    "actual_price": 7,
+    "storage_template": "city_storage/farmers_market/fruit_and_berries.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "CREAM": {
+    "name": "CREAM",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/cream.png",
+      "x1": "global_trade_hq/farmers_market/cream_x1.png",
+      "x2": "global_trade_hq/farmers_market/cream_x2.png",
+      "x3": "global_trade_hq/farmers_market/cream_x3.png",
+      "x4": "global_trade_hq/farmers_market/cream_x4.png",
+      "x5": "global_trade_hq/farmers_market/cream_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/cream.png",
+      "x1": "trade_depot/farmers_market/cream_x1.png",
+      "x2": "trade_depot/farmers_market/cream_x2.png",
+      "x3": "trade_depot/farmers_market/cream_x3.png",
+      "x4": "trade_depot/farmers_market/cream_x4.png",
+      "x5": "trade_depot/farmers_market/cream_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 9,
+    "storage_template": "city_storage/farmers_market/cream.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "CORN": {
+    "name": "CORN",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/corn.png",
+      "x1": "global_trade_hq/farmers_market/corn_x1.png",
+      "x2": "global_trade_hq/farmers_market/corn_x2.png",
+      "x3": "global_trade_hq/farmers_market/corn_x3.png",
+      "x4": "global_trade_hq/farmers_market/corn_x4.png",
+      "x5": "global_trade_hq/farmers_market/corn_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/corn.png",
+      "x1": "trade_depot/farmers_market/corn_x1.png",
+      "x2": "trade_depot/farmers_market/corn_x2.png",
+      "x3": "trade_depot/farmers_market/corn_x3.png",
+      "x4": "trade_depot/farmers_market/corn_x4.png",
+      "x5": "trade_depot/farmers_market/corn_x5.png"
+    },
+    "base_price": 210,
+    "actual_price": 4,
+    "storage_template": "city_storage/farmers_market/corn.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "CHEESE": {
+    "name": "CHEESE",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/cheese.png",
+      "x1": "global_trade_hq/farmers_market/cheese_x1.png",
+      "x2": "global_trade_hq/farmers_market/cheese_x2.png",
+      "x3": "global_trade_hq/farmers_market/cheese_x3.png",
+      "x4": "global_trade_hq/farmers_market/cheese_x4.png",
+      "x5": "global_trade_hq/farmers_market/cheese_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/cheese.png",
+      "x1": "trade_depot/farmers_market/cheese_x1.png",
+      "x2": "trade_depot/farmers_market/cheese_x2.png",
+      "x3": "trade_depot/farmers_market/cheese_x3.png",
+      "x4": "trade_depot/farmers_market/cheese_x4.png",
+      "x5": "trade_depot/farmers_market/cheese_x5.png"
+    },
+    "base_price": 495,
+    "actual_price": 12,
+    "storage_template": "city_storage/farmers_market/cheese.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "BEEF": {
+    "name": "BEEF",
+    "x_location": 480,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/farmers_market/beef.png",
+      "x1": "global_trade_hq/farmers_market/beef_x1.png",
+      "x2": "global_trade_hq/farmers_market/beef_x2.png",
+      "x3": "global_trade_hq/farmers_market/beef_x3.png",
+      "x4": "global_trade_hq/farmers_market/beef_x4.png",
+      "x5": "global_trade_hq/farmers_market/beef_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/farmers_market/beef.png",
+      "x1": "trade_depot/farmers_market/beef_x1.png",
+      "x2": "trade_depot/farmers_market/beef_x2.png",
+      "x3": "trade_depot/farmers_market/beef_x3.png",
+      "x4": "trade_depot/farmers_market/beef_x4.png",
+      "x5": "trade_depot/farmers_market/beef_x5.png"
+    },
+    "base_price": 645,
+    "actual_price": 15,
+    "storage_template": "city_storage/farmers_market/beef.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "CAP": {
+    "name": "CAP",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/cap.png",
+      "x1": "global_trade_hq/fashion_store/cap_x1.png",
+      "x2": "global_trade_hq/fashion_store/cap_x2.png",
+      "x3": "global_trade_hq/fashion_store/cap_x3.png",
+      "x4": "global_trade_hq/fashion_store/cap_x4.png",
+      "x5": "global_trade_hq/fashion_store/cap_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/cap.png",
+      "x1": "trade_depot/fashion_store/cap_x1.png",
+      "x2": "trade_depot/fashion_store/cap_x2.png",
+      "x3": "trade_depot/fashion_store/cap_x3.png",
+      "x4": "trade_depot/fashion_store/cap_x4.png",
+      "x5": "trade_depot/fashion_store/cap_x5.png"
+    },
+    "base_price": 450,
+    "actual_price": 20,
+    "storage_template": "city_storage/fashion_store/cap.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "SHOES": {
+    "name": "SHOES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/shoes.png",
+      "x1": "global_trade_hq/fashion_store/shoes_x1.png",
+      "x2": "global_trade_hq/fashion_store/shoes_x2.png",
+      "x3": "global_trade_hq/fashion_store/shoes_x3.png",
+      "x4": "global_trade_hq/fashion_store/shoes_x4.png",
+      "x5": "global_trade_hq/fashion_store/shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/shoes.png",
+      "x1": "trade_depot/fashion_store/shoes_x1.png",
+      "x2": "trade_depot/fashion_store/shoes_x2.png",
+      "x3": "trade_depot/fashion_store/shoes_x3.png",
+      "x4": "trade_depot/fashion_store/shoes_x4.png",
+      "x5": "trade_depot/fashion_store/shoes_x5.png"
+    },
+    "base_price": 735,
+    "actual_price": 70,
+    "storage_template": "city_storage/fashion_store/shoes.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "WATCH": {
+    "name": "WATCH",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/watch.png",
+      "x1": "global_trade_hq/fashion_store/watch_x1.png",
+      "x2": "global_trade_hq/fashion_store/watch_x2.png",
+      "x3": "global_trade_hq/fashion_store/watch_x3.png",
+      "x4": "global_trade_hq/fashion_store/watch_x4.png",
+      "x5": "global_trade_hq/fashion_store/watch_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/watch.png",
+      "x1": "trade_depot/fashion_store/watch_x1.png",
+      "x2": "trade_depot/fashion_store/watch_x2.png",
+      "x3": "trade_depot/fashion_store/watch_x3.png",
+      "x4": "trade_depot/fashion_store/watch_x4.png",
+      "x5": "trade_depot/fashion_store/watch_x5.png"
+    },
+    "base_price": 435,
+    "actual_price": 150,
+    "storage_template": "city_storage/fashion_store/watch.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "BUSINESS_SUITS": {
+    "name": "BUSINESS_SUITS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/business_suits.png",
+      "x1": "global_trade_hq/fashion_store/business_suits_x1.png",
+      "x2": "global_trade_hq/fashion_store/business_suits_x2.png",
+      "x3": "global_trade_hq/fashion_store/business_suits_x3.png",
+      "x4": "global_trade_hq/fashion_store/business_suits_x4.png",
+      "x5": "global_trade_hq/fashion_store/business_suits_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/business_suits.png",
+      "x1": "trade_depot/fashion_store/business_suits_x1.png",
+      "x2": "trade_depot/fashion_store/business_suits_x2.png",
+      "x3": "trade_depot/fashion_store/business_suits_x3.png",
+      "x4": "trade_depot/fashion_store/business_suits_x4.png",
+      "x5": "trade_depot/fashion_store/business_suits_x5.png"
+    },
+    "base_price": 877,
+    "actual_price": 180,
+    "storage_template": "city_storage/fashion_store/business_suits_storage.png",
+    "sell_duration": 9000,
+    "manufacturing_recipes": {}
+  },
+  "BACKPACK": {
+    "name": "BACKPACK",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fashion_store/backpack.png",
+      "x1": "global_trade_hq/fashion_store/backpack_x1.png",
+      "x2": "global_trade_hq/fashion_store/backpack_x2.png",
+      "x3": "global_trade_hq/fashion_store/backpack_x3.png",
+      "x4": "global_trade_hq/fashion_store/backpack_x4.png",
+      "x5": "global_trade_hq/fashion_store/backpack_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fashion_store/backpack.png",
+      "x1": "trade_depot/fashion_store/backpack_x1.png",
+      "x2": "trade_depot/fashion_store/backpack_x2.png",
+      "x3": "trade_depot/fashion_store/backpack_x3.png",
+      "x4": "trade_depot/fashion_store/backpack_x4.png",
+      "x5": "trade_depot/fashion_store/backpack_x5.png"
+    },
+    "base_price": 322,
+    "actual_price": 60,
+    "storage_template": "city_storage/fashion_store/backpack.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "ICE_CREAM_SANDWICH": {
+    "name": "ICE_CREAM_SANDWICH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich.png",
+      "x1": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/ice_cream_sandwich_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/ice_cream_sandwich.png",
+      "x1": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/ice_cream_sandwich_x5.png"
+    },
+    "base_price": 1920,
+    "actual_price": 6,
+    "storage_template": "city_storage/fast_food_restaurant/ice_cream_sandwich.png",
+    "sell_duration": 15000,
+    "manufacturing_recipes": {}
+  },
+  "PIZZA": {
+    "name": "PIZZA",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/pizza.png",
+      "x1": "global_trade_hq/fast_food_restaurant/pizza_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/pizza_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/pizza_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/pizza_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/pizza_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/pizza.png",
+      "x1": "trade_depot/fast_food_restaurant/pizza_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/pizza_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/pizza_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/pizza_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/pizza_x5.png"
+    },
+    "base_price": 1920,
+    "actual_price": 12,
+    "storage_template": "city_storage/fast_food_restaurant/pizza.png",
+    "sell_duration": 15000,
+    "manufacturing_recipes": {}
+  },
+  "BURGERS": {
+    "name": "BURGERS",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/burgers.png",
+      "x1": "global_trade_hq/fast_food_restaurant/burgers_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/burgers_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/burgers_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/burgers_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/burgers_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/burgers.png",
+      "x1": "trade_depot/fast_food_restaurant/burgers_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/burgers_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/burgers_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/burgers_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/burgers_x5.png"
+    },
+    "base_price": 2715,
+    "actual_price": 9,
+    "storage_template": "city_storage/fast_food_restaurant/burgers.png",
+    "sell_duration": 21000,
+    "manufacturing_recipes": {}
+  },
+  "CHEESE_FRIES": {
+    "name": "CHEESE_FRIES",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/cheese_fries.png",
+      "x1": "global_trade_hq/fast_food_restaurant/cheese_fries_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/cheese_fries_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/cheese_fries_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/cheese_fries_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/cheese_fries_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/cheese_fries.png",
+      "x1": "trade_depot/fast_food_restaurant/cheese_fries_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/cheese_fries_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/cheese_fries_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/cheese_fries_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/cheese_fries_x5.png"
+    },
+    "base_price": 787,
+    "actual_price": 7,
+    "storage_template": "city_storage/fast_food_restaurant/cheese_fries.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "LEMONADE_BOTTLE": {
+    "name": "LEMONADE_BOTTLE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/lemonade_bottle.png",
+      "x1": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/lemonade_bottle_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/lemonade_bottle.png",
+      "x1": "trade_depot/fast_food_restaurant/lemonade_bottle_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/lemonade_bottle_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/lemonade_bottle_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/lemonade_bottle_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/lemonade_bottle_x5.png"
+    },
+    "base_price": 1267,
+    "actual_price": 4,
+    "storage_template": "city_storage/fast_food_restaurant/lemonade_bottle.png",
+    "sell_duration": 11000,
+    "manufacturing_recipes": {}
+  },
+  "POPCORN": {
+    "name": "POPCORN",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/fast_food_restaurant/popcorn.png",
+      "x1": "global_trade_hq/fast_food_restaurant/popcorn_x1.png",
+      "x2": "global_trade_hq/fast_food_restaurant/popcorn_x2.png",
+      "x3": "global_trade_hq/fast_food_restaurant/popcorn_x3.png",
+      "x4": "global_trade_hq/fast_food_restaurant/popcorn_x4.png",
+      "x5": "global_trade_hq/fast_food_restaurant/popcorn_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fast_food_restaurant/popcorn.png",
+      "x1": "trade_depot/fast_food_restaurant/popcorn_x1.png",
+      "x2": "trade_depot/fast_food_restaurant/popcorn_x2.png",
+      "x3": "trade_depot/fast_food_restaurant/popcorn_x3.png",
+      "x4": "trade_depot/fast_food_restaurant/popcorn_x4.png",
+      "x5": "trade_depot/fast_food_restaurant/popcorn_x5.png"
+    },
+    "base_price": 937,
+    "actual_price": 3,
+    "storage_template": "city_storage/fast_food_restaurant/popcorn.png",
+    "sell_duration": 10000,
+    "manufacturing_recipes": {}
+  },
+  "CANNED_FISH": {
+    "name": "CANNED_FISH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/canned_fish.png",
+      "x1": "global_trade_hq/fish_marketplace/canned_fish_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/canned_fish_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/canned_fish_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/canned_fish_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/canned_fish_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/canned_fish.png",
+      "x1": "trade_depot/fish_marketplace/canned_fish_x1.png",
+      "x2": "trade_depot/fish_marketplace/canned_fish_x2.png",
+      "x3": "trade_depot/fish_marketplace/canned_fish_x3.png",
+      "x4": "trade_depot/fish_marketplace/canned_fish_x4.png",
+      "x5": "trade_depot/fish_marketplace/canned_fish_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 5,
+    "storage_template": "city_storage/fish_marketplace/canned_fish_storage.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "FISH_SOUP": {
+    "name": "FISH_SOUP",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/fish_soup.png",
+      "x1": "global_trade_hq/fish_marketplace/fish_soup_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/fish_soup_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/fish_soup_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/fish_soup_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/fish_soup_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/fish_soup.png",
+      "x1": "trade_depot/fish_marketplace/fish_soup_x1.png",
+      "x2": "trade_depot/fish_marketplace/fish_soup_x2.png",
+      "x3": "trade_depot/fish_marketplace/fish_soup_x3.png",
+      "x4": "trade_depot/fish_marketplace/fish_soup_x4.png",
+      "x5": "trade_depot/fish_marketplace/fish_soup_x5.png"
+    },
+    "base_price": 825,
+    "actual_price": 8,
+    "storage_template": "city_storage/fish_marketplace/fish_soup_storage.png",
+    "sell_duration": 9000,
+    "manufacturing_recipes": {}
+  },
+  "SALMON_SANDWICH": {
+    "name": "SALMON_SANDWICH",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/fish_marketplace/salmon_sandwich.png",
+      "x1": "global_trade_hq/fish_marketplace/salmon_sandwich_x1.png",
+      "x2": "global_trade_hq/fish_marketplace/salmon_sandwich_x2.png",
+      "x3": "global_trade_hq/fish_marketplace/salmon_sandwich_x3.png",
+      "x4": "global_trade_hq/fish_marketplace/salmon_sandwich_x4.png",
+      "x5": "global_trade_hq/fish_marketplace/salmon_sandwich_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/fish_marketplace/salmon_sandwich.png",
+      "x1": "trade_depot/fish_marketplace/salmon_sandwich_x1.png",
+      "x2": "trade_depot/fish_marketplace/salmon_sandwich_x2.png",
+      "x3": "trade_depot/fish_marketplace/salmon_sandwich_x3.png",
+      "x4": "trade_depot/fish_marketplace/salmon_sandwich_x4.png",
+      "x5": "trade_depot/fish_marketplace/salmon_sandwich_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 9,
+    "storage_template": "city_storage/fish_marketplace/salmon_sandwich_storage.png",
+    "sell_duration": 13000,
+    "manufacturing_recipes": {}
+  },
+  "CHAIRS": {
+    "name": "CHAIRS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/chairs.png",
+      "x1": "global_trade_hq/furniture_store/chairs_x1.png",
+      "x2": "global_trade_hq/furniture_store/chairs_x2.png",
+      "x3": "global_trade_hq/furniture_store/chairs_x3.png",
+      "x4": "global_trade_hq/furniture_store/chairs_x4.png",
+      "x5": "global_trade_hq/furniture_store/chairs_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/chairs.png",
+      "x1": "trade_depot/furniture_store/chairs_x1.png",
+      "x2": "trade_depot/furniture_store/chairs_x2.png",
+      "x3": "trade_depot/furniture_store/chairs_x3.png",
+      "x4": "trade_depot/furniture_store/chairs_x4.png",
+      "x5": "trade_depot/furniture_store/chairs_x5.png"
+    },
+    "base_price": 225,
+    "actual_price": 70,
+    "storage_template": "city_storage/furniture_store/chairs.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "TABLES": {
+    "name": "TABLES",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/tables.png",
+      "x1": "global_trade_hq/furniture_store/tables_x1.png",
+      "x2": "global_trade_hq/furniture_store/tables_x2.png",
+      "x3": "global_trade_hq/furniture_store/tables_x3.png",
+      "x4": "global_trade_hq/furniture_store/tables_x4.png",
+      "x5": "global_trade_hq/furniture_store/tables_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/tables.png",
+      "x1": "trade_depot/furniture_store/tables_x1.png",
+      "x2": "trade_depot/furniture_store/tables_x2.png",
+      "x3": "trade_depot/furniture_store/tables_x3.png",
+      "x4": "trade_depot/furniture_store/tables_x4.png",
+      "x5": "trade_depot/furniture_store/tables_x5.png"
+    },
+    "base_price": 375,
+    "actual_price": 120,
+    "storage_template": "city_storage/furniture_store/tables.png",
+    "sell_duration": 5500,
+    "manufacturing_recipes": {}
+  },
+  "HOME_TEXTILES": {
+    "name": "HOME_TEXTILES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/home_textiles.png",
+      "x1": "global_trade_hq/furniture_store/home_textiles_x1.png",
+      "x2": "global_trade_hq/furniture_store/home_textiles_x2.png",
+      "x3": "global_trade_hq/furniture_store/home_textiles_x3.png",
+      "x4": "global_trade_hq/furniture_store/home_textiles_x4.png",
+      "x5": "global_trade_hq/furniture_store/home_textiles_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/home_textiles.png",
+      "x1": "trade_depot/furniture_store/home_textiles_x1.png",
+      "x2": "trade_depot/furniture_store/home_textiles_x2.png",
+      "x3": "trade_depot/furniture_store/home_textiles_x3.png",
+      "x4": "trade_depot/furniture_store/home_textiles_x4.png",
+      "x5": "trade_depot/furniture_store/home_textiles_x5.png"
+    },
+    "base_price": 457,
+    "actual_price": 45,
+    "storage_template": "city_storage/furniture_store/home_textiles.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "CUPBOARD": {
+    "name": "CUPBOARD",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/cupboard.png",
+      "x1": "global_trade_hq/furniture_store/cupboard_x1.png",
+      "x2": "global_trade_hq/furniture_store/cupboard_x2.png",
+      "x3": "global_trade_hq/furniture_store/cupboard_x3.png",
+      "x4": "global_trade_hq/furniture_store/cupboard_x4.png",
+      "x5": "global_trade_hq/furniture_store/cupboard_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/cupboard.png",
+      "x1": "trade_depot/furniture_store/cupboard_x1.png",
+      "x2": "trade_depot/furniture_store/cupboard_x2.png",
+      "x3": "trade_depot/furniture_store/cupboard_x3.png",
+      "x4": "trade_depot/furniture_store/cupboard_x4.png",
+      "x5": "trade_depot/furniture_store/cupboard_x5.png"
+    },
+    "base_price": 675,
+    "actual_price": 150,
+    "storage_template": "city_storage/furniture_store/cupboard.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "COUCH": {
+    "name": "COUCH",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/furniture_store/couch.png",
+      "x1": "global_trade_hq/furniture_store/couch_x1.png",
+      "x2": "global_trade_hq/furniture_store/couch_x2.png",
+      "x3": "global_trade_hq/furniture_store/couch_x3.png",
+      "x4": "global_trade_hq/furniture_store/couch_x4.png",
+      "x5": "global_trade_hq/furniture_store/couch_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/furniture_store/couch.png",
+      "x1": "trade_depot/furniture_store/couch_x1.png",
+      "x2": "trade_depot/furniture_store/couch_x2.png",
+      "x3": "trade_depot/furniture_store/couch_x3.png",
+      "x4": "trade_depot/furniture_store/couch_x4.png",
+      "x5": "trade_depot/furniture_store/couch_x5.png"
+    },
+    "base_price": 1357,
+    "actual_price": 300,
+    "storage_template": "city_storage/furniture_store/couch.png",
+    "sell_duration": 11500,
+    "manufacturing_recipes": {}
+  },
+  "GRASS": {
+    "name": "GRASS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/grass.png",
+      "x1": "global_trade_hq/gardening_supplies/grass_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/grass_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/grass_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/grass_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/grass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/grass.png",
+      "x1": "trade_depot/gardening_supplies/grass_x1.png",
+      "x2": "trade_depot/gardening_supplies/grass_x2.png",
+      "x3": "trade_depot/gardening_supplies/grass_x3.png",
+      "x4": "trade_depot/gardening_supplies/grass_x4.png",
+      "x5": "trade_depot/gardening_supplies/grass_x5.png"
+    },
+    "base_price": 232,
+    "actual_price": 3,
+    "storage_template": "city_storage/gardening_supplies/grass.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "TREE_SAPLINGS": {
+    "name": "TREE_SAPLINGS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/tree_saplings.png",
+      "x1": "global_trade_hq/gardening_supplies/tree_saplings_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/tree_saplings_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/tree_saplings_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/tree_saplings_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/tree_saplings_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/tree_saplings.png",
+      "x1": "trade_depot/gardening_supplies/tree_saplings_x1.png",
+      "x2": "trade_depot/gardening_supplies/tree_saplings_x2.png",
+      "x3": "trade_depot/gardening_supplies/tree_saplings_x3.png",
+      "x4": "trade_depot/gardening_supplies/tree_saplings_x4.png",
+      "x5": "trade_depot/gardening_supplies/tree_saplings_x5.png"
+    },
+    "base_price": 315,
+    "actual_price": 6,
+    "storage_template": "city_storage/gardening_supplies/tree_saplings.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "GARDEN_FURNITURE": {
+    "name": "GARDEN_FURNITURE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/garden_furniture.png",
+      "x1": "global_trade_hq/gardening_supplies/garden_furniture_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/garden_furniture_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/garden_furniture_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/garden_furniture_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/garden_furniture_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/garden_furniture.png",
+      "x1": "trade_depot/gardening_supplies/garden_furniture_x1.png",
+      "x2": "trade_depot/gardening_supplies/garden_furniture_x2.png",
+      "x3": "trade_depot/gardening_supplies/garden_furniture_x3.png",
+      "x4": "trade_depot/gardening_supplies/garden_furniture_x4.png",
+      "x5": "trade_depot/gardening_supplies/garden_furniture_x5.png"
+    },
+    "base_price": 615,
+    "actual_price": 20,
+    "storage_template": "city_storage/gardening_supplies/garden_furniture.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "FIRE_PIT": {
+    "name": "FIRE_PIT",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/fire_pit.png",
+      "x1": "global_trade_hq/gardening_supplies/fire_pit_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/fire_pit_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/fire_pit_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/fire_pit_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/fire_pit_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/fire_pit.png",
+      "x1": "trade_depot/gardening_supplies/fire_pit_x1.png",
+      "x2": "trade_depot/gardening_supplies/fire_pit_x2.png",
+      "x3": "trade_depot/gardening_supplies/fire_pit_x3.png",
+      "x4": "trade_depot/gardening_supplies/fire_pit_x4.png",
+      "x5": "trade_depot/gardening_supplies/fire_pit_x5.png"
+    },
+    "base_price": 1305,
+    "actual_price": 30,
+    "storage_template": "city_storage/gardening_supplies/fire_pit.png",
+    "sell_duration": 11000,
+    "manufacturing_recipes": {}
+  },
+  "LAWN_MOWER": {
+    "name": "LAWN_MOWER",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/lawn_mower.png",
+      "x1": "global_trade_hq/gardening_supplies/lawn_mower_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/lawn_mower_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/lawn_mower_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/lawn_mower_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/lawn_mower_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/lawn_mower.png",
+      "x1": "trade_depot/gardening_supplies/lawn_mower_x1.png",
+      "x2": "trade_depot/gardening_supplies/lawn_mower_x2.png",
+      "x3": "trade_depot/gardening_supplies/lawn_mower_x3.png",
+      "x4": "trade_depot/gardening_supplies/lawn_mower_x4.png",
+      "x5": "trade_depot/gardening_supplies/lawn_mower_x5.png"
+    },
+    "base_price": 630,
+    "actual_price": 40,
+    "storage_template": "city_storage/gardening_supplies/lawn_mower.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "GARDEN_GNOMES": {
+    "name": "GARDEN_GNOMES",
+    "x_location": 1245,
+    "y_location": 700,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/garden_gnomes.png",
+      "x1": "global_trade_hq/gardening_supplies/garden_gnomes_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/garden_gnomes_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/garden_gnomes_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/garden_gnomes_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/garden_gnomes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/garden_gnomes.png",
+      "x1": "trade_depot/gardening_supplies/garden_gnomes_x1.png",
+      "x2": "trade_depot/gardening_supplies/garden_gnomes_x2.png",
+      "x3": "trade_depot/gardening_supplies/garden_gnomes_x3.png",
+      "x4": "trade_depot/gardening_supplies/garden_gnomes_x4.png",
+      "x5": "trade_depot/gardening_supplies/garden_gnomes_x5.png"
+    },
+    "base_price": 1200,
+    "actual_price": 18,
+    "storage_template": "city_storage/gardening_supplies/garden_gnomes.png",
+    "sell_duration": 10000,
+    "manufacturing_recipes": {}
+  },
+  "HAMMER": {
+    "name": "HAMMER",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/hammer.png",
+      "x1": "global_trade_hq/hardware_store/hammer_x1.png",
+      "x2": "global_trade_hq/hardware_store/hammer_x2.png",
+      "x3": "global_trade_hq/hardware_store/hammer_x3.png",
+      "x4": "global_trade_hq/hardware_store/hammer_x4.png",
+      "x5": "global_trade_hq/hardware_store/hammer_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/hammer.png",
+      "x1": "trade_depot/hardware_store/hammer_x1.png",
+      "x2": "trade_depot/hardware_store/hammer_x2.png",
+      "x3": "trade_depot/hardware_store/hammer_x3.png",
+      "x4": "trade_depot/hardware_store/hammer_x4.png",
+      "x5": "trade_depot/hardware_store/hammer_x5.png"
+    },
+    "base_price": 67,
+    "actual_price": 15,
+    "storage_template": "city_storage/hardware_store/hammer.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "MEASURING_TAPE": {
+    "name": "MEASURING_TAPE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/measuring_tape.png",
+      "x1": "global_trade_hq/hardware_store/measuring_tape_x1.png",
+      "x2": "global_trade_hq/hardware_store/measuring_tape_x2.png",
+      "x3": "global_trade_hq/hardware_store/measuring_tape_x3.png",
+      "x4": "global_trade_hq/hardware_store/measuring_tape_x4.png",
+      "x5": "global_trade_hq/hardware_store/measuring_tape_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/measuring_tape.png",
+      "x1": "trade_depot/hardware_store/measuring_tape_x1.png",
+      "x2": "trade_depot/hardware_store/measuring_tape_x2.png",
+      "x3": "trade_depot/hardware_store/measuring_tape_x3.png",
+      "x4": "trade_depot/hardware_store/measuring_tape_x4.png",
+      "x5": "trade_depot/hardware_store/measuring_tape_x5.png"
+    },
+    "base_price": 82,
+    "actual_price": 8,
+    "storage_template": "city_storage/hardware_store/measuring_tape.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "SHOVEL": {
+    "name": "SHOVEL",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/shovel.png",
+      "x1": "global_trade_hq/hardware_store/shovel_x1.png",
+      "x2": "global_trade_hq/hardware_store/shovel_x2.png",
+      "x3": "global_trade_hq/hardware_store/shovel_x3.png",
+      "x4": "global_trade_hq/hardware_store/shovel_x4.png",
+      "x5": "global_trade_hq/hardware_store/shovel_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/shovel.png",
+      "x1": "trade_depot/hardware_store/shovel_x1.png",
+      "x2": "trade_depot/hardware_store/shovel_x2.png",
+      "x3": "trade_depot/hardware_store/shovel_x3.png",
+      "x4": "trade_depot/hardware_store/shovel_x4.png",
+      "x5": "trade_depot/hardware_store/shovel_x5.png"
+    },
+    "base_price": 112,
+    "actual_price": 18,
+    "storage_template": "city_storage/hardware_store/shovel.png",
+    "sell_duration": 3500,
+    "manufacturing_recipes": {}
+  },
+  "COOKING_UTENSILS": {
+    "name": "COOKING_UTENSILS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/cooking_utensils.png",
+      "x1": "global_trade_hq/hardware_store/cooking_utensils_x1.png",
+      "x2": "global_trade_hq/hardware_store/cooking_utensils_x2.png",
+      "x3": "global_trade_hq/hardware_store/cooking_utensils_x3.png",
+      "x4": "global_trade_hq/hardware_store/cooking_utensils_x4.png",
+      "x5": "global_trade_hq/hardware_store/cooking_utensils_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/cooking_utensils.png",
+      "x1": "trade_depot/hardware_store/cooking_utensils_x1.png",
+      "x2": "trade_depot/hardware_store/cooking_utensils_x2.png",
+      "x3": "trade_depot/hardware_store/cooking_utensils_x3.png",
+      "x4": "trade_depot/hardware_store/cooking_utensils_x4.png",
+      "x5": "trade_depot/hardware_store/cooking_utensils_x5.png"
+    },
+    "base_price": 187,
+    "actual_price": 28,
+    "storage_template": "city_storage/hardware_store/cooking_utensils.png",
+    "sell_duration": 4000,
+    "manufacturing_recipes": {}
+  },
+  "LADDER": {
+    "name": "LADDER",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/ladder.png",
+      "x1": "global_trade_hq/hardware_store/ladder_x1.png",
+      "x2": "global_trade_hq/hardware_store/ladder_x2.png",
+      "x3": "global_trade_hq/hardware_store/ladder_x3.png",
+      "x4": "global_trade_hq/hardware_store/ladder_x4.png",
+      "x5": "global_trade_hq/hardware_store/ladder_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/ladder.png",
+      "x1": "trade_depot/hardware_store/ladder_x1.png",
+      "x2": "trade_depot/hardware_store/ladder_x2.png",
+      "x3": "trade_depot/hardware_store/ladder_x3.png",
+      "x4": "trade_depot/hardware_store/ladder_x4.png",
+      "x5": "trade_depot/hardware_store/ladder_x5.png"
+    },
+    "base_price": 315,
+    "actual_price": 24,
+    "storage_template": "city_storage/hardware_store/ladder.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "DRILL": {
+    "name": "DRILL",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/hardware_store/drill.png",
+      "x1": "global_trade_hq/hardware_store/drill_x1.png",
+      "x2": "global_trade_hq/hardware_store/drill_x2.png",
+      "x3": "global_trade_hq/hardware_store/drill_x3.png",
+      "x4": "global_trade_hq/hardware_store/drill_x4.png",
+      "x5": "global_trade_hq/hardware_store/drill_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/hardware_store/drill.png",
+      "x1": "trade_depot/hardware_store/drill_x1.png",
+      "x2": "trade_depot/hardware_store/drill_x2.png",
+      "x3": "trade_depot/hardware_store/drill_x3.png",
+      "x4": "trade_depot/hardware_store/drill_x4.png",
+      "x5": "trade_depot/hardware_store/drill_x5.png"
+    },
+    "base_price": 442,
+    "actual_price": 40,
+    "storage_template": "city_storage/hardware_store/drill.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "BBQ_GRILL": {
+    "name": "BBQ_GRILL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/bbq_grill.png",
+      "x1": "global_trade_hq/home_appliances/bbq_grill_x1.png",
+      "x2": "global_trade_hq/home_appliances/bbq_grill_x2.png",
+      "x3": "global_trade_hq/home_appliances/bbq_grill_x3.png",
+      "x4": "global_trade_hq/home_appliances/bbq_grill_x4.png",
+      "x5": "global_trade_hq/home_appliances/bbq_grill_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/bbq_grill.png",
+      "x1": "trade_depot/home_appliances/bbq_grill_x1.png",
+      "x2": "trade_depot/home_appliances/bbq_grill_x2.png",
+      "x3": "trade_depot/home_appliances/bbq_grill_x3.png",
+      "x4": "trade_depot/home_appliances/bbq_grill_x4.png",
+      "x5": "trade_depot/home_appliances/bbq_grill_x5.png"
+    },
+    "base_price": 397,
+    "actual_price": 200,
+    "storage_template": "city_storage/home_appliances/bbq_grill.png",
+    "sell_duration": 5000,
+    "manufacturing_recipes": {}
+  },
+  "REFRIGERATOR": {
+    "name": "REFRIGERATOR",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/refrigerator.png",
+      "x1": "global_trade_hq/home_appliances/refrigerator_x1.png",
+      "x2": "global_trade_hq/home_appliances/refrigerator_x2.png",
+      "x3": "global_trade_hq/home_appliances/refrigerator_x3.png",
+      "x4": "global_trade_hq/home_appliances/refrigerator_x4.png",
+      "x5": "global_trade_hq/home_appliances/refrigerator_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/refrigerator.png",
+      "x1": "trade_depot/home_appliances/refrigerator_x1.png",
+      "x2": "trade_depot/home_appliances/refrigerator_x2.png",
+      "x3": "trade_depot/home_appliances/refrigerator_x3.png",
+      "x4": "trade_depot/home_appliances/refrigerator_x4.png",
+      "x5": "trade_depot/home_appliances/refrigerator_x5.png"
+    },
+    "base_price": 795,
+    "actual_price": 400,
+    "storage_template": "city_storage/home_appliances/refrigerator.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "LIGHTING_SYSTEM": {
+    "name": "LIGHTING_SYSTEM",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/lighting_system.png",
+      "x1": "global_trade_hq/home_appliances/lighting_system_x1.png",
+      "x2": "global_trade_hq/home_appliances/lighting_system_x2.png",
+      "x3": "global_trade_hq/home_appliances/lighting_system_x3.png",
+      "x4": "global_trade_hq/home_appliances/lighting_system_x4.png",
+      "x5": "global_trade_hq/home_appliances/lighting_system_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/lighting_system.png",
+      "x1": "trade_depot/home_appliances/lighting_system_x1.png",
+      "x2": "trade_depot/home_appliances/lighting_system_x2.png",
+      "x3": "trade_depot/home_appliances/lighting_system_x3.png",
+      "x4": "trade_depot/home_appliances/lighting_system_x4.png",
+      "x5": "trade_depot/home_appliances/lighting_system_x5.png"
+    },
+    "base_price": 667,
+    "actual_price": 120,
+    "storage_template": "city_storage/home_appliances/lighting_system.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "TV": {
+    "name": "TV",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/tv.png",
+      "x1": "global_trade_hq/home_appliances/tv_x1.png",
+      "x2": "global_trade_hq/home_appliances/tv_x2.png",
+      "x3": "global_trade_hq/home_appliances/tv_x3.png",
+      "x4": "global_trade_hq/home_appliances/tv_x4.png",
+      "x5": "global_trade_hq/home_appliances/tv_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/tv.png",
+      "x1": "trade_depot/home_appliances/tv_x1.png",
+      "x2": "trade_depot/home_appliances/tv_x2.png",
+      "x3": "trade_depot/home_appliances/tv_x3.png",
+      "x4": "trade_depot/home_appliances/tv_x4.png",
+      "x5": "trade_depot/home_appliances/tv_x5.png"
+    },
+    "base_price": 960,
+    "actual_price": 700,
+    "storage_template": "city_storage/home_appliances/tv.png",
+    "sell_duration": 9000,
+    "manufacturing_recipes": {}
+  },
+  "MICROWAVE_OVEN": {
+    "name": "MICROWAVE_OVEN",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/microwave_oven.png",
+      "x1": "global_trade_hq/home_appliances/microwave_oven_x1.png",
+      "x2": "global_trade_hq/home_appliances/microwave_oven_x2.png",
+      "x3": "global_trade_hq/home_appliances/microwave_oven_x3.png",
+      "x4": "global_trade_hq/home_appliances/microwave_oven_x4.png",
+      "x5": "global_trade_hq/home_appliances/microwave_oven_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/microwave_oven.png",
+      "x1": "trade_depot/home_appliances/microwave_oven_x1.png",
+      "x2": "trade_depot/home_appliances/microwave_oven_x2.png",
+      "x3": "trade_depot/home_appliances/microwave_oven_x3.png",
+      "x4": "trade_depot/home_appliances/microwave_oven_x4.png",
+      "x5": "trade_depot/home_appliances/microwave_oven_x5.png"
+    },
+    "base_price": 360,
+    "actual_price": 160,
+    "storage_template": "city_storage/home_appliances/microwave_oven.png",
+    "sell_duration": 5500,
+    "manufacturing_recipes": {}
+  },
+  "METAL": {
+    "name": "METAL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/metal.png",
+      "x1": "global_trade_hq/raw_materials/metal_x1.png",
+      "x2": "global_trade_hq/raw_materials/metal_x2.png",
+      "x3": "global_trade_hq/raw_materials/metal_x3.png",
+      "x4": "global_trade_hq/raw_materials/metal_x4.png",
+      "x5": "global_trade_hq/raw_materials/metal_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/metal.png",
+      "x1": "trade_depot/raw_materials/metal_x1.png",
+      "x2": "trade_depot/raw_materials/metal_x2.png",
+      "x3": "trade_depot/raw_materials/metal_x3.png",
+      "x4": "trade_depot/raw_materials/metal_x4.png",
+      "x5": "trade_depot/raw_materials/metal_x5.png"
+    },
+    "base_price": 7,
+    "actual_price": 10,
+    "storage_template": "city_storage/raw_materials/metal.png",
+    "sell_duration": 1500,
+    "manufacturing_recipes": {}
+  },
+  "WOOD": {
+    "name": "WOOD",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/wood.png",
+      "x1": "global_trade_hq/raw_materials/wood_x1.png",
+      "x2": "global_trade_hq/raw_materials/wood_x2.png",
+      "x3": "global_trade_hq/raw_materials/wood_x3.png",
+      "x4": "global_trade_hq/raw_materials/wood_x4.png",
+      "x5": "global_trade_hq/raw_materials/wood_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/wood.png",
+      "x1": "trade_depot/raw_materials/wood_x1.png",
+      "x2": "trade_depot/raw_materials/wood_x2.png",
+      "x3": "trade_depot/raw_materials/wood_x3.png",
+      "x4": "trade_depot/raw_materials/wood_x4.png",
+      "x5": "trade_depot/raw_materials/wood_x5.png"
+    },
+    "base_price": 15,
+    "actual_price": 11,
+    "storage_template": "city_storage/raw_materials/wood.png",
+    "sell_duration": 1500,
+    "manufacturing_recipes": {}
+  },
+  "PLASTIC": {
+    "name": "PLASTIC",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/plastic.png",
+      "x1": "global_trade_hq/raw_materials/plastic_x1.png",
+      "x2": "global_trade_hq/raw_materials/plastic_x2.png",
+      "x3": "global_trade_hq/raw_materials/plastic_x3.png",
+      "x4": "global_trade_hq/raw_materials/plastic_x4.png",
+      "x5": "global_trade_hq/raw_materials/plastic_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/plastic.png",
+      "x1": "trade_depot/raw_materials/plastic_x1.png",
+      "x2": "trade_depot/raw_materials/plastic_x2.png",
+      "x3": "trade_depot/raw_materials/plastic_x3.png",
+      "x4": "trade_depot/raw_materials/plastic_x4.png",
+      "x5": "trade_depot/raw_materials/plastic_x5.png"
+    },
+    "base_price": 18,
+    "actual_price": 9,
+    "storage_template": "city_storage/raw_materials/plastic.png",
+    "sell_duration": 2000,
+    "manufacturing_recipes": {}
+  },
+  "TEXTILES": {
+    "name": "TEXTILES",
+    "x_location": 480,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/textiles.png",
+      "x1": "global_trade_hq/raw_materials/textiles_x1.png",
+      "x2": "global_trade_hq/raw_materials/textiles_x2.png",
+      "x3": "global_trade_hq/raw_materials/textiles_x3.png",
+      "x4": "global_trade_hq/raw_materials/textiles_x4.png",
+      "x5": "global_trade_hq/raw_materials/textiles_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/textiles.png",
+      "x1": "trade_depot/raw_materials/textiles_x1.png",
+      "x2": "trade_depot/raw_materials/textiles_x2.png",
+      "x3": "trade_depot/raw_materials/textiles_x3.png",
+      "x4": "trade_depot/raw_materials/textiles_x4.png",
+      "x5": "trade_depot/raw_materials/textiles_x5.png"
+    },
+    "base_price": 67,
+    "actual_price": 10,
+    "storage_template": "city_storage/raw_materials/textiles.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "SUGAR_AND_SPICES": {
+    "name": "SUGAR_AND_SPICES",
+    "x_location": 390,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/sugar_spices.png",
+      "x1": "global_trade_hq/raw_materials/sugar_spices_x1.png",
+      "x2": "global_trade_hq/raw_materials/sugar_spices_x2.png",
+      "x3": "global_trade_hq/raw_materials/sugar_spices_x3.png",
+      "x4": "global_trade_hq/raw_materials/sugar_spices_x4.png",
+      "x5": "global_trade_hq/raw_materials/sugar_spices_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/sugar_spices.png",
+      "x1": "trade_depot/raw_materials/sugar_spices_x1.png",
+      "x2": "trade_depot/raw_materials/sugar_spices_x2.png",
+      "x3": "trade_depot/raw_materials/sugar_spices_x3.png",
+      "x4": "trade_depot/raw_materials/sugar_spices_x4.png",
+      "x5": "trade_depot/raw_materials/sugar_spices_x5.png"
+    },
+    "base_price": 82,
+    "actual_price": 13,
+    "storage_template": "city_storage/raw_materials/sugar_spices.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "GLASS": {
+    "name": "GLASS",
+    "x_location": 490,
+    "y_location": 690,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/glass.png",
+      "x1": "global_trade_hq/raw_materials/glass_x1.png",
+      "x2": "global_trade_hq/raw_materials/glass_x2.png",
+      "x3": "global_trade_hq/raw_materials/glass_x3.png",
+      "x4": "global_trade_hq/raw_materials/glass_x4.png",
+      "x5": "global_trade_hq/raw_materials/glass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/glass.png",
+      "x1": "trade_depot/raw_materials/glass_x1.png",
+      "x2": "trade_depot/raw_materials/glass_x2.png",
+      "x3": "trade_depot/raw_materials/glass_x3.png",
+      "x4": "trade_depot/raw_materials/glass_x4.png",
+      "x5": "trade_depot/raw_materials/glass_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 15,
+    "storage_template": "city_storage/raw_materials/glass.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "SEEDS": {
+    "name": "SEEDS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/seeds.png",
+      "x1": "global_trade_hq/raw_materials/seeds_x1.png",
+      "x2": "global_trade_hq/raw_materials/seeds_x2.png",
+      "x3": "global_trade_hq/raw_materials/seeds_x3.png",
+      "x4": "global_trade_hq/raw_materials/seeds_x4.png",
+      "x5": "global_trade_hq/raw_materials/seeds_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/seeds.png",
+      "x1": "trade_depot/raw_materials/seeds_x1.png",
+      "x2": "trade_depot/raw_materials/seeds_x2.png",
+      "x3": "trade_depot/raw_materials/seeds_x3.png",
+      "x4": "trade_depot/raw_materials/seeds_x4.png",
+      "x5": "trade_depot/raw_materials/seeds_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 6,
+    "storage_template": "city_storage/raw_materials/seeds.png",
+    "sell_duration": 2500,
+    "manufacturing_recipes": {}
+  },
+  "MINERALS": {
+    "name": "MINERALS",
+    "x_location": 1330,
+    "y_location": 520,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/minerals.png",
+      "x1": "global_trade_hq/raw_materials/minerals_x1.png",
+      "x2": "global_trade_hq/raw_materials/minerals_x2.png",
+      "x3": "global_trade_hq/raw_materials/minerals_x3.png",
+      "x4": "global_trade_hq/raw_materials/minerals_x4.png",
+      "x5": "global_trade_hq/raw_materials/minerals_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/minerals.png",
+      "x1": "trade_depot/raw_materials/minerals_x1.png",
+      "x2": "trade_depot/raw_materials/minerals_x2.png",
+      "x3": "trade_depot/raw_materials/minerals_x3.png",
+      "x4": "trade_depot/raw_materials/minerals_x4.png",
+      "x5": "trade_depot/raw_materials/minerals_x5.png"
+    },
+    "base_price": 30,
+    "actual_price": 7,
+    "storage_template": "city_storage/raw_materials/minerals.png",
+    "sell_duration": 2500,
+    "manufacturing_recipes": {}
+  },
+  "CHEMICALS": {
+    "name": "CHEMICALS",
+    "x_location": 1440,
+    "y_location": 650,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/chemicals.png",
+      "x1": "global_trade_hq/raw_materials/chemicals_x1.png",
+      "x2": "global_trade_hq/raw_materials/chemicals_x2.png",
+      "x3": "global_trade_hq/raw_materials/chemicals_x3.png",
+      "x4": "global_trade_hq/raw_materials/chemicals_x4.png",
+      "x5": "global_trade_hq/raw_materials/chemicals_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/chemicals.png",
+      "x1": "trade_depot/raw_materials/chemicals_x1.png",
+      "x2": "trade_depot/raw_materials/chemicals_x2.png",
+      "x3": "trade_depot/raw_materials/chemicals_x3.png",
+      "x4": "trade_depot/raw_materials/chemicals_x4.png",
+      "x5": "trade_depot/raw_materials/chemicals_x5.png"
+    },
+    "base_price": 45,
+    "actual_price": 14,
+    "storage_template": "city_storage/raw_materials/chemicals.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "ANIMAL_FEED": {
+    "name": "ANIMAL_FEED",
+    "x_location": 1430,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/animal_feed.png",
+      "x1": "global_trade_hq/raw_materials/animal_feed_x1.png",
+      "x2": "global_trade_hq/raw_materials/animal_feed_x2.png",
+      "x3": "global_trade_hq/raw_materials/animal_feed_x3.png",
+      "x4": "global_trade_hq/raw_materials/animal_feed_x4.png",
+      "x5": "global_trade_hq/raw_materials/animal_feed_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/animal_feed.png",
+      "x1": "trade_depot/raw_materials/animal_feed_x1.png",
+      "x2": "trade_depot/raw_materials/animal_feed_x2.png",
+      "x3": "trade_depot/raw_materials/animal_feed_x3.png",
+      "x4": "trade_depot/raw_materials/animal_feed_x4.png",
+      "x5": "trade_depot/raw_materials/animal_feed_x5.png"
+    },
+    "base_price": 105,
+    "actual_price": 9,
+    "storage_template": "city_storage/raw_materials/animal_feed.png",
+    "sell_duration": 3500,
+    "manufacturing_recipes": {}
+  },
+  "ELECTRICAL_COMPONENTS": {
+    "name": "ELECTRICAL_COMPONENTS",
+    "x_location": 1520,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/electrical_components.png",
+      "x1": "global_trade_hq/raw_materials/electrical_components_x1.png",
+      "x2": "global_trade_hq/raw_materials/electrical_components_x2.png",
+      "x3": "global_trade_hq/raw_materials/electrical_components_x3.png",
+      "x4": "global_trade_hq/raw_materials/electrical_components_x4.png",
+      "x5": "global_trade_hq/raw_materials/electrical_components_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/electrical_components.png",
+      "x1": "trade_depot/raw_materials/electrical_components_x1.png",
+      "x2": "trade_depot/raw_materials/electrical_components_x2.png",
+      "x3": "trade_depot/raw_materials/electrical_components_x3.png",
+      "x4": "trade_depot/raw_materials/electrical_components_x4.png",
+      "x5": "trade_depot/raw_materials/electrical_components_x5.png"
+    },
+    "base_price": 120,
+    "actual_price": 18,
+    "storage_template": "city_storage/raw_materials/electrical_components.png",
+    "sell_duration": 3500,
+    "manufacturing_recipes": {}
+  },
+  "RECYCLED_FABRIC": {
+    "name": "RECYCLED_FABRIC",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/recycled_fabric.png",
+      "x1": "global_trade_hq/raw_materials/recycled_fabric_x1.png",
+      "x2": "global_trade_hq/raw_materials/recycled_fabric_x2.png",
+      "x3": "global_trade_hq/raw_materials/recycled_fabric_x3.png",
+      "x4": "global_trade_hq/raw_materials/recycled_fabric_x4.png",
+      "x5": "global_trade_hq/raw_materials/recycled_fabric_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/recycled_fabric.png",
+      "x1": "trade_depot/raw_materials/recycled_fabric_x1.png",
+      "x2": "trade_depot/raw_materials/recycled_fabric_x2.png",
+      "x3": "trade_depot/raw_materials/recycled_fabric_x3.png",
+      "x4": "trade_depot/raw_materials/recycled_fabric_x4.png",
+      "x5": "trade_depot/raw_materials/recycled_fabric_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 12,
+    "storage_template": "city_storage/raw_materials/recycled_fabric.png",
+    "sell_duration": 2000,
+    "manufacturing_recipes": {}
+  },
+  "CRUDE_OIL": {
+    "name": "CRUDE_OIL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/crude_oil.png",
+      "x1": "global_trade_hq/raw_materials/crude_oil_x1.png",
+      "x2": "global_trade_hq/raw_materials/crude_oil_x2.png",
+      "x3": "global_trade_hq/raw_materials/crude_oil_x3.png",
+      "x4": "global_trade_hq/raw_materials/crude_oil_x4.png",
+      "x5": "global_trade_hq/raw_materials/crude_oil_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/crude_oil.png",
+      "x1": "trade_depot/raw_materials/crude_oil_x1.png",
+      "x2": "trade_depot/raw_materials/crude_oil_x2.png",
+      "x3": "trade_depot/raw_materials/crude_oil_x3.png",
+      "x4": "trade_depot/raw_materials/crude_oil_x4.png",
+      "x5": "trade_depot/raw_materials/crude_oil_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 25,
+    "storage_template": "city_storage/raw_materials/crude_oil.png",
+    "sell_duration": 2200,
+    "manufacturing_recipes": {}
+  },
+  "COCONUT": {
+    "name": "COCONUT",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/coconut.png",
+      "x1": "global_trade_hq/raw_materials/coconut_x1.png",
+      "x2": "global_trade_hq/raw_materials/coconut_x2.png",
+      "x3": "global_trade_hq/raw_materials/coconut_x3.png",
+      "x4": "global_trade_hq/raw_materials/coconut_x4.png",
+      "x5": "global_trade_hq/raw_materials/coconut_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/coconut.png",
+      "x1": "trade_depot/raw_materials/coconut_x1.png",
+      "x2": "trade_depot/raw_materials/coconut_x2.png",
+      "x3": "trade_depot/raw_materials/coconut_x3.png",
+      "x4": "trade_depot/raw_materials/coconut_x4.png",
+      "x5": "trade_depot/raw_materials/coconut_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 5,
+    "storage_template": "city_storage/raw_materials/coconut.png",
+    "sell_duration": 2000,
+    "manufacturing_recipes": {}
+  },
+  "SILK": {
+    "name": "SILK",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/silk.png",
+      "x1": "global_trade_hq/raw_materials/silk_x1.png",
+      "x2": "global_trade_hq/raw_materials/silk_x2.png",
+      "x3": "global_trade_hq/raw_materials/silk_x3.png",
+      "x4": "global_trade_hq/raw_materials/silk_x4.png",
+      "x5": "global_trade_hq/raw_materials/silk_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/silk.png",
+      "x1": "trade_depot/raw_materials/silk_x1.png",
+      "x2": "trade_depot/raw_materials/silk_x2.png",
+      "x3": "trade_depot/raw_materials/silk_x3.png",
+      "x4": "trade_depot/raw_materials/silk_x4.png",
+      "x5": "trade_depot/raw_materials/silk_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 30,
+    "storage_template": "city_storage/raw_materials/silk.png",
+    "sell_duration": 2000,
+    "manufacturing_recipes": {}
+  },
+  "FISH": {
+    "name": "FISH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/fish.png",
+      "x1": "global_trade_hq/raw_materials/fish_x1.png",
+      "x2": "global_trade_hq/raw_materials/fish_x2.png",
+      "x3": "global_trade_hq/raw_materials/fish_x3.png",
+      "x4": "global_trade_hq/raw_materials/fish_x4.png",
+      "x5": "global_trade_hq/raw_materials/fish_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/fish.png",
+      "x1": "trade_depot/raw_materials/fish_x1.png",
+      "x2": "trade_depot/raw_materials/fish_x2.png",
+      "x3": "trade_depot/raw_materials/fish_x3.png",
+      "x4": "trade_depot/raw_materials/fish_x4.png",
+      "x5": "trade_depot/raw_materials/fish_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 14,
+    "storage_template": "city_storage/raw_materials/fish.png",
+    "sell_duration": 2000,
+    "manufacturing_recipes": {}
+  },
+  "STRING": {
+    "name": "STRING",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/string.png",
+      "x1": "global_trade_hq/silk_store/string_x1.png",
+      "x2": "global_trade_hq/silk_store/string_x2.png",
+      "x3": "global_trade_hq/silk_store/string_x3.png",
+      "x4": "global_trade_hq/silk_store/string_x4.png",
+      "x5": "global_trade_hq/silk_store/string_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/string.png",
+      "x1": "trade_depot/silk_store/string_x1.png",
+      "x2": "trade_depot/silk_store/string_x2.png",
+      "x3": "trade_depot/silk_store/string_x3.png",
+      "x4": "trade_depot/silk_store/string_x4.png",
+      "x5": "trade_depot/silk_store/string_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 4,
+    "storage_template": "city_storage/silk_store/string.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "FAN": {
+    "name": "FAN",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/fan.png",
+      "x1": "global_trade_hq/silk_store/fan_x1.png",
+      "x2": "global_trade_hq/silk_store/fan_x2.png",
+      "x3": "global_trade_hq/silk_store/fan_x3.png",
+      "x4": "global_trade_hq/silk_store/fan_x4.png",
+      "x5": "global_trade_hq/silk_store/fan_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/fan.png",
+      "x1": "trade_depot/silk_store/fan_x1.png",
+      "x2": "trade_depot/silk_store/fan_x2.png",
+      "x3": "trade_depot/silk_store/fan_x3.png",
+      "x4": "trade_depot/silk_store/fan_x4.png",
+      "x5": "trade_depot/silk_store/fan_x5.png"
+    },
+    "base_price": 825,
+    "actual_price": 20,
+    "storage_template": "city_storage/silk_store/fan.png",
+    "sell_duration": 9000,
+    "manufacturing_recipes": {}
+  },
+  "ROBE": {
+    "name": "ROBE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/silk_store/robe.png",
+      "x1": "global_trade_hq/silk_store/robe_x1.png",
+      "x2": "global_trade_hq/silk_store/robe_x2.png",
+      "x3": "global_trade_hq/silk_store/robe_x3.png",
+      "x4": "global_trade_hq/silk_store/robe_x4.png",
+      "x5": "global_trade_hq/silk_store/robe_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/silk_store/robe.png",
+      "x1": "trade_depot/silk_store/robe_x1.png",
+      "x2": "trade_depot/silk_store/robe_x2.png",
+      "x3": "trade_depot/silk_store/robe_x3.png",
+      "x4": "trade_depot/silk_store/robe_x4.png",
+      "x5": "trade_depot/silk_store/robe_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 35,
+    "storage_template": "city_storage/silk_store/robe.png",
+    "sell_duration": 13000,
+    "manufacturing_recipes": {}
+  },
+  "TENNIS_RACKET": {
+    "name": "TENNIS_RACKET",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/tennis_racket.png",
+      "x1": "global_trade_hq/sport_shop/tennis_racket_x1.png",
+      "x2": "global_trade_hq/sport_shop/tennis_racket_x2.png",
+      "x3": "global_trade_hq/sport_shop/tennis_racket_x3.png",
+      "x4": "global_trade_hq/sport_shop/tennis_racket_x4.png",
+      "x5": "global_trade_hq/sport_shop/tennis_racket_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/tennis_racket.png",
+      "x1": "trade_depot/sport_shop/tennis_racket_x1.png",
+      "x2": "trade_depot/sport_shop/tennis_racket_x2.png",
+      "x3": "trade_depot/sport_shop/tennis_racket_x3.png",
+      "x4": "trade_depot/sport_shop/tennis_racket_x4.png",
+      "x5": "trade_depot/sport_shop/tennis_racket_x5.png"
+    },
+    "base_price": 585,
+    "actual_price": 20,
+    "storage_template": "city_storage/sport_shop/tennis_racket.png",
+    "sell_duration": 6000,
+    "manufacturing_recipes": {}
+  },
+  "SPORTS_DRINK": {
+    "name": "SPORTS_DRINK",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/sports_drink.png",
+      "x1": "global_trade_hq/sport_shop/sports_drink_x1.png",
+      "x2": "global_trade_hq/sport_shop/sports_drink_x2.png",
+      "x3": "global_trade_hq/sport_shop/sports_drink_x3.png",
+      "x4": "global_trade_hq/sport_shop/sports_drink_x4.png",
+      "x5": "global_trade_hq/sport_shop/sports_drink_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/sports_drink.png",
+      "x1": "trade_depot/sport_shop/sports_drink_x1.png",
+      "x2": "trade_depot/sport_shop/sports_drink_x2.png",
+      "x3": "trade_depot/sport_shop/sports_drink_x3.png",
+      "x4": "trade_depot/sport_shop/sports_drink_x4.png",
+      "x5": "trade_depot/sport_shop/sports_drink_x5.png"
+    },
+    "base_price": 202,
+    "actual_price": 3,
+    "storage_template": "city_storage/sport_shop/sports_drink.png",
+    "sell_duration": 4000,
+    "manufacturing_recipes": {}
+  },
+  "FOOTBALL_SHOES": {
+    "name": "FOOTBALL_SHOES",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/football_shoes.png",
+      "x1": "global_trade_hq/sport_shop/football_shoes_x1.png",
+      "x2": "global_trade_hq/sport_shop/football_shoes_x2.png",
+      "x3": "global_trade_hq/sport_shop/football_shoes_x3.png",
+      "x4": "global_trade_hq/sport_shop/football_shoes_x4.png",
+      "x5": "global_trade_hq/sport_shop/football_shoes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/football_shoes.png",
+      "x1": "trade_depot/sport_shop/football_shoes_x1.png",
+      "x2": "trade_depot/sport_shop/football_shoes_x2.png",
+      "x3": "trade_depot/sport_shop/football_shoes_x3.png",
+      "x4": "trade_depot/sport_shop/football_shoes_x4.png",
+      "x5": "trade_depot/sport_shop/football_shoes_x5.png"
+    },
+    "base_price": 690,
+    "actual_price": 55,
+    "storage_template": "city_storage/sport_shop/football_shoes.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "PROTEIN_BAR": {
+    "name": "PROTEIN_BAR",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/protein_bar.png",
+      "x1": "global_trade_hq/sport_shop/protein_bar_x1.png",
+      "x2": "global_trade_hq/sport_shop/protein_bar_x2.png",
+      "x3": "global_trade_hq/sport_shop/protein_bar_x3.png",
+      "x4": "global_trade_hq/sport_shop/protein_bar_x4.png",
+      "x5": "global_trade_hq/sport_shop/protein_bar_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/protein_bar.png",
+      "x1": "trade_depot/sport_shop/protein_bar_x1.png",
+      "x2": "trade_depot/sport_shop/protein_bar_x2.png",
+      "x3": "trade_depot/sport_shop/protein_bar_x3.png",
+      "x4": "trade_depot/sport_shop/protein_bar_x4.png",
+      "x5": "trade_depot/sport_shop/protein_bar_x5.png"
+    },
+    "base_price": 783,
+    "actual_price": 4,
+    "storage_template": "city_storage/sport_shop/protein_bar.png",
+    "sell_duration": 8000,
+    "manufacturing_recipes": {}
+  },
+  "PING_PONG_TABLE": {
+    "name": "PING_PONG_TABLE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/sport_shop/ping_pong_table.png",
+      "x1": "global_trade_hq/sport_shop/ping_pong_table_x1.png",
+      "x2": "global_trade_hq/sport_shop/ping_pong_table_x2.png",
+      "x3": "global_trade_hq/sport_shop/ping_pong_table_x3.png",
+      "x4": "global_trade_hq/sport_shop/ping_pong_table_x4.png",
+      "x5": "global_trade_hq/sport_shop/ping_pong_table_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/sport_shop/ping_pong_table.png",
+      "x1": "trade_depot/sport_shop/ping_pong_table_x1.png",
+      "x2": "trade_depot/sport_shop/ping_pong_table_x2.png",
+      "x3": "trade_depot/sport_shop/ping_pong_table_x3.png",
+      "x4": "trade_depot/sport_shop/ping_pong_table_x4.png",
+      "x5": "trade_depot/sport_shop/ping_pong_table_x5.png"
+    },
+    "base_price": 933,
+    "actual_price": 120,
+    "storage_template": "city_storage/sport_shop/ping_pong_table.png",
+    "sell_duration": 10000,
+    "manufacturing_recipes": {}
+  },
+  "STORAGE_CAMERA": {
+    "name": "STORAGE_CAMERA",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/camera.png",
+      "x1": "global_trade_hq/special/storage/camera_x1.png",
+      "x2": "global_trade_hq/special/storage/camera_x2.png",
+      "x3": "global_trade_hq/special/storage/camera_x3.png",
+      "x4": "global_trade_hq/special/storage/camera_x4.png",
+      "x5": "global_trade_hq/special/storage/camera_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/camera.png",
+      "x1": "trade_depot/special/storage/camera_x1.png",
+      "x2": "trade_depot/special/storage/camera_x2.png",
+      "x3": "trade_depot/special/storage/camera_x3.png",
+      "x4": "trade_depot/special/storage/camera_x4.png",
+      "x5": "trade_depot/special/storage/camera_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/camera.png",
+    "sell_duration": 5500,
+    "manufacturing_recipes": {}
+  },
+  "STORAGE_LOCK": {
+    "name": "STORAGE_LOCK",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/lock.png",
+      "x1": "global_trade_hq/special/storage/lock_x1.png",
+      "x2": "global_trade_hq/special/storage/lock_x2.png",
+      "x3": "global_trade_hq/special/storage/lock_x3.png",
+      "x4": "global_trade_hq/special/storage/lock_x4.png",
+      "x5": "global_trade_hq/special/storage/lock_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/lock.png",
+      "x1": "trade_depot/special/storage/lock_x1.png",
+      "x2": "trade_depot/special/storage/lock_x2.png",
+      "x3": "trade_depot/special/storage/lock_x3.png",
+      "x4": "trade_depot/special/storage/lock_x4.png",
+      "x5": "trade_depot/special/storage/lock_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/lock.png",
+    "sell_duration": 5500,
+    "manufacturing_recipes": {}
+  },
+  "STORAGE_BARS": {
+    "name": "STORAGE_BARS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/bars.png",
+      "x1": "global_trade_hq/special/storage/bars_x1.png",
+      "x2": "global_trade_hq/special/storage/bars_x2.png",
+      "x3": "global_trade_hq/special/storage/bars_x3.png",
+      "x4": "global_trade_hq/special/storage/bars_x4.png",
+      "x5": "global_trade_hq/special/storage/bars_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/bars.png",
+      "x1": "trade_depot/special/storage/bars_x1.png",
+      "x2": "trade_depot/special/storage/bars_x2.png",
+      "x3": "trade_depot/special/storage/bars_x3.png",
+      "x4": "trade_depot/special/storage/bars_x4.png",
+      "x5": "trade_depot/special/storage/bars_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/bars.png",
+    "sell_duration": 5500,
+    "manufacturing_recipes": {}
+  },
+  "LETTER_BLOCKS": {
+    "name": "LETTER_BLOCKS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/letter_blocks.png",
+      "x1": "global_trade_hq/toy_shop/letter_blocks_x1.png",
+      "x2": "global_trade_hq/toy_shop/letter_blocks_x2.png",
+      "x3": "global_trade_hq/toy_shop/letter_blocks_x3.png",
+      "x4": "global_trade_hq/toy_shop/letter_blocks_x4.png",
+      "x5": "global_trade_hq/toy_shop/letter_blocks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/letter_blocks.png",
+      "x1": "trade_depot/toy_shop/letter_blocks_x1.png",
+      "x2": "trade_depot/toy_shop/letter_blocks_x2.png",
+      "x3": "trade_depot/toy_shop/letter_blocks_x3.png",
+      "x4": "trade_depot/toy_shop/letter_blocks_x4.png",
+      "x5": "trade_depot/toy_shop/letter_blocks_x5.png"
+    },
+    "base_price": 5,
+    "actual_price": 7,
+    "storage_template": "city_storage/toy_shop/letter_blocks.png",
+    "sell_duration": 200,
+    "manufacturing_recipes": {}
+  },
+  "KITE": {
+    "name": "KITE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/kite.png",
+      "x1": "global_trade_hq/toy_shop/kite_x1.png",
+      "x2": "global_trade_hq/toy_shop/kite_x2.png",
+      "x3": "global_trade_hq/toy_shop/kite_x3.png",
+      "x4": "global_trade_hq/toy_shop/kite_x4.png",
+      "x5": "global_trade_hq/toy_shop/kite_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/kite.png",
+      "x1": "trade_depot/toy_shop/kite_x1.png",
+      "x2": "trade_depot/toy_shop/kite_x2.png",
+      "x3": "trade_depot/toy_shop/kite_x3.png",
+      "x4": "trade_depot/toy_shop/kite_x4.png",
+      "x5": "trade_depot/toy_shop/kite_x5.png"
+    },
+    "base_price": 10,
+    "actual_price": 13,
+    "storage_template": "city_storage/toy_shop/kite.png",
+    "sell_duration": 300,
+    "manufacturing_recipes": {}
+  },
+  "TEDDY_BEAR": {
+    "name": "TEDDY_BEAR",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/teddy_bear.png",
+      "x1": "global_trade_hq/toy_shop/teddy_bear_x1.png",
+      "x2": "global_trade_hq/toy_shop/teddy_bear_x2.png",
+      "x3": "global_trade_hq/toy_shop/teddy_bear_x3.png",
+      "x4": "global_trade_hq/toy_shop/teddy_bear_x4.png",
+      "x5": "global_trade_hq/toy_shop/teddy_bear_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/teddy_bear.png",
+      "x1": "trade_depot/toy_shop/teddy_bear_x1.png",
+      "x2": "trade_depot/toy_shop/teddy_bear_x2.png",
+      "x3": "trade_depot/toy_shop/teddy_bear_x3.png",
+      "x4": "trade_depot/toy_shop/teddy_bear_x4.png",
+      "x5": "trade_depot/toy_shop/teddy_bear_x5.png"
+    },
+    "base_price": 15,
+    "actual_price": 18,
+    "storage_template": "city_storage/toy_shop/teddy_bear.png",
+    "sell_duration": 400,
+    "manufacturing_recipes": {}
+  },
+  "GAME_CONSOLE": {
+    "name": "GAME_CONSOLE",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/toy_shop/game_console.png",
+      "x1": "global_trade_hq/toy_shop/game_console_x1.png",
+      "x2": "global_trade_hq/toy_shop/game_console_x2.png",
+      "x3": "global_trade_hq/toy_shop/game_console_x3.png",
+      "x4": "global_trade_hq/toy_shop/game_console_x4.png",
+      "x5": "global_trade_hq/toy_shop/game_console_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/toy_shop/game_console.png",
+      "x1": "trade_depot/toy_shop/game_console_x1.png",
+      "x2": "trade_depot/toy_shop/game_console_x2.png",
+      "x3": "trade_depot/toy_shop/game_console_x3.png",
+      "x4": "trade_depot/toy_shop/game_console_x4.png",
+      "x5": "trade_depot/toy_shop/game_console_x5.png"
+    },
+    "base_price": 250,
+    "actual_price": 300,
+    "storage_template": "city_storage/toy_shop/game_console.png",
+    "sell_duration": 900,
+    "manufacturing_recipes": {}
+  },
+  "COCONUT_OIL": {
+    "name": "COCONUT_OIL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/tropical_products_store/coconut_oil.png",
+      "x1": "global_trade_hq/tropical_products_store/coconut_oil_x1.png",
+      "x2": "global_trade_hq/tropical_products_store/coconut_oil_x2.png",
+      "x3": "global_trade_hq/tropical_products_store/coconut_oil_x3.png",
+      "x4": "global_trade_hq/tropical_products_store/coconut_oil_x4.png",
+      "x5": "global_trade_hq/tropical_products_store/coconut_oil_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/tropical_products_store/coconut_oil.png",
+      "x1": "trade_depot/tropical_products_store/coconut_oil_x1.png",
+      "x2": "trade_depot/tropical_products_store/coconut_oil_x2.png",
+      "x3": "trade_depot/tropical_products_store/coconut_oil_x3.png",
+      "x4": "trade_depot/tropical_products_store/coconut_oil_x4.png",
+      "x5": "trade_depot/tropical_products_store/coconut_oil_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 15,
+    "storage_template": "city_storage/tropical_products_store/coconut_oil.png",
+    "sell_duration": 3000,
+    "manufacturing_recipes": {}
+  },
+  "FACE_CREAM": {
+    "name": "FACE_CREAM",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/tropical_products_store/face_cream.png",
+      "x1": "global_trade_hq/tropical_products_store/face_cream_x1.png",
+      "x2": "global_trade_hq/tropical_products_store/face_cream_x2.png",
+      "x3": "global_trade_hq/tropical_products_store/face_cream_x3.png",
+      "x4": "global_trade_hq/tropical_products_store/face_cream_x4.png",
+      "x5": "global_trade_hq/tropical_products_store/face_cream_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/tropical_products_store/face_cream.png",
+      "x1": "trade_depot/tropical_products_store/face_cream_x1.png",
+      "x2": "trade_depot/tropical_products_store/face_cream_x2.png",
+      "x3": "trade_depot/tropical_products_store/face_cream_x3.png",
+      "x4": "trade_depot/tropical_products_store/face_cream_x4.png",
+      "x5": "trade_depot/tropical_products_store/face_cream_x5.png"
+    },
+    "base_price": 637,
+    "actual_price": 18,
+    "storage_template": "city_storage/tropical_products_store/face_cream.png",
+    "sell_duration": 7000,
+    "manufacturing_recipes": {}
+  },
+  "TROPICAL_DRINK": {
+    "name": "TROPICAL_DRINK",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/tropical_products_store/tropical_drink.png",
+      "x1": "global_trade_hq/tropical_products_store/tropical_drink_x1.png",
+      "x2": "global_trade_hq/tropical_products_store/tropical_drink_x2.png",
+      "x3": "global_trade_hq/tropical_products_store/tropical_drink_x3.png",
+      "x4": "global_trade_hq/tropical_products_store/tropical_drink_x4.png",
+      "x5": "global_trade_hq/tropical_products_store/tropical_drink_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/tropical_products_store/tropical_drink.png",
+      "x1": "trade_depot/tropical_products_store/tropical_drink_x1.png",
+      "x2": "trade_depot/tropical_products_store/tropical_drink_x2.png",
+      "x3": "trade_depot/tropical_products_store/tropical_drink_x3.png",
+      "x4": "trade_depot/tropical_products_store/tropical_drink_x4.png",
+      "x5": "trade_depot/tropical_products_store/tropical_drink_x5.png"
+    },
+    "base_price": 1800,
+    "actual_price": 8,
+    "storage_template": "city_storage/tropical_products_store/tropical_drink.png",
+    "sell_duration": 15000,
+    "manufacturing_recipes": {}
+  },
+  "VU_GLOVES": {
+    "name": "VU_GLOVES",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/vu/gloves.png",
+      "x1": "global_trade_hq/special/vu/gloves_x1.png",
+      "x2": "global_trade_hq/special/vu/gloves_x2.png",
+      "x3": "global_trade_hq/special/vu/gloves_x3.png",
+      "x4": "global_trade_hq/special/vu/gloves_x4.png",
+      "x5": "global_trade_hq/special/vu/gloves_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/vu/gloves.png",
+      "x1": "trade_depot/special/vu/gloves_x1.png",
+      "x2": "trade_depot/special/vu/gloves_x2.png",
+      "x3": "trade_depot/special/vu/gloves_x3.png",
+      "x4": "trade_depot/special/vu/gloves_x4.png",
+      "x5": "trade_depot/special/vu/gloves_x5.png"
+    },
+    "base_price": 375,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/vu/gloves.png",
+    "sell_duration": 4500,
+    "manufacturing_recipes": {}
+  },
+  "VU_BATTERY": {
+    "name": "VU_BATTERY",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/vu/battery.png",
+      "x1": "global_trade_hq/special/vu/battery_x1.png",
+      "x2": "global_trade_hq/special/vu/battery_x2.png",
+      "x3": "global_trade_hq/special/vu/battery_x3.png",
+      "x4": "global_trade_hq/special/vu/battery_x4.png",
+      "x5": "global_trade_hq/special/vu/battery_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/vu/battery.png",
+      "x1": "trade_depot/special/vu/battery_x1.png",
+      "x2": "trade_depot/special/vu/battery_x2.png",
+      "x3": "trade_depot/special/vu/battery_x3.png",
+      "x4": "trade_depot/special/vu/battery_x4.png",
+      "x5": "trade_depot/special/vu/battery_x5.png"
+    },
+    "base_price": 375,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/vu/battery.png",
+    "sell_duration": 4500,
+    "manufacturing_recipes": {}
+  },
+  "VU_REMOTE": {
+    "name": "VU_REMOTE",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/vu/remote.png",
+      "x1": "global_trade_hq/special/vu/remote_x1.png",
+      "x2": "global_trade_hq/special/vu/remote_x2.png",
+      "x3": "global_trade_hq/special/vu/remote_x3.png",
+      "x4": "global_trade_hq/special/vu/remote_x4.png",
+      "x5": "global_trade_hq/special/vu/remote_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/vu/remote.png",
+      "x1": "trade_depot/special/vu/remote_x1.png",
+      "x2": "trade_depot/special/vu/remote_x2.png",
+      "x3": "trade_depot/special/vu/remote_x3.png",
+      "x4": "trade_depot/special/vu/remote_x4.png",
+      "x5": "trade_depot/special/vu/remote_x5.png"
+    },
+    "base_price": 375,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/vu/remote.png",
+    "sell_duration": 4500,
+    "manufacturing_recipes": {}
+  }
+}

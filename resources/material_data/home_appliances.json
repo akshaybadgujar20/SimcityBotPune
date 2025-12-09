@@ -1,0 +1,132 @@
+[
+  {
+    "name": "BBQ_GRILL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/bbq_grill.png",
+      "x1": "global_trade_hq/home_appliances/bbq_grill_x1.png",
+      "x2": "global_trade_hq/home_appliances/bbq_grill_x2.png",
+      "x3": "global_trade_hq/home_appliances/bbq_grill_x3.png",
+      "x4": "global_trade_hq/home_appliances/bbq_grill_x4.png",
+      "x5": "global_trade_hq/home_appliances/bbq_grill_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/bbq_grill.png",
+      "x1": "trade_depot/home_appliances/bbq_grill_x1.png",
+      "x2": "trade_depot/home_appliances/bbq_grill_x2.png",
+      "x3": "trade_depot/home_appliances/bbq_grill_x3.png",
+      "x4": "trade_depot/home_appliances/bbq_grill_x4.png",
+      "x5": "trade_depot/home_appliances/bbq_grill_x5.png"
+    },
+    "base_price": 397,
+    "actual_price": 200,
+    "storage_template": "city_storage/home_appliances/bbq_grill.png",
+    "sell_duration": 5000,
+    "building_name": "HOME_APPLIANCES"
+  },
+  {
+    "name": "REFRIGERATOR",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/refrigerator.png",
+      "x1": "global_trade_hq/home_appliances/refrigerator_x1.png",
+      "x2": "global_trade_hq/home_appliances/refrigerator_x2.png",
+      "x3": "global_trade_hq/home_appliances/refrigerator_x3.png",
+      "x4": "global_trade_hq/home_appliances/refrigerator_x4.png",
+      "x5": "global_trade_hq/home_appliances/refrigerator_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/refrigerator.png",
+      "x1": "trade_depot/home_appliances/refrigerator_x1.png",
+      "x2": "trade_depot/home_appliances/refrigerator_x2.png",
+      "x3": "trade_depot/home_appliances/refrigerator_x3.png",
+      "x4": "trade_depot/home_appliances/refrigerator_x4.png",
+      "x5": "trade_depot/home_appliances/refrigerator_x5.png"
+    },
+    "base_price": 795,
+    "actual_price": 400,
+    "storage_template": "city_storage/home_appliances/refrigerator.png",
+    "sell_duration": 8000,
+    "building_name": "HOME_APPLIANCES"
+  },
+  {
+    "name": "LIGHTING_SYSTEM",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/lighting_system.png",
+      "x1": "global_trade_hq/home_appliances/lighting_system_x1.png",
+      "x2": "global_trade_hq/home_appliances/lighting_system_x2.png",
+      "x3": "global_trade_hq/home_appliances/lighting_system_x3.png",
+      "x4": "global_trade_hq/home_appliances/lighting_system_x4.png",
+      "x5": "global_trade_hq/home_appliances/lighting_system_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/lighting_system.png",
+      "x1": "trade_depot/home_appliances/lighting_system_x1.png",
+      "x2": "trade_depot/home_appliances/lighting_system_x2.png",
+      "x3": "trade_depot/home_appliances/lighting_system_x3.png",
+      "x4": "trade_depot/home_appliances/lighting_system_x4.png",
+      "x5": "trade_depot/home_appliances/lighting_system_x5.png"
+    },
+    "base_price": 667,
+    "actual_price": 120,
+    "storage_template": "city_storage/home_appliances/lighting_system.png",
+    "sell_duration": 7000,
+    "building_name": "HOME_APPLIANCES"
+  },
+  {
+    "name": "TV",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/tv.png",
+      "x1": "global_trade_hq/home_appliances/tv_x1.png",
+      "x2": "global_trade_hq/home_appliances/tv_x2.png",
+      "x3": "global_trade_hq/home_appliances/tv_x3.png",
+      "x4": "global_trade_hq/home_appliances/tv_x4.png",
+      "x5": "global_trade_hq/home_appliances/tv_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/tv.png",
+      "x1": "trade_depot/home_appliances/tv_x1.png",
+      "x2": "trade_depot/home_appliances/tv_x2.png",
+      "x3": "trade_depot/home_appliances/tv_x3.png",
+      "x4": "trade_depot/home_appliances/tv_x4.png",
+      "x5": "trade_depot/home_appliances/tv_x5.png"
+    },
+    "base_price": 960,
+    "actual_price": 700,
+    "storage_template": "city_storage/home_appliances/tv.png",
+    "sell_duration": 9000,
+    "building_name": "HOME_APPLIANCES"
+  },
+  {
+    "name": "MICROWAVE_OVEN",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/home_appliances/microwave_oven.png",
+      "x1": "global_trade_hq/home_appliances/microwave_oven_x1.png",
+      "x2": "global_trade_hq/home_appliances/microwave_oven_x2.png",
+      "x3": "global_trade_hq/home_appliances/microwave_oven_x3.png",
+      "x4": "global_trade_hq/home_appliances/microwave_oven_x4.png",
+      "x5": "global_trade_hq/home_appliances/microwave_oven_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/home_appliances/microwave_oven.png",
+      "x1": "trade_depot/home_appliances/microwave_oven_x1.png",
+      "x2": "trade_depot/home_appliances/microwave_oven_x2.png",
+      "x3": "trade_depot/home_appliances/microwave_oven_x3.png",
+      "x4": "trade_depot/home_appliances/microwave_oven_x4.png",
+      "x5": "trade_depot/home_appliances/microwave_oven_x5.png"
+    },
+    "base_price": 360,
+    "actual_price": 160,
+    "storage_template": "city_storage/home_appliances/microwave_oven.png",
+    "sell_duration": 5500,
+    "building_name": "HOME_APPLIANCES"
+  }
+]

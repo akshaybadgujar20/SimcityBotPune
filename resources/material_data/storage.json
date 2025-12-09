@@ -1,0 +1,80 @@
+[
+  {
+    "name": "STORAGE_CAMERA",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/camera.png",
+      "x1": "global_trade_hq/special/storage/camera_x1.png",
+      "x2": "global_trade_hq/special/storage/camera_x2.png",
+      "x3": "global_trade_hq/special/storage/camera_x3.png",
+      "x4": "global_trade_hq/special/storage/camera_x4.png",
+      "x5": "global_trade_hq/special/storage/camera_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/camera.png",
+      "x1": "trade_depot/special/storage/camera_x1.png",
+      "x2": "trade_depot/special/storage/camera_x2.png",
+      "x3": "trade_depot/special/storage/camera_x3.png",
+      "x4": "trade_depot/special/storage/camera_x4.png",
+      "x5": "trade_depot/special/storage/camera_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/camera.png",
+    "sell_duration": 5500,
+    "building_name": ""
+  },
+  {
+    "name": "STORAGE_LOCK",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/lock.png",
+      "x1": "global_trade_hq/special/storage/lock_x1.png",
+      "x2": "global_trade_hq/special/storage/lock_x2.png",
+      "x3": "global_trade_hq/special/storage/lock_x3.png",
+      "x4": "global_trade_hq/special/storage/lock_x4.png",
+      "x5": "global_trade_hq/special/storage/lock_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/lock.png",
+      "x1": "trade_depot/special/storage/lock_x1.png",
+      "x2": "trade_depot/special/storage/lock_x2.png",
+      "x3": "trade_depot/special/storage/lock_x3.png",
+      "x4": "trade_depot/special/storage/lock_x4.png",
+      "x5": "trade_depot/special/storage/lock_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/lock.png",
+    "sell_duration": 5500,
+    "building_name": ""
+  },
+  {
+    "name": "STORAGE_BARS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/storage/bars.png",
+      "x1": "global_trade_hq/special/storage/bars_x1.png",
+      "x2": "global_trade_hq/special/storage/bars_x2.png",
+      "x3": "global_trade_hq/special/storage/bars_x3.png",
+      "x4": "global_trade_hq/special/storage/bars_x4.png",
+      "x5": "global_trade_hq/special/storage/bars_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/storage/bars.png",
+      "x1": "trade_depot/special/storage/bars_x1.png",
+      "x2": "trade_depot/special/storage/bars_x2.png",
+      "x3": "trade_depot/special/storage/bars_x3.png",
+      "x4": "trade_depot/special/storage/bars_x4.png",
+      "x5": "trade_depot/special/storage/bars_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/storage/bars.png",
+    "sell_duration": 5500,
+    "building_name": ""
+  }
+]

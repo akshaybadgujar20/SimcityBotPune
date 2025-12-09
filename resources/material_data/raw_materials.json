@@ -1,0 +1,418 @@
+[
+  {
+    "name": "METAL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/metal.png",
+      "x1": "global_trade_hq/raw_materials/metal_x1.png",
+      "x2": "global_trade_hq/raw_materials/metal_x2.png",
+      "x3": "global_trade_hq/raw_materials/metal_x3.png",
+      "x4": "global_trade_hq/raw_materials/metal_x4.png",
+      "x5": "global_trade_hq/raw_materials/metal_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/metal.png",
+      "x1": "trade_depot/raw_materials/metal_x1.png",
+      "x2": "trade_depot/raw_materials/metal_x2.png",
+      "x3": "trade_depot/raw_materials/metal_x3.png",
+      "x4": "trade_depot/raw_materials/metal_x4.png",
+      "x5": "trade_depot/raw_materials/metal_x5.png"
+    },
+    "base_price": 7,
+    "actual_price": 10,
+    "storage_template": "city_storage/raw_materials/metal.png",
+    "sell_duration": 1500,
+    "building_name": ""
+  },
+  {
+    "name": "WOOD",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/wood.png",
+      "x1": "global_trade_hq/raw_materials/wood_x1.png",
+      "x2": "global_trade_hq/raw_materials/wood_x2.png",
+      "x3": "global_trade_hq/raw_materials/wood_x3.png",
+      "x4": "global_trade_hq/raw_materials/wood_x4.png",
+      "x5": "global_trade_hq/raw_materials/wood_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/wood.png",
+      "x1": "trade_depot/raw_materials/wood_x1.png",
+      "x2": "trade_depot/raw_materials/wood_x2.png",
+      "x3": "trade_depot/raw_materials/wood_x3.png",
+      "x4": "trade_depot/raw_materials/wood_x4.png",
+      "x5": "trade_depot/raw_materials/wood_x5.png"
+    },
+    "base_price": 15,
+    "actual_price": 11,
+    "storage_template": "city_storage/raw_materials/wood.png",
+    "sell_duration": 1500,
+    "building_name": ""
+  },
+  {
+    "name": "PLASTIC",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/plastic.png",
+      "x1": "global_trade_hq/raw_materials/plastic_x1.png",
+      "x2": "global_trade_hq/raw_materials/plastic_x2.png",
+      "x3": "global_trade_hq/raw_materials/plastic_x3.png",
+      "x4": "global_trade_hq/raw_materials/plastic_x4.png",
+      "x5": "global_trade_hq/raw_materials/plastic_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/plastic.png",
+      "x1": "trade_depot/raw_materials/plastic_x1.png",
+      "x2": "trade_depot/raw_materials/plastic_x2.png",
+      "x3": "trade_depot/raw_materials/plastic_x3.png",
+      "x4": "trade_depot/raw_materials/plastic_x4.png",
+      "x5": "trade_depot/raw_materials/plastic_x5.png"
+    },
+    "base_price": 18,
+    "actual_price": 9,
+    "storage_template": "city_storage/raw_materials/plastic.png",
+    "sell_duration": 2000,
+    "building_name": ""
+  },
+  {
+    "name": "TEXTILES",
+    "x_location": 480,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/textiles.png",
+      "x1": "global_trade_hq/raw_materials/textiles_x1.png",
+      "x2": "global_trade_hq/raw_materials/textiles_x2.png",
+      "x3": "global_trade_hq/raw_materials/textiles_x3.png",
+      "x4": "global_trade_hq/raw_materials/textiles_x4.png",
+      "x5": "global_trade_hq/raw_materials/textiles_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/textiles.png",
+      "x1": "trade_depot/raw_materials/textiles_x1.png",
+      "x2": "trade_depot/raw_materials/textiles_x2.png",
+      "x3": "trade_depot/raw_materials/textiles_x3.png",
+      "x4": "trade_depot/raw_materials/textiles_x4.png",
+      "x5": "trade_depot/raw_materials/textiles_x5.png"
+    },
+    "base_price": 67,
+    "actual_price": 10,
+    "storage_template": "city_storage/raw_materials/textiles.png",
+    "sell_duration": 3000,
+    "building_name": ""
+  },
+  {
+    "name": "SUGAR_AND_SPICES",
+    "x_location": 390,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/sugar_spices.png",
+      "x1": "global_trade_hq/raw_materials/sugar_spices_x1.png",
+      "x2": "global_trade_hq/raw_materials/sugar_spices_x2.png",
+      "x3": "global_trade_hq/raw_materials/sugar_spices_x3.png",
+      "x4": "global_trade_hq/raw_materials/sugar_spices_x4.png",
+      "x5": "global_trade_hq/raw_materials/sugar_spices_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/sugar_spices.png",
+      "x1": "trade_depot/raw_materials/sugar_spices_x1.png",
+      "x2": "trade_depot/raw_materials/sugar_spices_x2.png",
+      "x3": "trade_depot/raw_materials/sugar_spices_x3.png",
+      "x4": "trade_depot/raw_materials/sugar_spices_x4.png",
+      "x5": "trade_depot/raw_materials/sugar_spices_x5.png"
+    },
+    "base_price": 82,
+    "actual_price": 13,
+    "storage_template": "city_storage/raw_materials/sugar_spices.png",
+    "sell_duration": 3000,
+    "building_name": ""
+  },
+  {
+    "name": "GLASS",
+    "x_location": 490,
+    "y_location": 690,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/glass.png",
+      "x1": "global_trade_hq/raw_materials/glass_x1.png",
+      "x2": "global_trade_hq/raw_materials/glass_x2.png",
+      "x3": "global_trade_hq/raw_materials/glass_x3.png",
+      "x4": "global_trade_hq/raw_materials/glass_x4.png",
+      "x5": "global_trade_hq/raw_materials/glass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/glass.png",
+      "x1": "trade_depot/raw_materials/glass_x1.png",
+      "x2": "trade_depot/raw_materials/glass_x2.png",
+      "x3": "trade_depot/raw_materials/glass_x3.png",
+      "x4": "trade_depot/raw_materials/glass_x4.png",
+      "x5": "trade_depot/raw_materials/glass_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 15,
+    "storage_template": "city_storage/raw_materials/glass.png",
+    "sell_duration": 3000,
+    "building_name": ""
+  },
+  {
+    "name": "SEEDS",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/seeds.png",
+      "x1": "global_trade_hq/raw_materials/seeds_x1.png",
+      "x2": "global_trade_hq/raw_materials/seeds_x2.png",
+      "x3": "global_trade_hq/raw_materials/seeds_x3.png",
+      "x4": "global_trade_hq/raw_materials/seeds_x4.png",
+      "x5": "global_trade_hq/raw_materials/seeds_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/seeds.png",
+      "x1": "trade_depot/raw_materials/seeds_x1.png",
+      "x2": "trade_depot/raw_materials/seeds_x2.png",
+      "x3": "trade_depot/raw_materials/seeds_x3.png",
+      "x4": "trade_depot/raw_materials/seeds_x4.png",
+      "x5": "trade_depot/raw_materials/seeds_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 6,
+    "storage_template": "city_storage/raw_materials/seeds.png",
+    "sell_duration": 2500,
+    "building_name": ""
+  },
+  {
+    "name": "MINERALS",
+    "x_location": 1330,
+    "y_location": 520,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/minerals.png",
+      "x1": "global_trade_hq/raw_materials/minerals_x1.png",
+      "x2": "global_trade_hq/raw_materials/minerals_x2.png",
+      "x3": "global_trade_hq/raw_materials/minerals_x3.png",
+      "x4": "global_trade_hq/raw_materials/minerals_x4.png",
+      "x5": "global_trade_hq/raw_materials/minerals_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/minerals.png",
+      "x1": "trade_depot/raw_materials/minerals_x1.png",
+      "x2": "trade_depot/raw_materials/minerals_x2.png",
+      "x3": "trade_depot/raw_materials/minerals_x3.png",
+      "x4": "trade_depot/raw_materials/minerals_x4.png",
+      "x5": "trade_depot/raw_materials/minerals_x5.png"
+    },
+    "base_price": 30,
+    "actual_price": 7,
+    "storage_template": "city_storage/raw_materials/minerals.png",
+    "sell_duration": 2500,
+    "building_name": ""
+  },
+  {
+    "name": "CHEMICALS",
+    "x_location": 1250,
+    "y_location": 690,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/chemicals.png",
+      "x1": "global_trade_hq/raw_materials/chemicals_x1.png",
+      "x2": "global_trade_hq/raw_materials/chemicals_x2.png",
+      "x3": "global_trade_hq/raw_materials/chemicals_x3.png",
+      "x4": "global_trade_hq/raw_materials/chemicals_x4.png",
+      "x5": "global_trade_hq/raw_materials/chemicals_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/chemicals.png",
+      "x1": "trade_depot/raw_materials/chemicals_x1.png",
+      "x2": "trade_depot/raw_materials/chemicals_x2.png",
+      "x3": "trade_depot/raw_materials/chemicals_x3.png",
+      "x4": "trade_depot/raw_materials/chemicals_x4.png",
+      "x5": "trade_depot/raw_materials/chemicals_x5.png"
+    },
+    "base_price": 45,
+    "actual_price": 14,
+    "storage_template": "city_storage/raw_materials/chemicals.png",
+    "sell_duration": 3000,
+    "building_name": ""
+  },
+  {
+    "name": "ANIMAL_FEED",
+    "x_location": 1430,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/animal_feed.png",
+      "x1": "global_trade_hq/raw_materials/animal_feed_x1.png",
+      "x2": "global_trade_hq/raw_materials/animal_feed_x2.png",
+      "x3": "global_trade_hq/raw_materials/animal_feed_x3.png",
+      "x4": "global_trade_hq/raw_materials/animal_feed_x4.png",
+      "x5": "global_trade_hq/raw_materials/animal_feed_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/animal_feed.png",
+      "x1": "trade_depot/raw_materials/animal_feed_x1.png",
+      "x2": "trade_depot/raw_materials/animal_feed_x2.png",
+      "x3": "trade_depot/raw_materials/animal_feed_x3.png",
+      "x4": "trade_depot/raw_materials/animal_feed_x4.png",
+      "x5": "trade_depot/raw_materials/animal_feed_x5.png"
+    },
+    "base_price": 105,
+    "actual_price": 9,
+    "storage_template": "city_storage/raw_materials/animal_feed.png",
+    "sell_duration": 3500,
+    "building_name": ""
+  },
+  {
+    "name": "ELECTRICAL_COMPONENTS",
+    "x_location": 1520,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/electrical_components.png",
+      "x1": "global_trade_hq/raw_materials/electrical_components_x1.png",
+      "x2": "global_trade_hq/raw_materials/electrical_components_x2.png",
+      "x3": "global_trade_hq/raw_materials/electrical_components_x3.png",
+      "x4": "global_trade_hq/raw_materials/electrical_components_x4.png",
+      "x5": "global_trade_hq/raw_materials/electrical_components_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/electrical_components.png",
+      "x1": "trade_depot/raw_materials/electrical_components_x1.png",
+      "x2": "trade_depot/raw_materials/electrical_components_x2.png",
+      "x3": "trade_depot/raw_materials/electrical_components_x3.png",
+      "x4": "trade_depot/raw_materials/electrical_components_x4.png",
+      "x5": "trade_depot/raw_materials/electrical_components_x5.png"
+    },
+    "base_price": 120,
+    "actual_price": 18,
+    "storage_template": "city_storage/raw_materials/electrical_components.png",
+    "sell_duration": 3500,
+    "building_name": ""
+  },
+  {
+    "name": "RECYCLED_FABRIC",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/recycled_fabric.png",
+      "x1": "global_trade_hq/raw_materials/recycled_fabric_x1.png",
+      "x2": "global_trade_hq/raw_materials/recycled_fabric_x2.png",
+      "x3": "global_trade_hq/raw_materials/recycled_fabric_x3.png",
+      "x4": "global_trade_hq/raw_materials/recycled_fabric_x4.png",
+      "x5": "global_trade_hq/raw_materials/recycled_fabric_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/recycled_fabric.png",
+      "x1": "trade_depot/raw_materials/recycled_fabric_x1.png",
+      "x2": "trade_depot/raw_materials/recycled_fabric_x2.png",
+      "x3": "trade_depot/raw_materials/recycled_fabric_x3.png",
+      "x4": "trade_depot/raw_materials/recycled_fabric_x4.png",
+      "x5": "trade_depot/raw_materials/recycled_fabric_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 12,
+    "storage_template": "city_storage/raw_materials/recycled_fabric.png",
+    "sell_duration": 2000,
+    "building_name": ""
+  },
+  {
+    "name": "CRUDE_OIL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/crude_oil.png",
+      "x1": "global_trade_hq/raw_materials/crude_oil_x1.png",
+      "x2": "global_trade_hq/raw_materials/crude_oil_x2.png",
+      "x3": "global_trade_hq/raw_materials/crude_oil_x3.png",
+      "x4": "global_trade_hq/raw_materials/crude_oil_x4.png",
+      "x5": "global_trade_hq/raw_materials/crude_oil_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/crude_oil.png",
+      "x1": "trade_depot/raw_materials/crude_oil_x1.png",
+      "x2": "trade_depot/raw_materials/crude_oil_x2.png",
+      "x3": "trade_depot/raw_materials/crude_oil_x3.png",
+      "x4": "trade_depot/raw_materials/crude_oil_x4.png",
+      "x5": "trade_depot/raw_materials/crude_oil_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 25,
+    "storage_template": "city_storage/raw_materials/crude_oil.png",
+    "sell_duration": 2200,
+    "building_name": ""
+  },
+  {
+    "name": "COCONUT",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/coconut.png",
+      "x1": "global_trade_hq/raw_materials/coconut_x1.png",
+      "x2": "global_trade_hq/raw_materials/coconut_x2.png",
+      "x3": "global_trade_hq/raw_materials/coconut_x3.png",
+      "x4": "global_trade_hq/raw_materials/coconut_x4.png",
+      "x5": "global_trade_hq/raw_materials/coconut_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/coconut.png",
+      "x1": "trade_depot/raw_materials/coconut_x1.png",
+      "x2": "trade_depot/raw_materials/coconut_x2.png",
+      "x3": "trade_depot/raw_materials/coconut_x3.png",
+      "x4": "trade_depot/raw_materials/coconut_x4.png",
+      "x5": "trade_depot/raw_materials/coconut_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 5,
+    "storage_template": "city_storage/raw_materials/coconut.png",
+    "sell_duration": 2000,
+    "building_name": ""
+  },
+  {
+    "name": "SILK",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/silk.png",
+      "x1": "global_trade_hq/raw_materials/silk_x1.png",
+      "x2": "global_trade_hq/raw_materials/silk_x2.png",
+      "x3": "global_trade_hq/raw_materials/silk_x3.png",
+      "x4": "global_trade_hq/raw_materials/silk_x4.png",
+      "x5": "global_trade_hq/raw_materials/silk_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/silk.png",
+      "x1": "trade_depot/raw_materials/silk_x1.png",
+      "x2": "trade_depot/raw_materials/silk_x2.png",
+      "x3": "trade_depot/raw_materials/silk_x3.png",
+      "x4": "trade_depot/raw_materials/silk_x4.png",
+      "x5": "trade_depot/raw_materials/silk_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 30,
+    "storage_template": "city_storage/raw_materials/silk.png",
+    "sell_duration": 2000,
+    "building_name": ""
+  },
+  {
+    "name": "FISH",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/raw_materials/fish.png",
+      "x1": "global_trade_hq/raw_materials/fish_x1.png",
+      "x2": "global_trade_hq/raw_materials/fish_x2.png",
+      "x3": "global_trade_hq/raw_materials/fish_x3.png",
+      "x4": "global_trade_hq/raw_materials/fish_x4.png",
+      "x5": "global_trade_hq/raw_materials/fish_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/raw_materials/fish.png",
+      "x1": "trade_depot/raw_materials/fish_x1.png",
+      "x2": "trade_depot/raw_materials/fish_x2.png",
+      "x3": "trade_depot/raw_materials/fish_x3.png",
+      "x4": "trade_depot/raw_materials/fish_x4.png",
+      "x5": "trade_depot/raw_materials/fish_x5.png"
+    },
+    "base_price": 22,
+    "actual_price": 14,
+    "storage_template": "city_storage/raw_materials/fish.png",
+    "sell_duration": 2000,
+    "building_name": ""
+  }
+]

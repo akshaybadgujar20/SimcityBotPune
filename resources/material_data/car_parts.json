@@ -1,0 +1,80 @@
+[
+  {
+    "name": "MOTOR_OIL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/motor_oil.png",
+      "x1": "global_trade_hq/car_parts/motor_oil_x1.png",
+      "x2": "global_trade_hq/car_parts/motor_oil_x2.png",
+      "x3": "global_trade_hq/car_parts/motor_oil_x3.png",
+      "x4": "global_trade_hq/car_parts/motor_oil_x4.png",
+      "x5": "global_trade_hq/car_parts/motor_oil_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/motor_oil.png",
+      "x1": "trade_depot/car_parts/motor_oil_x1.png",
+      "x2": "trade_depot/car_parts/motor_oil_x2.png",
+      "x3": "trade_depot/car_parts/motor_oil_x3.png",
+      "x4": "trade_depot/car_parts/motor_oil_x4.png",
+      "x5": "trade_depot/car_parts/motor_oil_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 12,
+    "storage_template": "city_storage/car_parts/motor_oil.png",
+    "sell_duration": 3000,
+    "building_name": "CAR_PARTS"
+  },
+  {
+    "name": "CAR_TIRE",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/car_tire.png",
+      "x1": "global_trade_hq/car_parts/car_tire_x1.png",
+      "x2": "global_trade_hq/car_parts/car_tire_x2.png",
+      "x3": "global_trade_hq/car_parts/car_tire_x3.png",
+      "x4": "global_trade_hq/car_parts/car_tire_x4.png",
+      "x5": "global_trade_hq/car_parts/car_tire_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/car_tire.png",
+      "x1": "trade_depot/car_parts/car_tire_x1.png",
+      "x2": "trade_depot/car_parts/car_tire_x2.png",
+      "x3": "trade_depot/car_parts/car_tire_x3.png",
+      "x4": "trade_depot/car_parts/car_tire_x4.png",
+      "x5": "trade_depot/car_parts/car_tire_x5.png"
+    },
+    "base_price": 712,
+    "actual_price": 22,
+    "storage_template": "city_storage/car_parts/car_tire.png",
+    "sell_duration": 8000,
+    "building_name": "CAR_PARTS"
+  },
+  {
+    "name": "ENGINE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/car_parts/engine.png",
+      "x1": "global_trade_hq/car_parts/engine_x1.png",
+      "x2": "global_trade_hq/car_parts/engine_x2.png",
+      "x3": "global_trade_hq/car_parts/engine_x3.png",
+      "x4": "global_trade_hq/car_parts/engine_x4.png",
+      "x5": "global_trade_hq/car_parts/engine_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/car_parts/engine.png",
+      "x1": "trade_depot/car_parts/engine_x1.png",
+      "x2": "trade_depot/car_parts/engine_x2.png",
+      "x3": "trade_depot/car_parts/engine_x3.png",
+      "x4": "trade_depot/car_parts/engine_x4.png",
+      "x5": "trade_depot/car_parts/engine_x5.png"
+    },
+    "base_price": 1500,
+    "actual_price": 150,
+    "storage_template": "city_storage/car_parts/engine.png",
+    "sell_duration": 13000,
+    "building_name": "CAR_PARTS"
+  }
+]

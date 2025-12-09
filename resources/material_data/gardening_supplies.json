@@ -1,0 +1,158 @@
+[
+  {
+    "name": "GRASS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/grass.png",
+      "x1": "global_trade_hq/gardening_supplies/grass_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/grass_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/grass_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/grass_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/grass_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/grass.png",
+      "x1": "trade_depot/gardening_supplies/grass_x1.png",
+      "x2": "trade_depot/gardening_supplies/grass_x2.png",
+      "x3": "trade_depot/gardening_supplies/grass_x3.png",
+      "x4": "trade_depot/gardening_supplies/grass_x4.png",
+      "x5": "trade_depot/gardening_supplies/grass_x5.png"
+    },
+    "base_price": 232,
+    "actual_price": 3,
+    "storage_template": "city_storage/gardening_supplies/grass.png",
+    "sell_duration": 5000,
+    "building_name": "GARDENING_SUPPLIES"
+  },
+  {
+    "name": "TREE_SAPLINGS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/tree_saplings.png",
+      "x1": "global_trade_hq/gardening_supplies/tree_saplings_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/tree_saplings_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/tree_saplings_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/tree_saplings_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/tree_saplings_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/tree_saplings.png",
+      "x1": "trade_depot/gardening_supplies/tree_saplings_x1.png",
+      "x2": "trade_depot/gardening_supplies/tree_saplings_x2.png",
+      "x3": "trade_depot/gardening_supplies/tree_saplings_x3.png",
+      "x4": "trade_depot/gardening_supplies/tree_saplings_x4.png",
+      "x5": "trade_depot/gardening_supplies/tree_saplings_x5.png"
+    },
+    "base_price": 315,
+    "actual_price": 6,
+    "storage_template": "city_storage/gardening_supplies/tree_saplings.png",
+    "sell_duration": 5000,
+    "building_name": "GARDENING_SUPPLIES"
+  },
+  {
+    "name": "GARDEN_FURNITURE",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/garden_furniture.png",
+      "x1": "global_trade_hq/gardening_supplies/garden_furniture_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/garden_furniture_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/garden_furniture_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/garden_furniture_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/garden_furniture_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/garden_furniture.png",
+      "x1": "trade_depot/gardening_supplies/garden_furniture_x1.png",
+      "x2": "trade_depot/gardening_supplies/garden_furniture_x2.png",
+      "x3": "trade_depot/gardening_supplies/garden_furniture_x3.png",
+      "x4": "trade_depot/gardening_supplies/garden_furniture_x4.png",
+      "x5": "trade_depot/gardening_supplies/garden_furniture_x5.png"
+    },
+    "base_price": 615,
+    "actual_price": 20,
+    "storage_template": "city_storage/gardening_supplies/garden_furniture.png",
+    "sell_duration": 7000,
+    "building_name": "GARDENING_SUPPLIES"
+  },
+  {
+    "name": "FIRE_PIT",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/fire_pit.png",
+      "x1": "global_trade_hq/gardening_supplies/fire_pit_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/fire_pit_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/fire_pit_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/fire_pit_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/fire_pit_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/fire_pit.png",
+      "x1": "trade_depot/gardening_supplies/fire_pit_x1.png",
+      "x2": "trade_depot/gardening_supplies/fire_pit_x2.png",
+      "x3": "trade_depot/gardening_supplies/fire_pit_x3.png",
+      "x4": "trade_depot/gardening_supplies/fire_pit_x4.png",
+      "x5": "trade_depot/gardening_supplies/fire_pit_x5.png"
+    },
+    "base_price": 1305,
+    "actual_price": 30,
+    "storage_template": "city_storage/gardening_supplies/fire_pit.png",
+    "sell_duration": 11000,
+    "building_name": "GARDENING_SUPPLIES"
+  },
+  {
+    "name": "LAWN_MOWER",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/lawn_mower.png",
+      "x1": "global_trade_hq/gardening_supplies/lawn_mower_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/lawn_mower_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/lawn_mower_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/lawn_mower_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/lawn_mower_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/lawn_mower.png",
+      "x1": "trade_depot/gardening_supplies/lawn_mower_x1.png",
+      "x2": "trade_depot/gardening_supplies/lawn_mower_x2.png",
+      "x3": "trade_depot/gardening_supplies/lawn_mower_x3.png",
+      "x4": "trade_depot/gardening_supplies/lawn_mower_x4.png",
+      "x5": "trade_depot/gardening_supplies/lawn_mower_x5.png"
+    },
+    "base_price": 630,
+    "actual_price": 40,
+    "storage_template": "city_storage/gardening_supplies/lawn_mower.png",
+    "sell_duration": 7000,
+    "building_name": "GARDENING_SUPPLIES"
+  },
+  {
+    "name": "GARDEN_GNOMES",
+    "x_location": 1245,
+    "y_location": 700,
+    "hq_templates": {
+      "base": "global_trade_hq/gardening_supplies/garden_gnomes.png",
+      "x1": "global_trade_hq/gardening_supplies/garden_gnomes_x1.png",
+      "x2": "global_trade_hq/gardening_supplies/garden_gnomes_x2.png",
+      "x3": "global_trade_hq/gardening_supplies/garden_gnomes_x3.png",
+      "x4": "global_trade_hq/gardening_supplies/garden_gnomes_x4.png",
+      "x5": "global_trade_hq/gardening_supplies/garden_gnomes_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/gardening_supplies/garden_gnomes.png",
+      "x1": "trade_depot/gardening_supplies/garden_gnomes_x1.png",
+      "x2": "trade_depot/gardening_supplies/garden_gnomes_x2.png",
+      "x3": "trade_depot/gardening_supplies/garden_gnomes_x3.png",
+      "x4": "trade_depot/gardening_supplies/garden_gnomes_x4.png",
+      "x5": "trade_depot/gardening_supplies/garden_gnomes_x5.png"
+    },
+    "base_price": 1200,
+    "actual_price": 18,
+    "storage_template": "city_storage/gardening_supplies/garden_gnomes.png",
+    "sell_duration": 10000,
+    "building_name": "GARDENING_SUPPLIES"
+  }
+]

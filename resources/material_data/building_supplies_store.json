@@ -1,0 +1,158 @@
+[
+  {
+    "name": "NAILS",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/nails.png",
+      "x1": "global_trade_hq/building_supplies_store/nails_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/nails_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/nails_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/nails_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/nails_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/nails.png",
+      "x1": "trade_depot/building_supplies_store/nails_x1.png",
+      "x2": "trade_depot/building_supplies_store/nails_x2.png",
+      "x3": "trade_depot/building_supplies_store/nails_x3.png",
+      "x4": "trade_depot/building_supplies_store/nails_x4.png",
+      "x5": "trade_depot/building_supplies_store/nails_x5.png"
+    },
+    "base_price": 60,
+    "actual_price": 8,
+    "storage_template": "city_storage/building_supplies_store/nails.png",
+    "sell_duration": 3000,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  },
+  {
+    "name": "PLANKS",
+    "x_location": 570,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/planks.png",
+      "x1": "global_trade_hq/building_supplies_store/planks_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/planks_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/planks_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/planks_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/planks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/planks.png",
+      "x1": "trade_depot/building_supplies_store/planks_x1.png",
+      "x2": "trade_depot/building_supplies_store/planks_x2.png",
+      "x3": "trade_depot/building_supplies_store/planks_x3.png",
+      "x4": "trade_depot/building_supplies_store/planks_x4.png",
+      "x5": "trade_depot/building_supplies_store/planks_x5.png"
+    },
+    "base_price": 90,
+    "actual_price": 9,
+    "storage_template": "city_storage/building_supplies_store/planks.png",
+    "sell_duration": 3000,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  },
+  {
+    "name": "BRICKS",
+    "x_location": 675,
+    "y_location": 680,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/bricks.png",
+      "x1": "global_trade_hq/building_supplies_store/bricks_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/bricks_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/bricks_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/bricks_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/bricks_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/bricks.png",
+      "x1": "trade_depot/building_supplies_store/bricks_x1.png",
+      "x2": "trade_depot/building_supplies_store/bricks_x2.png",
+      "x3": "trade_depot/building_supplies_store/bricks_x3.png",
+      "x4": "trade_depot/building_supplies_store/bricks_x4.png",
+      "x5": "trade_depot/building_supplies_store/bricks_x5.png"
+    },
+    "base_price": 142,
+    "actual_price": 14,
+    "storage_template": "city_storage/building_supplies_store/bricks.png",
+    "sell_duration": 4000,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  },
+  {
+    "name": "CEMENT",
+    "x_location": 1245,
+    "y_location": 370,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/cement.png",
+      "x1": "global_trade_hq/building_supplies_store/cement_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/cement_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/cement_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/cement_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/cement_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/cement.png",
+      "x1": "trade_depot/building_supplies_store/cement_x1.png",
+      "x2": "trade_depot/building_supplies_store/cement_x2.png",
+      "x3": "trade_depot/building_supplies_store/cement_x3.png",
+      "x4": "trade_depot/building_supplies_store/cement_x4.png",
+      "x5": "trade_depot/building_supplies_store/cement_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 16,
+    "storage_template": "city_storage/building_supplies_store/cement.png",
+    "sell_duration": 5000,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  },
+  {
+    "name": "GLUE",
+    "x_location": 1340,
+    "y_location": 530,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/glue.png",
+      "x1": "global_trade_hq/building_supplies_store/glue_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/glue_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/glue_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/glue_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/glue_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/glue.png",
+      "x1": "trade_depot/building_supplies_store/glue_x1.png",
+      "x2": "trade_depot/building_supplies_store/glue_x2.png",
+      "x3": "trade_depot/building_supplies_store/glue_x3.png",
+      "x4": "trade_depot/building_supplies_store/glue_x4.png",
+      "x5": "trade_depot/building_supplies_store/glue_x5.png"
+    },
+    "base_price": 330,
+    "actual_price": 7,
+    "storage_template": "city_storage/building_supplies_store/glue.png",
+    "sell_duration": 5000,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  },
+  {
+    "name": "PAINT",
+    "x_location": 1245,
+    "y_location": 480,
+    "hq_templates": {
+      "base": "global_trade_hq/building_supplies_store/paint.png",
+      "x1": "global_trade_hq/building_supplies_store/paint_x1.png",
+      "x2": "global_trade_hq/building_supplies_store/paint_x2.png",
+      "x3": "global_trade_hq/building_supplies_store/paint_x3.png",
+      "x4": "global_trade_hq/building_supplies_store/paint_x4.png",
+      "x5": "global_trade_hq/building_supplies_store/paint_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/building_supplies_store/paint.png",
+      "x1": "trade_depot/building_supplies_store/paint_x1.png",
+      "x2": "trade_depot/building_supplies_store/paint_x2.png",
+      "x3": "trade_depot/building_supplies_store/paint_x3.png",
+      "x4": "trade_depot/building_supplies_store/paint_x4.png",
+      "x5": "trade_depot/building_supplies_store/paint_x5.png"
+    },
+    "base_price": 240,
+    "actual_price": 13,
+    "storage_template": "city_storage/building_supplies_store/paint.png",
+    "sell_duration": 4500,
+    "building_name": "BUILDING_SUPPLIES_STORE"
+  }
+]
