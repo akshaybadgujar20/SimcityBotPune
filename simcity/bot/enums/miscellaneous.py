@@ -10,6 +10,8 @@ class Miscellaneous(Enum):
     RECYCLED_FABRIC = 'misc/recycled_fabric.png'
     RECYCLED_FABRIC_2 = 'misc/recycled_fabric_2.png'
     COIN = 'misc/coin.png'
+    REGIONS = 'misc/regions.png'
+    EMPTY_BOX = 'misc/empty_box.png'
     DANIEL_FACE = 'misc/daniel_face.png'
     PLUS_ICON = 'misc/plus_icon.png'
     DANIEL_TRADE_ICON = 'misc/daniel_trade_icon.png'
@@ -27,7 +29,7 @@ class Miscellaneous(Enum):
     EMPTY_TRADE_BOXES='misc/empty_trade_boxes.png'
     ADVERTISE_ICON='misc/advertise_icon.png'
     COMMERCIAL_INFO_ICON='misc/commercial_info_icon.png'
-    REGIONS='misc/go_to_regions_button.png'
+    GO_TO_REGIONS_BUTTON='misc/go_to_regions_button.png'
     CARGO_SHIP_ICON='misc/cargo_ship_icon.png'
     HOME_TRADE_ICON='misc/home_trade_icon.png'
 

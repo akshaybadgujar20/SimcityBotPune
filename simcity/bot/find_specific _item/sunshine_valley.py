@@ -1,105 +1,219 @@
-import time
 import logging
+import time
+
 import uiautomator2 as u2
-from simcity.bot.automation.adb_actions import perform_click, perform_swipe, perform_click_with_rectangle
+from sympy import false
+
+from simcity.bot.automation.adb_actions import perform_click, perform_click_with_rectangle, press_esc_key
+from simcity.bot.automation.city_utility_actions import click_on_back_button, check_if_regions_button_visible, \
+    click_on_home_button, collect_all_items_from_factory, add_item_to_factory_production, check_if_i_reach_home, \
+    click_on_regions_button, click_on_limestone_cliff, click_on_green_valley, click_on_material_storage
 from simcity.bot.automation.find_material import find_miscellaneous_material
 from simcity.bot.enums.miscellaneous import Miscellaneous
 from simcity.bot.main import set_up
+from simcity.bot.time_manager import TimerManager
 
-device_id = '5575'
-d = u2.connect("127.0.0.1:5575")
+device_id = '5725'
+device = u2.connect("127.0.0.1:5725")
+manager = TimerManager()
+global_trade_hq_timer = "global_trade_hq_timer"
+production_timer = "production_timer"
 
-def perform_automation_0():
-    set_up(device_id)
+def perform_automation():
+    manager.create_timer(global_trade_hq_timer, interval=1)
     for i in range(1000):
         # search for item
         perform_click(180,195, device_id)
         time.sleep(1)
         perform_click(170, 335, device_id)
         time.sleep(1)
-        for i in range(10):
+
+        manager.reset_timer(global_trade_hq_timer)
+        for i in range(15):
             coin, screenshot = find_miscellaneous_material(Miscellaneous.COIN, device_id)
             if len(coin) > 0:
+                manager.start_timer(global_trade_hq_timer)
                 break
+            time.sleep(1)
             continue
 
         recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
         if len(recycled_fabric) == 1:
-            logging.info('recycled_fabric (1) icon found and clicking on it')
-            perform_click_with_rectangle(recycled_fabric[0], device_id)
-            time.sleep(10)
-            buy_recycled_fabric()
-        elif len(recycled_fabric) > 1:
-            logging.info('recycled_fabric (More than 1) icon found and clicking on 1st it')
-            perform_click_with_rectangle(recycled_fabric[0], device_id)
-            time.sleep(10)
-            buy_recycled_fabric()
-            perform_click(170, 335, device_id)
+            buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+            check_for_production_of_recycled_fabric()
+            set_timer()
             continue
+        elif len(recycled_fabric) > 1:
+            buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+            check_for_production_of_recycled_fabric()
+            continue
+            # goto next global trade hq for buy
         else:
             # swipe to right 1st time
-            d.swipe(1575, 460, 620, 460, 0.5)
+            device.swipe(1575, 460, 620, 460, 0.5)
             recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
             if len(recycled_fabric) == 1:
-                logging.info('recycled_fabric (1) icon found and clicking on it')
-                perform_click_with_rectangle(recycled_fabric[0], device_id)
-                time.sleep(10)
-                buy_recycled_fabric()
-            elif len(recycled_fabric) > 1:
-                logging.info('recycled_fabric (More than 1) icon found and clicking on 1st it')
-                perform_click_with_rectangle(recycled_fabric[0], device_id)
-                time.sleep(10)
-                buy_recycled_fabric()
-                perform_click(170, 335, device_id)
+                buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                check_for_production_of_recycled_fabric()
+                set_timer()
                 continue
+            elif len(recycled_fabric) > 1:
+                buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                check_for_production_of_recycled_fabric()
+                continue
+                # goto next global trade hq for buy
             else:
                 # swipe to right 2nd time
-                d.swipe(1575, 460, 620, 460, 0.5)
+                device.swipe(1575, 460, 620, 460, 0.5)
                 recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
                 if len(recycled_fabric) == 1:
-                    logging.info('recycled_fabric (1) icon found and clicking on it')
-                    perform_click_with_rectangle(recycled_fabric[0], device_id)
-                    time.sleep(10)
-                    buy_recycled_fabric()
-                elif len(recycled_fabric) > 1:
-                    logging.info('recycled_fabric (More than 1) icon found and clicking on 1st it')
-                    perform_click_with_rectangle(recycled_fabric[0], device_id)
-                    time.sleep(10)
-                    buy_recycled_fabric()
-                    perform_click(170, 335, device_id)
+                    buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                    check_for_production_of_recycled_fabric()
+                    set_timer()
                     continue
+                elif len(recycled_fabric) > 1:
+                    buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                    check_for_production_of_recycled_fabric()
+                    continue
+                    # goto next global trade hq for buy
                 else:
                     # swipe to right 3rd time
-                    d.swipe(1575, 460, 620, 460, 0.5)
+                    device.swipe(1575, 460, 620, 460, 0.5)
                     recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
                     if len(recycled_fabric) == 1:
-                        logging.info('recycled_fabric (1) icon found and clicking on it')
-                        perform_click_with_rectangle(recycled_fabric[0], device_id)
-                        time.sleep(10)
-                        buy_recycled_fabric()
-                    elif len(recycled_fabric) > 1:
-                        logging.info('recycled_fabric (More than 1) icon found and clicking on 1st it')
-                        perform_click_with_rectangle(recycled_fabric[0], device_id)
-                        time.sleep(10)
-                        buy_recycled_fabric()
-                        perform_click(170, 335, device_id)
+                        buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                        check_for_production_of_recycled_fabric()
+                        set_timer()
                         continue
+                    elif len(recycled_fabric) > 1:
+                        buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
+                        check_for_production_of_recycled_fabric()
+                        continue
+                        # goto next global trade hq for buy
                     else:
-                        logging.info("nothing found waiting for 25 second")
-                        time.sleep(25)
+                        check_for_production_of_recycled_fabric()
+                        set_timer()
+
+def check_for_production_of_recycled_fabric():
+    timer = manager.get_timer_time(production_timer)
+    if timer is not None:
+        click_on_back_button(device_id)
+        logging.info("finding REGIONS")
+        regions_icon, screenshot = find_miscellaneous_material(Miscellaneous.REGIONS, device_id)
+        if len(regions_icon) > 0:
+            logging.info("REGIONS found")
+            logging.info("clicking on regions button")
+            click_on_regions_button(device_id)
+            time.sleep(1)
+            click_on_limestone_cliff(device_id)
+            check_if_i_reach_home(device_id)
+            click_on_regions_button(device_id)
+            time.sleep(1)
+            click_on_green_valley(device_id)
+            check_if_i_reach_home(device_id)
+
+            timer = manager.get_timer_time(production_timer)
+            logging.info(f"timer {timer}")
+            if timer is not None:
+                if timer > 300:
+                    logging.info("Timer present and it is > 300")
+                    perform_click(490, 510, device_id)
+                    time.sleep(1)
+                    collect_all_items_from_factory(device_id)
+                    open_factory_and_add_raw_material_for_production()
+                    manager.reset_timer(production_timer)
+                    manager.start_timer(production_timer)
+
+            else:
+                perform_click(490, 510, device_id)
+                empty_box, screenshot = find_miscellaneous_material(Miscellaneous.EMPTY_BOX, device_id)
+                if len(empty_box) > 0:
+                    open_factory_and_add_raw_material_for_production()
+                    manager.reset_timer(production_timer)
+                    manager.start_timer(production_timer)
+        else:
+            time.sleep(1)
+            click_on_home_button(device_id)
+            check_if_i_reach_home(device_id)
+            timer = manager.get_timer_time(production_timer)
+            logging.info(f"timer {timer}")
+            if timer is not None:
+                if timer > 300:
+                    logging.info("Timer present and it is > 300")
+                    perform_click(490, 510, device_id)
+                    time.sleep(1)
+                    collect_all_items_from_factory(device_id)
+                    open_factory_and_add_raw_material_for_production()
+                    manager.reset_timer(production_timer)
+                    manager.start_timer(production_timer)
+
+            else:
+                perform_click(490, 510, device_id)
+                empty_box, screenshot = find_miscellaneous_material(Miscellaneous.EMPTY_BOX, device_id)
+                if len(empty_box) > 0:
+                    open_factory_and_add_raw_material_for_production()
+                    manager.reset_timer(production_timer)
+                    manager.start_timer(production_timer)
+
+        logging.info("press_esc_key")
+        click_on_material_storage(device_id)
+        time.sleep(0.5)
+        press_esc_key(device_id)
+        home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)
+        if len(home_trade_icon) > 0:
+            perform_click_with_rectangle(home_trade_icon[0], device_id)
+        time.sleep(1)
+        return
+
+
+def open_factory_and_add_raw_material_for_production():
+    add_item_to_factory_production(device, 670, 370, 380, 935, 1260, 935)
+
+
+def set_timer():
+    timer = manager.get_timer_time(global_trade_hq_timer)
+    if timer < 27:
+        time.sleep(30-timer)
+    return
+
+def produce_and_collect_recycle_fabric():
+    for i in range(100):
+        perform_click(375, 1025, device_id)
+        perform_click(595, 1025, device_id)
+        perform_click(810, 1025, device_id)
+        perform_click(1030, 1025, device_id)
+        perform_click(1240, 1025, device_id)
+        device.swipe_points([(670, 370), (380, 935), (1260, 935)], duration=0.3)
+        time.sleep(301)
+
+def buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric):
+    logging.info('recycle fabric found')
+    global home
+    home= False
+    perform_click_with_rectangle(recycled_fabric[0], device_id)
+    time.sleep(5)
+    check_if_visiting_city_trade_depo_opened_or_not()
+    buy_recycled_fabric()
+
+def check_if_visiting_city_trade_depo_opened_or_not():
+    for i in range(15):
+        trade_boxes, screenshot = find_miscellaneous_material(Miscellaneous.TRADE_BOX, device_id)
+        if len(trade_boxes) > 0:
+            break
+        time.sleep(1)
+        continue
 
 def buy_recycled_fabric():
     recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC_2, device_id)
-    if len(recycled_fabric) == 1:
-        logging.info('recycled_fabric (1) icon found and clicking on it')
-        perform_click_with_rectangle(recycled_fabric[0], device_id)
-    elif len(recycled_fabric) > 1:
+    if len(recycled_fabric) >= 1:
         logging.info('recycled_fabric (More than 1) icon found and clicking on all one by one')
         for recycled_fabric_data in recycled_fabric:
-            perform_click_with_rectangle(recycled_fabric_data[0], device_id)
+            perform_click_with_rectangle(recycled_fabric_data, device_id)
+            time.sleep(1)
     else:
         logging.info('recycled_fabric (More than 1) icon found and clicking on 1st it')
-
+    return
 
 set_up(device_id)
-perform_automation_0()
+# produce_and_collect_recycle_fabric()
+perform_automation()

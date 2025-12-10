@@ -1,7 +1,7 @@
 import time
 
 from simcity.bot.automation.adb_actions import perform_swipe, perform_click_with_rectangle, perform_click
-from simcity.bot.automation.city_actions import swipe_up, swipe_down, swipe_right, swipe_right, swipe_left, swipe_top_right, swipe_bottom_left, swipe_top_right_halfway
+from simcity.bot.automation.game_movement_actions import swipe_up, swipe_down, swipe_right, swipe_right, swipe_left, swipe_top_right, swipe_bottom_left, swipe_top_right_halfway
 from simcity.bot.automation.find_material import find_miscellaneous_material
 from simcity.bot.automation.take_screenshot import take_color_screenshot
 from simcity.bot.automation.take_screenshot_and_read_text import read_text_from_image
