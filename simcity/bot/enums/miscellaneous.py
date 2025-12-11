@@ -38,6 +38,7 @@ class Miscellaneous(Enum):
     CLOSE='misc/close.png'
     CREATE_SALE='misc/create_sale.png'
     MY_TRADE_DEPOT='misc/my_trade_depot.png'
+    VISITNG_TRADE_DEPOT='misc/visiting_trade_depot.png'
     HOME='misc/home.png'
     TRADE_DEPOT_NAME='misc/trade_depot_name.png'
     MISSING_ITEMS='misc/missing_items.png'

@@ -15,7 +15,7 @@ def click_on_home_button(device_id):
     perform_click(95, 85, device_id)
 
 def click_on_regions_button(device_id):
-    perform_click(185, 900, device_id)
+    perform_click(330, 890, device_id)
 
 def add_item_to_factory_production(device, x1,y1,x2,y2,x3,y3):
     device.swipe_points([(x1, y1), (x2, y2), (x3, y3)], duration=0.2)
@@ -24,7 +24,7 @@ def click_on_limestone_cliff(device_id):
     perform_click(950, 705, device_id)
 
 def click_on_green_valley(device_id):
-    perform_click(655, 510, device_id)
+    perform_click(665, 540, device_id)
 
 def check_if_i_reach_home(device_id):
     for i in range(15):

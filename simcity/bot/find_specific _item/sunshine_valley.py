@@ -13,8 +13,8 @@ from simcity.bot.enums.miscellaneous import Miscellaneous
 from simcity.bot.main import set_up
 from simcity.bot.time_manager import TimerManager
 
-device_id = '5725'
-device = u2.connect("127.0.0.1:5725")
+device_id = '5565'
+device = u2.connect("127.0.0.1:5565")
 manager = TimerManager()
 global_trade_hq_timer = "global_trade_hq_timer"
 production_timer = "production_timer"
@@ -51,6 +51,7 @@ def perform_automation():
         else:
             # swipe to right 1st time
             device.swipe(1575, 460, 620, 460, 0.5)
+            time.sleep(1)
             recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
             if len(recycled_fabric) == 1:
                 buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
@@ -65,6 +66,7 @@ def perform_automation():
             else:
                 # swipe to right 2nd time
                 device.swipe(1575, 460, 620, 460, 0.5)
+                time.sleep(1)
                 recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
                 if len(recycled_fabric) == 1:
                     buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
@@ -77,22 +79,8 @@ def perform_automation():
                     continue
                     # goto next global trade hq for buy
                 else:
-                    # swipe to right 3rd time
-                    device.swipe(1575, 460, 620, 460, 0.5)
-                    recycled_fabric, screenshot = find_miscellaneous_material(Miscellaneous.RECYCLED_FABRIC, device_id)
-                    if len(recycled_fabric) == 1:
-                        buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
-                        check_for_production_of_recycled_fabric()
-                        set_timer()
-                        continue
-                    elif len(recycled_fabric) > 1:
-                        buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric)
-                        check_for_production_of_recycled_fabric()
-                        continue
-                        # goto next global trade hq for buy
-                    else:
-                        check_for_production_of_recycled_fabric()
-                        set_timer()
+                    check_for_production_of_recycled_fabric()
+                    set_timer()
 
 def check_for_production_of_recycled_fabric():
     timer = manager.get_timer_time(production_timer)
@@ -122,10 +110,11 @@ def check_for_production_of_recycled_fabric():
             check_if_i_reach_home(device_id)
             add_items_to_production_when_no_timer_present()
     else:
-        home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)
-        if len(home_trade_icon) > 0:
-            perform_click_with_rectangle(home_trade_icon[0], device_id)
-        time.sleep(1)
+        # click_on_back_button(device_id)
+        # home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)
+        # if len(home_trade_icon) > 0:
+        #     perform_click_with_rectangle(home_trade_icon[0], device_id)
+        # time.sleep(1)
         return
 
     logging.info("process complete")
@@ -157,11 +146,21 @@ def handle_scenario_where_i_am_in_same_region():
 
 def handle_adding_recycle_fabric_to_production_when_previous_production_is_ready():
     timer = manager.get_timer_time(production_timer)
+    logging.info("handle_adding_recycle_fabric_to_production_when_previous_production_is_ready")
     logging.info(f"timer {timer}")
     logging.info("Timer present and it is > 300")
-    perform_click(490, 510, device_id)
+    perform_click(530, 520, device_id)
+    time.sleep(0.2)
+    perform_click(530, 520, device_id)
+    time.sleep(0.2)
+    perform_click(530, 520, device_id)
+    time.sleep(0.2)
+    perform_click(530, 520, device_id)
+    time.sleep(0.2)
+    perform_click(530, 520, device_id)
     time.sleep(1)
-    collect_all_items_from_factory(device_id)
+    perform_click(530, 520, device_id)
+    time.sleep(1)
     add_item_to_factory_production(device, 670, 370, 380, 935, 1260, 935)
     manager.reset_timer(production_timer)
     manager.start_timer(production_timer)
@@ -193,6 +192,14 @@ def buy_recycle_fabric_from_visiting_city_trade_depot(recycled_fabric):
     buy_recycled_fabric()
 
 def check_if_visiting_city_trade_depo_opened_or_not():
+    for i in range(15):
+        my_trade_depot, screenshot = find_miscellaneous_material(Miscellaneous.VISITNG_TRADE_DEPOT, device_id)
+        if len(my_trade_depot) > 0:
+            perform_click_with_rectangle(my_trade_depot[0], device_id)
+            break
+        time.sleep(1)
+        continue
+    time.sleep(1)
     for i in range(15):
         trade_boxes, screenshot = find_miscellaneous_material(Miscellaneous.TRADE_BOX, device_id)
         if len(trade_boxes) > 0:
