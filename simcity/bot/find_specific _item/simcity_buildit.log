@@ -1,44 +1,192 @@
-10-12-2025 - 16:17:35  - logger.py:39 - INFO - 
+10-12-2025 - 16:58:52  - logger.py:39 - INFO - 
 ===== New Automation Started =====
 
-10-12-2025 - 16:17:35  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-10-12-2025 - 16:17:35  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+10-12-2025 - 16:58:52  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+10-12-2025 - 16:58:52  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
 127.0.0.1:5725	device
 
 
-10-12-2025 - 16:17:35  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5725' is present in the adb devices output.
-10-12-2025 - 16:17:40  - apply_nsm.py:23 - INFO - total matches 8
-10-12-2025 - 16:17:42  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:17:45  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:17:49  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:17:52  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:17:53  - sunshine_valley.py:99 - INFO - finding REGIONS
-10-12-2025 - 16:17:55  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:17:55  - sunshine_valley.py:102 - INFO - REGIONS found
-10-12-2025 - 16:17:55  - sunshine_valley.py:103 - INFO - clicking on regions button
-10-12-2025 - 16:17:58  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:00  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:04  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:08  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:18:11  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:13  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:18  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:22  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:18:22  - sunshine_valley.py:114 - INFO - timer None
-10-12-2025 - 16:18:25  - apply_nsm.py:23 - INFO - total matches 5
-10-12-2025 - 16:18:27  - sunshine_valley.py:156 - INFO - press_esc_key
-10-12-2025 - 16:18:32  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:18:37  - apply_nsm.py:23 - INFO - total matches 8
-10-12-2025 - 16:18:39  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:18:42  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:18:45  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:18:49  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
-10-12-2025 - 16:18:50  - sunshine_valley.py:99 - INFO - finding REGIONS
-10-12-2025 - 16:18:53  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:18:53  - sunshine_valley.py:102 - INFO - REGIONS found
-10-12-2025 - 16:18:53  - sunshine_valley.py:103 - INFO - clicking on regions button
-10-12-2025 - 16:18:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:18:59  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:19:03  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
-10-12-2025 - 16:19:08  - apply_nsm.py:23 - INFO - total matches 1
-10-12-2025 - 16:19:12  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:58:52  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5725' is present in the adb devices output.
+10-12-2025 - 16:58:56  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 16:58:58  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 16:59:01  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 16:59:04  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 16:59:07  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 16:59:07  - sunshine_valley.py:99 - INFO - timer: None
+10-12-2025 - 16:59:10  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 16:59:12  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:14  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:19  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:22  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 16:59:25  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:27  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 16:59:30  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 16:59:33  - sunshine_valley.py:131 - INFO - process complete
+10-12-2025 - 16:59:37  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 16:59:43  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 16:59:44  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 16:59:44  - sunshine_valley.py:187 - INFO - recycle fabric found
+10-12-2025 - 16:59:51  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 16:59:52  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 16:59:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 16:59:59  - apply_nsm.py:23 - INFO - total matches 4
+10-12-2025 - 17:00:01  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:00:01  - sunshine_valley.py:206 - INFO - recycled_fabric (More than 1) icon found and clicking on all one by one
+10-12-2025 - 17:00:03  - sunshine_valley.py:99 - INFO - timer: 30
+10-12-2025 - 17:00:05  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:00:17  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:00:19  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:00:21  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:24  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:27  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:30  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:30  - sunshine_valley.py:99 - INFO - timer: 57
+10-12-2025 - 17:00:32  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:00:48  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:00:50  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:53  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:55  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:59  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:00:59  - sunshine_valley.py:99 - INFO - timer: 86
+10-12-2025 - 17:01:00  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:01:22  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:01:25  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:01:26  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:01:29  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:01:32  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:01:35  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:01:35  - sunshine_valley.py:99 - INFO - timer: 122
+10-12-2025 - 17:01:36  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:01:55  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:01:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:01:59  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:02:03  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:02:06  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:02:06  - sunshine_valley.py:99 - INFO - timer: 154
+10-12-2025 - 17:02:08  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:02:28  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:02:30  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:02:31  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:02:31  - sunshine_valley.py:187 - INFO - recycle fabric found
+10-12-2025 - 17:02:39  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:02:41  - apply_nsm.py:23 - INFO - total matches 3
+10-12-2025 - 17:02:41  - sunshine_valley.py:206 - INFO - recycled_fabric (More than 1) icon found and clicking on all one by one
+10-12-2025 - 17:02:46  - sunshine_valley.py:99 - INFO - timer: 193
+10-12-2025 - 17:02:48  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:03:01  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:03:04  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:03:05  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:08  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:11  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:14  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:14  - sunshine_valley.py:99 - INFO - timer: 221
+10-12-2025 - 17:03:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:03:34  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:03:35  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:38  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:41  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:44  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:03:44  - sunshine_valley.py:99 - INFO - timer: 252
+10-12-2025 - 17:03:46  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:04:07  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:04:09  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:04:11  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:13  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:20  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:20  - sunshine_valley.py:99 - INFO - timer: 287
+10-12-2025 - 17:04:21  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:04:39  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:04:41  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:43  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:46  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:49  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:04:49  - sunshine_valley.py:99 - INFO - timer: 316
+10-12-2025 - 17:04:50  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:05:13  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:05:15  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:05:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:19  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:22  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:25  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:25  - sunshine_valley.py:99 - INFO - timer: 352
+10-12-2025 - 17:05:26  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:05:46  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:05:47  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:49  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:05:52  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:05:52  - sunshine_valley.py:187 - INFO - recycle fabric found
+10-12-2025 - 17:05:58  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:06:00  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:06:04  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:06:07  - apply_nsm.py:23 - INFO - total matches 7
+10-12-2025 - 17:06:10  - apply_nsm.py:23 - INFO - total matches 2
+10-12-2025 - 17:06:10  - sunshine_valley.py:206 - INFO - recycled_fabric (More than 1) icon found and clicking on all one by one
+10-12-2025 - 17:06:13  - sunshine_valley.py:99 - INFO - timer: 400
+10-12-2025 - 17:06:13  - sunshine_valley.py:102 - INFO - finding REGIONS
+10-12-2025 - 17:06:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.REGIONS
+10-12-2025 - 17:06:18  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:06:20  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:06:25  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:06:25  - sunshine_valley.py:160 - INFO - timer 412
+10-12-2025 - 17:06:25  - sunshine_valley.py:161 - INFO - Timer present and it is > 300
+10-12-2025 - 17:06:30  - sunshine_valley.py:131 - INFO - process complete
+10-12-2025 - 17:06:34  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:06:40  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:06:41  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:06:44  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:06:47  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:06:50  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:06:50  - sunshine_valley.py:99 - INFO - timer: 20
+10-12-2025 - 17:06:52  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:07:13  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:07:14  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:17  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:20  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:23  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:23  - sunshine_valley.py:99 - INFO - timer: 53
+10-12-2025 - 17:07:24  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:07:47  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:07:49  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:07:50  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:53  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:59  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:07:59  - sunshine_valley.py:99 - INFO - timer: 89
+10-12-2025 - 17:08:01  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:08:19  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:08:21  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:08:21  - sunshine_valley.py:187 - INFO - recycle fabric found
+10-12-2025 - 17:08:28  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:30  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:31  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:33  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:35  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:37  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:39  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:41  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:46  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.TRADE_BOX
+10-12-2025 - 17:08:50  - apply_nsm.py:23 - INFO - total matches 6
+10-12-2025 - 17:08:52  - apply_nsm.py:23 - INFO - total matches 1
+10-12-2025 - 17:08:52  - sunshine_valley.py:206 - INFO - recycled_fabric (More than 1) icon found and clicking on all one by one
+10-12-2025 - 17:08:54  - sunshine_valley.py:99 - INFO - timer: 144
+10-12-2025 - 17:08:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:09:02  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:05  - apply_nsm.py:23 - INFO - total matches 8
+10-12-2025 - 17:09:06  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:09:09  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:09:12  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:09:15  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.RECYCLED_FABRIC
+10-12-2025 - 17:09:15  - sunshine_valley.py:99 - INFO - timer: 165
+10-12-2025 - 17:09:16  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.HOME_TRADE_ICON
+10-12-2025 - 17:09:35  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:39  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:42  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:45  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:48  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:52  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:09:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:10:00  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:10:03  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN
+10-12-2025 - 17:10:07  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.COIN

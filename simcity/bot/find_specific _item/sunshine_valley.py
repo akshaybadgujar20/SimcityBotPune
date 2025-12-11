@@ -97,7 +97,7 @@ def perform_automation():
 def check_for_production_of_recycled_fabric():
     timer = manager.get_timer_time(production_timer)
     logging.info(f"timer: {timer}")
-    if timer is not None:
+    if timer is not None and timer > 360:
         click_on_back_button(device_id)
         logging.info("finding REGIONS")
         regions_icon, screenshot = find_miscellaneous_material(Miscellaneous.REGIONS, device_id)
@@ -111,7 +111,7 @@ def check_for_production_of_recycled_fabric():
             click_on_home_button(device_id)
             check_if_i_reach_home(device_id)
             handle_adding_recycle_fabric_to_production_when_previous_production_is_ready()
-    else:
+    elif timer is None:
         click_on_back_button(device_id)
         regions_icon, screenshot = find_miscellaneous_material(Miscellaneous.REGIONS, device_id)
         if len(regions_icon) > 0:
@@ -121,6 +121,12 @@ def check_for_production_of_recycled_fabric():
             click_on_home_button(device_id)
             check_if_i_reach_home(device_id)
             add_items_to_production_when_no_timer_present()
+    else:
+        home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)
+        if len(home_trade_icon) > 0:
+            perform_click_with_rectangle(home_trade_icon[0], device_id)
+        time.sleep(1)
+        return
 
     logging.info("process complete")
     click_on_material_storage(device_id)
@@ -136,7 +142,7 @@ def add_items_to_production_when_no_timer_present():
     perform_click(490, 510, device_id)
     time.sleep(1)
     add_item_to_factory_production(device, 670, 370, 380, 935, 1260, 935)
-    manager.reset_timer(production_timer)
+    manager.create_timer(production_timer, interval=1)
     manager.start_timer(production_timer)
 
 def handle_scenario_where_i_am_in_same_region():
@@ -152,14 +158,13 @@ def handle_scenario_where_i_am_in_same_region():
 def handle_adding_recycle_fabric_to_production_when_previous_production_is_ready():
     timer = manager.get_timer_time(production_timer)
     logging.info(f"timer {timer}")
-    if timer > 300:
-        logging.info("Timer present and it is > 300")
-        perform_click(490, 510, device_id)
-        time.sleep(1)
-        collect_all_items_from_factory(device_id)
-        add_item_to_factory_production(device)
-        manager.reset_timer(production_timer)
-        manager.start_timer(production_timer)
+    logging.info("Timer present and it is > 300")
+    perform_click(490, 510, device_id)
+    time.sleep(1)
+    collect_all_items_from_factory(device_id)
+    add_item_to_factory_production(device, 670, 370, 380, 935, 1260, 935)
+    manager.reset_timer(production_timer)
+    manager.start_timer(production_timer)
 
 
 def set_timer():
