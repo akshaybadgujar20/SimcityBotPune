@@ -32,7 +32,7 @@ def perform_automation():
         time.sleep(1)
         # close home menu
         logging.info('Clicking on close home menu icon')
-        perform_click(1835, 990, device_id)
+        perform_click(1835, 995, device_id)
         # wait for some time
         logging.info('Waiting for 7 seconds')
         time.sleep(7)
@@ -58,15 +58,15 @@ def perform_automation():
         logging.info('Opening building menu')
         # perform_swipe(950, 540, 950, 540, 1, device_id)
         d.touch.down(950, 540)
-        d.sleep(1)
+        d.sleep(2)
         # click on delete
-        time.sleep(1)
+        time.sleep(2)
         logging.info('Clicking on delete')
-        perform_click(1820, 415, device_id)
+        perform_click(1835, 430, device_id)
         # confirm on yes
         time.sleep(1)
         logging.info('Clicking on confirm delete button')
-        perform_click(1130, 740, device_id)
+        perform_click(1140, 730, device_id)
         time.sleep(5)
 
 perform_automation()

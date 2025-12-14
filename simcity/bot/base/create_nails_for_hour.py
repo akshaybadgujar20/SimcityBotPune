@@ -41,7 +41,7 @@ def manufacture_nails():
         y_location=375
     )
 
-    for i in range(12):
+    for i in range(17):
         logging.info('waiting for 150 sec')
         time.sleep(150)
         click_on_material_storage(device_id)

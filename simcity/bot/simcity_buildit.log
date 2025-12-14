@@ -1,223 +1,31 @@
-12-12-2025 - 17:14:51  - logger.py:39 - INFO - 
+14-12-2025 - 10:06:19  - logger.py:39 - INFO - 
 ===== New Automation Started =====
 
-12-12-2025 - 17:14:52  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-12-12-2025 - 17:14:52  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+emulator-5554	offline
+
+
+14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5555' is NOT present in the adb devices output.
+14-12-2025 - 10:06:23  - main.py:147 - INFO - Inside factory no 1
+14-12-2025 - 10:06:29  - main.py:147 - INFO - Inside factory no 2
+14-12-2025 - 10:06:35  - main.py:147 - INFO - Inside factory no 3
+14-12-2025 - 10:06:40  - main.py:147 - INFO - Inside factory no 4
+14-12-2025 - 10:06:42  - main.py:147 - INFO - Inside factory no 5
+14-12-2025 - 10:06:45  - main.py:147 - INFO - Inside factory no 6
+14-12-2025 - 10:06:49  - main.py:147 - INFO - Inside factory no 7
+14-12-2025 - 10:06:52  - main.py:147 - INFO - Inside factory no 8
+14-12-2025 - 10:06:55  - main.py:147 - INFO - Inside factory no 9
+14-12-2025 - 10:06:58  - main.py:147 - INFO - Inside factory no 10
+14-12-2025 - 10:07:01  - main.py:147 - INFO - Inside factory no 11
+14-12-2025 - 10:07:04  - main.py:147 - INFO - Inside factory no 12
+14-12-2025 - 10:07:07  - _internal.py:97 - INFO - 127.0.0.1 - - [14/Dec/2025 10:07:07] "POST /action-perform HTTP/1.1" 200 -
+14-12-2025 - 10:07:08  - _internal.py:97 - INFO - 127.0.0.1 - - [14/Dec/2025 10:07:08] "OPTIONS /action-perform HTTP/1.1" 200 -
+14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
 127.0.0.1:5555	device
-127.0.0.1:5565	device
+emulator-5554	device
+emulator-5564	device
 
 
-12-12-2025 - 17:14:52  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5725' is NOT present in the adb devices output.
-12-12-2025 - 17:14:54  - main.py:73 - INFO - selling => Material.RECYCLED_FABRIC
-12-12-2025 - 17:14:54  - main.py:74 - INFO - depot_page_no => 1
-12-12-2025 - 17:14:54  - find_empty_trade_boxes_and_sell_material.py:25 - INFO - finding Material.RECYCLED_FABRIC on trade depot page no  0
-12-12-2025 - 17:14:54  - app.py:875 - ERROR - Exception on /action-perform [POST]
-Traceback (most recent call last):
-  File "C:\Users\abadgujar2\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-                                                ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\server.py", line 81, in perform_action
-    sell_materials(select_material_list, city_port, False, False)
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\main.py", line 75, in sell_materials
-    depot_page_no = find_empty_trade_boxes_and_sell_material(material, device_id, advertise, full_price, depot_page_no)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\automation\find_empty_trade_boxes_and_sell_material.py", line 26, in find_empty_trade_boxes_and_sell_material
-    empty_trade_boxes, screenshot = find_miscellaneous_material(Miscellaneous.EMPTY_TRADE_BOXES, device_id)
-                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\automation\find_material.py", line 13, in find_miscellaneous_material
-    return take_screenshot_and_perform_template_matching(material, template, device_id, threshold)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\automation\find_material.py", line 28, in take_screenshot_and_perform_template_matching
-    screenshot = take_bw_screenshot(device_id)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\abadgujar2\PycharmProjects\SimcityBotPune\simcity\bot\automation\take_screenshot.py", line 15, in take_bw_screenshot
-    screenshot_gray = cv2.cvtColor(screenshot, cv2.COLOR_BGR2GRAY)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-cv2.error: OpenCV(4.10.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
-
-12-12-2025 - 17:14:54  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:14:54] "[35m[1mPOST /action-perform HTTP/1.1[0m" 500 -
-12-12-2025 - 17:17:56  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:17:56] "OPTIONS /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:17:56  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-12-12-2025 - 17:17:56  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
-127.0.0.1:5555	device
-127.0.0.1:5565	device
-
-
-12-12-2025 - 17:17:56  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
-12-12-2025 - 17:17:56  - main.py:73 - INFO - selling => Material.RECYCLED_FABRIC
-12-12-2025 - 17:17:56  - main.py:74 - INFO - depot_page_no => 1
-12-12-2025 - 17:17:56  - find_empty_trade_boxes_and_sell_material.py:25 - INFO - finding Material.RECYCLED_FABRIC on trade depot page no  0
-12-12-2025 - 17:17:57  - apply_nsm.py:23 - INFO - total matches 8
-12-12-2025 - 17:17:57  - find_empty_trade_boxes_and_sell_material.py:28 - INFO - found 8 empty trade boxes
-12-12-2025 - 17:17:57  - find_empty_trade_boxes_and_sell_material.py:30 - INFO - finding Material.RECYCLED_FABRIC quantity on city storage for quantity
-12-12-2025 - 17:18:00  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:04  - find_empty_trade_boxes_and_sell_material.py:17 - INFO - found quantity = 354
-
-12-12-2025 - 17:18:10  - find_empty_trade_boxes_and_sell_material.py:48 - INFO - found quantity = 354
-12-12-2025 - 17:18:11  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 349
-12-12-2025 - 17:18:11  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:12  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:20  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 344
-12-12-2025 - 17:18:20  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:21  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:28  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 339
-12-12-2025 - 17:18:28  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:29  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:36  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 334
-12-12-2025 - 17:18:36  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:36  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:44  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 329
-12-12-2025 - 17:18:44  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:45  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:18:53  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 324
-12-12-2025 - 17:18:53  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:18:54  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:19:02  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 319
-12-12-2025 - 17:19:02  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:19:03  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:19:10  - main.py:76 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:19:12  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:19:12  - main.py:83 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:19:15  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:19:15  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:19:15] "POST /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:19:24  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:19:24] "OPTIONS /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:19:24  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-12-12-2025 - 17:19:24  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
-127.0.0.1:5555	device
-127.0.0.1:5565	device
-
-
-12-12-2025 - 17:19:24  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
-12-12-2025 - 17:19:24  - main.py:73 - INFO - selling => Material.RECYCLED_FABRIC
-12-12-2025 - 17:19:24  - main.py:74 - INFO - depot_page_no => 1
-12-12-2025 - 17:19:24  - find_empty_trade_boxes_and_sell_material.py:25 - INFO - finding Material.RECYCLED_FABRIC on trade depot page no  0
-12-12-2025 - 17:19:27  - apply_nsm.py:23 - INFO - total matches 8
-12-12-2025 - 17:19:27  - find_empty_trade_boxes_and_sell_material.py:28 - INFO - found 8 empty trade boxes
-12-12-2025 - 17:19:27  - find_empty_trade_boxes_and_sell_material.py:30 - INFO - finding Material.RECYCLED_FABRIC quantity on city storage for quantity
-12-12-2025 - 17:19:30  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:19:32  - find_empty_trade_boxes_and_sell_material.py:17 - INFO - found quantity = 314
-
-12-12-2025 - 17:19:39  - find_empty_trade_boxes_and_sell_material.py:48 - INFO - found quantity = 314
-12-12-2025 - 17:19:40  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 309
-12-12-2025 - 17:19:40  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:19:42  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:19:51  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 304
-12-12-2025 - 17:19:51  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:19:53  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:03  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 299
-12-12-2025 - 17:20:03  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:20:04  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:12  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 294
-12-12-2025 - 17:20:12  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:20:14  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:23  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 289
-12-12-2025 - 17:20:23  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:20:25  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:34  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 284
-12-12-2025 - 17:20:34  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:20:35  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:43  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 279
-12-12-2025 - 17:20:43  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:20:44  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:20:52  - main.py:76 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:20:54  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:20:54  - main.py:83 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:20:56  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:20:56  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:20:56] "POST /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:21:21  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:21:21] "OPTIONS /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:21:21  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-12-12-2025 - 17:21:21  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
-127.0.0.1:5555	device
-127.0.0.1:5565	device
-
-
-12-12-2025 - 17:21:21  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
-12-12-2025 - 17:21:21  - main.py:73 - INFO - selling => Material.RECYCLED_FABRIC
-12-12-2025 - 17:21:21  - main.py:74 - INFO - depot_page_no => 1
-12-12-2025 - 17:21:21  - find_empty_trade_boxes_and_sell_material.py:25 - INFO - finding Material.RECYCLED_FABRIC on trade depot page no  0
-12-12-2025 - 17:21:23  - apply_nsm.py:23 - INFO - total matches 8
-12-12-2025 - 17:21:23  - find_empty_trade_boxes_and_sell_material.py:28 - INFO - found 8 empty trade boxes
-12-12-2025 - 17:21:23  - find_empty_trade_boxes_and_sell_material.py:30 - INFO - finding Material.RECYCLED_FABRIC quantity on city storage for quantity
-12-12-2025 - 17:21:26  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:21:28  - find_empty_trade_boxes_and_sell_material.py:17 - INFO - found quantity = 274
-
-12-12-2025 - 17:21:37  - find_empty_trade_boxes_and_sell_material.py:48 - INFO - found quantity = 274
-12-12-2025 - 17:21:38  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 269
-12-12-2025 - 17:21:38  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:21:39  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:21:48  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 264
-12-12-2025 - 17:21:48  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:21:50  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:21:58  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 259
-12-12-2025 - 17:21:58  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:22:00  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:22:09  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 254
-12-12-2025 - 17:22:09  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:22:10  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:22:19  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 249
-12-12-2025 - 17:22:19  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:22:21  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:22:29  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 244
-12-12-2025 - 17:22:29  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:22:31  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:22:39  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 239
-12-12-2025 - 17:22:39  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:22:40  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:22:49  - main.py:76 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:22:50  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:22:50  - main.py:83 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:22:52  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:22:52  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:22:52] "POST /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:23:47  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:23:47] "OPTIONS /action-perform HTTP/1.1" 200 -
-12-12-2025 - 17:23:47  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-12-12-2025 - 17:23:47  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
-127.0.0.1:5555	device
-127.0.0.1:5565	device
-
-
-12-12-2025 - 17:23:47  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
-12-12-2025 - 17:23:47  - main.py:73 - INFO - selling => Material.RECYCLED_FABRIC
-12-12-2025 - 17:23:47  - main.py:74 - INFO - depot_page_no => 1
-12-12-2025 - 17:23:47  - find_empty_trade_boxes_and_sell_material.py:25 - INFO - finding Material.RECYCLED_FABRIC on trade depot page no  0
-12-12-2025 - 17:23:50  - apply_nsm.py:23 - INFO - total matches 7
-12-12-2025 - 17:23:50  - find_empty_trade_boxes_and_sell_material.py:28 - INFO - found 7 empty trade boxes
-12-12-2025 - 17:23:50  - find_empty_trade_boxes_and_sell_material.py:30 - INFO - finding Material.RECYCLED_FABRIC quantity on city storage for quantity
-12-12-2025 - 17:23:53  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:23:55  - find_empty_trade_boxes_and_sell_material.py:17 - INFO - found quantity = 234
-
-12-12-2025 - 17:24:03  - find_empty_trade_boxes_and_sell_material.py:48 - INFO - found quantity = 234
-12-12-2025 - 17:24:04  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 229
-12-12-2025 - 17:24:04  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:24:06  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:24:16  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 224
-12-12-2025 - 17:24:16  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:24:18  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:24:29  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 219
-12-12-2025 - 17:24:29  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:24:30  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:24:41  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 214
-12-12-2025 - 17:24:41  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:24:43  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:24:53  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 209
-12-12-2025 - 17:24:53  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:24:56  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:25:06  - find_empty_trade_boxes_and_sell_material.py:53 - INFO - remaining_quantity => 204
-12-12-2025 - 17:25:06  - find_empty_trade_boxes_and_sell_material.py:55 - INFO - finding Material.RECYCLED_FABRIC on city storage page no 0
-12-12-2025 - 17:25:09  - apply_nsm.py:23 - INFO - total matches 1
-12-12-2025 - 17:25:20  - main.py:76 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:25:23  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:25:23  - main.py:83 - INFO - Checking if create sale window is visible
-12-12-2025 - 17:25:26  - find_material.py:46 - INFO - no rectangles found for Miscellaneous.CREATE_SALE
-12-12-2025 - 17:25:26  - _internal.py:97 - INFO - 127.0.0.1 - - [12/Dec/2025 17:25:26] "POST /action-perform HTTP/1.1" 200 -
+14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.

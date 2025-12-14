@@ -119,8 +119,9 @@ def check_for_production_of_recycled_fabric():
 
     logging.info("process complete")
     click_on_material_storage(device_id)
-    time.sleep(0.5)
+    time.sleep(1)
     press_esc_key(device_id)
+    time.sleep(1)
     home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)
     if len(home_trade_icon) > 0:
         perform_click_with_rectangle(home_trade_icon[0], device_id)
