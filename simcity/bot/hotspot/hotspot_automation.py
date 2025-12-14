@@ -13,7 +13,7 @@ def perform_automation():
     set_up(device_id)
     for i in range(500):
         logging.info('Clicking on home icon')
-        perform_click(1820, 585, device_id)
+        perform_click(1720, 1010, device_id)
         # wait for sometime
         logging.info('Waiting for 0.5 seconds')
         time.sleep(1)
@@ -50,7 +50,7 @@ def perform_automation():
         # upgrade building
         logging.info('Upgrading building')
         # perform_swipe(635, 485, 950, 540, 1, device_id)
-        d.drag(635, 485, 950, 540, duration=0.2)
+        d.drag(635, 485, 950, 540, duration=0.3)
         # wait for some time
         logging.info('Waiting for 11 seconds')
         time.sleep(11)
@@ -67,6 +67,6 @@ def perform_automation():
         time.sleep(1)
         logging.info('Clicking on confirm delete button')
         perform_click(1130, 740, device_id)
-        time.sleep(4)
+        time.sleep(5)
 
 perform_automation()
