@@ -1,31 +1,92 @@
-14-12-2025 - 10:06:19  - logger.py:39 - INFO - 
+15-12-2025 - 05:45:43  - logger.py:39 - INFO - 
 ===== New Automation Started =====
 
-14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
-emulator-5554	offline
-
-
-14-12-2025 - 10:06:21  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5555' is NOT present in the adb devices output.
-14-12-2025 - 10:06:23  - main.py:147 - INFO - Inside factory no 1
-14-12-2025 - 10:06:29  - main.py:147 - INFO - Inside factory no 2
-14-12-2025 - 10:06:35  - main.py:147 - INFO - Inside factory no 3
-14-12-2025 - 10:06:40  - main.py:147 - INFO - Inside factory no 4
-14-12-2025 - 10:06:42  - main.py:147 - INFO - Inside factory no 5
-14-12-2025 - 10:06:45  - main.py:147 - INFO - Inside factory no 6
-14-12-2025 - 10:06:49  - main.py:147 - INFO - Inside factory no 7
-14-12-2025 - 10:06:52  - main.py:147 - INFO - Inside factory no 8
-14-12-2025 - 10:06:55  - main.py:147 - INFO - Inside factory no 9
-14-12-2025 - 10:06:58  - main.py:147 - INFO - Inside factory no 10
-14-12-2025 - 10:07:01  - main.py:147 - INFO - Inside factory no 11
-14-12-2025 - 10:07:04  - main.py:147 - INFO - Inside factory no 12
-14-12-2025 - 10:07:07  - _internal.py:97 - INFO - 127.0.0.1 - - [14/Dec/2025 10:07:07] "POST /action-perform HTTP/1.1" 200 -
-14-12-2025 - 10:07:08  - _internal.py:97 - INFO - 127.0.0.1 - - [14/Dec/2025 10:07:08] "OPTIONS /action-perform HTTP/1.1" 200 -
-14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
-14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+15-12-2025 - 05:45:43  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:45:43  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
 127.0.0.1:5555	device
 emulator-5554	device
-emulator-5564	device
 
 
-14-12-2025 - 10:07:09  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:45:43  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:45:44  - main.py:147 - INFO - Inside factory no 1
+15-12-2025 - 05:45:45  - main.py:147 - INFO - Inside factory no 2
+15-12-2025 - 05:45:46  - main.py:147 - INFO - Inside factory no 3
+15-12-2025 - 05:45:48  - main.py:147 - INFO - Inside factory no 4
+15-12-2025 - 05:45:49  - main.py:147 - INFO - Inside factory no 5
+15-12-2025 - 05:45:50  - main.py:147 - INFO - Inside factory no 6
+15-12-2025 - 05:45:52  - main.py:147 - INFO - Inside factory no 7
+15-12-2025 - 05:45:53  - main.py:147 - INFO - Inside factory no 8
+15-12-2025 - 05:45:54  - main.py:147 - INFO - Inside factory no 9
+15-12-2025 - 05:45:56  - main.py:147 - INFO - Inside factory no 10
+15-12-2025 - 05:45:57  - main.py:147 - INFO - Inside factory no 11
+15-12-2025 - 05:45:59  - main.py:147 - INFO - Inside factory no 12
+15-12-2025 - 05:46:00  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:46:00] "POST /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:46:04  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:46:04] "OPTIONS /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:46:04  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:46:04  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+
+
+15-12-2025 - 05:46:04  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:46:30  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:46:30] "POST /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:48:41  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:48:41] "OPTIONS /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:48:41  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:48:41  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+
+
+15-12-2025 - 05:48:41  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:48:41  - main.py:147 - INFO - Inside factory no 1
+15-12-2025 - 05:48:43  - main.py:147 - INFO - Inside factory no 2
+15-12-2025 - 05:48:44  - main.py:147 - INFO - Inside factory no 3
+15-12-2025 - 05:48:45  - main.py:147 - INFO - Inside factory no 4
+15-12-2025 - 05:48:47  - main.py:147 - INFO - Inside factory no 5
+15-12-2025 - 05:48:48  - main.py:147 - INFO - Inside factory no 6
+15-12-2025 - 05:48:50  - main.py:147 - INFO - Inside factory no 7
+15-12-2025 - 05:48:51  - main.py:147 - INFO - Inside factory no 8
+15-12-2025 - 05:48:52  - main.py:147 - INFO - Inside factory no 9
+15-12-2025 - 05:48:53  - main.py:147 - INFO - Inside factory no 10
+15-12-2025 - 05:48:55  - main.py:147 - INFO - Inside factory no 11
+15-12-2025 - 05:48:56  - main.py:147 - INFO - Inside factory no 12
+15-12-2025 - 05:48:57  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:48:57] "POST /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:48:58  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:48:58] "OPTIONS /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:48:58  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:48:58  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+
+
+15-12-2025 - 05:48:58  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:49:24  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:49:24] "POST /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:50:26  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:50:26] "OPTIONS /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:50:26  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:50:26  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+
+
+15-12-2025 - 05:50:26  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:50:27  - main.py:147 - INFO - Inside factory no 1
+15-12-2025 - 05:50:28  - main.py:147 - INFO - Inside factory no 2
+15-12-2025 - 05:50:29  - main.py:147 - INFO - Inside factory no 3
+15-12-2025 - 05:50:30  - main.py:147 - INFO - Inside factory no 4
+15-12-2025 - 05:50:32  - main.py:147 - INFO - Inside factory no 5
+15-12-2025 - 05:50:33  - main.py:147 - INFO - Inside factory no 6
+15-12-2025 - 05:50:35  - main.py:147 - INFO - Inside factory no 7
+15-12-2025 - 05:50:36  - main.py:147 - INFO - Inside factory no 8
+15-12-2025 - 05:50:37  - main.py:147 - INFO - Inside factory no 9
+15-12-2025 - 05:50:39  - main.py:147 - INFO - Inside factory no 10
+15-12-2025 - 05:50:40  - main.py:147 - INFO - Inside factory no 11
+15-12-2025 - 05:50:41  - main.py:147 - INFO - Inside factory no 12
+15-12-2025 - 05:50:43  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:50:43] "POST /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:50:43  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:50:43] "OPTIONS /action-perform HTTP/1.1" 200 -
+15-12-2025 - 05:50:43  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+15-12-2025 - 05:50:43  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+
+
+15-12-2025 - 05:50:43  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+15-12-2025 - 05:51:09  - _internal.py:97 - INFO - 127.0.0.1 - - [15/Dec/2025 05:51:09] "POST /action-perform HTTP/1.1" 200 -

@@ -53,11 +53,18 @@ def manufacture_nails():
             perform_click(950, 520, device_id)
             time.sleep(1)
         logging.info("checking for building opening")
-        found_item, screenshot = find_miscellaneous_material(Miscellaneous.BUILDING_SUPPLY_STORE, device_id)
-        logging.info(f"len(found_item) => {len(found_item)}")
-        if len(found_item) < 1:
+        building_supply_store, screenshot = find_miscellaneous_material(Miscellaneous.BUILDING_SUPPLY_STORE, device_id)
+        logging.info(f"len(building_supply_store) => {len(building_supply_store)}")
+        if len(building_supply_store) < 1:
+            logging.info("opening building supply  store ")
             perform_click(950, 520, device_id)
             time.sleep(1)
+            building_supply_store, screenshot = find_miscellaneous_material(Miscellaneous.BUILDING_SUPPLY_STORE, device_id)
+            logging.info(f"len(building_supply_store) => {len(building_supply_store)}")
+            if len(building_supply_store) < 1:
+                logging.info("opening building supply  store ")
+                perform_click(950, 520, device_id)
+                time.sleep(1)
         # add metal to production
         logging.info("adding nails to production")
         for j in range(11):
