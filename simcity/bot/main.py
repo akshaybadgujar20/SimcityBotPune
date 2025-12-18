@@ -50,35 +50,47 @@ def buy_items(materials, material_priorities, device_id):
     manager.create_timer(timer_name, interval=1)
     check_for_close_button(materials, material_priorities, manager, device_id)
 
-def open_next_empty_trade_box(
+def get_next_empty_trade_box(
         device_id,
+        empty_trade_boxes,
+        empty_trade_box_index,
         current_depot_page,
-        used_boxes_on_page,
-        max_depot_pages,
-        boxes_per_page):
+        max_depot_pages):
 
-    while True:
-        if used_boxes_on_page >= boxes_per_page:
-            if current_depot_page >= max_depot_pages:
-                return False, current_depot_page, used_boxes_on_page
-
-            go_to_next_page_in_city_trade_depot(device_id)
-            time.sleep(1)
-            current_depot_page += 1
-            used_boxes_on_page = 0
-            continue
-
-        empty_trade_boxes, _ = find_miscellaneous_material(
-            Miscellaneous.EMPTY_TRADE_BOXES,
-            device_id
+    # If we still have unused boxes on current page
+    if empty_trade_box_index < len(empty_trade_boxes):
+        return (
+            empty_trade_boxes[empty_trade_box_index],
+            empty_trade_boxes,
+            empty_trade_box_index + 1,
+            current_depot_page
         )
 
-        if empty_trade_boxes:
-            open_empty_trade_box(empty_trade_boxes[0], device_id)
-            time.sleep(1)
-            return True, current_depot_page, used_boxes_on_page + 1
+    # Otherwise, move to next page and scan again
+    if current_depot_page >= max_depot_pages:
+        return None, empty_trade_boxes, empty_trade_box_index, current_depot_page
 
-        used_boxes_on_page = boxes_per_page
+    go_to_next_page_in_city_trade_depot(device_id)
+    time.sleep(1)
+    current_depot_page += 1
+
+    empty_trade_boxes, _ = find_miscellaneous_material(
+        Miscellaneous.EMPTY_TRADE_BOXES,
+        device_id
+    )
+
+    empty_trade_box_index = 0
+
+    if not empty_trade_boxes:
+        return None, empty_trade_boxes, empty_trade_box_index, current_depot_page
+
+    return (
+        empty_trade_boxes[0],
+        empty_trade_boxes,
+        1,
+        current_depot_page
+    )
+
 
 
 def sell_materials(
@@ -87,8 +99,7 @@ def sell_materials(
         advertise,
         full_price,
         max_city_storage_scrolls=15,
-        max_depot_pages=4,
-        boxes_per_page=8):
+        max_depot_pages=4):
 
     click_on_purchase_menu(device_id)
     time.sleep(2)
@@ -96,51 +107,56 @@ def sell_materials(
     time.sleep(2)
 
     current_depot_page = 1
-    used_boxes_on_page = 0
+    empty_trade_boxes, _ = find_miscellaneous_material(
+        Miscellaneous.EMPTY_TRADE_BOXES,
+        device_id
+    )
+    empty_trade_box_index = 0
 
     for material in materials:
         logging.info(f'Selling material: {material.name}')
 
         # --------------------------------------------------
-        # STEP 1: Open ONE trade box to open Sell window
+        # STEP 1: Open ONE trade box (page-aware, sequential)
         # --------------------------------------------------
-        success, current_depot_page, used_boxes_on_page = \
-            open_next_empty_trade_box(
+        box, empty_trade_boxes, empty_trade_box_index, current_depot_page = \
+            get_next_empty_trade_box(
                 device_id,
+                empty_trade_boxes,
+                empty_trade_box_index,
                 current_depot_page,
-                used_boxes_on_page,
-                max_depot_pages,
-                boxes_per_page
+                max_depot_pages
             )
 
-        if not success:
+        if box is None:
             logging.info('No empty trade boxes available')
             return
 
+        open_empty_trade_box(box, device_id)
+        time.sleep(1)
+
         # --------------------------------------------------
-        # STEP 2: Switch storage ONCE for this material
+        # STEP 2: Switch storage ONCE for material
         # --------------------------------------------------
         check_material_type_and_open_trade_depot(device_id, material)
         time.sleep(1)
 
         # --------------------------------------------------
-        # STEP 3: Find material & quantity (vertical scroll)
+        # STEP 3: Find quantity (vertical scroll)
         # --------------------------------------------------
-        founded_material = None
         total_quantity = 0
 
-        for scroll_no in range(max_city_storage_scrolls):
+        for _ in range(max_city_storage_scrolls):
             founded_material_list, _ = find_material_in_city_storage(material, device_id)
 
             if founded_material_list:
-                founded_material = founded_material_list[0]
-                total_quantity = capture_material_quantity(founded_material, device_id)
+                total_quantity = capture_material_quantity(founded_material_list[0], device_id)
                 break
 
             go_to_next_page_in_storage(device_id)
             time.sleep(1)
 
-        if founded_material is None or total_quantity <= 0:
+        if total_quantity <= 0:
             logging.info(f'{material.name} not found or zero quantity')
             continue
 
@@ -148,9 +164,25 @@ def sell_materials(
         logging.info(f'{material.name} quantity: {total_quantity}')
 
         # --------------------------------------------------
-        # STEP 4: Sell using capacity (NO storage switching)
+        # STEP 4: Sell loop (re-scan storage EVERY time)
         # --------------------------------------------------
         while remaining_quantity > 0:
+
+            founded_material = None
+
+            for _ in range(max_city_storage_scrolls):
+                founded_material_list, _ = find_material_in_city_storage(material, device_id)
+
+                if founded_material_list:
+                    founded_material = founded_material_list[0]
+                    break
+
+                go_to_next_page_in_storage(device_id)
+                time.sleep(1)
+
+            if founded_material is None:
+                logging.info(f'{material.name} not found during selling')
+                break
 
             sell_material(
                 founded_material,
@@ -166,18 +198,22 @@ def sell_materials(
             if remaining_quantity <= 0:
                 break
 
-            success, current_depot_page, used_boxes_on_page = \
-                open_next_empty_trade_box(
+            box, empty_trade_boxes, empty_trade_box_index, current_depot_page = \
+                get_next_empty_trade_box(
                     device_id,
+                    empty_trade_boxes,
+                    empty_trade_box_index,
                     current_depot_page,
-                    used_boxes_on_page,
-                    max_depot_pages,
-                    boxes_per_page
+                    max_depot_pages
                 )
 
-            if not success:
+            if box is None:
                 logging.info('Depot full while selling')
                 return
+
+            open_empty_trade_box(box, device_id)
+            time.sleep(1)
+
 
 def check_material_type_and_open_trade_depot(device_id, material):
     if material.building_name != 'FACTORY':
