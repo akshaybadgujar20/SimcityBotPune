@@ -29,6 +29,13 @@ def find_empty_trade_boxes_and_sell_material(material, device_id, advertise, ful
                 if found_quantity == 0:
                     logging.info(f'finding {material.name} quantity on city storage for quantity')
                     open_empty_trade_box(empty_trade_boxes[0], device_id)
+
+                    if material.building_name != 'FACTORY':
+                        logging.info('Item is commercial item, opening storage depot')
+                        perform_click(625,775,device_id)
+                    else:
+                        logging.info('Item is factory item')
+
                     for city_storage_page_no in range(15):
                         founded_material_list, screenshot = find_material_in_city_storage(material, device_id)
                         if len(founded_material_list) > 0:

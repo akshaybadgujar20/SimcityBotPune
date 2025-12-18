@@ -23,6 +23,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/building_supplies_store/nails.png",
     "sell_duration": 3000,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "PLANKS": {
@@ -49,6 +50,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/building_supplies_store/planks.png",
     "sell_duration": 3000,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "BRICKS": {
@@ -75,6 +77,7 @@
     "actual_price": 14,
     "storage_template": "city_storage/building_supplies_store/bricks.png",
     "sell_duration": 4000,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "CEMENT": {
@@ -101,6 +104,7 @@
     "actual_price": 16,
     "storage_template": "city_storage/building_supplies_store/cement.png",
     "sell_duration": 5000,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "GLUE": {
@@ -127,6 +131,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/building_supplies_store/glue.png",
     "sell_duration": 5000,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "PAINT": {
@@ -153,6 +158,7 @@
     "actual_price": 13,
     "storage_template": "city_storage/building_supplies_store/paint.png",
     "sell_duration": 4500,
+    "building_name": "BUILDING_SUPPLIES_STORE",
     "manufacturing_recipes": {}
   },
   "WROUGHT_IRON": {
@@ -179,6 +185,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/bureau_of_restoration/wrought_iron.png",
     "sell_duration": 400,
+    "building_name": "BUREAU_OF_RESTORATION",
     "manufacturing_recipes": {}
   },
   "CARVED_WOOD": {
@@ -205,6 +212,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/bureau_of_restoration/carved_wood.png",
     "sell_duration": 350,
+    "building_name": "BUREAU_OF_RESTORATION",
     "manufacturing_recipes": {}
   },
   "CHISELED_STONE": {
@@ -231,6 +239,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/bureau_of_restoration/chiseled_stone.png",
     "sell_duration": 420,
+    "building_name": "BUREAU_OF_RESTORATION",
     "manufacturing_recipes": {}
   },
   "TAPESTRY": {
@@ -257,6 +266,7 @@
     "actual_price": 30,
     "storage_template": "city_storage/bureau_of_restoration/tapestry.png",
     "sell_duration": 500,
+    "building_name": "BUREAU_OF_RESTORATION",
     "manufacturing_recipes": {}
   },
   "STAINED_GLASS": {
@@ -283,6 +293,7 @@
     "actual_price": 22,
     "storage_template": "city_storage/bureau_of_restoration/stained_glass_storage.png",
     "sell_duration": 450,
+    "building_name": "BUREAU_OF_RESTORATION",
     "manufacturing_recipes": {}
   },
   "MOTOR_OIL": {
@@ -309,6 +320,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/car_parts/motor_oil.png",
     "sell_duration": 3000,
+    "building_name": "CAR_PARTS",
     "manufacturing_recipes": {}
   },
   "CAR_TIRE": {
@@ -335,6 +347,7 @@
     "actual_price": 22,
     "storage_template": "city_storage/car_parts/car_tire.png",
     "sell_duration": 8000,
+    "building_name": "CAR_PARTS",
     "manufacturing_recipes": {}
   },
   "ENGINE": {
@@ -361,6 +374,7 @@
     "actual_price": 150,
     "storage_template": "city_storage/car_parts/engine.png",
     "sell_duration": 13000,
+    "building_name": "CAR_PARTS",
     "manufacturing_recipes": {}
   },
   "WOOL_SHIRT": {
@@ -387,6 +401,7 @@
     "actual_price": 25,
     "storage_template": "city_storage/country_store/wool_shirt.png",
     "sell_duration": 14000,
+    "building_name": "COUNTRY_STORE",
     "manufacturing_recipes": {}
   },
   "PICNIC_BASKET": {
@@ -413,6 +428,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/country_store/picnic_basket.png",
     "sell_duration": 39000,
+    "building_name": "COUNTRY_STORE",
     "manufacturing_recipes": {}
   },
   "APPLE_JAM": {
@@ -439,6 +455,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/country_store/apple_jam.png",
     "sell_duration": 22000,
+    "building_name": "COUNTRY_STORE",
     "manufacturing_recipes": {}
   },
   "TIRAMISU": {
@@ -465,6 +482,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/desert_shop/tiramisu.png",
     "sell_duration": 200,
+    "building_name": "DESERT_SHOP",
     "manufacturing_recipes": {}
   },
   "CHURROS": {
@@ -491,6 +509,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/desert_shop/churros.png",
     "sell_duration": 180,
+    "building_name": "DESERT_SHOP",
     "manufacturing_recipes": {}
   },
   "PROFITEROLE": {
@@ -517,6 +536,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/desert_shop/profiterole.png",
     "sell_duration": 220,
+    "building_name": "DESERT_SHOP",
     "manufacturing_recipes": {}
   },
   "MOCHI": {
@@ -543,6 +563,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/desert_shop/mochi.png",
     "sell_duration": 250,
+    "building_name": "DESERT_SHOP",
     "manufacturing_recipes": {}
   },
   "PAVLOVA": {
@@ -569,6 +590,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/desert_shop/pavlova.png",
     "sell_duration": 300,
+    "building_name": "DESERT_SHOP",
     "manufacturing_recipes": {}
   },
   "DONUTS": {
@@ -595,6 +617,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/donut_shop/donuts.png",
     "sell_duration": 7000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "GREEN_SMOOTHIE": {
@@ -621,6 +644,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/donut_shop/green_smoothie.png",
     "sell_duration": 8000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "BREAD_ROLL": {
@@ -647,6 +671,7 @@
     "actual_price": 4,
     "storage_template": "city_storage/donut_shop/bread_roll.png",
     "sell_duration": 11000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "CHERRY_CHEESECAKE": {
@@ -673,6 +698,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/donut_shop/cherry_cheesecake.png",
     "sell_duration": 14000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "FROZEN_YOGURT": {
@@ -699,6 +725,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/donut_shop/frozen_yogurt.png",
     "sell_duration": 12000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "COFFEE": {
@@ -725,6 +752,7 @@
     "actual_price": 3,
     "storage_template": "city_storage/donut_shop/coffee.png",
     "sell_duration": 6000,
+    "building_name": "DONUT_SHOP",
     "manufacturing_recipes": {}
   },
   "REUSABLE_BAG": {
@@ -751,6 +779,7 @@
     "actual_price": 4,
     "storage_template": "city_storage/eco_shop/reusable_bag.png",
     "sell_duration": 3000,
+    "building_name": "ECO_SHOP",
     "manufacturing_recipes": {}
   },
   "ECOLOGICAL_SHOES": {
@@ -777,6 +806,7 @@
     "actual_price": 20,
     "storage_template": "city_storage/eco_shop/ecological_shoes.png",
     "sell_duration": 6000,
+    "building_name": "ECO_SHOP",
     "manufacturing_recipes": {}
   },
   "YOGA_MAT": {
@@ -803,6 +833,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/eco_shop/yoga_mat.png",
     "sell_duration": 13000,
+    "building_name": "ECO_SHOP",
     "manufacturing_recipes": {}
   },
   "DOZER_BLADE": {
@@ -829,6 +860,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/expansion/blade.png",
     "sell_duration": 6000,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "DOZER_EXHAUST": {
@@ -855,6 +887,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/expansion/exhaust.png",
     "sell_duration": 6000,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "DOZER_WHEEL": {
@@ -881,6 +914,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/expansion/wheel.png",
     "sell_duration": 6000,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "VEGETABLES": {
@@ -907,6 +941,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/farmers_market/vegetables.png",
     "sell_duration": 3500,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "FLOUR_BAG": {
@@ -933,6 +968,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/farmers_market/flour_bag.png",
     "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "FRUIT_AND_BERRIES": {
@@ -959,6 +995,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/farmers_market/fruit_and_berries.png",
     "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "CREAM": {
@@ -985,6 +1022,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/farmers_market/cream.png",
     "sell_duration": 5000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "CORN": {
@@ -1011,12 +1049,13 @@
     "actual_price": 4,
     "storage_template": "city_storage/farmers_market/corn.png",
     "sell_duration": 5000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "CHEESE": {
     "name": "CHEESE",
     "x_location": 1245,
-    "y_location": 480,
+    "y_location": 680,
     "hq_templates": {
       "base": "global_trade_hq/farmers_market/cheese.png",
       "x1": "global_trade_hq/farmers_market/cheese_x1.png",
@@ -1037,6 +1076,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/farmers_market/cheese.png",
     "sell_duration": 6000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "BEEF": {
@@ -1063,6 +1103,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/farmers_market/beef.png",
     "sell_duration": 7000,
+    "building_name": "FARMER_S_MARKET",
     "manufacturing_recipes": {}
   },
   "CAP": {
@@ -1089,6 +1130,7 @@
     "actual_price": 20,
     "storage_template": "city_storage/fashion_store/cap.png",
     "sell_duration": 6000,
+    "building_name": "FASHION_STORE",
     "manufacturing_recipes": {}
   },
   "SHOES": {
@@ -1115,6 +1157,7 @@
     "actual_price": 70,
     "storage_template": "city_storage/fashion_store/shoes.png",
     "sell_duration": 8000,
+    "building_name": "FASHION_STORE",
     "manufacturing_recipes": {}
   },
   "WATCH": {
@@ -1141,6 +1184,7 @@
     "actual_price": 150,
     "storage_template": "city_storage/fashion_store/watch.png",
     "sell_duration": 6000,
+    "building_name": "FASHION_STORE",
     "manufacturing_recipes": {}
   },
   "BUSINESS_SUITS": {
@@ -1165,8 +1209,9 @@
     },
     "base_price": 877,
     "actual_price": 180,
-    "storage_template": "city_storage/fashion_store/business_suits_storage.png",
+    "storage_template": "city_storage/fashion_store/business_suits.png",
     "sell_duration": 9000,
+    "building_name": "FASHION_STORE",
     "manufacturing_recipes": {}
   },
   "BACKPACK": {
@@ -1193,6 +1238,7 @@
     "actual_price": 60,
     "storage_template": "city_storage/fashion_store/backpack.png",
     "sell_duration": 5000,
+    "building_name": "FASHION_STORE",
     "manufacturing_recipes": {}
   },
   "ICE_CREAM_SANDWICH": {
@@ -1219,6 +1265,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/fast_food_restaurant/ice_cream_sandwich.png",
     "sell_duration": 15000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "PIZZA": {
@@ -1245,6 +1292,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/fast_food_restaurant/pizza.png",
     "sell_duration": 15000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "BURGERS": {
@@ -1271,6 +1319,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/fast_food_restaurant/burgers.png",
     "sell_duration": 21000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "CHEESE_FRIES": {
@@ -1297,6 +1346,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/fast_food_restaurant/cheese_fries.png",
     "sell_duration": 8000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "LEMONADE_BOTTLE": {
@@ -1323,6 +1373,7 @@
     "actual_price": 4,
     "storage_template": "city_storage/fast_food_restaurant/lemonade_bottle.png",
     "sell_duration": 11000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "POPCORN": {
@@ -1349,6 +1400,7 @@
     "actual_price": 3,
     "storage_template": "city_storage/fast_food_restaurant/popcorn.png",
     "sell_duration": 10000,
+    "building_name": "FAST_FOOD_RESTAURANT",
     "manufacturing_recipes": {}
   },
   "CANNED_FISH": {
@@ -1375,6 +1427,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/fish_marketplace/canned_fish_storage.png",
     "sell_duration": 3000,
+    "building_name": "FISH_MARKETPLACE",
     "manufacturing_recipes": {}
   },
   "FISH_SOUP": {
@@ -1401,6 +1454,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/fish_marketplace/fish_soup_storage.png",
     "sell_duration": 9000,
+    "building_name": "FISH_MARKETPLACE",
     "manufacturing_recipes": {}
   },
   "SALMON_SANDWICH": {
@@ -1427,6 +1481,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/fish_marketplace/salmon_sandwich_storage.png",
     "sell_duration": 13000,
+    "building_name": "FISH_MARKETPLACE",
     "manufacturing_recipes": {}
   },
   "CHAIRS": {
@@ -1453,6 +1508,7 @@
     "actual_price": 70,
     "storage_template": "city_storage/furniture_store/chairs.png",
     "sell_duration": 3000,
+    "building_name": "FURNITURE_STORE",
     "manufacturing_recipes": {}
   },
   "TABLES": {
@@ -1479,6 +1535,7 @@
     "actual_price": 120,
     "storage_template": "city_storage/furniture_store/tables.png",
     "sell_duration": 5500,
+    "building_name": "FURNITURE_STORE",
     "manufacturing_recipes": {}
   },
   "HOME_TEXTILES": {
@@ -1505,6 +1562,7 @@
     "actual_price": 45,
     "storage_template": "city_storage/furniture_store/home_textiles.png",
     "sell_duration": 6000,
+    "building_name": "FURNITURE_STORE",
     "manufacturing_recipes": {}
   },
   "CUPBOARD": {
@@ -1531,6 +1589,7 @@
     "actual_price": 150,
     "storage_template": "city_storage/furniture_store/cupboard.png",
     "sell_duration": 7000,
+    "building_name": "FURNITURE_STORE",
     "manufacturing_recipes": {}
   },
   "COUCH": {
@@ -1557,6 +1616,7 @@
     "actual_price": 300,
     "storage_template": "city_storage/furniture_store/couch.png",
     "sell_duration": 11500,
+    "building_name": "FURNITURE_STORE",
     "manufacturing_recipes": {}
   },
   "GRASS": {
@@ -1583,6 +1643,7 @@
     "actual_price": 3,
     "storage_template": "city_storage/gardening_supplies/grass.png",
     "sell_duration": 5000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "TREE_SAPLINGS": {
@@ -1609,6 +1670,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/gardening_supplies/tree_saplings.png",
     "sell_duration": 5000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "GARDEN_FURNITURE": {
@@ -1635,6 +1697,7 @@
     "actual_price": 20,
     "storage_template": "city_storage/gardening_supplies/garden_furniture.png",
     "sell_duration": 7000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "FIRE_PIT": {
@@ -1661,6 +1724,7 @@
     "actual_price": 30,
     "storage_template": "city_storage/gardening_supplies/fire_pit.png",
     "sell_duration": 11000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "LAWN_MOWER": {
@@ -1687,6 +1751,7 @@
     "actual_price": 40,
     "storage_template": "city_storage/gardening_supplies/lawn_mower.png",
     "sell_duration": 7000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "GARDEN_GNOMES": {
@@ -1713,6 +1778,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/gardening_supplies/garden_gnomes.png",
     "sell_duration": 10000,
+    "building_name": "GARDENING_SUPPLIES",
     "manufacturing_recipes": {}
   },
   "HAMMER": {
@@ -1739,6 +1805,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/hardware_store/hammer.png",
     "sell_duration": 3000,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "MEASURING_TAPE": {
@@ -1765,6 +1832,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/hardware_store/measuring_tape.png",
     "sell_duration": 3000,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "SHOVEL": {
@@ -1791,6 +1859,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/hardware_store/shovel.png",
     "sell_duration": 3500,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "COOKING_UTENSILS": {
@@ -1817,6 +1886,7 @@
     "actual_price": 28,
     "storage_template": "city_storage/hardware_store/cooking_utensils.png",
     "sell_duration": 4000,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "LADDER": {
@@ -1843,6 +1913,7 @@
     "actual_price": 24,
     "storage_template": "city_storage/hardware_store/ladder.png",
     "sell_duration": 5000,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "DRILL": {
@@ -1869,6 +1940,7 @@
     "actual_price": 40,
     "storage_template": "city_storage/hardware_store/drill.png",
     "sell_duration": 6000,
+    "building_name": "HARDWARE_STORE",
     "manufacturing_recipes": {}
   },
   "BBQ_GRILL": {
@@ -1895,6 +1967,7 @@
     "actual_price": 200,
     "storage_template": "city_storage/home_appliances/bbq_grill.png",
     "sell_duration": 5000,
+    "building_name": "HOME_APPLIANCES",
     "manufacturing_recipes": {}
   },
   "REFRIGERATOR": {
@@ -1921,6 +1994,7 @@
     "actual_price": 400,
     "storage_template": "city_storage/home_appliances/refrigerator.png",
     "sell_duration": 8000,
+    "building_name": "HOME_APPLIANCES",
     "manufacturing_recipes": {}
   },
   "LIGHTING_SYSTEM": {
@@ -1947,6 +2021,7 @@
     "actual_price": 120,
     "storage_template": "city_storage/home_appliances/lighting_system.png",
     "sell_duration": 7000,
+    "building_name": "HOME_APPLIANCES",
     "manufacturing_recipes": {}
   },
   "TV": {
@@ -1973,6 +2048,7 @@
     "actual_price": 700,
     "storage_template": "city_storage/home_appliances/tv.png",
     "sell_duration": 9000,
+    "building_name": "HOME_APPLIANCES",
     "manufacturing_recipes": {}
   },
   "MICROWAVE_OVEN": {
@@ -1999,6 +2075,7 @@
     "actual_price": 160,
     "storage_template": "city_storage/home_appliances/microwave_oven.png",
     "sell_duration": 5500,
+    "building_name": "HOME_APPLIANCES",
     "manufacturing_recipes": {}
   },
   "METAL": {
@@ -2025,6 +2102,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/raw_materials/metal.png",
     "sell_duration": 1500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "WOOD": {
@@ -2051,6 +2129,7 @@
     "actual_price": 11,
     "storage_template": "city_storage/raw_materials/wood.png",
     "sell_duration": 1500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "PLASTIC": {
@@ -2077,6 +2156,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/raw_materials/plastic.png",
     "sell_duration": 2000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "TEXTILES": {
@@ -2103,6 +2183,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/raw_materials/textiles.png",
     "sell_duration": 3000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "SUGAR_AND_SPICES": {
@@ -2129,6 +2210,7 @@
     "actual_price": 13,
     "storage_template": "city_storage/raw_materials/sugar_spices.png",
     "sell_duration": 3000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "GLASS": {
@@ -2155,6 +2237,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/raw_materials/glass.png",
     "sell_duration": 3000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "SEEDS": {
@@ -2181,6 +2264,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/raw_materials/seeds.png",
     "sell_duration": 2500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "MINERALS": {
@@ -2207,12 +2291,13 @@
     "actual_price": 7,
     "storage_template": "city_storage/raw_materials/minerals.png",
     "sell_duration": 2500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "CHEMICALS": {
     "name": "CHEMICALS",
-    "x_location": 1440,
-    "y_location": 650,
+    "x_location": 1250,
+    "y_location": 690,
     "hq_templates": {
       "base": "global_trade_hq/raw_materials/chemicals.png",
       "x1": "global_trade_hq/raw_materials/chemicals_x1.png",
@@ -2233,6 +2318,7 @@
     "actual_price": 14,
     "storage_template": "city_storage/raw_materials/chemicals.png",
     "sell_duration": 3000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "ANIMAL_FEED": {
@@ -2259,6 +2345,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/raw_materials/animal_feed.png",
     "sell_duration": 3500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "ELECTRICAL_COMPONENTS": {
@@ -2285,6 +2372,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/raw_materials/electrical_components.png",
     "sell_duration": 3500,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "RECYCLED_FABRIC": {
@@ -2311,6 +2399,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/raw_materials/recycled_fabric.png",
     "sell_duration": 2000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "CRUDE_OIL": {
@@ -2337,6 +2426,7 @@
     "actual_price": 25,
     "storage_template": "city_storage/raw_materials/crude_oil.png",
     "sell_duration": 2200,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "COCONUT": {
@@ -2363,6 +2453,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/raw_materials/coconut.png",
     "sell_duration": 2000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "SILK": {
@@ -2389,6 +2480,7 @@
     "actual_price": 30,
     "storage_template": "city_storage/raw_materials/silk.png",
     "sell_duration": 2000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "FISH": {
@@ -2415,6 +2507,7 @@
     "actual_price": 14,
     "storage_template": "city_storage/raw_materials/fish.png",
     "sell_duration": 2000,
+    "building_name": "FACTORY",
     "manufacturing_recipes": {}
   },
   "STRING": {
@@ -2441,6 +2534,7 @@
     "actual_price": 4,
     "storage_template": "city_storage/silk_store/string.png",
     "sell_duration": 3000,
+    "building_name": "SILK_STORE",
     "manufacturing_recipes": {}
   },
   "FAN": {
@@ -2467,6 +2561,7 @@
     "actual_price": 20,
     "storage_template": "city_storage/silk_store/fan.png",
     "sell_duration": 9000,
+    "building_name": "SILK_STORE",
     "manufacturing_recipes": {}
   },
   "ROBE": {
@@ -2493,6 +2588,7 @@
     "actual_price": 35,
     "storage_template": "city_storage/silk_store/robe.png",
     "sell_duration": 13000,
+    "building_name": "SILK_STORE",
     "manufacturing_recipes": {}
   },
   "TENNIS_RACKET": {
@@ -2519,6 +2615,7 @@
     "actual_price": 20,
     "storage_template": "city_storage/sport_shop/tennis_racket.png",
     "sell_duration": 6000,
+    "building_name": "SPORT_SHOP",
     "manufacturing_recipes": {}
   },
   "SPORTS_DRINK": {
@@ -2545,6 +2642,7 @@
     "actual_price": 3,
     "storage_template": "city_storage/sport_shop/sports_drink.png",
     "sell_duration": 4000,
+    "building_name": "SPORT_SHOP",
     "manufacturing_recipes": {}
   },
   "FOOTBALL_SHOES": {
@@ -2571,6 +2669,7 @@
     "actual_price": 55,
     "storage_template": "city_storage/sport_shop/football_shoes.png",
     "sell_duration": 7000,
+    "building_name": "SPORT_SHOP",
     "manufacturing_recipes": {}
   },
   "PROTEIN_BAR": {
@@ -2597,6 +2696,7 @@
     "actual_price": 4,
     "storage_template": "city_storage/sport_shop/protein_bar.png",
     "sell_duration": 8000,
+    "building_name": "SPORT_SHOP",
     "manufacturing_recipes": {}
   },
   "PING_PONG_TABLE": {
@@ -2623,6 +2723,7 @@
     "actual_price": 120,
     "storage_template": "city_storage/sport_shop/ping_pong_table.png",
     "sell_duration": 10000,
+    "building_name": "SPORT_SHOP",
     "manufacturing_recipes": {}
   },
   "STORAGE_CAMERA": {
@@ -2649,6 +2750,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/storage/camera.png",
     "sell_duration": 5500,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "STORAGE_LOCK": {
@@ -2675,6 +2777,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/storage/lock.png",
     "sell_duration": 5500,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "STORAGE_BARS": {
@@ -2701,6 +2804,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/storage/bars.png",
     "sell_duration": 5500,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "LETTER_BLOCKS": {
@@ -2727,6 +2831,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/toy_shop/letter_blocks.png",
     "sell_duration": 200,
+    "building_name": "TOY_SHOP",
     "manufacturing_recipes": {}
   },
   "KITE": {
@@ -2753,6 +2858,7 @@
     "actual_price": 13,
     "storage_template": "city_storage/toy_shop/kite.png",
     "sell_duration": 300,
+    "building_name": "TOY_SHOP",
     "manufacturing_recipes": {}
   },
   "TEDDY_BEAR": {
@@ -2779,6 +2885,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/toy_shop/teddy_bear.png",
     "sell_duration": 400,
+    "building_name": "TOY_SHOP",
     "manufacturing_recipes": {}
   },
   "GAME_CONSOLE": {
@@ -2805,6 +2912,7 @@
     "actual_price": 300,
     "storage_template": "city_storage/toy_shop/game_console.png",
     "sell_duration": 900,
+    "building_name": "TOY_SHOP",
     "manufacturing_recipes": {}
   },
   "COCONUT_OIL": {
@@ -2831,6 +2939,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/tropical_products_store/coconut_oil.png",
     "sell_duration": 3000,
+    "building_name": "TROPICAL_PRODUCTS_STORE",
     "manufacturing_recipes": {}
   },
   "FACE_CREAM": {
@@ -2857,6 +2966,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/tropical_products_store/face_cream.png",
     "sell_duration": 7000,
+    "building_name": "TROPICAL_PRODUCTS_STORE",
     "manufacturing_recipes": {}
   },
   "TROPICAL_DRINK": {
@@ -2883,6 +2993,7 @@
     "actual_price": 8,
     "storage_template": "city_storage/tropical_products_store/tropical_drink.png",
     "sell_duration": 15000,
+    "building_name": "TROPICAL_PRODUCTS_STORE",
     "manufacturing_recipes": {}
   },
   "VU_GLOVES": {
@@ -2909,6 +3020,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/vu/gloves.png",
     "sell_duration": 4500,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "VU_BATTERY": {
@@ -2935,6 +3047,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/vu/battery.png",
     "sell_duration": 4500,
+    "building_name": "",
     "manufacturing_recipes": {}
   },
   "VU_REMOTE": {
@@ -2961,6 +3074,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/special/vu/remote.png",
     "sell_duration": 4500,
+    "building_name": "",
     "manufacturing_recipes": {}
   }
 }

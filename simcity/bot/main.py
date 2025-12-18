@@ -46,48 +46,24 @@ def buy_items(materials, material_priorities, device_id):
     check_for_close_button(materials, material_priorities, manager, device_id)
 
 def sell_materials(materials, device_id, advertise, full_price, depot_page_no=1):
-    # logging.info('Checking if create sale window is visible and close it')
-    # create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
-    # if len(create_sale_window) > 0:
-    #     logging.info(f'create sale window found {len(create_sale_window)}, closing it')
-    #     perform_click(1800, 65, device_id)
-    #     time.sleep(0.5)
-    #     perform_swipe(350, 550,1300, 550, 1000, device_id)
-    #     time.sleep(1)
-    #     perform_swipe(350, 550,1300, 550, 1000, device_id)
-    #     time.sleep(1)
-    #     perform_swipe(350, 550,1300, 550, 1000, device_id)
-    #     time.sleep(1)
-    #
-    # is_trade_depot_open = check_if_trade_depot_open(device_id)
-    # if not is_trade_depot_open:
-    #     logging.info('trade depot is not open, finding and opening it')
-    #     find_and_open_trade_depot(device_id)
-    # logging.info('trade depot is open')
-    #
-    # trade_depot, screenshot = find_miscellaneous_material(Miscellaneous.TRADE_DEPOT_NAME, device_id)
-    # logging.info(f'selling materials {materials}')
-    # if len(trade_depot) > 0:
-        for index, material in enumerate(materials):
-            if is_sell_materials_running:
-                logging.info(f'selling => {material.name}')
-                logging.info(f'depot_page_no => {depot_page_no}')
-                depot_page_no = find_empty_trade_boxes_and_sell_material(material, device_id, advertise, full_price, depot_page_no)
-                logging.info('Checking if create sale window is visible')
-                create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
-                if len(create_sale_window) > 0:
-                    logging.info(f'create sale window found {len(create_sale_window)}, closing it')
-                    perform_click(1800, 65, device_id)
-                    time.sleep(0.5)
+    for index, material in enumerate(materials):
+        if is_sell_materials_running:
+            logging.info(f'selling => {material.name}')
+            logging.info(f'depot_page_no => {depot_page_no}')
+            depot_page_no = find_empty_trade_boxes_and_sell_material(material, device_id, advertise, full_price, depot_page_no)
+            logging.info('Checking if create sale window is visible')
+            create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
+            if len(create_sale_window) > 0:
+                logging.info(f'create sale window found {len(create_sale_window)}, closing it')
+                perform_click(1800, 65, device_id)
+                time.sleep(0.5)
 
-        logging.info('Checking if create sale window is visible')
-        create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
-        if len(create_sale_window) > 0:
-            logging.info(f'create sale window found {len(create_sale_window)}, closing it')
-            perform_click(1800,65, device_id)
-            time.sleep(0.5)
-    # else:
-    #     logging.info('trade depot is not open')
+    logging.info('Checking if create sale window is visible')
+    create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
+    if len(create_sale_window) > 0:
+        logging.info(f'create sale window found {len(create_sale_window)}, closing it')
+        perform_click(1800,65, device_id)
+        time.sleep(0.5)
 
 def collect_sold_item_money(iteration, device_id):
     is_trade_depot_open = check_if_trade_depot_open(device_id)
@@ -161,7 +137,7 @@ def add_raw_material_to_production(material, no_of_factories, device_id):
     device = u2.connect('127.0.0.1:'+device_id)
     for i in range(no_of_factories):
         if is_add_raw_material_to_production_running:
-            device.swipe_points([(material.x_location, material.y_location), (380, 935), (1260, 935)], duration=0.2)
+            device.swipe_points([(material.x_location, material.y_location), (380, 935), (1260, 1000)], duration=0.2)
             time.sleep(0.1)
             perform_click(500, 140, device_id)
             time.sleep(0.5)

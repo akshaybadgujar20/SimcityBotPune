@@ -23,7 +23,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/raw_materials/metal.png",
     "sell_duration": 1500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "WOOD",
@@ -49,7 +49,7 @@
     "actual_price": 11,
     "storage_template": "city_storage/raw_materials/wood.png",
     "sell_duration": 1500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "PLASTIC",
@@ -75,7 +75,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/raw_materials/plastic.png",
     "sell_duration": 2000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "TEXTILES",
@@ -101,7 +101,7 @@
     "actual_price": 10,
     "storage_template": "city_storage/raw_materials/textiles.png",
     "sell_duration": 3000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "SUGAR_AND_SPICES",
@@ -127,7 +127,7 @@
     "actual_price": 13,
     "storage_template": "city_storage/raw_materials/sugar_spices.png",
     "sell_duration": 3000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "GLASS",
@@ -153,7 +153,7 @@
     "actual_price": 15,
     "storage_template": "city_storage/raw_materials/glass.png",
     "sell_duration": 3000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "SEEDS",
@@ -179,7 +179,7 @@
     "actual_price": 6,
     "storage_template": "city_storage/raw_materials/seeds.png",
     "sell_duration": 2500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "MINERALS",
@@ -205,7 +205,7 @@
     "actual_price": 7,
     "storage_template": "city_storage/raw_materials/minerals.png",
     "sell_duration": 2500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "CHEMICALS",
@@ -231,7 +231,7 @@
     "actual_price": 14,
     "storage_template": "city_storage/raw_materials/chemicals.png",
     "sell_duration": 3000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "ANIMAL_FEED",
@@ -257,7 +257,7 @@
     "actual_price": 9,
     "storage_template": "city_storage/raw_materials/animal_feed.png",
     "sell_duration": 3500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "ELECTRICAL_COMPONENTS",
@@ -283,7 +283,7 @@
     "actual_price": 18,
     "storage_template": "city_storage/raw_materials/electrical_components.png",
     "sell_duration": 3500,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "RECYCLED_FABRIC",
@@ -309,7 +309,7 @@
     "actual_price": 12,
     "storage_template": "city_storage/raw_materials/recycled_fabric.png",
     "sell_duration": 2000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "CRUDE_OIL",
@@ -335,7 +335,7 @@
     "actual_price": 25,
     "storage_template": "city_storage/raw_materials/crude_oil.png",
     "sell_duration": 2200,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "COCONUT",
@@ -361,7 +361,7 @@
     "actual_price": 5,
     "storage_template": "city_storage/raw_materials/coconut.png",
     "sell_duration": 2000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "SILK",
@@ -387,7 +387,7 @@
     "actual_price": 30,
     "storage_template": "city_storage/raw_materials/silk.png",
     "sell_duration": 2000,
-    "building_name": ""
+    "building_name": "FACTORY"
   },
   {
     "name": "FISH",
@@ -413,6 +413,6 @@
     "actual_price": 14,
     "storage_template": "city_storage/raw_materials/fish.png",
     "sell_duration": 2000,
-    "building_name": ""
+    "building_name": "FACTORY"
   }
 ]
