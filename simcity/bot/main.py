@@ -6,6 +6,7 @@ from simcity.bot.automation.adb_actions import perform_click_with_rectangle, per
 from simcity.bot.automation.check_adb_devices_and_connect_if_not_connected import check_adb_devices_and_connect_if_not_connected
 from simcity.bot.automation.check_for_close_button import check_for_close_button
 from simcity.bot.automation.check_for_home_button import check_for_home_button
+from simcity.bot.automation.city_utility_actions import click_on_purchase_menu, click_on_own_trade_depot
 from simcity.bot.automation.click_on_daniel_face_and_goto_daniel_city import click_on_daniel_face_and_goto_daniel_city, open_global_trade_hq_and_find_material
 from simcity.bot.automation.find_empty_trade_boxes_and_sell_material import find_empty_trade_boxes_and_sell_material, \
     stop_sell_materials_task
@@ -46,24 +47,17 @@ def buy_items(materials, material_priorities, device_id):
     check_for_close_button(materials, material_priorities, manager, device_id)
 
 def sell_materials(materials, device_id, advertise, full_price, depot_page_no=1):
+    # open trade depot
+    click_on_purchase_menu(device_id)
+    time.sleep(2)
+    click_on_own_trade_depot(device_id)
+    time.sleep(2)
+
     for index, material in enumerate(materials):
         if is_sell_materials_running:
             logging.info(f'selling => {material.name}')
             logging.info(f'depot_page_no => {depot_page_no}')
             depot_page_no = find_empty_trade_boxes_and_sell_material(material, device_id, advertise, full_price, depot_page_no)
-            logging.info('Checking if create sale window is visible')
-            create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
-            if len(create_sale_window) > 0:
-                logging.info(f'create sale window found {len(create_sale_window)}, closing it')
-                perform_click(1800, 65, device_id)
-                time.sleep(0.5)
-
-    logging.info('Checking if create sale window is visible')
-    create_sale_window, screenshot = find_miscellaneous_material(Miscellaneous.CREATE_SALE, device_id)
-    if len(create_sale_window) > 0:
-        logging.info(f'create sale window found {len(create_sale_window)}, closing it')
-        perform_click(1800,65, device_id)
-        time.sleep(0.5)
 
 def collect_sold_item_money(iteration, device_id):
     is_trade_depot_open = check_if_trade_depot_open(device_id)
@@ -296,9 +290,6 @@ def set_running_state(is_running):
     stop_collect_produced_items_from_commercial_buildings(is_running)
     stop_add_raw_material_to_production(is_running)
 
-def find_cargo_ship():
-    print(f'')
-
 def advertise_all_items_on_trade_depot(iteration,device_id):
     is_trade_depot_open = check_if_trade_depot_open(device_id)
     if not is_trade_depot_open:
@@ -333,166 +324,3 @@ def advertise_all_items_on_trade_depot(iteration,device_id):
             perform_swipe(1500, 550, 360, 550, 1000, device_id)
             iteration += 1
             advertise_all_items_on_trade_depot(iteration, device_id)
-
-def farm_nails(materials, no_of_factories, device_id):
-    # logging.info(f'Producing metal')
-    # for i in range(6):
-    #     logging.info(f'Adding metal to factories iteration {i+1}')
-    #     add_raw_material_to_production(material_dict['METAL'], no_of_factories, device_id)
-    #     logging.info('waiting for 50 seconds')
-    #     time.sleep(50)
-    #     logging.info('waiting completed 50 seconds, collecting metal')
-    #     collect_raw_materials(no_of_factories, device_id)
-    #     time.sleep(0.5)
-
-    logging.info(f'Producing metal finished, now producing nails')
-    press_esc_key(device_id)
-    perform_click(960, 420, device_id)
-    time.sleep(0.5)
-    perform_click(1420, 140, device_id)
-    time.sleep(0.5)
-
-    logging.info(f'Adding nails to production')
-    add_commercial_material_to_production(materials, device_id, no_of_materials=11)
-    time.sleep(0.5)
-
-    # add chetah token
-    logging.info(f'adding cheetah token')
-    perform_click(1480, 930, device_id)
-    time.sleep(0.5)
-    perform_swipe( 950, 510,620, 700, 500, device_id)
-    time.sleep(0.5)
-
-    for i in range(16):
-        logging.info(f'waiting for 170 seconds iteration {i + 1}')
-        time.sleep(170)
-        logging.info(f'wait completed for 170 seconds, collecting nails')
-        for j in range(12):
-            perform_click(950, 510, device_id)
-
-        logging.info(f'collection finished')
-        time.sleep(1)
-        found_item, screenshot = find_miscellaneous_material(Miscellaneous.COMMERCIAL_INFO_ICON, device_id)
-        logging.info(f'found_item {len(found_item)}')
-        if len(found_item) > 0:
-            logging.info('commercial building window is open, adding nails to production')
-            time.sleep(1)
-            for i in range(11):
-                perform_swipe(material_dict['NAILS'].x_location, material_dict['NAILS'].y_location, 510, 950, 500, device_id)
-
-        else:
-            logging.info(f'opening commercial building window again')
-            perform_click(950, 490, device_id)
-            logging.info('sleeping 1 sec')
-            time.sleep(2)
-            logging.info('commercial building window is open, adding nails to production')
-            for i in range(11):
-                perform_swipe(material_dict['NAILS'].x_location, material_dict['NAILS'].y_location, 510, 950, 500, device_id)
-
-
-# advertise_all_items_on_trade_depot(0,"5555")
-
-# device_id = '127.0.0.1:5555'
-# # feedBot(Item.METAL,device_id)
-# start_time = time.time()
-# find_item(Item.TRADE_BOX.value,device_id)
-# end_time = time.time()
-# # Calculate the execution time
-# execution_time = end_time - start_time
-# logging.info(f"Execution time: {execution_time} seconds")
-# device_id = '5915'
-# set_up(device_id)
-# Grand Heaven
-# device_id = '127.0.0.1:5675'
-# device_id = '127.0.0.1:5895'
-
-#juganband hills
-# device_id = '127.0.0.1:5665'
-
-#petrol bay
-# device_id = '127.0.0.1:5655'
-
-# Cottonwood Forest
-# device_id = '5915'
-# set_up(device_id)
-# collect_produced_items_from_commercial_buildings(9,device_id)
-# Nautilus Platue
-# device_id = '127.0.0.1:5685'
-
-
-# buy_item(Material.METAL, device_id)
-# find_material(Material.METAL.value['hq_template_url'], device_id)
-
-# find_items_with_priorities(items, device_id)
-
-# screenshot = screenshot = cv2.imread('C:\\Users\\abadgujar2\\SimcityBuildIt\\simcity\\bot\\screenshot.png')
-# template = cv2.imread(Item.STORAGE_BAR.value)
-# rectangles = find_storage_bars(screenshot, template, device_id)
-# draw_rectangles_on_screenshot(rectangles, screenshot, 'output_image.png')
-
-# go_to_trade_depot_and_open_it(device_id)
-# sell_item(Item.CITY_STORAGE_METAL, 0, False, 1, device_id)
-# sell_item(Item.CITY_ELECTRICAL_COMPONENT, 0, False, 1, device_id, 6000)
-# sell_item_with_zero_price(Material.WATCH.value['hq_template_url'], 0, False, 1, device_id, 6000)
-
-# go_to_trade_depot_and_open_it(device_id)
-# collect_sold_item_money(1, device_id)
-
-# go_to_trade_depot_and_open_it(device_id)
-# advertise_trade_depot_items(1, device_id)
-
-# draw_rectagle(device_id)
-
-# read_text_from_screenshot()
-
-
-# material_priorities = {
-#     Material.STORAGE_BARS: 1,
-#     Material.STORAGE_CAMERA: 2,
-#     Material.STORAGE_LOCK: 3
-# }
-# materials = ['STORAGE_BARS', 'STORAGE_CAMERA', 'STORAGE_LOCK']
-# buy_items(materials, material_priorities, device_id)
-
-# find_material_in_global_trade_hq(material_dict.get(Material.STORAGE_CAMERA.value), device_id)
-# find_material_in_trade_depot(material_dict.get(Material.STORAGE_LOCK.value), device_id)
-# find_material(Material.STORAGE_BAR.value['depot']['url'],device_id, Material.STORAGE_BAR.value['depot']['threshold'])
-# find_material(Material.WATCH.value['hq_template_url'],device_id)
-# find_miscellaneous_material(Miscellaneous.TRADE_BOX,device_id)
-
-# logging.info(f'{Material.METAL.value.get('x_location')}')
-
-# take_screenshot_and_read_text(device_id,280,300,380,400)
-
-
-# collect_produced_items_from_commercial_buildings(device_id)
-# collect_raw_materials(device_id)
-# add_raw_material_to_production(Material.CHEMICALS,device_id)
-# sell_item(material_dict.get(Material.METAL.value), True, 1, device_id)
-# find_miscellaneous_material(Miscellaneous.EMPTY_TRADE_BOXES, device_id)
-# take_screenshot_and_read_text(device_id, 630,245, 960, 340)
-
-# add_commercial_material_to_production(material_dict.get(Material.VEGETABLES.value),device_id)
-# materials = [material_dict.get(Material.MINERALS.value),material_dict.get(Material.CHEMICALS.value)]
-# sell_materials(materials, device_id, False, True)
-
-# find_materials_in_city_storage(materials,device_id)
-
-# find_material_in_global_trade_hq(material_dict.get(Material.METAL.value),device_id)
-# find_material_in_city_storage(material_dict.get(Material.SEEDS.value),device_id)
-
-# find_miscellaneous_material(Miscellaneous.TRADE_DEPOT_NAME,device_id)
-
-
-# material_priorities = {
-#     Material.STORAGE_BARS: 1,
-#     Material.STORAGE_LOCK: 2,
-#     Material.STORAGE_CAMERA: 3,
-#     Material.VU_REMOTE: 4,
-#     Material.VU_BATTERY: 5,
-#     Material.VU_GLOVES: 6,
-#     Material.DOZER_WHEEL: 7,
-#     Material.DOZER_EXHAUST: 8,
-#     Material.DOZER_BLADE: 9
-# }
-# materials = ['STORAGE_BARS', 'STORAGE_LOCK', 'STORAGE_CAMERA','VU_REMOTE','VU_BATTERY','VU_GLOVES','DOZER_WHEEL','DOZER_EXHAUST','DOZER_BLADE']

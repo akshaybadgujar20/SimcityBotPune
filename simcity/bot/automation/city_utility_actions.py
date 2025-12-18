@@ -26,6 +26,24 @@ def click_on_limestone_cliff(device_id):
 def click_on_green_valley(device_id):
     perform_click(665, 540, device_id)
 
+def click_on_purchase_menu(device_id):
+    perform_click(1840, 195, device_id)
+
+def click_on_best_value_menu(device_id):
+    perform_click(180,195, device_id)
+
+def click_on_global_trade_hq(device_id):
+    perform_click(180, 345, device_id)
+
+def click_on_own_trade_depot(device_id):
+    perform_click(180, 625, device_id)
+
+def click_on_city_storage(device_id):
+    perform_click(625,775,device_id)
+
+def click_on_own_material_storage(device_id):
+    perform_click(510,775,device_id)
+
 def check_if_i_reach_home(device_id):
     for i in range(15):
         home_trade_icon, screenshot = find_miscellaneous_material(Miscellaneous.HOME_TRADE_ICON, device_id)

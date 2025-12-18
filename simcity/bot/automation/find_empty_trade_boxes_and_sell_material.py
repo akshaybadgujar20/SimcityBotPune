@@ -3,6 +3,7 @@ import math
 import time
 
 from simcity.bot.automation.adb_actions import perform_swipe, perform_click_with_rectangle, perform_click, press_esc_key
+from simcity.bot.automation.city_utility_actions import click_on_own_material_storage, click_on_city_storage
 from simcity.bot.automation.find_material import find_miscellaneous_material, find_material_in_city_storage
 from simcity.bot.automation.open_empty_trade_box import open_empty_trade_box
 from simcity.bot.automation.sell_material import sell_material
@@ -31,10 +32,11 @@ def find_empty_trade_boxes_and_sell_material(material, device_id, advertise, ful
                     open_empty_trade_box(empty_trade_boxes[0], device_id)
 
                     if material.building_name != 'FACTORY':
-                        logging.info('Item is commercial item, opening storage depot')
-                        perform_click(625,775,device_id)
+                        logging.info('Item is commercial item, opening city storage')
+                        click_on_city_storage(device_id)
                     else:
-                        logging.info('Item is factory item')
+                        logging.info('Item is factory item, opening material storage')
+                        click_on_own_material_storage(device_id)
 
                     for city_storage_page_no in range(15):
                         founded_material_list, screenshot = find_material_in_city_storage(material, device_id)

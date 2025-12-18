@@ -27,6 +27,7 @@ class Miscellaneous(Enum):
     # ITEM_BOXES='misc/item_boxes.png'
     ITEM_BOXES='misc/item_boxes.png'
     EMPTY_TRADE_BOXES='misc/empty_trade_boxes.png'
+    CREATE_SALE_MENU='misc/create_sale_menu.png'
     ADVERTISE_ICON='misc/advertise_icon.png'
     COMMERCIAL_INFO_ICON='misc/commercial_info_icon.png'
     BUILDING_SUPPLY_STORE='misc/building_supply_store.png'
