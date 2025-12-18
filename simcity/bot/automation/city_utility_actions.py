@@ -1,6 +1,6 @@
 import time
 
-from simcity.bot.automation.adb_actions import perform_click
+from simcity.bot.automation.adb_actions import perform_click, perform_swipe
 from simcity.bot.automation.find_material import find_miscellaneous_material
 from simcity.bot.enums.miscellaneous import Miscellaneous
 
@@ -39,10 +39,16 @@ def click_on_own_trade_depot(device_id):
     perform_click(180, 625, device_id)
 
 def click_on_city_storage(device_id):
-    perform_click(625,775,device_id)
+    perform_click(630,780,device_id)
 
 def click_on_own_material_storage(device_id):
     perform_click(510,775,device_id)
+
+def go_to_next_page_in_city_trade_depot(device_id):
+    perform_swipe(1675, 545, 530, 545, 1000, device_id)
+
+def go_to_next_page_in_storage(device_id):
+    perform_swipe(925, 650, 925, 260, 1000, device_id)
 
 def check_if_i_reach_home(device_id):
     for i in range(15):

@@ -4,4 +4,4 @@ from simcity.bot.main import set_up
 
 device_id = '5555'
 set_up(device_id)
-find_miscellaneous_material(Miscellaneous.CREATE_SALE_MENU,device_id)
+find_miscellaneous_material(Miscellaneous.EMPTY_TRADE_BOXES,device_id)
