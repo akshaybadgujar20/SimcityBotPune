@@ -2,9 +2,9 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS  # Import CORS
 
 from simcity.bot.enums.material import Material
-from simcity.bot.main import buy_items, sell_materials, collect_raw_materials, collect_produced_items_from_commercial_buildings, collect_sold_item_money, \
-    add_commercial_material_to_production, add_raw_material_to_production, set_up, stop_buy_items, stop_sell_materials, stop_collect_sold_item_money, \
-    stop_add_raw_material_to_production, stop_collect_raw_materials, stop_collect_produced_items_from_commercial_buildings, set_running_state
+from simcity.bot.main import buy_items, sell_materials, collect_raw_materials, \
+    collect_produced_items_from_commercial_buildings, collect_sold_item_money, \
+    add_commercial_material_to_production, add_raw_material_to_production, set_up
 from simcity.bot.material_data_loader import load_material_info_data
 
 app = Flask(__name__)
@@ -72,7 +72,7 @@ def perform_action():
         for index, material in enumerate(request_data['selectedMaterials']):
             select_material_list.append(material_dict[material])
             material_priorities[Material[material]] = index + 1
-    set_running_state(True)
+
     if request_data['action'] == 'CONTINUOUS_BUY':
         buy_items(request_data['selectedMaterials'], material_priorities, city_port)
     elif request_data['action'] == 'SELL_WITH_FULL_VALUE':
@@ -84,7 +84,7 @@ def perform_action():
     elif request_data['action'] == 'COLLECT_FROM_COMMERCIAL':
         collect_produced_items_from_commercial_buildings(request_data['commercialCount'],city_port)
     elif request_data['action'] == 'COLLECT_SOLD_ITEM_MONEY':
-        collect_sold_item_money(1, city_port)
+        collect_sold_item_money(city_port)
     elif request_data['action'] == 'ADVERTISE_ITEM_ON_TRADE_DEPOT':
         print('no action mapped')
 
@@ -98,7 +98,6 @@ def perform_action():
 
 @app.route('/action-stop', methods=['GET'])
 def stop_action():
-    set_running_state(False)
     return jsonify({"message": "action stopped"}), 200
 
 if __name__ == '__main__':

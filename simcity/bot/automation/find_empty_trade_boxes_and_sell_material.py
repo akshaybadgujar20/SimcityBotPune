@@ -55,7 +55,7 @@ def get_next_empty_trade_box(
         current_depot_page
     )
 
-def find_empty_trade_boxes_and_sell_material(materials, device_id, advertise, full_price, max_city_storage_scrolls=15, max_depot_pages=4):
+def find_empty_trade_boxes_and_sell_material(materials, device_id, advertise, full_price, max_city_storage_scrolls=15, max_depot_pages=5):
     click_on_purchase_menu(device_id)
     time.sleep(2)
     click_on_own_trade_depot(device_id)

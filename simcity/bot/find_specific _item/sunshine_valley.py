@@ -2,11 +2,10 @@ import logging
 import time
 
 import uiautomator2 as u2
-from sympy import false
 
 from simcity.bot.automation.adb_actions import perform_click, perform_click_with_rectangle, press_esc_key
-from simcity.bot.automation.city_utility_actions import click_on_back_button, check_if_regions_button_visible, \
-    click_on_home_button, collect_all_items_from_factory, add_item_to_factory_production, check_if_i_reach_home, \
+from simcity.bot.automation.city_utility_actions import click_on_back_button, click_on_home_button, \
+    add_item_to_factory_production, check_if_i_reach_home, \
     click_on_regions_button, click_on_limestone_cliff, click_on_green_valley, click_on_material_storage
 from simcity.bot.automation.find_material import find_miscellaneous_material
 from simcity.bot.enums.miscellaneous import Miscellaneous

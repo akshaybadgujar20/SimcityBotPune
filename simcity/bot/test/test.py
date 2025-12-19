@@ -1,7 +1,6 @@
-from simcity.bot.automation.find_material import find_miscellaneous_material
-from simcity.bot.enums.miscellaneous import Miscellaneous
+from simcity.bot.automation.city_utility_actions import go_to_next_page_in_city_trade_depot
 from simcity.bot.main import set_up
 
-device_id = '5555'
+device_id = '5565'
 set_up(device_id)
-find_miscellaneous_material(Miscellaneous.EMPTY_TRADE_BOXES,device_id)
+go_to_next_page_in_city_trade_depot(device_id)

@@ -7,17 +7,12 @@ from simcity.bot.automation.adb_actions import perform_click_with_rectangle, per
 from simcity.bot.automation.check_adb_devices_and_connect_if_not_connected import \
     check_adb_devices_and_connect_if_not_connected
 from simcity.bot.automation.check_for_close_button import check_for_close_button
-from simcity.bot.automation.city_utility_actions import click_on_purchase_menu, click_on_own_trade_depot, \
-    go_to_next_page_in_city_trade_depot, click_on_city_storage, click_on_own_material_storage, \
-    go_to_next_page_in_storage
-from simcity.bot.automation.find_empty_trade_boxes_and_sell_material import stop_sell_materials_task, \
-    capture_material_quantity, find_empty_trade_boxes_and_sell_material
-from simcity.bot.automation.find_material import find_miscellaneous_material, find_material_in_city_storage
+from simcity.bot.automation.city_utility_actions import go_to_next_page_in_city_trade_depot, click_on_return_button
+from simcity.bot.automation.find_empty_trade_boxes_and_sell_material import find_empty_trade_boxes_and_sell_material
+from simcity.bot.automation.find_material import find_miscellaneous_material
 from simcity.bot.automation.find_materials_on_global_trade_hq import stop_buy_items_task
-from simcity.bot.automation.open_empty_trade_box import open_empty_trade_box
-from simcity.bot.automation.sell_material import sell_material
 from simcity.bot.automation.take_screenshot_and_read_text import take_screenshot_and_read_text
-from simcity.bot.automation.trade_depot import find_and_open_trade_depot, check_if_trade_depot_open
+from simcity.bot.automation.trade_depot import find_and_open_trade_depot
 from simcity.bot.enums.building import Building
 from simcity.bot.enums.miscellaneous import Miscellaneous
 from simcity.bot.logger import setup_logging
@@ -28,14 +23,6 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 import logging
 manager = TimerManager()
-
-is_sell_materials_running = True
-is_collect_sold_item_money_running = True
-is_advertise_all_item_from_trade_depot_running = True
-is_collect_raw_materials_running = True
-is_add_raw_material_to_production_running = True
-is_add_commercial_material_to_production_running = True
-is_collect_produced_items_from_commercial_buildings_running = True
 
 material_dict = load_material_info_data()
 
@@ -51,110 +38,93 @@ def buy_items(materials, material_priorities, device_id):
 def sell_materials( materials, device_id, advertise, full_price):
     find_empty_trade_boxes_and_sell_material(materials, device_id, advertise, full_price)
 
+def collect_sold_item_money(device_id, max_pages=5):
+    logging.info('opening trade HQ')
+    find_and_open_trade_depot(device_id)
 
-
-
-
-
-def collect_sold_item_money(iteration, device_id):
-    is_trade_depot_open = check_if_trade_depot_open(device_id)
-    if not is_trade_depot_open:
-        logging.info('trade depot is not open, finding and opening it')
-        find_and_open_trade_depot(device_id)
     logging.info('trade depot is open')
 
-    if is_collect_sold_item_money_running:
-        logging.info(f'iteration {iteration}')
-        if iteration == 4:
-            return
-        logging.info('finding sold items')
-        sold_items, screenshot = find_miscellaneous_material(Miscellaneous.CITY_STORAGE_PURCHASE_COMPLETED, device_id)
+    for current_page in range(1, max_pages + 1):
+        logging.info(f'scanning trade depot page {current_page}')
+
+        sold_items, _ = find_miscellaneous_material(Miscellaneous.CITY_STORAGE_PURCHASE_COMPLETED, device_id)
+
         if len(sold_items) > 0:
-            for index, sold_item in enumerate(sold_items):
-                if is_collect_sold_item_money_running:
-                    perform_click_with_rectangle(sold_item, device_id)
-            iteration += 1
-            collect_sold_item_money(iteration, device_id)
+            logging.info(f'found {len(sold_items)} sold items')
+
+            for sold_item in sold_items:
+                perform_click_with_rectangle(sold_item, device_id)
+                time.sleep(0.3)
         else:
-            perform_swipe(1500, 550, 360, 550, 1000, device_id)
-            iteration += 1
-            collect_sold_item_money(iteration, device_id)
+            logging.info('no sold items on this page')
+
+        # Move to next page if not last
+        if current_page < max_pages:
+            go_to_next_page_in_city_trade_depot(device_id)
+
+    click_on_return_button(device_id)
 
 def collect_produced_items_from_commercial_buildings(no_of_commercial_buildings, device_id):
     for i in range(no_of_commercial_buildings):
-        if is_collect_produced_items_from_commercial_buildings_running:
-            logging.info(f'Inside commercial building window')
-            press_esc_key(device_id)
-            time.sleep(1)
-            for j in range(11):
-                perform_click(950, 520, device_id)
-            else:
-                logging.info(f'11 clicks finished')
-                time.sleep(1)
-                found_item, screenshot = find_miscellaneous_material(Miscellaneous.COMMERCIAL_INFO_ICON, device_id)
-                if len(found_item) > 0:
-                    logging.info('commercial building window is open, go to next one')
-                    perform_click(500, 140, device_id)
-                    time.sleep(1)
-                else:
-                    logging.info(f'opening commercial building window again')
-                    perform_click(950, 520, device_id)
-                    logging.info('sleeping 1 sec')
-                    time.sleep(1)
-                    logging.info('clicking on left button')
-                    perform_click(500, 140, device_id)
+        logging.info(f'Inside commercial building window')
+        press_esc_key(device_id)
+        time.sleep(1)
+        for j in range(11):
+            perform_click(950, 520, device_id)
         else:
-            break
+            logging.info(f'11 clicks finished')
+            time.sleep(1)
+            found_item, screenshot = find_miscellaneous_material(Miscellaneous.COMMERCIAL_INFO_ICON, device_id)
+            if len(found_item) > 0:
+                logging.info('commercial building window is open, go to next one')
+                perform_click(500, 140, device_id)
+                time.sleep(1)
+            else:
+                logging.info(f'opening commercial building window again')
+                perform_click(950, 520, device_id)
+                logging.info('sleeping 1 sec')
+                time.sleep(1)
+                logging.info('clicking on left button')
+                perform_click(500, 140, device_id)
+
 
 def collect_raw_materials(no_of_factories,device_id):
     perform_click(500, 140, device_id)
     time.sleep(0.5)
     for i in range(no_of_factories):
-        if is_collect_raw_materials_running:
-            logging.info(f'Inside factory no {i+1}')
-            perform_click(375, 1025, device_id)
-            perform_click(595, 1025, device_id)
-            perform_click(810, 1025, device_id)
-            perform_click(1030, 1025, device_id)
-            perform_click(1240, 1025, device_id)
-            time.sleep(0.5)
-            perform_click(500, 140, device_id)
-        else:
-            break
+        logging.info(f'Inside factory no {i+1}')
+        perform_click(375, 1025, device_id)
+        perform_click(595, 1025, device_id)
+        perform_click(810, 1025, device_id)
+        perform_click(1030, 1025, device_id)
+        perform_click(1240, 1025, device_id)
+        time.sleep(0.5)
+        perform_click(500, 140, device_id)
+
 
 def add_raw_material_to_production(material, no_of_factories, device_id):
     perform_click(500, 140, device_id)
     time.sleep(0.5)
     device = u2.connect('127.0.0.1:'+device_id)
     for i in range(no_of_factories):
-        if is_add_raw_material_to_production_running:
-            device.swipe_points([(material.x_location, material.y_location), (380, 935), (1260, 1000)], duration=0.2)
-            time.sleep(0.1)
-            perform_click(500, 140, device_id)
-            time.sleep(0.5)
-        else:
-            break
+        device.swipe_points([(material.x_location, material.y_location), (380, 935), (1260, 1000)], duration=0.2)
+        time.sleep(0.1)
+        perform_click(500, 140, device_id)
+        time.sleep(0.5)
+
 
 def add_commercial_material_to_production(materials, device_id, no_of_materials= 11):
     for index, material in enumerate(materials):
-        if is_add_commercial_material_to_production_running:
-            goto_commercial_building(device_id, material.building_name)
-            for i in range(no_of_materials):
-                if is_add_commercial_material_to_production_running:
-                    perform_swipe(material.x_location, material.y_location, 520, 940, 500, device_id)
-                else:
-                    missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
-                    if len(missing_items) > 0:
-                        logging.info(f'Missing item window found clicking on it')
-                        perform_click(710,795, device_id)
-                        time.sleep(1)
-                    break
+        goto_commercial_building(device_id, material.building_name)
+        for i in range(no_of_materials):
+            perform_swipe(material.x_location, material.y_location, 520, 940, 500, device_id)
 
-            missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
-            if len(missing_items) > 0:
-                logging.info(f'Missing item window found clicking on it')
-                perform_click(710,795, device_id)
-                time.sleep(1)
+
+        missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
+        if len(missing_items) > 0:
+            logging.info(f'Missing item window found clicking on it')
+            perform_click(710,795, device_id)
+            time.sleep(1)
         else:
             missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
             if len(missing_items) > 0:
@@ -249,75 +219,3 @@ def buy_from_friends(materials, city_name, device_id):
     else:
         logging.info('friends icon not found')
 
-# Stopping functions
-def stop_sell_materials(is_running):
-    global is_sell_materials_running
-    is_sell_materials_running = is_running
-    stop_sell_materials_task(is_running)
-
-def stop_buy_items(is_running):
-    stop_buy_items_task(is_running)
-
-def stop_collect_sold_item_money(is_running):
-    global is_collect_sold_item_money_running
-    is_collect_sold_item_money_running = is_running
-
-def stop_collect_raw_materials(is_running):
-    global is_collect_raw_materials_running
-    is_collect_raw_materials_running = is_running
-
-def stop_add_raw_material_to_production(is_running):
-    global is_add_raw_material_to_production_running
-    is_add_raw_material_to_production_running = is_running
-
-def stop_collect_produced_items_from_commercial_buildings(is_running):
-    global is_collect_produced_items_from_commercial_buildings_running
-    is_collect_produced_items_from_commercial_buildings_running = is_running
-
-def stop_add_commercial_material_to_production(is_running):
-    global is_add_commercial_material_to_production
-    is_add_commercial_material_to_production_running = is_running
-
-def set_running_state(is_running):
-    stop_buy_items(is_running)
-    stop_sell_materials(is_running)
-    stop_collect_sold_item_money(is_running)
-    stop_collect_raw_materials(is_running)
-    stop_add_raw_material_to_production(is_running)
-    stop_collect_produced_items_from_commercial_buildings(is_running)
-    stop_add_raw_material_to_production(is_running)
-
-def advertise_all_items_on_trade_depot(iteration,device_id):
-    is_trade_depot_open = check_if_trade_depot_open(device_id)
-    if not is_trade_depot_open:
-        logging.info('trade depot is not open, finding and opening it')
-        find_and_open_trade_depot(device_id)
-    logging.info('trade depot is open')
-
-    if is_advertise_all_item_from_trade_depot_running:
-        logging.info(f'iteration {iteration}')
-        if iteration == 5:
-            return
-        logging.info('finding sold items')
-        advertised_items, screenshot = find_miscellaneous_material(Miscellaneous.TRADE_DEPOT_COIN, device_id)
-        if len(advertised_items) > 0:
-            for index, sold_item in enumerate(advertised_items):
-                if is_advertise_all_item_from_trade_depot_running:
-                    perform_click_with_rectangle(sold_item, device_id)
-                    advertised_icon, screenshot = find_miscellaneous_material(Miscellaneous.ADVERTISE_ICON, device_id)
-                    if len(advertised_icon) > 0:
-                        perform_click_with_rectangle(advertised_icon[0], device_id)
-                        perform_click(1280,60, device_id)
-                        logging.info(f'waiting for 60s')
-                        time.sleep(60)
-                    else:
-                        perform_click(1280, 60, device_id)
-                        continue
-            logging.info(f'scrolling horizontaly for next page')
-            perform_swipe(1500, 550, 360, 550, 1000, device_id)
-            iteration += 1
-            advertise_all_items_on_trade_depot(iteration, device_id)
-        else:
-            perform_swipe(1500, 550, 360, 550, 1000, device_id)
-            iteration += 1
-            advertise_all_items_on_trade_depot(iteration, device_id)
