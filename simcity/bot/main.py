@@ -271,21 +271,20 @@ def collect_produced_items_from_commercial_buildings(no_of_commercial_buildings,
         else:
             break
 
-def collect_raw_materials(no_of_factories,device_id):
+def collect_raw_materials(no_of_factories, device_id, stop_event):
     perform_click(500, 140, device_id)
     time.sleep(0.5)
     for i in range(no_of_factories):
-        if is_collect_raw_materials_running:
-            logging.info(f'Inside factory no {i+1}')
-            perform_click(375, 1025, device_id)
-            perform_click(595, 1025, device_id)
-            perform_click(810, 1025, device_id)
-            perform_click(1030, 1025, device_id)
-            perform_click(1240, 1025, device_id)
-            time.sleep(0.5)
-            perform_click(500, 140, device_id)
-        else:
+        if stop_event.is_set():
             break
+        logging.info(f'Inside factory no {i + 1}')
+        perform_click(375, 1025, device_id)
+        perform_click(595, 1025, device_id)
+        perform_click(810, 1025, device_id)
+        perform_click(1030, 1025, device_id)
+        perform_click(1240, 1025, device_id)
+        time.sleep(0.5)
+        perform_click(500, 140, device_id)
 
 def add_raw_material_to_production(material, no_of_factories, device_id, stop_event):
     perform_click(500, 140, device_id)
@@ -299,33 +298,33 @@ def add_raw_material_to_production(material, no_of_factories, device_id, stop_ev
         perform_click(500, 140, device_id)
         time.sleep(0.5)
 
-def add_commercial_material_to_production(materials, device_id, no_of_materials= 11):
+def add_commercial_material_to_production(materials, device_id, stop_event, no_of_materials=11):
     for index, material in enumerate(materials):
-        if is_add_commercial_material_to_production_running:
-            goto_commercial_building(device_id, material.building_name)
-            for i in range(no_of_materials):
-                if is_add_commercial_material_to_production_running:
-                    perform_swipe(material.x_location, material.y_location, 520, 940, 500, device_id)
-                else:
-                    missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
-                    if len(missing_items) > 0:
-                        logging.info(f'Missing item window found clicking on it')
-                        perform_click(710,795, device_id)
-                        time.sleep(1)
-                    break
-
-            missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
-            if len(missing_items) > 0:
-                logging.info(f'Missing item window found clicking on it')
-                perform_click(710,795, device_id)
-                time.sleep(1)
-        else:
-            missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS, device_id)
-            if len(missing_items) > 0:
-                logging.info(f'Missing item window found clicking on it')
-                perform_click(710,795, device_id)
-                time.sleep(1)
+        if stop_event and stop_event.is_set():
             break
+        missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS,device_id)
+        if len(missing_items) > 0:
+            logging.info('Missing item window found clicking on it')
+            perform_click(710, 795, device_id)
+            time.sleep(1)
+
+        goto_commercial_building(device_id, material.building_name)
+
+        for i in range(no_of_materials):
+            if stop_event and stop_event.is_set():
+                break
+            missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS,device_id)
+            if len(missing_items) > 0:
+                logging.info('Missing item window found clicking on it')
+                perform_click(710, 795, device_id)
+                time.sleep(1)
+            perform_swipe(material.x_location, material.y_location, 520, 940, 500, device_id)
+
+        missing_items, screenshot = find_miscellaneous_material(Miscellaneous.MISSING_ITEMS,device_id)
+        if len(missing_items) > 0:
+            logging.info('Missing item window found clicking on it')
+            perform_click(710, 795, device_id)
+            time.sleep(1)
 
 def goto_commercial_building(device_id, building_name):
     logging.info(f'building_name => {building_name}')
