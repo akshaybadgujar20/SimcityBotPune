@@ -16,11 +16,19 @@ def sell_materials(
         device_id,
         advertise,
         full_price,
+        stop_event,
         max_city_storage_scrolls=15,
         max_depot_pages=4):
 
+    if stop_event.is_set():
+        return
+
     click_on_purchase_menu(device_id)
     time.sleep(2)
+
+    if stop_event.is_set():
+        return
+
     click_on_own_trade_depot(device_id)
     time.sleep(2)
 
@@ -32,11 +40,12 @@ def sell_materials(
     empty_trade_box_index = 0
 
     for material in materials:
+
+        if stop_event.is_set():
+            return
+
         logging.info(f'Selling material: {material.name}')
 
-        # --------------------------------------------------
-        # STEP 1: Open ONE trade box (page-aware, sequential)
-        # --------------------------------------------------
         box, empty_trade_boxes, empty_trade_box_index, current_depot_page = \
             get_next_empty_trade_box(
                 device_id,
@@ -53,22 +62,26 @@ def sell_materials(
         open_empty_trade_box(box, device_id)
         time.sleep(1)
 
-        # --------------------------------------------------
-        # STEP 2: Switch storage ONCE for material
-        # --------------------------------------------------
+        if stop_event.is_set():
+            return
+
         check_material_type_and_open_trade_depot(device_id, material)
         time.sleep(1)
 
-        # --------------------------------------------------
-        # STEP 3: Find quantity (vertical scroll)
-        # --------------------------------------------------
         total_quantity = 0
 
         for _ in range(max_city_storage_scrolls):
+
+            if stop_event.is_set():
+                return
+
             founded_material_list, _ = find_material_in_city_storage(material, device_id)
 
             if founded_material_list:
-                total_quantity = capture_material_quantity(founded_material_list[0], device_id)
+                total_quantity = capture_material_quantity(
+                    founded_material_list[0],
+                    device_id
+                )
                 break
 
             go_to_next_page_in_storage(device_id)
@@ -81,14 +94,18 @@ def sell_materials(
         remaining_quantity = total_quantity
         logging.info(f'{material.name} quantity: {total_quantity}')
 
-        # --------------------------------------------------
-        # STEP 4: Sell loop (re-scan storage EVERY time)
-        # --------------------------------------------------
         while remaining_quantity > 0:
+
+            if stop_event.is_set():
+                return
 
             founded_material = None
 
             for _ in range(max_city_storage_scrolls):
+
+                if stop_event.is_set():
+                    return
+
                 founded_material_list, _ = find_material_in_city_storage(material, device_id)
 
                 if founded_material_list:
@@ -131,6 +148,7 @@ def sell_materials(
 
             open_empty_trade_box(box, device_id)
             time.sleep(1)
+
 
 
 def check_material_type_and_open_trade_depot(device_id, material):
