@@ -91,8 +91,6 @@ def get_next_empty_trade_box(
         current_depot_page
     )
 
-
-
 def sell_materials(
         materials,
         device_id,
@@ -214,7 +212,6 @@ def sell_materials(
             open_empty_trade_box(box, device_id)
             time.sleep(1)
 
-
 def check_material_type_and_open_trade_depot(device_id, material):
     if material.building_name != 'FACTORY':
         logging.info('Item is commercial item, opening city storage')
@@ -223,7 +220,6 @@ def check_material_type_and_open_trade_depot(device_id, material):
         logging.info('Item is factory item, opening material storage')
         click_on_own_material_storage(device_id)
     time.sleep(1)
-
 
 def collect_sold_item_money(iteration, device_id):
     is_trade_depot_open = check_if_trade_depot_open(device_id)
@@ -291,18 +287,17 @@ def collect_raw_materials(no_of_factories,device_id):
         else:
             break
 
-def add_raw_material_to_production(material, no_of_factories, device_id):
+def add_raw_material_to_production(material, no_of_factories, device_id, stop_event):
     perform_click(500, 140, device_id)
     time.sleep(0.5)
-    device = u2.connect('127.0.0.1:'+device_id)
+    device = u2.connect('127.0.0.1:' + device_id)
     for i in range(no_of_factories):
-        if is_add_raw_material_to_production_running:
-            device.swipe_points([(material.x_location, material.y_location), (380, 935), (1260, 1000)], duration=0.2)
-            time.sleep(0.1)
-            perform_click(500, 140, device_id)
-            time.sleep(0.5)
-        else:
+        if stop_event.is_set():
             break
+        device.swipe_points([(material.x_location, material.y_location),(380, 935),(1260, 1000)],duration=0.2)
+        time.sleep(0.1)
+        perform_click(500, 140, device_id)
+        time.sleep(0.5)
 
 def add_commercial_material_to_production(materials, device_id, no_of_materials= 11):
     for index, material in enumerate(materials):
@@ -417,44 +412,6 @@ def buy_from_friends(materials, city_name, device_id):
 
     else:
         logging.info('friends icon not found')
-
-# Stopping functions
-def stop_sell_materials(is_running):
-    global is_sell_materials_running
-    is_sell_materials_running = is_running
-    stop_sell_materials_task(is_running)
-
-def stop_buy_items(is_running):
-    stop_buy_items_task(is_running)
-
-def stop_collect_sold_item_money(is_running):
-    global is_collect_sold_item_money_running
-    is_collect_sold_item_money_running = is_running
-
-def stop_collect_raw_materials(is_running):
-    global is_collect_raw_materials_running
-    is_collect_raw_materials_running = is_running
-
-def stop_add_raw_material_to_production(is_running):
-    global is_add_raw_material_to_production_running
-    is_add_raw_material_to_production_running = is_running
-
-def stop_collect_produced_items_from_commercial_buildings(is_running):
-    global is_collect_produced_items_from_commercial_buildings_running
-    is_collect_produced_items_from_commercial_buildings_running = is_running
-
-def stop_add_commercial_material_to_production(is_running):
-    global is_add_commercial_material_to_production
-    is_add_commercial_material_to_production_running = is_running
-
-def set_running_state(is_running):
-    stop_buy_items(is_running)
-    stop_sell_materials(is_running)
-    stop_collect_sold_item_money(is_running)
-    stop_collect_raw_materials(is_running)
-    stop_add_raw_material_to_production(is_running)
-    stop_collect_produced_items_from_commercial_buildings(is_running)
-    stop_add_raw_material_to_production(is_running)
 
 def advertise_all_items_on_trade_depot(iteration,device_id):
     is_trade_depot_open = check_if_trade_depot_open(device_id)
