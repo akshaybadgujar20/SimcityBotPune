@@ -1,10 +1,13 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from threading import Thread, Event
+
+from simcity.bot.city_actions.add_commercial_material_to_production import add_commercial_material_to_production
+from simcity.bot.city_actions.add_raw_material_to_production import add_raw_material_to_production
+from simcity.bot.city_actions.collect_raw_materials import collect_raw_materials
+from simcity.bot.city_actions.sell_materials import sell_materials
 from simcity.bot.enums.material import Material
-from simcity.bot.main import buy_items, sell_materials, collect_raw_materials, \
-    collect_produced_items_from_commercial_buildings, collect_sold_item_money, \
-    add_commercial_material_to_production, add_raw_material_to_production, set_up
+from simcity.bot.main import set_up
 from simcity.bot.material_data_loader import load_material_info_data
 
 app = Flask(__name__)
@@ -40,14 +43,7 @@ def perform_action():
             select_material_list.append(material_dict[material])
             material_priorities[Material[material]] = index + 1
 
-    if request_data['action'] == 'CONTINUOUS_BUY':
-        start_action(
-            city_port,
-            buy_items,
-            (request_data['selectedMaterials'], material_priorities, city_port)
-        )
-
-    elif request_data['action'] == 'SELL_WITH_FULL_VALUE':
+    if request_data['action'] == 'SELL_WITH_FULL_VALUE':
         start_action(
             city_port,
             sell_materials,
@@ -66,20 +62,6 @@ def perform_action():
             city_port,
             collect_raw_materials,
             (request_data['factoriesCount'], city_port)
-        )
-
-    elif request_data['action'] == 'COLLECT_FROM_COMMERCIAL':
-        start_action(
-            city_port,
-            collect_produced_items_from_commercial_buildings,
-            (request_data['commercialCount'], city_port)
-        )
-
-    elif request_data['action'] == 'COLLECT_SOLD_ITEM_MONEY':
-        start_action(
-            city_port,
-            collect_sold_item_money,
-            (1, city_port)
         )
 
     elif request_data['action'] == 'ADVERTISE_ITEM_ON_TRADE_DEPOT':
