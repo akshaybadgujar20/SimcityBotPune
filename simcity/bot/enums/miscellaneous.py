@@ -57,3 +57,4 @@ class Miscellaneous(Enum):
     COTTONWOOD_FOREST='misc/cottonwood_forest.png'
     GRAND_HAVEN='misc/grand_haven.png'
     JUGBAND_HILLS='misc/jugband_hills.png'
+    BUY_ICON='misc/buy_icon.png'

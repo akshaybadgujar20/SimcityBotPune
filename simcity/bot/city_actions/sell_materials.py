@@ -1,3 +1,4 @@
+from simcity.bot.automation.adb_actions import perform_click_with_rectangle
 from simcity.bot.automation.city_utility_actions import click_on_own_trade_depot, click_on_city_storage, \
     click_on_own_material_storage, go_to_next_page_in_city_trade_depot, go_to_next_page_in_storage, \
     click_on_purchase_menu
@@ -33,6 +34,18 @@ def sell_materials(
     time.sleep(2)
 
     current_depot_page = 1
+
+    logging.info(f'Finding buy icons')
+    buy_icons, _ = find_miscellaneous_material(
+        Miscellaneous.BUY_ICON,
+        device_id
+    )
+    if len(buy_icons) > 0:
+        logging.info(f'Buy icons found: {len(buy_icons)}')
+        for buy_icon in buy_icons:
+            perform_click_with_rectangle(buy_icon, device_id)
+            time.sleep(0.2)
+
     empty_trade_boxes, _ = find_miscellaneous_material(
         Miscellaneous.EMPTY_TRADE_BOXES,
         device_id

@@ -1,0 +1,25 @@
+02-03-2026 - 15:33:24  - logger.py:39 - INFO - 
+===== New Automation Started =====
+
+02-03-2026 - 15:33:24  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+02-03-2026 - 15:33:24  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5565	device
+127.0.0.1:5575	device
+127.0.0.1:5585	device
+127.0.0.1:5595	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+02-03-2026 - 15:33:24  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5585' is present in the adb devices output.
+02-03-2026 - 15:33:24  - _internal.py:97 - INFO - 127.0.0.1 - - [02/Mar/2026 15:33:24] "POST /action-perform HTTP/1.1" 200 -
+02-03-2026 - 15:33:28  - sell_materials.py:38 - INFO - Finding buy icons
+02-03-2026 - 15:33:30  - apply_nsm.py:23 - INFO - total matches 7
+02-03-2026 - 15:33:30  - sell_materials.py:44 - INFO - Buy icons found: 7
+02-03-2026 - 15:33:34  - apply_nsm.py:23 - INFO - total matches 7
+02-03-2026 - 15:33:34  - sell_materials.py:60 - INFO - Selling material: Material.FRUIT_AND_BERRIES
+02-03-2026 - 15:33:35  - sell_materials.py:169 - INFO - Item is commercial item, opening city storage
+02-03-2026 - 15:33:38  - apply_nsm.py:23 - INFO - total matches 1
