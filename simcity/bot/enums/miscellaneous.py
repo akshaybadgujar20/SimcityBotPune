@@ -58,3 +58,4 @@ class Miscellaneous(Enum):
     GRAND_HAVEN='misc/grand_haven.png'
     JUGBAND_HILLS='misc/jugband_hills.png'
     BUY_ICON='misc/buy_icon.png'
+    SILK='misc/silk.png'

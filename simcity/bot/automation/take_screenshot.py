@@ -17,9 +17,6 @@ def take_bw_screenshot(device_id):
     screenshot_path = os.path.join(city_dir, "screenshot.png")
     screenshot_gray_path = os.path.join(city_dir, "screenshot_gray.jpg")
 
-    logging.info(f'screenshot_path: {screenshot_path}')
-    logging.info(f'screenshot_gray_path: {screenshot_gray_path}')
-
     # Take a screenshot from the Android device using ADB
     os.system(f"adb -s 127.0.0.1:{device_id} exec-out screencap -p > \"{screenshot_path}\"")
     # Load the screenshot and template images
@@ -35,9 +32,6 @@ def take_color_screenshot(device_id):
 
     screenshot_path = os.path.join(city_dir, "screenshot.png")
     screenshot_color_path = os.path.join(city_dir, "screenshot.jpg")
-
-    logging.info(f'screenshot_path: {screenshot_path}')
-    logging.info(f'screenshot_color_path: {screenshot_color_path}')
 
     # Take a screenshot from the Android device using ADB
     os.system(f"adb -s 127.0.0.1:{device_id} exec-out screencap -p > \"{screenshot_path}\"")

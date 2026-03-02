@@ -4,6 +4,7 @@ from threading import Thread, Event
 
 from simcity.bot.city_actions.add_commercial_material_to_production import add_commercial_material_to_production
 from simcity.bot.city_actions.add_raw_material_to_production import add_raw_material_to_production
+from simcity.bot.city_actions.buy_items import buy_items
 from simcity.bot.city_actions.collect_raw_materials import collect_raw_materials
 from simcity.bot.city_actions.sell_materials import sell_materials
 from simcity.bot.enums.material import Material
@@ -43,7 +44,14 @@ def perform_action():
             select_material_list.append(material_dict[material])
             material_priorities[Material[material]] = index + 1
 
-    if request_data['action'] == 'SELL_WITH_FULL_VALUE':
+    if request_data['action'] == 'CONTINUOUS_BUY':
+        start_action(
+            city_port,
+            buy_items,
+            (select_material_list[0], city_port)
+        )
+
+    elif request_data['action'] == 'SELL_WITH_FULL_VALUE':
         start_action(
             city_port,
             sell_materials,
