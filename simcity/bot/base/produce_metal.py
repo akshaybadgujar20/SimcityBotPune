@@ -4,7 +4,9 @@ from types import SimpleNamespace
 
 import uiautomator2 as u2
 
-from simcity.bot.main import add_raw_material_to_production, collect_raw_materials, set_up
+from simcity.bot.city_actions.add_raw_material_to_production import add_raw_material_to_production
+from simcity.bot.city_actions.collect_raw_materials import collect_raw_materials
+from simcity.bot.main import set_up
 
 device_id = '5555'
 device = u2.connect("127.0.0.1:5555")
