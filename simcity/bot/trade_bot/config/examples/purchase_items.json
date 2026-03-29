@@ -1,0 +1,15 @@
+{
+  "purchase_items": [
+    {
+      "name": "wood",
+      "material": "WOOD",
+      "priority": 1
+    },
+    {
+      "name": "plastic",
+      "material": "PLASTIC",
+      "priority": 2,
+      "template_path": "material_data/your_game/hq/plastic_base.png"
+    }
+  ]
+}

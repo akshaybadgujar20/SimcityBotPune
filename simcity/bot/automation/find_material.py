@@ -8,9 +8,21 @@ from simcity.bot.automation.take_screenshot import take_bw_screenshot
 from simcity.bot.automation.take_template import take_template
 
 
-def find_miscellaneous_material(material, device_id, threshold=0.8):
+def find_miscellaneous_material(
+    material,
+    device_id,
+    threshold=0.8,
+    *,
+    log_empty_match: bool = True,
+):
     template = take_template(material.value)
-    return take_screenshot_and_perform_template_matching(material, template, device_id, threshold)
+    return take_screenshot_and_perform_template_matching(
+        material,
+        template,
+        device_id,
+        threshold,
+        log_empty_match=log_empty_match,
+    )
 
 def find_material_in_city_storage(material, device_id, threshold=0.9):
     template = take_template(material.storage_template)
@@ -20,18 +32,54 @@ def find_material_in_global_trade_hq(material, device_id, threshold=0.9):
     template = take_template(material.hq_templates.base)
     return take_screenshot_and_perform_template_matching(material.name, template, device_id, threshold)
 
-def find_material_in_trade_depot(material, device_id, threshold=0.9):
+def find_material_in_trade_depot(
+    material, device_id, threshold=0.9, *, log_empty_match: bool = True
+):
     template = take_template(material.depot_templates.base)
-    return take_screenshot_and_perform_template_matching(material.name, template, device_id, threshold)
+    return take_screenshot_and_perform_template_matching(
+        material.name,
+        template,
+        device_id,
+        threshold,
+        log_empty_match=log_empty_match,
+    )
 
-def take_screenshot_and_perform_template_matching(material_name, template, device_id, threshold):
+def take_screenshot_and_perform_template_matching(
+    material_name,
+    template,
+    device_id,
+    threshold,
+    *,
+    log_empty_match: bool = True,
+):
     screenshot = take_bw_screenshot(device_id)
-    return perform_matching(material_name, screenshot, template, threshold)
+    return perform_matching(
+        material_name,
+        screenshot,
+        template,
+        threshold,
+        log_empty_match=log_empty_match,
+    )
 
-def perform_template_matching(screenshot, material_name, template, device_id, threshold):
-    return perform_matching(material_name, screenshot, template, threshold)
+def perform_template_matching(
+    screenshot, material_name, template, device_id, threshold, *, log_empty_match: bool = True
+):
+    return perform_matching(
+        material_name,
+        screenshot,
+        template,
+        threshold,
+        log_empty_match=log_empty_match,
+    )
 
-def perform_matching(material_name, screenshot, template, threshold):
+def perform_matching(
+    material_name,
+    screenshot,
+    template,
+    threshold,
+    *,
+    log_empty_match: bool = True,
+):
     # Perform template matching
     result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
     # Set a threshold for matching
@@ -42,7 +90,7 @@ def perform_matching(material_name, screenshot, template, threshold):
         h, w = template.shape[:2]
         rect = [int(point[0]), int(point[1]), int(point[0] + w), int(point[1] + h)]
         rectangles.append(rect)
-    if len(rectangles) == 0:
+    if len(rectangles) == 0 and log_empty_match:
         logging.info(f'no rectangles found for {material_name}')
     matches = []
     if len(rectangles) > 0:
