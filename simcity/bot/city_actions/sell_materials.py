@@ -35,17 +35,6 @@ def sell_materials(
 
     current_depot_page = 1
 
-    logging.info(f'Finding buy icons')
-    buy_icons, _ = find_miscellaneous_material(
-        Miscellaneous.BUY_ICON,
-        device_id
-    )
-    if len(buy_icons) > 0:
-        logging.info(f'Buy icons found: {len(buy_icons)}')
-        for buy_icon in buy_icons:
-            perform_click_with_rectangle(buy_icon, device_id)
-            time.sleep(0.2)
-
     empty_trade_boxes, _ = find_miscellaneous_material(
         Miscellaneous.EMPTY_TRADE_BOXES,
         device_id
@@ -83,8 +72,9 @@ def sell_materials(
 
         total_quantity = 0
 
-        for _ in range(max_city_storage_scrolls):
+        for page_index in range(max_city_storage_scrolls):
 
+            logging.info(f'searching item on page no {page_index}')
             if stop_event.is_set():
                 return
 
@@ -97,6 +87,7 @@ def sell_materials(
                 )
                 break
 
+            logging.info(f'going to next page {device_id}')
             go_to_next_page_in_storage(device_id)
             time.sleep(1)
 
@@ -179,6 +170,17 @@ def get_next_empty_trade_box(
         empty_trade_box_index,
         current_depot_page,
         max_depot_pages):
+
+    logging.info(f'Finding buy icons')
+    buy_icons, _ = find_miscellaneous_material(
+        Miscellaneous.BUY_ICON,
+        device_id
+    )
+    if len(buy_icons) > 0:
+        logging.info(f'Buy icons found: {len(buy_icons)}')
+        for buy_icon in buy_icons:
+            perform_click_with_rectangle(buy_icon, device_id)
+            time.sleep(0.2)
 
     # If we still have unused boxes on current page
     if empty_trade_box_index < len(empty_trade_boxes):

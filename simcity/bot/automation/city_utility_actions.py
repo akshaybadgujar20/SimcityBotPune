@@ -48,7 +48,7 @@ def go_to_next_page_in_city_trade_depot(device_id):
     perform_swipe(1675, 545, 530, 545, 1000, device_id)
 
 def go_to_next_page_in_storage(device_id):
-    perform_swipe(925, 650, 925, 260, 1000, device_id)
+    perform_swipe(870, 620, 870, 260, 1000, device_id)
 
 def check_if_i_reach_home(device_id):
     for i in range(15):
