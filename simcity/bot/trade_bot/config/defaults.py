@@ -41,6 +41,9 @@ class TradeBotConfig:
     save_scans: bool = False
     capture_session_id: Optional[str] = None
     captures_root_override: Optional[Path] = None
+    #: When set (``run_trade_session`` sets this from ``device_id`` if omitted), scan images go under
+    #: ``<captures root>/<device_slug>/`` so N concurrent cities do not overwrite each other.
+    capture_device_id: Optional[str] = None
 
     def __post_init__(self) -> None:
         if self.capture_session_id is None:

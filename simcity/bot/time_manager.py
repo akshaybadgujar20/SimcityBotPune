@@ -1,37 +1,54 @@
-from simcity.bot.custom_timer import CustomTimer
 import logging
+import threading
 
-# Managing multiple timers with unique keys
+from simcity.bot.custom_timer import CustomTimer
+
+
 class TimerManager:
-    def __init__(self):
-        self.timers = {}
+    """Multiple timers by key; safe for concurrent trade sessions (different keys per device)."""
+
+    def __init__(self) -> None:
+        self.timers: dict = {}
+        self._lock = threading.Lock()
 
     def create_timer(self, key, interval=1):
         """Creates a new timer identified by a unique key"""
-        if key not in self.timers:
-            self.timers[key] = CustomTimer(key, interval)
+        with self._lock:
+            if key not in self.timers:
+                self.timers[key] = CustomTimer(key, interval)
 
     def start_timer(self, key):
         """Start a specific timer"""
-        if key in self.timers:
-            self.timers[key].start()
+        with self._lock:
+            t = self.timers.get(key)
+        if t is not None:
+            t.start()
 
     def stop_timer(self, key):
         """Stop a specific timer"""
-        if key in self.timers:
-            self.timers[key].stop()
+        with self._lock:
+            t = self.timers.get(key)
+        if t is not None:
+            t.stop()
 
     def reset_timer(self, key):
         """Reset a specific timer"""
-        if key in self.timers:
-            self.timers[key].reset()
+        with self._lock:
+            t = self.timers.get(key)
+        if t is not None:
+            t.reset()
 
     def get_timer_time(self, key):
-        """Get the time elapsed for a specific timer"""
-        if key in self.timers:
-            return self.timers[key].get_time()
+        """Get the time elapsed for a specific timer (0 if the key was never created)."""
+        with self._lock:
+            t = self.timers.get(key)
+        if t is not None:
+            return t.get_time()
+        return 0
 
     def set_timer_interval(self, key, interval):
         """Set a new interval for a specific timer"""
-        if key in self.timers:
-            self.timers[key].set_interval(interval)
+        with self._lock:
+            t = self.timers.get(key)
+        if t is not None:
+            t.set_interval(interval)

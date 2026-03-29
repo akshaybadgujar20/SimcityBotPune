@@ -13,9 +13,15 @@ _PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 
 
 def captures_root(config: Optional["TradeBotConfig"] = None) -> Path:
-    if config and config.captures_root_override is not None:
-        return Path(config.captures_root_override)
-    return _PACKAGE_ROOT / "captures"
+    from simcity.bot.trade_bot.utils.device_scope import device_id_slug
+
+    if config is not None and config.captures_root_override is not None:
+        base = Path(config.captures_root_override)
+    else:
+        base = _PACKAGE_ROOT / "captures"
+    if config is not None and config.capture_device_id:
+        return base / device_id_slug(config.capture_device_id)
+    return base
 
 
 def ensure_capture_subdir(config: Optional["TradeBotConfig"], *parts: str) -> Path:

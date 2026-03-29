@@ -10,13 +10,14 @@ from simcity.bot.automation.city_utility_actions import (
     click_on_global_trade_hq,
     click_on_purchase_menu,
 )
-from simcity.bot.city_actions.buy_items import global_trade_hq_timer, manager
+from simcity.bot.city_actions.buy_items import manager
 from simcity.bot.trade_bot.config.defaults import TradeBotConfig
 from simcity.bot.trade_bot.models.purchase_item import PurchaseItem
 from simcity.bot.trade_bot.services.city_depot_service import CityDepotService
 from simcity.bot.trade_bot.services.detection_service import DetectionService
 from simcity.bot.trade_bot.services.global_trade_service import GlobalTradeService
 from simcity.bot.trade_bot.services.navigation_wrapper import NavigationWrapper
+from simcity.bot.trade_bot.utils.device_scope import global_trade_hq_timer_key
 
 logger = logging.getLogger("trade_bot")
 
@@ -32,8 +33,8 @@ class TradeSessionState:
         return set(self._all_names)
 
 
-def _ensure_trade_hq_timer() -> None:
-    manager.create_timer(global_trade_hq_timer, interval=1)
+def _ensure_trade_hq_timer(device_id: str) -> None:
+    manager.create_timer(global_trade_hq_timer_key(device_id), interval=1)
 
 
 def _log_session_buy_totals(buy_counts: Dict[str, int]) -> None:
@@ -59,9 +60,16 @@ def run_trade_session(
     trade depot: 1st view when HQ opens, then swipe right for the 2nd and 3rd views
     (count set by ``hq_trade_views``). Meant to be called from
     your API or a script.
+
+    **Concurrent cities:** pass a distinct ``device_id`` per ADB device/emulator port.
+    HQ timers and trade-bot capture folders are scoped per ``device_id``; live
+    screenshots already use ``screenshots/city_<device_id>/``. Each call may use its
+    own ``purchase_items`` list for that city.
     """
     cfg = config or TradeBotConfig()
-    _ensure_trade_hq_timer()
+    if cfg.capture_device_id is None:
+        cfg.capture_device_id = device_id
+    _ensure_trade_hq_timer(device_id)
     purchase_list = list(purchase_items)
     if not purchase_list:
         logger.info("Your shopping list is empty — nothing to do.")

@@ -14,6 +14,10 @@ from simcity.bot.trade_bot.orchestrator.trade_session import (
     TradeSessionState,
     run_trade_session,
 )
+from simcity.bot.trade_bot.utils.device_scope import (
+    device_id_slug,
+    global_trade_hq_timer_key,
+)
 
 __all__ = [
     "run_trade_session",
@@ -26,4 +30,6 @@ __all__ = [
     "DetectedItem",
     "TradeBotConfig",
     "material_facade_for",
+    "device_id_slug",
+    "global_trade_hq_timer_key",
 ]

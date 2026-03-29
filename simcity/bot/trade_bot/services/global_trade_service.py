@@ -11,7 +11,6 @@ from simcity.bot.automation.city_utility_actions import (
 from simcity.bot.automation.take_screenshot import take_bw_screenshot
 from simcity.bot.city_actions.buy_items import (
     buy_item_from_visiting_city_trade_depot,
-    global_trade_hq_timer,
     manager,
 )
 from simcity.bot.enums.miscellaneous import Miscellaneous
@@ -23,6 +22,7 @@ from simcity.bot.trade_bot.models.purchase_item import PurchaseItem
 from simcity.bot.trade_bot.services.city_depot_service import CityDepotService
 from simcity.bot.trade_bot.services.detection_service import DetectionService
 from simcity.bot.trade_bot.services.navigation_wrapper import NavigationWrapper
+from simcity.bot.trade_bot.utils.device_scope import global_trade_hq_timer_key
 
 logger = logging.getLogger("trade_bot")
 
@@ -63,6 +63,7 @@ class GlobalTradeService:
         self._nav = navigation
         self._city_depot = city_depot
         self._buy_counts = buy_counts_by_item
+        self._hq_timer_key = global_trade_hq_timer_key(device_id)
 
     def _record_buy(self, item_name: str) -> None:
         if self._buy_counts is None:
@@ -70,7 +71,7 @@ class GlobalTradeService:
         self._buy_counts[item_name] = self._buy_counts.get(item_name, 0) + 1
 
     def wait_until_hq_ready(self, stop_check: Optional[Callable[[], bool]] = None) -> bool:
-        manager.reset_timer(global_trade_hq_timer)
+        manager.reset_timer(self._hq_timer_key)
         interval = max(0.05, self._config.hq_coin_poll_interval_seconds)
         max_attempts = max(1, self._config.hq_coin_max_poll_attempts)
         logger.info(
@@ -86,7 +87,7 @@ class GlobalTradeService:
                 log_empty_match=False,
             )
             if len(coin) > 0:
-                manager.start_timer(global_trade_hq_timer)
+                manager.start_timer(self._hq_timer_key)
                 logger.info("Coin offers visible — this trade depot view is ready to search.")
                 return True
             if attempt in (1, max_attempts) or (
