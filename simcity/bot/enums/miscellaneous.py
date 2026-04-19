@@ -60,3 +60,14 @@ class Miscellaneous(Enum):
     COTTONWOOD_FOREST='misc/cottonwood_forest.png'
     GRAND_HAVEN='misc/grand_haven.png'
     JUGBAND_HILLS='misc/jugband_hills.png'
+    BUY_ICON='misc/buy_icon.png'
+    SILK='misc/silk.png'
+
+    STORAGE_CAMERA_GLOBAL_TRADE_HQ='misc/silk.png'
+    STORAGE_CAMERA_VISITOR_TRADE_DEPOT='misc/storage_camera_visitor_trade_depot.png'
+
+    STORAGE_BARS_GLOBAL_TRADE_HQ='misc/silk.png'
+    STORAGE_BARS_VISITOR_TRADE_DEPOT='misc/storage_bars_visitor_trade_depot.png'
+
+    STORAGE_LOCK_GLOBAL_TRADE_HQ='misc/storage_lock_global_trade_hq.png'
+    STORAGE_LOCK_VISITOR_TRADE_DEPOT='misc/storage_lock_visitor_trade_depot.png'

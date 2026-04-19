@@ -1,0 +1,227 @@
+29-03-2026 - 11:38:34  - logger.py:39 - INFO - 
+===== New Automation Started =====
+
+29-03-2026 - 11:38:36  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:38:36  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+emulator-5554	offline
+
+
+29-03-2026 - 11:38:36  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5555' is NOT present in the adb devices output.
+29-03-2026 - 11:38:36  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:38:36] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:38:37  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:38:38  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:38:40  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:38:42  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:38:43  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:38:45  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:38:46  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:38:48  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:38:48] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:38:48  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:38:48  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+emulator-5554	device
+emulator-5564	device
+
+
+29-03-2026 - 11:38:48  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5575' is NOT present in the adb devices output.
+29-03-2026 - 11:38:48  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:38:48] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:38:48  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:38:49  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:38:50  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:38:50  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:38:51  - collect_raw_materials.py:13 - INFO - Inside factory no 10
+29-03-2026 - 11:38:52  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:38:53  - collect_raw_materials.py:13 - INFO - Inside factory no 11
+29-03-2026 - 11:38:53  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:38:54  - collect_raw_materials.py:13 - INFO - Inside factory no 12
+29-03-2026 - 11:38:55  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:38:57  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:38:58  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:39:00  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:39:02  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:39:06  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:06] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:06  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:39:06  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:39:06  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+29-03-2026 - 11:39:06  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:06] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:22  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:22] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:22  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:39:22  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:39:22  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5575' is present in the adb devices output.
+29-03-2026 - 11:39:22  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:22] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:38  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:38] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:38  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:39:38  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:39:38  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5565' is NOT present in the adb devices output.
+29-03-2026 - 11:39:38  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:38] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:39  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:39:41  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:39:42  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:39:44  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:39:46  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:39:47  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:39:49  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:39:50  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:39:52  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:39:52  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:52] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:52  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:39:52  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5565	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:39:52  - check_adb_devices_and_connect_if_not_connected.py:17 - INFO - '5585' is NOT present in the adb devices output.
+29-03-2026 - 11:39:52  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:39:52] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:39:53  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:39:55  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:39:56  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:39:58  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:39:59  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:40:01  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:40:03  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:40:25  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:25] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:40:25  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:40:25  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5565	device
+127.0.0.1:5575	device
+127.0.0.1:5585	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:40:25  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
+29-03-2026 - 11:40:25  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:25] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:40:25  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:40:27  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:40:29  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:40:30  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:30] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:40:30  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:40:30  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5565	device
+127.0.0.1:5575	device
+127.0.0.1:5585	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:40:30  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5585' is present in the adb devices output.
+29-03-2026 - 11:40:30  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:30] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:40:30  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:40:32  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:40:34  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:40:35  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:40:37  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:40:38  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:40:50  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:50] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:40:50  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:40:50  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5565	device
+127.0.0.1:5575	device
+127.0.0.1:5585	device
+emulator-5554	device
+emulator-5564	device
+emulator-5574	device
+emulator-5584	device
+
+
+29-03-2026 - 11:40:50  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5565' is present in the adb devices output.
+29-03-2026 - 11:40:50  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:40:50] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:48:58  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:48:58] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:48:58  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:48:58  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5574	device
+
+
+29-03-2026 - 11:48:58  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5575' is present in the adb devices output.
+29-03-2026 - 11:48:58  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:48:58] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:48:59  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:49:00  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:49:02  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:49:03  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:49:05  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:49:06  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:49:08  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:49:09  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:49:11  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:49:14  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:49:14] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:49:14  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:49:14  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	device
+emulator-5554	device
+emulator-5574	device
+
+
+29-03-2026 - 11:49:14  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5575' is present in the adb devices output.
+29-03-2026 - 11:49:14  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:49:14] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:50:30  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:50:30] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:50:30  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:50:30  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	offline
+emulator-5554	device
+
+
+29-03-2026 - 11:50:30  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+29-03-2026 - 11:50:30  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:50:30] "POST /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:50:30  - collect_raw_materials.py:13 - INFO - Inside factory no 1
+29-03-2026 - 11:50:32  - collect_raw_materials.py:13 - INFO - Inside factory no 2
+29-03-2026 - 11:50:34  - collect_raw_materials.py:13 - INFO - Inside factory no 3
+29-03-2026 - 11:50:35  - collect_raw_materials.py:13 - INFO - Inside factory no 4
+29-03-2026 - 11:50:37  - collect_raw_materials.py:13 - INFO - Inside factory no 5
+29-03-2026 - 11:50:38  - collect_raw_materials.py:13 - INFO - Inside factory no 6
+29-03-2026 - 11:50:40  - collect_raw_materials.py:13 - INFO - Inside factory no 7
+29-03-2026 - 11:50:41  - collect_raw_materials.py:13 - INFO - Inside factory no 8
+29-03-2026 - 11:50:43  - collect_raw_materials.py:13 - INFO - Inside factory no 9
+29-03-2026 - 11:50:44  - collect_raw_materials.py:13 - INFO - Inside factory no 10
+29-03-2026 - 11:50:46  - collect_raw_materials.py:13 - INFO - Inside factory no 11
+29-03-2026 - 11:50:48  - collect_raw_materials.py:13 - INFO - Inside factory no 12
+29-03-2026 - 11:51:14  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:51:14] "OPTIONS /action-perform HTTP/1.1" 200 -
+29-03-2026 - 11:51:14  - check_adb_devices_and_connect_if_not_connected.py:12 - INFO - ADB Devices Output:
+29-03-2026 - 11:51:14  - check_adb_devices_and_connect_if_not_connected.py:13 - INFO - List of devices attached
+127.0.0.1:5555	device
+127.0.0.1:5575	offline
+emulator-5554	device
+
+
+29-03-2026 - 11:51:14  - check_adb_devices_and_connect_if_not_connected.py:15 - INFO - '5555' is present in the adb devices output.
+29-03-2026 - 11:51:14  - _internal.py:97 - INFO - 127.0.0.1 - - [29/Mar/2026 11:51:14] "POST /action-perform HTTP/1.1" 200 -

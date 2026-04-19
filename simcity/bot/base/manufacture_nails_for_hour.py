@@ -6,9 +6,10 @@ import uiautomator2 as u2
 from simcity.bot.automation.adb_actions import perform_click, press_esc_key, perform_swipe
 from simcity.bot.automation.city_utility_actions import click_on_material_storage
 from simcity.bot.automation.find_material import find_miscellaneous_material
+from simcity.bot.city_actions.add_raw_material_to_production import add_raw_material_to_production
+from simcity.bot.city_actions.collect_raw_materials import collect_raw_materials
 from simcity.bot.enums.miscellaneous import Miscellaneous
-from simcity.bot.main import add_raw_material_to_production, collect_raw_materials, set_up, \
-    collect_produced_items_from_commercial_buildings
+from simcity.bot.main import set_up
 
 device_id = '5555'
 device = u2.connect("127.0.0.1:5555")

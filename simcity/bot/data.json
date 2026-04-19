@@ -1,4 +1,85 @@
 {
+  "SCUBA_MASK": {
+    "name": "SCUBA_MASK",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/beach/scuba_mask.png",
+      "x1": "global_trade_hq/special/beach/camera_x1.png",
+      "x2": "global_trade_hq/special/beach/camera_x2.png",
+      "x3": "global_trade_hq/special/beach/camera_x3.png",
+      "x4": "global_trade_hq/special/beach/camera_x4.png",
+      "x5": "global_trade_hq/special/beach/camera_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/beach/scuba_mask.png",
+      "x1": "trade_depot/special/beach/camera_x1.png",
+      "x2": "trade_depot/special/beach/camera_x2.png",
+      "x3": "trade_depot/special/beach/camera_x3.png",
+      "x4": "trade_depot/special/beach/camera_x4.png",
+      "x5": "trade_depot/special/beach/camera_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/beach/scuba_mask.png",
+    "sell_duration": 5500,
+    "building_name": "",
+    "manufacturing_recipes": {}
+  },
+  "LIFEBELT": {
+    "name": "LIFEBELT",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/beach/lifebelt.png",
+      "x1": "global_trade_hq/special/beach/lock_x1.png",
+      "x2": "global_trade_hq/special/beach/lock_x2.png",
+      "x3": "global_trade_hq/special/beach/lock_x3.png",
+      "x4": "global_trade_hq/special/beach/lock_x4.png",
+      "x5": "global_trade_hq/special/beach/lock_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/beach/lifebelt.png",
+      "x1": "trade_depot/special/beach/lock_x1.png",
+      "x2": "trade_depot/special/beach/lock_x2.png",
+      "x3": "trade_depot/special/beach/lock_x3.png",
+      "x4": "trade_depot/special/beach/lock_x4.png",
+      "x5": "trade_depot/special/beach/lock_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/beach/lifebelt.png",
+    "sell_duration": 5500,
+    "building_name": "",
+    "manufacturing_recipes": {}
+  },
+  "SHIP_WHEEL": {
+    "name": "SHIP_WHEEL",
+    "x_location": 665,
+    "y_location": 375,
+    "hq_templates": {
+      "base": "global_trade_hq/special/beach/ship_wheel.png",
+      "x1": "global_trade_hq/special/beach/bars_x1.png",
+      "x2": "global_trade_hq/special/beach/bars_x2.png",
+      "x3": "global_trade_hq/special/beach/bars_x3.png",
+      "x4": "global_trade_hq/special/beach/bars_x4.png",
+      "x5": "global_trade_hq/special/beach/bars_x5.png"
+    },
+    "depot_templates": {
+      "base": "trade_depot/special/beach/ship_wheel.png",
+      "x1": "trade_depot/special/beach/bars_x1.png",
+      "x2": "trade_depot/special/beach/bars_x2.png",
+      "x3": "trade_depot/special/beach/bars_x3.png",
+      "x4": "trade_depot/special/beach/bars_x4.png",
+      "x5": "trade_depot/special/beach/bars_x5.png"
+    },
+    "base_price": 487,
+    "actual_price": 10,
+    "storage_template": "city_storage/special/beach/ship_wheel.png",
+    "sell_duration": 5500,
+    "building_name": "",
+    "manufacturing_recipes": {}
+  },
   "NAILS": {
     "name": "NAILS",
     "x_location": 665,
