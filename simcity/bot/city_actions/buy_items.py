@@ -10,7 +10,7 @@ from simcity.bot.automation.find_material import (
 from simcity.bot.enums.material import Material
 from simcity.bot.enums.miscellaneous import Miscellaneous
 from simcity.bot.main import manager
-from simcity.bot.trade_bot import PurchaseItem, run_trade_session
+from simcity.bot.trade_bot.models.purchase_item import PurchaseItem
 from simcity.bot.trade_bot.utils.trade_log import trade_log
 
 global_trade_hq_timer = "global_trade_hq_timer"
@@ -31,6 +31,8 @@ def _to_purchase_items(material_or_list) -> list[PurchaseItem]:
 
 def buy_items(material_or_list, device_id, stop_event):
     """Backward-compatible entry point; delegates to ``run_trade_session``."""
+    from simcity.bot.trade_bot.orchestrator.trade_session import run_trade_session
+
     purchase_items = _to_purchase_items(material_or_list)
     trade_log(
         device_id,

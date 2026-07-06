@@ -10,7 +10,7 @@ from simcity.bot.automation.city_utility_actions import (
     click_on_global_trade_hq,
     click_on_purchase_menu,
 )
-from simcity.bot.city_actions.buy_items import manager
+from simcity.bot.main import manager
 from simcity.bot.trade_bot.config.defaults import TradeBotConfig
 from simcity.bot.trade_bot.models.purchase_item import PurchaseItem
 from simcity.bot.trade_bot.services.city_depot_service import CityDepotService
