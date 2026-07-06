@@ -1,13 +1,13 @@
 import logging
 import os
 import time
+from pathlib import Path
 
 import cv2
 
-# screenshot_path = '..\\..\\..\\resources\\screenshots_3\\screenshot (32).png'  # Path to save the screenshot
-# screenshot_path = 'C:\\Users\\Akshay\\Pictures\\BlueStacks\\Screenshot_2024.10.25_00.33.50.277.png'  # Path to save the screenshot
-
-BASE_DIR = "screenshots"
+# Repo root / ``screenshots`` so concurrent API workers (different cwd) still isolate by device.
+_REPO_ROOT = Path(__file__).resolve().parents[3]
+BASE_DIR = str(_REPO_ROOT / "screenshots")
 
 
 def take_bw_screenshot(device_id):

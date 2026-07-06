@@ -1,0 +1,20 @@
+# Optional YAML (requires: pip install pyyaml)
+# How many trade depot views to scan (1st when HQ opens, then swipe right for 2nd, 3rd, …)
+hq_trade_views: 3
+max_depot_pages: 3
+# If slot-marker count >= this after a page, we try the next mayor depot page (up to max_depot_pages).
+depot_full_page_trade_box_threshold: 8
+visiting_depot_trade_box_wait_seconds: 25.0
+match_threshold: 0.9
+dedup_iou_threshold: 0.5
+swipe_after_seconds: 2.0
+hq_coin_poll_interval_seconds: 0.2
+hq_coin_max_poll_attempts: 5
+hq_empty_pass_wait_seconds: 30.0
+hq_trade_refresh_period_seconds: 30.0
+hq_swipe_x1: 1575
+hq_swipe_y1: 460
+hq_swipe_x2: 620
+hq_swipe_y2: 460
+hq_swipe_duration_s: 0.5
+save_scans: false
