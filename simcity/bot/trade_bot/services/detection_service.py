@@ -16,6 +16,7 @@ from simcity.bot.trade_bot.utils.image_storage import (
     build_capture_name,
     save_scanned_image,
 )
+from simcity.bot.trade_bot.utils.trade_log import trade_log
 
 logger = logging.getLogger("trade_bot")
 
@@ -79,8 +80,9 @@ def _iou(a: List[int], b: List[int]) -> float:
 
 
 class DetectionService:
-    def __init__(self, config: TradeBotConfig) -> None:
+    def __init__(self, config: TradeBotConfig, device_id: Optional[str] = None) -> None:
         self._config = config
+        self._device_id = device_id
 
     def detect_parallel_hq(
         self,
@@ -96,7 +98,7 @@ class DetectionService:
             stop_check,
             phase="hq",
             scan_index=view_index,
-            stop_after_best_priority=True,
+            stop_after_best_priority=False,
         )
 
     def detect_parallel_depot(
@@ -288,6 +290,13 @@ class DetectionService:
                 _iou(rect, kr) >= iou_threshold
                 for _, kr in kept
             ):
+                if self._device_id:
+                    trade_log(
+                        self._device_id,
+                        "DETECT",
+                        'Dropped overlapping detection for "%s" (IoU dedup)',
+                        item.name,
+                    )
                 continue
             kept.append((item, rect))
         return kept
@@ -297,6 +306,34 @@ class DetectionService:
         deduped: Sequence[Candidate],
     ) -> Optional[Candidate]:
         return deduped[0] if deduped else None
+
+    def pick_first_by_screen_position(
+        self,
+        candidates: Sequence[Candidate],
+    ) -> Optional[Candidate]:
+        if not candidates:
+            return None
+        sorted_by_pos = sorted(
+            candidates,
+            key=lambda t: (t[1][0], t[1][1], t[0].priority, t[0].name),
+        )
+        deduped = self.dedupe_cross_items(
+            sorted_by_pos, self._config.dedup_iou_threshold
+        )
+        if not deduped:
+            return None
+        choice = deduped[0]
+        item, rect = choice
+        if self._device_id:
+            trade_log(
+                self._device_id,
+                "DETECT",
+                'Picking "%s" at (%s, %s) — leftmost/topmost on screen',
+                item.name,
+                rect[0],
+                rect[1],
+            )
+        return choice
 
 
 def _draw_candidates_bgr(

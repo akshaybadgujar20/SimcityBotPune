@@ -58,19 +58,19 @@ Unknown actions return `{"message": "unknown action"}` with HTTP 200.
 
 ### Action dispatch
 
-| `action` value | Handler | Arguments passed | Notes |
-|----------------|---------|------------------|-------|
-| `CONTINUOUS_BUY` | `buy_items` | `(select_material_list[0], city_port)` | **First material only** |
-| `SELL_WITH_FULL_VALUE` | `sell_materials` | `(select_material_list, city_port, False, True)` | `advertise=False`, `full_price=True` |
-| `SELL_WITH_ZERO_VALUE` | `sell_materials` | `(select_material_list, city_port, False, False)` | `advertise=False`, `full_price=False` |
-| `COLLECT_FROM_FACTORY` | `collect_raw_materials` | `(factoriesCount, city_port)` | |
-| `ADD_COMMERCIAL_MATERIAL_TO_PRODUCTION` | `add_commercial_material_to_production` | `(select_material_list, city_port)` | All selected materials |
-| `ADD_RAW_MATERIAL_TO_PRODUCTION` | `add_raw_material_to_production` | `(select_material_list[0], factoriesCount, city_port)` | First material only |
-| `ADVERTISE_ITEM_ON_TRADE_DEPOT` | *(none)* | — | Prints `no action mapped`; **not implemented** |
+| `action` value | Handler | Arguments passed | Functional guide | Notes |
+|----------------|---------|------------------|------------------|-------|
+| `CONTINUOUS_BUY` | `run_trade_session` | `(city_port, purchase_items)` | [continuous-buy](actions/continuous-buy.md) | **All** `selectedMaterials`; empty list → HTTP 400 |
+| `SELL_WITH_FULL_VALUE` | `sell_materials` | `(select_material_list, city_port, False, True)` | [sell-with-full-value](actions/sell-with-full-value.md) | `advertise=False`, `full_price=True` |
+| `SELL_WITH_ZERO_VALUE` | `sell_materials` | `(select_material_list, city_port, False, False)` | [sell-with-zero-value](actions/sell-with-zero-value.md) | `advertise=False`, `full_price=False` |
+| `COLLECT_FROM_FACTORY` | `collect_raw_materials` | `(factoriesCount, city_port)` | [collect-from-factory](actions/collect-from-factory.md) | |
+| `ADD_COMMERCIAL_MATERIAL_TO_PRODUCTION` | `add_commercial_material_to_production` | `(select_material_list, city_port)` | [add-commercial-to-production](actions/add-commercial-to-production.md) | All selected materials |
+| `ADD_RAW_MATERIAL_TO_PRODUCTION` | `add_raw_material_to_production` | `(select_material_list[0], factoriesCount, city_port)` | [add-raw-to-production](actions/add-raw-to-production.md) | First material only |
+| `ADVERTISE_ITEM_ON_TRADE_DEPOT` | *(none)* | — | [advertise-on-trade-depot](actions/advertise-on-trade-depot.md) | Prints `no action mapped`; **not implemented** |
 
 Action string constants align with [`enums/city_actions.py`](../simcity/bot/enums/city_actions.py) enum names (without the human-readable values).
 
-For in-game behavior of each handler, see [city-actions.md](city-actions.md).
+For in-game behavior of each handler, see [city-actions.md](city-actions.md) or the per-action [functional guides](actions/README.md).
 
 ### Example requests
 

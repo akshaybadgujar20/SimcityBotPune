@@ -6,6 +6,7 @@ This documentation explains the **SimcityBotPune** bot: a Python automation syst
 
 1. [Overview](overview.md) — what the bot does and how the package is organized
 2. [API](api.md) — Flask endpoints, request schema, action dispatch
+2.5. [Action guides](actions/README.md) — per-action functional understanding (when to use, flows, gaps)
 3. [Architecture](architecture.md) — layers, concurrency, shared state
 4. [City actions](city-actions.md) — high-level game task orchestration
 5. [Automation](automation.md) — low-level ADB, CV, OCR primitives
@@ -27,6 +28,23 @@ This documentation explains the **SimcityBotPune** bot: a Python automation syst
 | [trade-bot.md](trade-bot.md) | [`simcity/bot/trade_bot/`](../simcity/bot/trade_bot/) |
 | [setup.md](setup.md) | [`requirements.txt`](../requirements.txt), [`main.py`](../simcity/bot/main.py) |
 | [legacy-modules.md](legacy-modules.md) | [`base/`](../simcity/bot/base/), [`cities/`](../simcity/bot/cities/), [`hotspot/`](../simcity/bot/hotspot/), [`test/`](../simcity/bot/test/) |
+| [actions/README.md](actions/README.md) | [`server.py`](../simcity/bot/server.py) `perform_action` dispatch |
+
+## Action guides
+
+Per-action functional understanding documents for each `POST /action-perform` handler:
+
+| Action | Guide |
+|--------|-------|
+| `CONTINUOUS_BUY` | [continuous-buy.md](actions/continuous-buy.md) |
+| `SELL_WITH_FULL_VALUE` | [sell-with-full-value.md](actions/sell-with-full-value.md) |
+| `SELL_WITH_ZERO_VALUE` | [sell-with-zero-value.md](actions/sell-with-zero-value.md) |
+| `COLLECT_FROM_FACTORY` | [collect-from-factory.md](actions/collect-from-factory.md) |
+| `ADD_COMMERCIAL_MATERIAL_TO_PRODUCTION` | [add-commercial-to-production.md](actions/add-commercial-to-production.md) |
+| `ADD_RAW_MATERIAL_TO_PRODUCTION` | [add-raw-to-production.md](actions/add-raw-to-production.md) |
+| `ADVERTISE_ITEM_ON_TRADE_DEPOT` | [advertise-on-trade-depot.md](actions/advertise-on-trade-depot.md) |
+
+Shared infrastructure (threading, stop, request fields): [actions/README.md](actions/README.md).
 
 ## Quick reference
 

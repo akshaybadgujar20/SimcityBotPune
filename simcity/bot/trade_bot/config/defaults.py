@@ -10,7 +10,7 @@ from uuid import uuid4
 class TradeBotConfig:
     #: Trade depot (Global Trade HQ): how many **views** to check — **3** = 1st as it opens, then swipe right
     #: for 2nd, swipe right again for 3rd. Clamped between 1 and 6.
-    hq_trade_views: int = 2
+    hq_trade_views: int = 5
     max_depot_pages: int = 3
     #: Visiting a mayor: if we still need items and see at least this many ``TRADE_BOX`` slot markers on
     #: screen, assume another depot page may exist and swipe. Below this, treat as the last page.

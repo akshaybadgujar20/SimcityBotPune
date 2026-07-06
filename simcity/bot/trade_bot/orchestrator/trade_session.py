@@ -18,6 +18,7 @@ from simcity.bot.trade_bot.services.detection_service import DetectionService
 from simcity.bot.trade_bot.services.global_trade_service import GlobalTradeService
 from simcity.bot.trade_bot.services.navigation_wrapper import NavigationWrapper
 from simcity.bot.trade_bot.utils.device_scope import global_trade_hq_timer_key
+from simcity.bot.trade_bot.utils.trade_log import trade_log
 
 logger = logging.getLogger("trade_bot")
 
@@ -37,11 +38,13 @@ def _ensure_trade_hq_timer(device_id: str) -> None:
     manager.create_timer(global_trade_hq_timer_key(device_id), interval=1)
 
 
-def _log_session_buy_totals(buy_counts: Dict[str, int]) -> None:
+def _log_session_buy_totals(device_id: str, buy_counts: Dict[str, int]) -> None:
     parts = [f'"{name}": {buy_counts[name]}' for name in sorted(buy_counts.keys())]
     total = sum(buy_counts.values())
-    logger.info(
-        "Session buy totals after this iteration: %s (grand total: %s)",
+    trade_log(
+        device_id,
+        "SESSION",
+        "Cycle buy totals — %s (grand total: %s)",
         ", ".join(parts),
         total,
     )
@@ -50,21 +53,18 @@ def _log_session_buy_totals(buy_counts: Dict[str, int]) -> None:
 def run_trade_session(
     device_id: str,
     purchase_items: Sequence[PurchaseItem],
+    stop_event: Optional[Event] = None,
     *,
     config: Optional[TradeBotConfig] = None,
-    stop_event: Optional[Event] = None,
     max_session_iterations: int = 10_000,
 ) -> None:
     """
     Open the purchase menu and Global Trade HQ, refresh listings, and scan the
-    trade depot: 1st view when HQ opens, then swipe right for the 2nd and 3rd views
-    (count set by ``hq_trade_views``). Meant to be called from
-    your API or a script.
+    trade depot across ``hq_trade_views`` pages per pass. Meant to be called from
+    the API or a script.
 
-    **Concurrent cities:** pass a distinct ``device_id`` per ADB device/emulator port.
-    HQ timers and trade-bot capture folders are scoped per ``device_id``; live
-    screenshots already use ``screenshots/city_<device_id>/``. Each call may use its
-    own ``purchase_items`` list for that city.
+    ``stop_event`` may be passed positionally (Flask ``start_action`` thread) or
+    as a keyword argument.
     """
     cfg = config or TradeBotConfig()
     if cfg.capture_device_id is None:
@@ -72,7 +72,7 @@ def run_trade_session(
     _ensure_trade_hq_timer(device_id)
     purchase_list = list(purchase_items)
     if not purchase_list:
-        logger.info("Your shopping list is empty — nothing to do.")
+        trade_log(device_id, "SESSION", "Shopping list empty — nothing to do")
         return
     purchase_by_name = {p.name: p for p in purchase_list}
     buy_counts: Dict[str, int] = {p.name: 0 for p in purchase_list}
@@ -81,19 +81,23 @@ def run_trade_session(
         return bool(stop_event and stop_event.is_set())
 
     ordered = sorted(purchase_list, key=lambda x: (x.priority, x.name))
-    logger.info(
-        "Starting a shopping run on your city (device %s). We’ll try up to %s full refresh cycles.",
+    trade_log(
         device_id,
+        "SESSION",
+        "Session start — up to %s cycles, hq_trade_views=%s",
         max_session_iterations,
+        cfg.hq_trade_views,
     )
-    logger.info(
-        "You’re looking for %s item(s). Lower priority number = we try to get it first.",
+    trade_log(
+        device_id,
+        "SESSION",
+        "Shopping for %s item(s) in parallel on each HQ page",
         len(purchase_list),
     )
     for p in ordered:
-        logger.info('  • "%s" (priority %s)', p.name, p.priority)
+        trade_log(device_id, "SESSION", '  • "%s" (list order %s)', p.name, p.priority)
 
-    detection = DetectionService(cfg)
+    detection = DetectionService(cfg, device_id=device_id)
     navigation = NavigationWrapper(device_id)
     city_depot = CityDepotService(
         device_id, cfg, detection, navigation, buy_counts_by_item=buy_counts
@@ -107,30 +111,36 @@ def run_trade_session(
         buy_counts_by_item=buy_counts,
     )
 
-    logger.info("Opening the purchase menu…")
+    trade_log(device_id, "SESSION", "Opening purchase menu")
     click_on_purchase_menu(device_id)
-    logger.info("Pausing a second so the menu can appear…")
     time.sleep(1)
-    logger.info("Opening Global Trade HQ (trade depot)…")
+    trade_log(device_id, "SESSION", "Opening Global Trade HQ")
     click_on_global_trade_hq(device_id)
 
     for outer_i in range(max_session_iterations):
         if stop_check():
-            logger.info("Stop requested — ending the shopping run (was on cycle %s).", outer_i + 1)
+            trade_log(
+                device_id,
+                "STOP",
+                "Stop requested — ending session on cycle %s",
+                outer_i + 1,
+            )
+            _log_session_buy_totals(device_id, buy_counts)
             return
 
-        logger.info(
-            "Cycle %s of %s: refreshing listings, then browsing the trade depot again.",
+        trade_log(
+            device_id,
+            "SESSION",
+            "Cycle %s of %s — Best Value + reopen GTHQ",
             outer_i + 1,
             max_session_iterations,
         )
-        logger.info("Tapping Best Value so new offers can load…")
         click_on_best_value_menu(device_id)
-        logger.info("Short pause while the game updates…")
         time.sleep(1)
-        logger.info("Opening Global Trade HQ again…")
+        if stop_check():
+            trade_log(device_id, "STOP", "Stop requested after Best Value tap")
+            return
         click_on_global_trade_hq(device_id)
-        logger.info("Waiting a moment for the trade screen to finish loading…")
         time.sleep(1)
 
         global_trade.scan_trade_depot_views_and_visit(
@@ -139,4 +149,4 @@ def run_trade_session(
             stop_check=stop_check,
             apply_refresh_timer=True,
         )
-        _log_session_buy_totals(buy_counts)
+        _log_session_buy_totals(device_id, buy_counts)

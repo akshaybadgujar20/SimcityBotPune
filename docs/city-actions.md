@@ -10,43 +10,47 @@ Every API-dispatched function receives a final `stop_event: threading.Event` arg
 
 ## `buy_items.py`
 
+> **Functional guide:** [actions/continuous-buy.md](actions/continuous-buy.md)
+
 | | |
 |---|---|
-| **Purpose** | Continuously buy a single material from Global Trade HQ |
-| **Server action** | `CONTINUOUS_BUY` |
-| **Signature** | `buy_items(material_to_be_found, device_id, stop_event)` |
+| **Purpose** | Continuously buy one or more materials from Global Trade HQ |
+| **Server action** | `CONTINUOUS_BUY` (via `run_trade_session`) |
+| **Signature** | `buy_items(material_or_list, device_id, stop_event)` — thin wrapper; API uses `run_trade_session` directly |
 
 ### Algorithm
 
-1. Create HQ timer (`global_trade_hq_timer`).
+Handled by [`run_trade_session`](../simcity/bot/trade_bot/orchestrator/trade_session.py):
+
+1. Create per-device HQ timer.
 2. Open purchase menu → Global Trade HQ.
-3. Loop up to 1000 iterations:
+3. Loop up to 10,000 cycles:
    - Tap Best Value → reopen Global Trade HQ.
-   - Wait for COIN icon (up to 15s) and start timer when HQ view is ready.
-   - Search HQ view 1 for material via `find_material_in_global_trade_hq`.
-   - If not found, swipe right and check views 2 and 3.
-   - On match: `buy_item_from_visiting_city_trade_depot` → click listing, wait for visiting depot, `buy_item`.
-   - On no match across views: `set_timer()` — sleep until ~30s refresh window elapses.
+   - Scan up to 5 HQ pages; on each page parallel-detect **all** requested items.
+   - On match: visit mayor depot, buy matched item, sweep depot for other requested items, return to GTHQ and continue the page pass.
+   - After full pass: wait ~30s refresh window.
 
 ### Key automation calls
 
 - [`click_on_purchase_menu`](../simcity/bot/automation/city_utility_actions.py), [`click_on_global_trade_hq`](../simcity/bot/automation/city_utility_actions.py), [`click_on_best_value_menu`](../simcity/bot/automation/city_utility_actions.py)
-- [`find_miscellaneous_material`](../simcity/bot/automation/find_material.py) (`COIN`)
-- [`find_material_in_global_trade_hq`](../simcity/bot/automation/find_material.py), [`find_material_in_trade_depot`](../simcity/bot/automation/find_material.py)
+- `DetectionService.detect_parallel_hq` — parallel template match per page
+- [`find_material_in_trade_depot`](../simcity/bot/automation/find_material.py) — inside visiting depot
 
 ### Exported helpers (reused by `trade_bot`)
 
 - `buy_item_from_visiting_city_trade_depot(material, found_item_list, device_id)` — click HQ listing, travel to mayor
 - `buy_item(material, device_id)` — buy inside visiting depot, swipe pages if needed
-- `set_timer()` — wait remainder of 30s HQ refresh period
+- `set_timer()` — legacy HQ refresh wait (superseded by trade_bot timer logic)
 
 ### Stop behavior
 
-**Does not check `stop_event`** in the main loop. Stop only takes effect if the thread is preempted by a new action on the same port.
+`run_trade_session` checks `stop_event` between cycles, during HQ/depot waits, and on navigation steps. `POST /action-stop` is effective.
 
 ---
 
 ## `sell_materials.py`
+
+> **Functional guides:** [actions/sell-with-full-value.md](actions/sell-with-full-value.md) · [actions/sell-with-zero-value.md](actions/sell-with-zero-value.md)
 
 | | |
 |---|---|
@@ -80,6 +84,8 @@ Checks `stop_event.is_set()` at multiple points throughout the sell loop.
 
 ## `collect_raw_materials.py`
 
+> **Functional guide:** [actions/collect-from-factory.md](actions/collect-from-factory.md)
+
 | | |
 |---|---|
 | **Purpose** | Tap factory collection slots to collect produced raw materials |
@@ -103,6 +109,8 @@ Checks `stop_event` between factories.
 
 ## `add_raw_material_to_production.py`
 
+> **Functional guide:** [actions/add-raw-to-production.md](actions/add-raw-to-production.md)
+
 | | |
 |---|---|
 | **Purpose** | Drag a raw material from storage into factory production slots |
@@ -125,6 +133,8 @@ Checks `stop_event` between factories.
 ---
 
 ## `add_commercial_material_to_production.py`
+
+> **Functional guide:** [actions/add-commercial-to-production.md](actions/add-commercial-to-production.md)
 
 | | |
 |---|---|
@@ -181,6 +191,8 @@ Checks `stop_event` before work and inside the click loop.
 
 ## `advertise_all_items_on_trade_depot.py`
 
+> **Functional guide:** [actions/advertise-on-trade-depot.md](actions/advertise-on-trade-depot.md)
+
 | | |
 |---|---|
 | **Purpose** | Find trade depot coin icons, click advertise, wait 60s per item (5 page iterations) |
@@ -204,7 +216,7 @@ Checks `stop_event` throughout; 60s wait loop is interruptible.
 
 | Module | Server action | Checks stop_event |
 |--------|---------------|-------------------|
-| `buy_items` | `CONTINUOUS_BUY` | No |
+| `run_trade_session` / `buy_items` | `CONTINUOUS_BUY` | Yes |
 | `sell_materials` | `SELL_WITH_FULL_VALUE`, `SELL_WITH_ZERO_VALUE` | Yes |
 | `collect_raw_materials` | `COLLECT_FROM_FACTORY` | Yes |
 | `add_raw_material_to_production` | `ADD_RAW_MATERIAL_TO_PRODUCTION` | Yes |
@@ -214,7 +226,8 @@ Checks `stop_event` throughout; 60s wait loop is interruptible.
 
 ## Related documents
 
+- [Action guides](actions/README.md) — per-action functional understanding
 - [API](api.md) — how actions are triggered
 - [Automation](automation.md) — primitives used by city actions
 - [Data and enums](data-and-enums.md) — `MaterialInfo` fields used in production/sell flows
-- [Trade bot](trade-bot.md) — alternative buy implementation reusing `buy_items` helpers
+- [Trade bot](trade-bot.md) — same engine as `CONTINUOUS_BUY`; also runnable standalone via scripts

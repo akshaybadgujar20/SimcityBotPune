@@ -21,6 +21,7 @@ from simcity.bot.trade_bot.models.material_facade import material_facade_for
 from simcity.bot.trade_bot.models.purchase_item import PurchaseItem
 from simcity.bot.trade_bot.services.detection_service import DetectionService
 from simcity.bot.trade_bot.services.navigation_wrapper import NavigationWrapper
+from simcity.bot.trade_bot.utils.trade_log import trade_log
 
 logger = logging.getLogger("trade_bot")
 
@@ -62,27 +63,32 @@ class CityDepotService:
         After travel from Global Trade HQ, the game auto-opens the mayor’s depot.
         We treat ``Miscellaneous.TRADE_BOX`` markers as “depot is up” (same signal as legacy code).
         """
-        logger.info(
-            "Waiting for travel (~5–7s typical) and their trade depot — looking for trade slot markers "
-            "(up to %.0fs)…",
+        trade_log(
+            self._device_id,
+            "DEPOT",
+            "Waiting for mayor depot to open (up to %.0fs, trade slot markers)…",
             self._config.visiting_depot_trade_box_wait_seconds,
         )
         deadline = time.monotonic() + self._config.visiting_depot_trade_box_wait_seconds
         interval = 1.0
         while time.monotonic() < deadline:
             if stop_check and stop_check():
-                logger.info("Stop requested while waiting for their depot.")
+                trade_log(self._device_id, "STOP", "Stop requested while waiting for mayor depot")
                 return False
             n = self._trade_box_marker_count()
             if n > 0:
-                logger.info(
-                    "Reached their city — trade depot is open (counted %s trade slot marker(s) on screen).",
+                trade_log(
+                    self._device_id,
+                    "DEPOT",
+                    "Mayor depot open — %s trade slot marker(s) visible",
                     n,
                 )
                 return True
             time.sleep(interval)
-        logger.warning(
-            "Did not see any trade slot markers — depot may not have opened. Skipping extra shopping here."
+        trade_log(
+            self._device_id,
+            "DEPOT",
+            "Mayor depot did not open in time — skipping depot sweep",
         )
         return False
 
@@ -112,10 +118,10 @@ class CityDepotService:
         page = 0
         while page < max_pages:
             if stop_check and stop_check():
-                logger.info("You asked to stop — leaving this depot.")
+                trade_log(self._device_id, "STOP", "Stop requested — leaving mayor depot sweep")
                 return
             if not remaining:
-                logger.info("Got everything we still needed from this depot.")
+                trade_log(self._device_id, "DEPOT", "All requested items handled in this depot")
                 return
 
             items = [purchase_by_name[n] for n in remaining if n in purchase_by_name]
@@ -126,8 +132,10 @@ class CityDepotService:
                 return
 
             box_count = self._trade_box_marker_count()
-            logger.info(
-                "Mayor depot page %s of %s — %s trade slot marker(s); looking for: %s",
+            trade_log(
+                self._device_id,
+                "DEPOT",
+                "Mayor depot page %s/%s — %s slot markers; seeking: %s",
                 page + 1,
                 max_pages,
                 box_count,
@@ -147,7 +155,12 @@ class CityDepotService:
                 if purchase_item.name not in remaining:
                     continue
                 facade = material_facade_for(purchase_item)
-                logger.info('Trying to buy "%s" from their depot…', purchase_item.name)
+                trade_log(
+                    self._device_id,
+                    "DEPOT",
+                    'Buying "%s" in mayor depot',
+                    purchase_item.name,
+                )
                 buy_item(facade, self._device_id)
                 still, _ = find_material_in_trade_depot(
                     facade,
@@ -158,13 +171,17 @@ class CityDepotService:
                 if not still:
                     remaining.discard(purchase_item.name)
                     self._record_buy(purchase_item.name)
-                    logger.info(
-                        'Looks good — "%s" is no longer showing here (bought or gone).',
+                    trade_log(
+                        self._device_id,
+                        "DEPOT",
+                        '"%s" no longer visible — buy succeeded or listing gone',
                         purchase_item.name,
                     )
                 else:
-                    logger.info(
-                        'Still seeing "%s" on screen after the buy tap — we may try again or move on.',
+                    trade_log(
+                        self._device_id,
+                        "DEPOT",
+                        '"%s" still visible after buy tap',
                         purchase_item.name,
                     )
 
@@ -213,15 +230,15 @@ class CityDepotService:
         stop_check: Optional[Callable[[], bool]] = None,
     ) -> None:
         if stop_check and stop_check():
-            logger.info("Stop requested — skipping the trip back to Global Trade HQ.")
+            trade_log(self._device_id, "STOP", "Stop requested — skipping return to GTHQ")
             return
-        logger.info("Closing their trade depot (ESC)…")
+        trade_log(self._device_id, "NAV", "Closing mayor depot (ESC)")
         close_trade_depot(self._device_id)
-        logger.info("Opening the purchase menu…")
+        trade_log(self._device_id, "NAV", "Opening purchase menu")
         click_on_purchase_menu(self._device_id)
         time.sleep(1)
         if stop_check and stop_check():
             return
-        logger.info("Opening Global Trade HQ from the purchase menu…")
+        trade_log(self._device_id, "NAV", "Opening Global Trade HQ from purchase menu")
         click_on_global_trade_hq(self._device_id)
         time.sleep(1)

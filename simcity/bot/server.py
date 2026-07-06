@@ -4,12 +4,13 @@ from threading import Thread, Event
 
 from simcity.bot.city_actions.add_commercial_material_to_production import add_commercial_material_to_production
 from simcity.bot.city_actions.add_raw_material_to_production import add_raw_material_to_production
-from simcity.bot.city_actions.buy_items import buy_items
 from simcity.bot.city_actions.collect_raw_materials import collect_raw_materials
 from simcity.bot.city_actions.sell_materials import sell_materials
 from simcity.bot.enums.material import Material
 from simcity.bot.main import set_up
 from simcity.bot.material_data_loader import load_material_info_data
+from simcity.bot.trade_bot import PurchaseItem, run_trade_session
+from simcity.bot.trade_bot.utils.trade_log import trade_log
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -45,11 +46,34 @@ def perform_action():
             material_priorities[Material[material]] = index + 1
 
     if request_data['action'] == 'CONTINUOUS_BUY':
+        if not request_data.get('selectedMaterials'):
+            trade_log(
+                city_port,
+                "API",
+                "CONTINUOUS_BUY rejected — selectedMaterials is empty",
+            )
+            return jsonify({"message": "selectedMaterials required for CONTINUOUS_BUY"}), 400
+
+        purchase_items = [
+            PurchaseItem(name=key, priority=index + 1, material=Material[key])
+            for index, key in enumerate(request_data['selectedMaterials'])
+        ]
+        names = ", ".join(p.name for p in purchase_items)
+        trade_log(
+            city_port,
+            "API",
+            "CONTINUOUS_BUY received — %s item(s): %s",
+            len(purchase_items),
+            names,
+        )
+        if city_port in stop_events:
+            trade_log(city_port, "API", "Preempting prior action on this port")
         start_action(
             city_port,
-            buy_items,
-            (select_material_list[0], city_port)
+            run_trade_session,
+            (city_port, purchase_items),
         )
+        trade_log(city_port, "API", "Continuous buy thread started")
 
     elif request_data['action'] == 'SELL_WITH_FULL_VALUE':
         start_action(
@@ -119,6 +143,7 @@ def stop_action():
 
     if city_port in stop_events:
         stop_events[city_port].set()
+        trade_log(city_port, "STOP", "Stop requested via /action-stop")
         return jsonify({"message": "action stop requested"}), 200
 
     return jsonify({"message": "no running action for this city"}), 200

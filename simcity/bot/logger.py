@@ -36,5 +36,10 @@ def setup_logging():
         # Add the handlers to the logger
         logger.addHandler(console_handler)
         logger.addHandler(file_handler)
+
+        trade_bot_logger = logging.getLogger("trade_bot")
+        trade_bot_logger.setLevel(logging.INFO)
+        trade_bot_logger.propagate = True
+
         logger.info('\n===== New Automation Started =====\n')
         print('Logging setup completed')
